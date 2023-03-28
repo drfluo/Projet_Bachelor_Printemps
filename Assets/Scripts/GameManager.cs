@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public CameraMovement cameraMovement;
-
+    public RoadManager roadManager;
     public InputManager inputManager;
 
     private void Start()
@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private void HandleMouseclick(Vector3Int position)
     {
         Debug.Log(position);
+        roadManager.PlaceRoad(position);
     }
 
 
