@@ -20,6 +20,10 @@ public class InputManager : MonoBehaviour
 		get { return cameraMovementVector; }
 	}
 
+	private void Start() {
+		cameraMovementVector=new Vector2(0,0);
+	}
+
 	private void Update()
 	{
 		CheckClickDownEvent();
@@ -43,6 +47,7 @@ public class InputManager : MonoBehaviour
 	private void CheckArrowInput()
 	{
 		cameraMovementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+		Debug.Log(cameraMovementVector);
 	}
 
 	private void CheckClickHoldEvent()
