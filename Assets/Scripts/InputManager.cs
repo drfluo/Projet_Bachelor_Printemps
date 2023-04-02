@@ -38,7 +38,9 @@ public class InputManager : MonoBehaviour
 		Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 		if(Physics.Raycast(ray, out hit, Mathf.Infinity, groundMask))
 		{
+			
 			Vector3Int positionInt = Vector3Int.RoundToInt(hit.point);
+			Debug.Log(positionInt);
 			return positionInt;
 		}
 		return null;

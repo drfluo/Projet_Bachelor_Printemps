@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
 
 
 
-    private void Update()
+    /*private void Update()
     {
         cameraMovement.MoveCamera(new Vector3(inputManager.CameraMovementVector.x,0, inputManager.CameraMovementVector.y));
-    }
+    }*/
 }
