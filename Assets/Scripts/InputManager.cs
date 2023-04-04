@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class InputManager : MonoBehaviour
 {
+    public PlacementManager placementManager;    
+
     public Action<Vector3Int> OnMouseClick, OnMouseHold;
     public Action OnMouseUp;
 	private Vector2 cameraMovementVector;
@@ -40,7 +42,6 @@ public class InputManager : MonoBehaviour
 		{
 			
 			Vector3Int positionInt = Vector3Int.RoundToInt(hit.point);
-			Debug.Log(positionInt);
 			return positionInt;
 		}
 		return null;
@@ -49,7 +50,6 @@ public class InputManager : MonoBehaviour
 	private void CheckArrowInput()
 	{
 		cameraMovementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-		Debug.Log(cameraMovementVector);
 	}
 
 	private void CheckClickHoldEvent()
@@ -65,21 +65,37 @@ public class InputManager : MonoBehaviour
 
 	private void CheckClickUpEvent()
 	{
-		if (Input.GetMouseButtonUp(0) && EventSystem.current.IsPointerOverGameObject() == false)
+		if (Input.GetMouseButtonUp(0))
 		{
+			Debug.Log("YO LE RAP");
 			OnMouseUp?.Invoke();
 
 		}
+
 	}
 
 	private void CheckClickDownEvent()
 	{
-		if (Input.GetMouseButtonDown(0) && EventSystem.current.IsPointerOverGameObject() == false)
+		if (Input.GetMouseButtonDown(0))
 		{
 			var position = RaycastGround();
 			if (position != null)
 				OnMouseClick?.Invoke(position.Value);
-
+ 
 		}
+		if (Input.GetMouseButtonDown(1))
+		{
+			var position = RaycastGround();
+			if (position != null)
+			{
+				Debug.Log("je click");
+				Debug.Log(position);
+				placementManager.RemoveRoad(position.Value);
+			}
+		}
+		
 	}
+
+
+	
 }

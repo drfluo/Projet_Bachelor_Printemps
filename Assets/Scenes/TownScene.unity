@@ -15172,7 +15172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadEnd: {fileID: 919132149155446097, guid: 08a4e74aa4e785d4bb8d11cbe0e9b81e, type: 3}
-  roadStraight: {fileID: 919132149155446097, guid: cd0f2c1d97411224591e3cfc5c29e402, type: 3}
+  roadStraight: {fileID: 919132149155446097, guid: 714b10b24f7c8b34faf9b64257567ab6, type: 3}
   corner: {fileID: 919132149155446097, guid: 3af50e35697e0e54e802f2e98e4a2bd4, type: 3}
   threeWay: {fileID: 919132149155446097, guid: 0ac89edb9278cb74fbc934ebe5b330c6, type: 3}
   fourWay: {fileID: 919132149155446097, guid: b39fddf923fd5374b8fe6ee3315ef7a7, type: 3}
@@ -22842,8 +22842,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620c8f2a675fa884fae58ed9ee800fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roadManager: {fileID: 527914465}
   width: 30
   height: 30
+  roadFixer: {fileID: 0}
 --- !u!4 &788738469
 Transform:
   m_ObjectHideFlags: 0
@@ -35503,6 +35505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd0857953d78c6488b323c0df7095db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placementManager: {fileID: 788738468}
   mainCamera: {fileID: 2044889011}
   groundMask:
     serializedVersion: 2

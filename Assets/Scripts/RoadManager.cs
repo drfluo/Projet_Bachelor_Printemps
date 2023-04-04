@@ -23,6 +23,7 @@ public class RoadManager : MonoBehaviour
 
     public void PlaceRoad(Vector3Int position)
     {
+        Debug.Log("dans Palce rocad");
         if(placementManager.CheckIfPositionInBound(position)==false)
         {
             return;
@@ -67,6 +68,8 @@ public class RoadManager : MonoBehaviour
         FixRoadPrefabs();
     }
 
+    
+
     private void FixRoadPrefabs()
     {
        foreach(var temporaryPosition in temporaryPlacementPositions)
@@ -90,6 +93,7 @@ public class RoadManager : MonoBehaviour
 
     public void FinishPlacingRoad()
     {
+
         placementMode = false;
         placementManager.AddtemporaryStructureToStructureDictionary(); 
         if(temporaryPlacementPositions.Count >0)

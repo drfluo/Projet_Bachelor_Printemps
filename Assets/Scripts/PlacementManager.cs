@@ -3,17 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlacementManager : MonoBehaviour
 {
+    public RoadManager roadManager;
     public int width, height;
     Grid placementGrid;
 
     private Dictionary<Vector3Int, StructureModel> temporaryRoadObjects = new Dictionary<Vector3Int, StructureModel>();
     private Dictionary<Vector3Int, StructureModel> structureDictionary = new Dictionary<Vector3Int, StructureModel>();
-
+    public RoadFixer roadFixer;
 
     private void Start() 
     {
+        roadFixer = GetComponent<RoadFixer>();
+
         placementGrid=new Grid(width,height);
     }
 
@@ -114,5 +118,85 @@ public class PlacementManager : MonoBehaviour
             structureDictionary[position].SwapModel(newModel, rotation);
         }
     }
+
+
+    public void RemoveRoad(Vector3Int position)
+    {
+            Debug.Log(placementGrid[position.x,position.z]);
+            
+            //Debug.Log(structureDictionary[position]);
+            if(placementGrid[position.x,position.z]!=CellType.Empty)
+            {
+                placementGrid[position.x, position.z] = CellType.Empty;
+                Destroy(structureDictionary[position].gameObject); 
+                structureDictionary.Remove(position);
+
+                /*var neighbours = GetNeighboursOfTypeFor(position, CellType.Road);
+                foreach(var positionToFix in neighbours)
+                {
+                    roadFixer.FixRoadAtPosition(this, positionToFix);
+                }*/
+
+                //cell du dessus
+                position.x+=1;
+                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                {
+                    placementGrid[position.x, position.z] = CellType.Empty;
+                    Destroy(structureDictionary[position].gameObject); 
+                    structureDictionary.Remove(position);
+                    
+                    Debug.Log("just avamt le üéace rpad");
+
+                    roadManager.PlaceRoad(position);
+                    roadManager.FinishPlacingRoad();
+                }
+
+
+                position.x-=2;
+                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                {
+                    placementGrid[position.x, position.z] = CellType.Empty;
+                    Destroy(structureDictionary[position].gameObject); 
+                    structureDictionary.Remove(position);
+                    
+                    Debug.Log("just avamt le üéace rpad");
+
+                    roadManager.PlaceRoad(position);
+                    roadManager.FinishPlacingRoad();
+
+                }
+
+                position.x+=1;
+
+
+                position.z-=1;
+                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                {
+                    placementGrid[position.x, position.z] = CellType.Empty;
+                    Destroy(structureDictionary[position].gameObject); 
+                    structureDictionary.Remove(position);
+                    
+                    Debug.Log("just avamt le üéace rpad");
+
+                    roadManager.PlaceRoad(position);
+                    roadManager.FinishPlacingRoad();
+                }
+
+                position.z+=2;
+                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                {
+                    placementGrid[position.x, position.z] = CellType.Empty;
+                    Destroy(structureDictionary[position].gameObject); 
+                    structureDictionary.Remove(position);
+                    
+                    Debug.Log("just avamt le üéace rpad");
+
+                    roadManager.PlaceRoad(position);
+                    roadManager.FinishPlacingRoad();
+                }
+
+            }
+    }
+
 
 }

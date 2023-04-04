@@ -36,7 +36,7 @@ public class RoadFixer : MonoBehaviour
 
     private void Create4Way(PlacementManager placementManager, CellType[] result, Vector3Int temporaryPosition)
     {
-        placementManager.ModifyStructureModel(temporaryPosition, fourWay, Quaternion.identity);
+        placementManager.ModifyStructureModel(temporaryPosition, fourWay, Quaternion.Euler(0, 180, 0));
     }
 
     //[left,up,right,down]
@@ -107,12 +107,12 @@ public class RoadFixer : MonoBehaviour
     {
         if (result[0] == CellType.Road && result[2] == CellType.Road)
         {
-            placementManager.ModifyStructureModel(temporaryPosition, roadStraight, Quaternion.identity);
+            placementManager.ModifyStructureModel(temporaryPosition, roadStraight, Quaternion.Euler(0, 90, 0));
             return true;
         }
         else if (result[1] == CellType.Road && result[3] == CellType.Road)
         {
-            placementManager.ModifyStructureModel(temporaryPosition, roadStraight, Quaternion.Euler(0, 90, 0));
+            placementManager.ModifyStructureModel(temporaryPosition, roadStraight, Quaternion.identity);
             return true;
         }
         return false;
