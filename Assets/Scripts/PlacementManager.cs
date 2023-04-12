@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -12,12 +13,10 @@ public class PlacementManager : MonoBehaviour
 
     private Dictionary<Vector3Int, StructureModel> temporaryRoadObjects = new Dictionary<Vector3Int, StructureModel>();
     private Dictionary<Vector3Int, StructureModel> structureDictionary = new Dictionary<Vector3Int, StructureModel>();
-    public RoadFixer roadFixer;
+
 
     private void Start() 
     {
-        roadFixer = GetComponent<RoadFixer>();
-
         placementGrid=new Grid(width,height);
     }
 
@@ -27,9 +26,11 @@ public class PlacementManager : MonoBehaviour
     
     }
 
-    internal void PlaceObjectOnTheMap(Vector3Int position, GameObject prefab, CellType structure)
+    internal void PlaceObjectOnTheMap(Vector3Int position, GameObject prefab, CellType type)
     {
-        throw new NotImplementedException();
+        placementGrid[position.x, position.z] = type;
+        StructureModel structure = CreateANewStructureModel(position, prefab, type);
+        structureDictionary.Add(position, structure);
     }
 
     public bool CheckIfPositionInBound(Vector3Int position)
@@ -125,8 +126,26 @@ public class PlacementManager : MonoBehaviour
     }
 
 
+    public void FixBuildingAtPosition(Vector3Int position)
+    {
+        var result = GetNeighbourtTypesFor(position);
+        int roadCount = 0;
+        roadCount = result.Where(Matrix4x4 => Matrix4x4 == CellType.Road).Count();
+        if (roadCount == 0)
+        {
+            Debug.Log("House shouldn't be here");
+            Destroy(structureDictionary[position].gameObject);
+            structureDictionary.Remove(position);
+        }
+    }
+
+
+
+
     public void RemoveRoad(Vector3Int position)
     {
+
+            //TODO : if no road next to house then delete house
             Debug.Log(placementGrid[position.x,position.z]);
             
             if(placementGrid[position.x,position.z]!=CellType.Empty)
@@ -146,7 +165,7 @@ public class PlacementManager : MonoBehaviour
 
                 //cell du dessus
                 position.x+=1;
-                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                if(placementGrid[position.x,position.z]==CellType.Road)
                 {
                     placementGrid[position.x, position.z] = CellType.Empty;
                     Destroy(structureDictionary[position].gameObject); 
@@ -155,11 +174,15 @@ public class PlacementManager : MonoBehaviour
 
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();
+                }
+                else if(placementGrid[position.x, position.z] != CellType.Empty)
+                {
+                    FixBuildingAtPosition(position);
                 }
 
 
                 position.x-=2;
-                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                if(placementGrid[position.x,position.z] == CellType.Road)
                 {
                     placementGrid[position.x, position.z] = CellType.Empty;
                     Destroy(structureDictionary[position].gameObject); 
@@ -170,12 +193,16 @@ public class PlacementManager : MonoBehaviour
                     roadManager.FinishPlacingRoad();
 
                 }
+                else if (placementGrid[position.x, position.z] != CellType.Empty)
+                {
+                    FixBuildingAtPosition(position);
+                }
 
-                position.x+=1;
+            position.x+=1;
 
 
                 position.z-=1;
-                if(placementGrid[position.x,position.z]!=CellType.Empty)
+                if(placementGrid[position.x,position.z] == CellType.Road)
                 {
                     placementGrid[position.x, position.z] = CellType.Empty;
                     Destroy(structureDictionary[position].gameObject); 
@@ -185,9 +212,13 @@ public class PlacementManager : MonoBehaviour
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();
                 }
+                else if (placementGrid[position.x, position.z] != CellType.Empty)
+                {
+                    FixBuildingAtPosition(position);
+                }
 
-                position.z+=2;
-                if(placementGrid[position.x,position.z]!=CellType.Empty)
+            position.z+=2;
+                if(placementGrid[position.x,position.z] == CellType.Road)
                 {
                     placementGrid[position.x, position.z] = CellType.Empty;
                     Destroy(structureDictionary[position].gameObject); 
@@ -197,8 +228,12 @@ public class PlacementManager : MonoBehaviour
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();
                 }
+                else if (placementGrid[position.x, position.z] != CellType.Empty)
+                {
+                    FixBuildingAtPosition(position);
+                }
 
-            }
+        }
     }
 
 

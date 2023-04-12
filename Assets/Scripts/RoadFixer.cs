@@ -34,6 +34,8 @@ public class RoadFixer : MonoBehaviour
         }
     }
 
+
+
     private void Create4Way(PlacementManager placementManager, CellType[] result, Vector3Int temporaryPosition)
     {
         placementManager.ModifyStructureModel(temporaryPosition, fourWay, Quaternion.Euler(0, 180, 0));
@@ -117,5 +119,8 @@ public class RoadFixer : MonoBehaviour
         }
         return false;
     }
+
+
+    //TODO create function fixHouse to check if no neighbours, if yes then delete
 
 }
