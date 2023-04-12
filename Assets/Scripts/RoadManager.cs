@@ -23,7 +23,6 @@ public class RoadManager : MonoBehaviour
 
     public void PlaceRoad(Vector3Int position)
     {
-        Debug.Log("dans Palce rocad");
         if(placementManager.CheckIfPositionInBound(position)==false)
         {
             return;

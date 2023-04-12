@@ -27,6 +27,11 @@ public class PlacementManager : MonoBehaviour
     
     }
 
+    internal void PlaceObjectOnTheMap(Vector3Int position, GameObject prefab, CellType structure)
+    {
+        throw new NotImplementedException();
+    }
+
     public bool CheckIfPositionInBound(Vector3Int position)
     {
          if(position.x>=0 && position.x < width && position.z>=0 && position.z<height)
@@ -124,14 +129,16 @@ public class PlacementManager : MonoBehaviour
     {
             Debug.Log(placementGrid[position.x,position.z]);
             
-            //Debug.Log(structureDictionary[position]);
             if(placementGrid[position.x,position.z]!=CellType.Empty)
             {
                 placementGrid[position.x, position.z] = CellType.Empty;
                 Destroy(structureDictionary[position].gameObject); 
                 structureDictionary.Remove(position);
 
-                /*var neighbours = GetNeighboursOfTypeFor(position, CellType.Road);
+                /*TODO : implement this solution so it works (more elegant)
+                 * 
+                 * 
+                 * var neighbours = GetNeighboursOfTypeFor(position, CellType.Road);
                 foreach(var positionToFix in neighbours)
                 {
                     roadFixer.FixRoadAtPosition(this, positionToFix);
@@ -145,7 +152,6 @@ public class PlacementManager : MonoBehaviour
                     Destroy(structureDictionary[position].gameObject); 
                     structureDictionary.Remove(position);
                     
-                    Debug.Log("just avamt le üéace rpad");
 
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();
@@ -159,7 +165,6 @@ public class PlacementManager : MonoBehaviour
                     Destroy(structureDictionary[position].gameObject); 
                     structureDictionary.Remove(position);
                     
-                    Debug.Log("just avamt le üéace rpad");
 
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();
@@ -176,7 +181,6 @@ public class PlacementManager : MonoBehaviour
                     Destroy(structureDictionary[position].gameObject); 
                     structureDictionary.Remove(position);
                     
-                    Debug.Log("just avamt le üéace rpad");
 
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();
@@ -189,7 +193,6 @@ public class PlacementManager : MonoBehaviour
                     Destroy(structureDictionary[position].gameObject); 
                     structureDictionary.Remove(position);
                     
-                    Debug.Log("just avamt le üéace rpad");
 
                     roadManager.PlaceRoad(position);
                     roadManager.FinishPlacingRoad();

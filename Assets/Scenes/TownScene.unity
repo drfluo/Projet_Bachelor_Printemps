@@ -14591,9 +14591,9 @@ RectTransform:
   m_Father: {fileID: 88944062}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15.273376, y: -79.71577}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &504028729
@@ -15172,10 +15172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadEnd: {fileID: 919132149155446097, guid: 08a4e74aa4e785d4bb8d11cbe0e9b81e, type: 3}
-  roadStraight: {fileID: 919132149155446097, guid: 714b10b24f7c8b34faf9b64257567ab6, type: 3}
+  roadStraight: {fileID: 919132149155446097, guid: cd0f2c1d97411224591e3cfc5c29e402, type: 3}
   corner: {fileID: 919132149155446097, guid: b478f88668577f94480ca43181f17295, type: 3}
   threeWay: {fileID: 919132149155446097, guid: 1e3fb9bac6903b74fa75ed0d53726852, type: 3}
-  fourWay: {fileID: 919132149155446097, guid: ef8ad9d5e43ab4d4898186cc3376ac51, type: 3}
+  fourWay: {fileID: 919132149155446097, guid: 31cbbd8923ad5a0428fbe63e44900ab6, type: 3}
 --- !u!1 &529517739
 GameObject:
   m_ObjectHideFlags: 0
@@ -19698,13 +19698,30 @@ GameObject:
   - component: {fileID: 681313532}
   - component: {fileID: 681313531}
   - component: {fileID: 681313530}
+  - component: {fileID: 681313529}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &681313529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681313528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b07899c9c5d9c4eb9b7f714b1c03c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeRoadButton: {fileID: 504028732}
+  placeHouseButton: {fileID: 1325324658}
+  placeSpecialButton: {fileID: 1405492519}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &681313530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22153,6 +22170,7 @@ MonoBehaviour:
   cameraMovement: {fileID: 2044889014}
   roadManager: {fileID: 527914465}
   inputManager: {fileID: 1166395989}
+  uiController: {fileID: 681313529}
 --- !u!4 &768318899
 Transform:
   m_ObjectHideFlags: 0
@@ -40590,9 +40608,9 @@ RectTransform:
   m_Father: {fileID: 88944062}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15.273376, y: -122.85961}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1325324655
@@ -41810,9 +41828,9 @@ RectTransform:
   m_Father: {fileID: 88944062}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 95.27338, y: -21.571922}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360282590
@@ -43589,9 +43607,9 @@ RectTransform:
   m_Father: {fileID: 88944062}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15.273376, y: -166.00345}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1405591759

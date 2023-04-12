@@ -67,9 +67,7 @@ public class InputManager : MonoBehaviour
 	{
 		if (Input.GetMouseButtonUp(0))
 		{
-			Debug.Log("YO LE RAP");
 			OnMouseUp?.Invoke();
-
 		}
 
 	}
@@ -88,8 +86,6 @@ public class InputManager : MonoBehaviour
 			var position = RaycastGround();
 			if (position != null)
 			{
-				Debug.Log("je click");
-				Debug.Log(position);
 				placementManager.RemoveRoad(position.Value);
 			}
 		}
