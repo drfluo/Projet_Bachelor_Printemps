@@ -1,3 +1,4 @@
+﻿using SVS;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,75 +7,89 @@ using UnityEngine;
 
 public class StructureManager : MonoBehaviour
 {
-    public StructurePrefabWeighted[] housesPrefabs, specialPrefabs;
+    public StructurePrefabWeighted[] housesPrefabe, specialPrefabs, bigStructuresPrefabs;
     public PlacementManager placementManager;
 
-    private float[] houseWeights, specialWeights;
+    private float[] houseWeights, specialWeights, bigStructureWeights;
 
     private void Start()
     {
-        houseWeights = housesPrefabs.Select(prefabStats => prefabStats.weight).ToArray();
-        specialWeights= specialPrefabs.Select(prefabStats => prefabStats.weight).ToArray();
+        houseWeights = housesPrefabe.Select(prefabStats => prefabStats.weight).ToArray();
+        specialWeights = specialPrefabs.Select(prefabStats => prefabStats.weight).ToArray();
     }
 
     public void PlaceHouse(Vector3Int position)
     {
-        if(checkPositionBeforePlacement(position))
+        if (CheckPositionBeforePlacement(position))
         {
             int randomIndex = GetRandomWeightedIndex(houseWeights);
-            placementManager.PlaceObjectOnTheMap(position, housesPrefabs[randomIndex].prefab, CellType.Structure);
-
+            placementManager.PlaceObjectOnTheMap(position, housesPrefabe[randomIndex].prefab, CellType.Structure);
         }
     }
 
+
     public void PlaceSpecial(Vector3Int position)
     {
-        if (checkPositionBeforePlacement(position))
+        if (CheckPositionBeforePlacement(position))
         {
             int randomIndex = GetRandomWeightedIndex(specialWeights);
-            placementManager.PlaceObjectOnTheMap(position, specialPrefabs[randomIndex].prefab, CellType.Structure);
-
+            placementManager.PlaceObjectOnTheMap(position, specialPrefabs[randomIndex].prefab, CellType.SpecialStructure);
         }
     }
 
     private int GetRandomWeightedIndex(float[] weights)
     {
         float sum = 0f;
-        for(int i=0; i< weights.Length;i++)
+        for (int i = 0; i < weights.Length; i++)
         {
             sum += weights[i];
         }
+
         float randomValue = UnityEngine.Random.Range(0, sum);
         float tempSum = 0;
         for (int i = 0; i < weights.Length; i++)
         {
-            if(randomValue>=tempSum&&randomValue<tempSum+weights[i])
+            //0->weihg[0] weight[0]->weight[1]
+            if(randomValue >= tempSum && randomValue < tempSum + weights[i])
             {
                 return i;
             }
-            else
-            {
-                tempSum += weights[i];
-            }
+            tempSum += weights[i];
         }
         return 0;
     }
 
-    private bool checkPositionBeforePlacement(Vector3Int position)
+    private bool CheckPositionBeforePlacement(Vector3Int position)
     {
-        if(placementManager.CheckIfPositionInBound(position)==false)
+        if (DefaultCheck(position) == false)
         {
-            Debug.Log("This position is out of bounds");
             return false;
         }
-        if(placementManager.CheckIfPositionIsFree(position)==false)
+
+        if (RoadCheck(position) == false)
+            return false;
+        
+        return true;
+    }
+
+    private bool RoadCheck(Vector3Int position)
+    {
+        if (placementManager.GetNeighboursOfTypeFor(position, CellType.Road).Count <= 0)
         {
-            Debug.Log("position is taken");
+            Debug.Log("Must be placed near a road");
             return false;
         }
-        if(placementManager.GetNeighboursOfTypeFor(position, CellType.Road).Count <=0)
+        return true;
+    }
+
+    private bool DefaultCheck(Vector3Int position)
+    {
+        if (placementManager.CheckIfPositionInBound(position) == false)
         {
-            Debug.Log("No road nearby");
+            return false;
+        }
+        if (placementManager.CheckIfPositionIsFree(position) == false)
+        {
             return false;
         }
         return true;

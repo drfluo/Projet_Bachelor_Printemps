@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,26 +14,30 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
-        buttonList = new List<Button> { placeRoadButton, placeHouseButton, placeSpecialButton };
+        buttonList = new List<Button> { placeHouseButton, placeRoadButton, placeSpecialButton};
 
         placeRoadButton.onClick.AddListener(() =>
         {
             ResetButtonColor();
             ModifyOutline(placeRoadButton);
             OnRoadPlacement?.Invoke();
+
         });
         placeHouseButton.onClick.AddListener(() =>
         {
             ResetButtonColor();
             ModifyOutline(placeHouseButton);
             OnHousePlacement?.Invoke();
+
         });
         placeSpecialButton.onClick.AddListener(() =>
         {
             ResetButtonColor();
             ModifyOutline(placeSpecialButton);
             OnSpecialPlacement?.Invoke();
+
         });
+
     }
 
     private void ModifyOutline(Button button)
@@ -43,9 +47,9 @@ public class UIController : MonoBehaviour
         outline.enabled = true;
     }
 
-    private void ResetButtonColor()
+    public void ResetButtonColor()
     {
-        foreach(Button button in buttonList)
+        foreach (Button button in buttonList)
         {
             button.GetComponent<Outline>().enabled = false;
         }

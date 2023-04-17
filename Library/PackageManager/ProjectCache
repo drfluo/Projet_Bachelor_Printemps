@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638160351978990101
-    m_Hash: 4263432994
+      ticks: 638170260333726360
+    m_Hash: 3553868414
   m_LockFileStatus:
     m_FilePath: C:/_LAURELINE/Programmation/Git/Road_To_Ze_Bachelor/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638160351979000076
-    m_Hash: 1273127031
+      ticks: 638170260375007053
+    m_Hash: 787289184
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -104,6 +104,7 @@ m_PackageAssets:
         - 2.0.0-preview.22
         - 2.0.0
         - 2.0.1
+        - 2.0.3
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -119,6 +120,7 @@ m_PackageAssets:
         - 2.0.0-preview.22
         - 2.0.0
         - 2.0.1
+        - 2.0.3
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -286,12 +288,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: 9b718d58b8f7a34e564f2c79af6d2ca788e929d4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.17
+    - packageId: com.unity.ide.visualstudio@2.0.16
       testable: 0
       isDirectDependency: 1
-      version: 2.0.17
+      version: 2.0.16
       source: 1
-      resolvedPath: C:\_LAURELINE\Programmation\Git\Road_To_Ze_Bachelor\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
+      resolvedPath: C:\_LAURELINE\Programmation\Git\Road_To_Ze_Bachelor\Library\PackageCache\com.unity.ide.visualstudio@2.0.16
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -376,13 +378,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 638059987360000000
-      documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
+      datePublishedTicks: 637914298680000000
+      documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 1f126893bfb18ea9661fb15771613e841467073c
+        revision: c01855ef6461b821ab0226135e96a4ee86de96be
         path: 
     - packageId: com.unity.ide.vscode@1.2.5
       testable: 0
@@ -641,6 +643,7 @@ m_PackageAssets:
         - 1.3.1
         - 1.3.2
         - 1.3.3
+        - 1.3.4
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -651,6 +654,7 @@ m_PackageAssets:
         - 1.3.1
         - 1.3.2
         - 1.3.3
+        - 1.3.4
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -3407,6 +3411,7 @@ m_PackageAssets:
         - 1.7.0
         - 1.7.1
         - 1.8.1
+        - 1.8.2
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3428,6 +3433,7 @@ m_PackageAssets:
         - 1.7.0
         - 1.7.1
         - 1.8.1
+        - 1.8.2
         verified: 1.6.0
       dependencies:
       - name: com.unity.modules.unitywebrequest
