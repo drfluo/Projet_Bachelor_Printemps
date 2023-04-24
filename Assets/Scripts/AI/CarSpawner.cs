@@ -10,7 +10,9 @@ public class CarSpawner : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(SelectACarPrefab(), transform);
+        GameObject chosenCar = SelectACarPrefab();
+        
+        Instantiate(chosenCar, transform);
     }
 
     private GameObject SelectACarPrefab()

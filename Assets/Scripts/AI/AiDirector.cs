@@ -15,41 +15,7 @@ namespace SimpleCity.AI
         AdjacencyGraph carGraph = new AdjacencyGraph();
 
         List<Vector3> carPath = new List<Vector3>();
-
-        /*public void SpawnAllAagents()
-       {
-           foreach (var house in placementManager.GetAllHouses())
-           {
-               TrySpawningAnAgent(house, placementManager.GetRandomSpecialStrucutre());
-           }
-           foreach (var specialStructure in placementManager.GetAllSpecialStructures())
-           {
-               TrySpawningAnAgent(specialStructure, placementManager.GetRandomHouseStructure());
-           }
-       }
-
-      private void TrySpawningAnAgent(StructureModel startStructure, StructureModel endStructure)
-       {
-           if(startStructure != null && endStructure != null)
-           {
-               var startPosition = ((INeedingRoad)startStructure).RoadPosition;
-               var endPosition = ((INeedingRoad)endStructure).RoadPosition;
-
-               var startMarkerPosition = placementManager.GetStructureAt(startPosition).GetPedestrianSpawnMarker(startStructure.transform.position);
-               var endMarkerPosition = placementManager.GetStructureAt(endPosition).GetNearestPedestrianMarkerTo(endStructure.transform.position);
-
-               var agent = Instantiate(GetRandomPedestrian(), startMarkerPosition.Position, Quaternion.identity);
-               var path = placementManager.GetPathBetween(startPosition, endPosition, true);
-               if(path.Count > 0)
-               {
-                   path.Reverse();
-                   List<Vector3> agentPath = GetPedestrianPath(path, startMarkerPosition.Position, endMarkerPosition);
-                   var aiAgent = agent.GetComponent<AiAgent>();
-                   aiAgent.Initialize(agentPath);
-               }
-           }
-       }*/
-
+        
         public void SpawnACar()
         {
             foreach (var house in placementManager.GetAllHouses())
@@ -57,6 +23,8 @@ namespace SimpleCity.AI
                 TrySpawninACar(house, placementManager.GetRandomSpecialStrucutre());
             }
         }
+
+
 
         private void TrySpawninACar(StructureModel startStructure, StructureModel endStructure)
         {
@@ -90,7 +58,7 @@ namespace SimpleCity.AI
         {
             carGraph.ClearGraph();
             CreatACarGraph(path);
-            Debug.Log(carGraph);
+
             return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
         }
 
@@ -128,10 +96,6 @@ namespace SimpleCity.AI
                 if (limitDistance && tempDictionary.Count > 2)
                 {
                     var distanceSortedMarkers = tempDictionary.OrderBy(x => Vector3.Distance(x.Key.Position, x.Value)).ToList();
-                    foreach (var item in distanceSortedMarkers)
-                    {
-                        Debug.Log(Vector3.Distance(item.Key.Position, item.Value));
-                    }
                     for (int j = 0; j < 2; j++)
                     {
                         carGraph.AddEdge(distanceSortedMarkers[j].Key.Position, distanceSortedMarkers[j].Value);
@@ -139,29 +103,6 @@ namespace SimpleCity.AI
                 }
             }
         }
-
-
-        private void Update()
-        {
-            //DrawGraph(carGraph);
-            for (int i = 1; i < carPath.Count; i++)
-            {
-                Debug.DrawLine(carPath[i - 1] + Vector3.up, carPath[i] + Vector3.up, Color.magenta);
-            }
-        }
-
-        private void DrawGraph(AdjacencyGraph graph)
-        {
-            foreach (var vertex in graph.GetVertices())
-            {
-                foreach (var vertexNeighbour in graph.GetConnectedVerticesTo(vertex))
-                {
-                    Debug.DrawLine(vertex.Position + Vector3.up, vertexNeighbour.Position + Vector3.up, Color.red);
-                }
-            }
-        }
-
-
     }
 }
 

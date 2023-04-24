@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
 
     public ObjectDetector objectDetector;
 
-    public PathVisualizer pathVisualizer;
-
     void Start()
     {
         uiController.OnRoadPlacement += RoadPlacementHandler;
@@ -30,19 +28,8 @@ public class GameManager : MonoBehaviour
     {
         ClearInputActions();
         uiController.ResetButtonColor();
-        pathVisualizer.ResetPath();
-        inputManager.OnMouseClick += TrySelectingAgent;
     }
 
-    private void TrySelectingAgent(Ray ray)
-    {
-        GameObject hitObject = objectDetector.RaycastAll(ray);
-        if(hitObject != null)
-        {
-            var agentScript = hitObject.GetComponent<AiAgent>();
-            agentScript?.ShowPath();
-        }
-    }
 
 
     private void SpecialPlacementHandler()

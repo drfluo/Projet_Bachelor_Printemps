@@ -62,8 +62,6 @@
     <Compile Include="Assets\Scripts\ObjectDetector.cs" />
     <Compile Include="Assets\Scripts\AI\SmartRoad.cs" />
     <Compile Include="Assets\Scripts\AI\Marker.cs" />
-    <Compile Include="Assets\Scripts\AI\SmartCrosswalks.cs" />
-    <Compile Include="Assets\Scripts\AI\AiAgent.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\StructureModel.cs" />
@@ -82,7 +80,6 @@
     <Compile Include="Assets\Scripts\AI\CarController.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\AI\RoadHelperMultipleCarMarkers.cs" />
-    <Compile Include="Assets\Scripts\PathVisualizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

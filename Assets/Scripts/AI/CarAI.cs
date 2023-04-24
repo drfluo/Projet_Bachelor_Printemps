@@ -17,8 +17,8 @@ public class CarAI : MonoBehaviour
 
     [SerializeField]
     private GameObject raycastStartingPoint = null;
-    [SerializeField]
-    private float collisionRaycastLength = 0.1f;
+
+    public float raycastSafetyDistance;
 
     internal bool IsThisLastPathIndex()
     {
@@ -49,6 +49,21 @@ public class CarAI : MonoBehaviour
         {
             currentTargetPosition = path[index];
         }
+
+        //if sports car then safetydistance shorter
+        foreach (Transform child in transform)
+        {
+            if(child.name.Contains("Sports"))
+            {
+                SetSafetyDistance(0.1f);
+            }
+        }
+        
+    }
+
+    public void SetSafetyDistance(float newDistance)
+    {
+        raycastSafetyDistance = newDistance;
     }
 
     public void SetPath(List<Vector3> path)
@@ -77,9 +92,12 @@ public class CarAI : MonoBehaviour
         CheckForCollisions();
     }
 
+
+
+
     private void CheckForCollisions()
     {
-        if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,collisionRaycastLength, 1 << gameObject.layer))
+        if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,raycastSafetyDistance, 1 << gameObject.layer))
         {
             collisionStop = true;
         }
@@ -88,6 +106,9 @@ public class CarAI : MonoBehaviour
             collisionStop = false;
         }
     }
+
+
+
 
     private void Drive()
     {
