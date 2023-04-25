@@ -4,8 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CarAI : MonoBehaviour
 {
+    /*previously in CarController*/
+    Rigidbody rb;
+ 
+    private float power = 10;
+    private float torque = 0.02f;
+    private float maxSpeed = 0.4f;
+
+    [SerializeField]
+    private Vector2 movementVector;
+    /* END   */
+
     [SerializeField]
     private List<Vector3> path = null;
     [SerializeField]
@@ -18,7 +30,12 @@ public class CarAI : MonoBehaviour
     [SerializeField]
     private GameObject raycastStartingPoint = null;
 
-    public float raycastSafetyDistance;
+    private float raycastSafetyDistance=0.75f;
+    private float raycastObstacleAhead=0.9f;
+
+    private float distanceObstacleAhead=-10f;
+
+
 
     internal bool IsThisLastPathIndex()
     {
@@ -36,11 +53,18 @@ public class CarAI : MonoBehaviour
         set { stop = value; }
     }
 
-    [field: SerializeField]
-    public UnityEvent<Vector2> OnDrive { get; set; }
+ 
+
+    /*previously in CarController*/
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void Start()
     {
+        InitializeCar();
+
         if(path == null || path.Count == 0)
         {
             Stop = true;
@@ -49,22 +73,68 @@ public class CarAI : MonoBehaviour
         {
             currentTargetPosition = path[index];
         }
+    }
 
-        //if sports car then safetydistance shorter
+    private void Update()
+    {
+        CheckIfArrived();
+        Drive();
+        CheckForCollisions();
+    }
+
+    
+private RaycastHit hit;
+    private void FixedUpdate()
+    {
+
+        //WOULD BE COOL IF : another raycasting with longer distance that only slows down until certain point(object no longer coming closer) : sinon voiture de sport "bump" dans celle devant
+        //idée : avoir une variable "distance truc devant" et checker si cette distance change, si oui, ralentir jusqu'à ce qu'elle change plus et tant que y a toujours un truc devant
+        bool haveToAccelerate=true;
+        if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,out hit,raycastObstacleAhead, 1 << gameObject.layer))
+        {
+            if(distanceObstacleAhead<0)
+            {
+                distanceObstacleAhead=hit.distance;
+            }
+            if(hit.distance< distanceObstacleAhead)
+            {
+                distanceObstacleAhead=hit.distance;
+                haveToAccelerate=false;
+                Debug.Log(-movementVector.y * transform.forward * 1/hit.distance*power/10);
+                rb.AddForce(-movementVector.y * transform.forward * 1/hit.distance*power/10);
+            }
+            
+        }
+        else
+        {
+            distanceObstacleAhead=-10f;
+        }
+        
+        if(rb.velocity.magnitude < maxSpeed)
+        {
+            rb.AddForce(movementVector.y * transform.forward * power);
+        }
+        rb.AddTorque(movementVector.x * Vector3.up * torque * movementVector.y);
+    }
+    /* END   */
+
+
+    private void InitializeCar()
+    {
+        //if sports car then safetydistance shorter and maxspeed greater
         foreach (Transform child in transform)
         {
             if(child.name.Contains("Sports"))
             {
-                SetSafetyDistance(0.1f);
+                raycastSafetyDistance = 0.4f;
+                maxSpeed=0.6f;
             }
         }
-        
+
     }
 
-    public void SetSafetyDistance(float newDistance)
-    {
-        raycastSafetyDistance = newDistance;
-    }
+
+
 
     public void SetPath(List<Vector3> path)
     {
@@ -85,12 +155,7 @@ public class CarAI : MonoBehaviour
         Stop = false;
     }
 
-    private void Update()
-    {
-        CheckIfArrived();
-        Drive();
-        CheckForCollisions();
-    }
+
 
 
 
@@ -114,7 +179,7 @@ public class CarAI : MonoBehaviour
     {
         if (Stop)
         {
-            OnDrive?.Invoke(Vector2.zero);
+            this.movementVector = Vector2.zero;
         }
         else
         {
@@ -128,7 +193,7 @@ public class CarAI : MonoBehaviour
             {
                 rotateCar = -1;
             }
-            OnDrive?.Invoke(new Vector2(rotateCar, 1));
+            this.movementVector = new Vector2(rotateCar, 1);
         }
     }
 

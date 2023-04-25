@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 569683081087099779}
   - component: {fileID: 5288401989019888607}
   - component: {fileID: 9129931513075086721}
-  - component: {fileID: -7368483073046397102}
   - component: {fileID: -1274727206583111556}
   m_Layer: 10
   m_Name: Car
@@ -94,22 +93,6 @@ MonoBehaviour:
   carPrefabs:
   - {fileID: 771982215564958993, guid: 855cd82b21977fe458e741a8f5352a56, type: 3}
   - {fileID: 3224105099788658157, guid: 25c83d295f789394da1342229c25d951, type: 3}
---- !u!114 &-7368483073046397102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569683081087099838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ce851434c504124c9e41ec05d8b53aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  power: 10
-  torque: 0.02
-  maxSpeed: 0.4
-  movementVector: {x: 0, y: 0}
 --- !u!114 &-1274727206583111556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07c9c03ed6ed104c9c79355ef33bba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  power: 10
+  torque: 0.02
+  maxSpeed: 0.4
+  movementVector: {x: 0, y: 0}
   path: []
   arriveDistance: 0.2
   lastPointArriveDistance: 0.1
@@ -129,21 +116,6 @@ MonoBehaviour:
   currentTargetPosition: {x: 0, y: 0, z: 0}
   raycastStartingPoint: {fileID: 7828243858922119456}
   raycastSafetyDistance: 1
-  <OnDrive>k__BackingField:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -7368483073046397102}
-        m_TargetAssemblyTypeName: CarController, _ProjectAssembly
-        m_MethodName: Move
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7828243858922119456
 GameObject:
   m_ObjectHideFlags: 0

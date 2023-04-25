@@ -10,6 +10,18 @@ public class SmartRoad : MonoBehaviour
     public CarAI currentCar;
 
 
+    //IDEA
+    /*
+    Create variable isACarBlocking qui dit si une voiture en empeche une autr de passer, si non alors on met pas car.Stop=true 
+    (typiquement dans un croisement trois voies, tant qu'aucune voiture ne tourne c'est comme siu c'était une seule voie)
+
+
+    Aussi, pour la priorité de droite:
+        Liste de pair de waypoint ? Genre si ton prochain c'est celui là check que personne est là ?
+        Une liste de qui domine qui ? genre un nombre associé au waypoint avec un modulo style 1>2>3>4>1... ?
+        
+    */
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Car"))
