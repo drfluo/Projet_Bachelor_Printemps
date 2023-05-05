@@ -23,7 +23,7 @@ public class StructureModel : MonoBehaviour, INeedingRoad
             Destroy(child.gameObject);
         }
         var structure = Instantiate(model, transform);
-        structure.transform.localPosition = new Vector3(0, yHeight, 0);
+        structure.transform.localPosition = new Vector3(0, 0, 0);
         structure.transform.localRotation = rotation;
     }
 

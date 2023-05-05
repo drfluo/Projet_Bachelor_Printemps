@@ -7,8 +7,13 @@ using UnityEngine;
 public class PlacementManager : MonoBehaviour
 {
     public int width, height;
-    Grid placementGrid;
+    public Grid placementGrid;
     public RoadManager roadManager;
+
+
+    public GameObject[] roadPrefab;
+    public int idPrefab = 0;
+
 
 
     private Dictionary<Vector3Int, StructureModel> temporaryRoadobjects = new Dictionary<Vector3Int, StructureModel>();
@@ -334,4 +339,83 @@ public class PlacementManager : MonoBehaviour
         }
     }
 
+
+
+
+
+
+    public void Swap(Vector3Int position)
+    {
+        if (placementGrid[position.x, position.z] == CellType.Road)
+        {
+            Debug.Log(structureDictionary[position].gameObject.transform.GetChild(0).gameObject);
+            if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("Straight"))
+            {
+                Debug.Log("YES");
+                idPrefab+=1;
+                //Debug.Log(idPrefab);
+                idPrefab = idPrefab%5;
+                //Debug.Log(idPrefab);
+                ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.identity);
+
+                //roadManager.roadFixer.FixRoadAtPosition(this, position);
+
+                var result = GetNeighboursTypes(position);
+                /*
+                var positiontest = position;
+
+                positiontest.x -=1;
+
+                Debug.Log(structureDictionary[positiontest].gameObject.transform.GetChild(0));//gauche
+                positiontest.x +=2;
+                Debug.Log(structureDictionary[positiontest].gameObject.transform.GetChild(0));//droite
+                positiontest.x-=1;
+                */
+
+
+   
+                if (result[0] == CellType.Road && result[2] == CellType.Road)
+                {
+                    ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.identity);
+                
+                }
+                else if (result[1] == CellType.Road && result[3] == CellType.Road)
+                {
+                    ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,90,0));
+                }
+                
+
+
+                //les ceder le passage et les stop font face au intersection avec les prochaines lignes
+
+                var positionTest = position;
+                positionTest.z+=1;
+                
+                //si celui de dessus est un croisement à 3 ou 4 vois, on le tourne
+                if (structureDictionary.ContainsKey(positionTest))
+                {
+                    if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
+                    {
+                        Debug.Log("TOURNE");
+                        ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,270,0));
+                    }
+                }
+                positionTest.z-=1;
+
+
+                //si celui à gauche est un croisement de 3 ou 4 vois, on le tourne
+                positionTest.x-=1;
+
+                if (structureDictionary.ContainsKey(positionTest))
+                {
+                    if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
+                    {
+                        Debug.Log("TOURNE");
+                        ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,180,0));
+                    }
+                }
+                positionTest.x+=1;
+            }
+        }
+    }
 }

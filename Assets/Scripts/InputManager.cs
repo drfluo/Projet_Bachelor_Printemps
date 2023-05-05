@@ -64,12 +64,22 @@ public class InputManager : MonoBehaviour
         {
             OnMouseClick?.Invoke(mainCamera.ScreenPointToRay(Input.mousePosition));
         }
+
         if (Input.GetMouseButtonDown(1))
         {
             var position = RaycastGround();
             if (position != null)
             {
                 placementManager.RemoveRoad(position.Value);
+            }
+        }
+
+        if (Input.GetMouseButtonDown(2))
+        {
+            var position = RaycastGround();
+            if (position != null)
+            { 
+                placementManager.Swap(position.Value);
             }
         }
     }

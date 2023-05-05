@@ -709,6 +709,13 @@ MonoBehaviour:
   width: 15
   height: 15
   roadManager: {fileID: 2093395483}
+  roadPrefab:
+  - {fileID: 5661862354351878554, guid: 9af6cba450cf2c341aacd5e931cc99f7, type: 3}
+  - {fileID: 5661862354351878554, guid: 0cf01c743836d154eb47042e1bc62afd, type: 3}
+  - {fileID: 5661862354351878554, guid: 7e163d8702ec10e489ba7c18ec518313, type: 3}
+  - {fileID: 5661862354351878554, guid: f34174b704326ff49b5475180708bf15, type: 3}
+  - {fileID: 5661862354351878554, guid: 87b8c631d82b13746a5683c05fad5b32, type: 3}
+  idPrefab: 0
 --- !u!4 &540532164
 Transform:
   m_ObjectHideFlags: 0
@@ -2137,7 +2144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadEnd: {fileID: 1120765361980748800, guid: ef8f049b66a193541ad3b7d3a231eb38, type: 3}
-  roadStraight: {fileID: 5661862354351878554, guid: 0cf01c743836d154eb47042e1bc62afd, type: 3}
+  roadStraight: {fileID: 5661862354351878554, guid: 9af6cba450cf2c341aacd5e931cc99f7, type: 3}
   corner: {fileID: 7077802812573144028, guid: 55b7f49bc3cc00b44aa21a5f66ac2aaa, type: 3}
   threeWay: {fileID: 2384947387477557946, guid: 2524a8437a2d4394da7f7a0546a71f3d, type: 3}
   fourWay: {fileID: 3351635067702010651, guid: f4402828bce58b54791119f89fa2df61, type: 3}
