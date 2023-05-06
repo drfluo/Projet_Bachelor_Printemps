@@ -76,7 +76,6 @@ public class StructureManager : MonoBehaviour
     {
         if (placementManager.GetNeighboursOfTypeFor(position, CellType.Road).Count <= 0)
         {
-            Debug.Log("Must be placed near a road");
             return false;
         }
         return true;

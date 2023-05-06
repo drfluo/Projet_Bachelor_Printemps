@@ -46,7 +46,6 @@ public class PlacementManager : MonoBehaviour
         if (structureNeedingRoad != null)
         {
             structureNeedingRoad.RoadPosition = GetNearestRoad(position, width, height).Value;
-            Debug.Log("My nearest road position is: " + structureNeedingRoad.RoadPosition);
         }
 
         for (int x = 0; x < width; x++)
@@ -131,6 +130,10 @@ public class PlacementManager : MonoBehaviour
     {
         var resultPath = GridSearch.AStarSearch(placementGrid, new Point(startPosition.x, startPosition.z), new Point(endPosition.x, endPosition.z), isAgent);
         List<Vector3Int> path = new List<Vector3Int>();
+        if(resultPath==null)
+        {
+            return null;
+        }
         foreach (Point point in resultPath)
         {
             path.Add(new Vector3Int(point.X, 0, point.Y));
@@ -235,7 +238,6 @@ public class PlacementManager : MonoBehaviour
         roadCount = result.Where(Matrix4x4 => Matrix4x4 == CellType.Road).Count();
         if (roadCount == 0)
         {
-            Debug.Log("House shouldn't be here");
             Destroy(structureDictionary[position].gameObject);
             placementGrid.removeElementFromList(position);
             structureDictionary.Remove(position);
@@ -348,30 +350,15 @@ public class PlacementManager : MonoBehaviour
     {
         if (placementGrid[position.x, position.z] == CellType.Road)
         {
-            Debug.Log(structureDictionary[position].gameObject.transform.GetChild(0).gameObject);
             if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("Straight"))
             {
-                Debug.Log("YES");
                 idPrefab+=1;
-                //Debug.Log(idPrefab);
                 idPrefab = idPrefab%5;
-                //Debug.Log(idPrefab);
                 ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.identity);
 
                 //roadManager.roadFixer.FixRoadAtPosition(this, position);
 
                 var result = GetNeighboursTypes(position);
-                /*
-                var positiontest = position;
-
-                positiontest.x -=1;
-
-                Debug.Log(structureDictionary[positiontest].gameObject.transform.GetChild(0));//gauche
-                positiontest.x +=2;
-                Debug.Log(structureDictionary[positiontest].gameObject.transform.GetChild(0));//droite
-                positiontest.x-=1;
-                */
-
 
    
                 if (result[0] == CellType.Road && result[2] == CellType.Road)
@@ -396,7 +383,6 @@ public class PlacementManager : MonoBehaviour
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        Debug.Log("TOURNE");
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,270,0));
                     }
                 }
@@ -410,7 +396,6 @@ public class PlacementManager : MonoBehaviour
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        Debug.Log("TOURNE");
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,180,0));
                     }
                 }

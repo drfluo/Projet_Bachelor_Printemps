@@ -100,7 +100,6 @@ private RaycastHit hit;
             {
                 distanceObstacleAhead=hit.distance;
                 haveToAccelerate=false;
-                Debug.Log(-movementVector.y * transform.forward * 1/hit.distance*power/10);
                 rb.AddForce(-movementVector.y * transform.forward * 1/hit.distance*power/10);
             }
             

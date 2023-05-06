@@ -39,7 +39,6 @@
      <Compile Include="Assets\Scripts\AI\CarAI.cs" />
      <Compile Include="Assets\Scripts\GridSearch.cs" />
      <Compile Include="Assets\Scripts\AI\RoadHelper.cs" />
-     <Compile Include="Assets\Scripts\AudioPlayer.cs" />
      <Compile Include="Assets\Scripts\INeedingRoad.cs" />
      <Compile Include="Assets\Scripts\RoadFixer.cs" />
      <Compile Include="Assets\Scripts\ObjectDetector.cs" />

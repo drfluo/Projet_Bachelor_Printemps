@@ -8,6 +8,7 @@ public class SmartRoad : MonoBehaviour
 {
     Queue<CarAI> trafficQueue = new Queue<CarAI>();
     public CarAI currentCar;
+    
 
 
     //IDEA

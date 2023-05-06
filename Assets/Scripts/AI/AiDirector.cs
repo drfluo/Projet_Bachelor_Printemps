@@ -35,10 +35,9 @@ namespace SimpleCity.AI
 
                 var path = placementManager.GetPathBetween(startRoadPosition, endRoadPosition, true);
                 path.Reverse();
-
+                
                 if (path.Count == 0 && path.Count>2)
                     return;
-
                 var startMarkerPosition = placementManager.GetStructureAt(startRoadPosition).GetCarSpawnMarker(path[1]);
 
                 var endMarkerPosition = placementManager.GetStructureAt(endRoadPosition).GetCarEndMarker(path[path.Count-2]);
@@ -54,6 +53,7 @@ namespace SimpleCity.AI
         }
 
 
+//Choose a path by A* in graph of possible path
         private List<Vector3> GetCarPath(List<Vector3Int> path, Vector3 startPosition, Vector3 endPosition)
         {
             carGraph.ClearGraph();
@@ -62,8 +62,10 @@ namespace SimpleCity.AI
             return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
         }
 
+//creates graph of all possible path for a car
         private void CreatACarGraph(List<Vector3Int> path)
         {
+
             Dictionary<Marker, Vector3> tempDictionary = new Dictionary<Marker, Vector3>();
             for (int i = 0; i < path.Count; i++)
             {
@@ -80,6 +82,7 @@ namespace SimpleCity.AI
                     {
                         carGraph.AddEdge(marker.Position, markerNeighbour.Position);
                     }
+                    //openforconnections -> can connect to another cell
                     if(marker.OpenForconnections && i + 1 < path.Count)
                     {
                         var nextRoadPosition = placementManager.GetStructureAt(path[i + 1]);

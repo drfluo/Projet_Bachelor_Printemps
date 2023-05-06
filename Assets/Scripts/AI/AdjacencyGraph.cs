@@ -16,8 +16,8 @@ namespace SimpleCity.AI
             if(GetVertexAt(position) != null)
             {
                 return null;
+                
             }
-
             Vertex v = new Vertex(position);
             AddVertex(v);
             return v;
@@ -27,7 +27,9 @@ namespace SimpleCity.AI
         private void AddVertex(Vertex v)
         {
             if (adjacencyDictionary.ContainsKey(v))
+            {
                 return;
+            }
             adjacencyDictionary.Add(v, new List<Vertex>());
         }
 
@@ -52,13 +54,16 @@ namespace SimpleCity.AI
             if(v1 == null)
             {
                 v1 = new Vertex(position1);
+                AddVertex(v1);
             }
             if(v2 == null)
             {
                 v2 = new Vertex(position2);
+                AddVertex(v2);
             }
+            
             AddEdgeBetween(v1, v2);
-            AddEdgeBetween(v2, v1);
+            //AddEdgeBetween(v2, v1);
 
         }
 
@@ -89,15 +94,20 @@ namespace SimpleCity.AI
             {
                 return adjacencyDictionary[v1];
             }
-            return null;
+            List<Vertex> list = new List<Vertex>();
+            return list;
         }
 
         public List<Vertex> GetConnectedVerticesTo(Vector3 position)
         {
             var v1 = GetVertexAt(position);
             if (v1 == null)
-                return null;
-            return adjacencyDictionary[v1];
+            {
+                List<Vertex> list = new List<Vertex>();
+                return list;
+            
+            }
+                return adjacencyDictionary[v1];
         }
 
         public void ClearGraph()
