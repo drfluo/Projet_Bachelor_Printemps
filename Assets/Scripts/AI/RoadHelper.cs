@@ -28,11 +28,11 @@ namespace SimpleCity.AI
             return incomming;
         }
 
-        protected Marker GetClosestMarkeTo(Vector3 structurePosition, List<Marker> pedestrianMarkers, bool isCorner = false)
+        protected Marker GetClosestMarkeTo(Vector3 structurePosition, List<Marker> markers, bool isCorner = false)
         {
             if (isCorner)
             {
-                foreach (var marker in pedestrianMarkers)
+                foreach (var marker in markers)
                 {
                     var direction = marker.Position - structurePosition;
                     direction.Normalize();
@@ -47,7 +47,7 @@ namespace SimpleCity.AI
             {
                 Marker closestMarker = null;
                 float distance = float.MaxValue;
-                foreach (var marker in pedestrianMarkers)
+                foreach (var marker in markers)
                 {
                     var markerDistance = Vector3.Distance(structurePosition, marker.Position);
                     if(distance > markerDistance)
