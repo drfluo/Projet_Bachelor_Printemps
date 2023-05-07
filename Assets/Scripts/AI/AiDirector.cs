@@ -77,7 +77,6 @@ namespace SimpleCity.AI
 
                 foreach (var marker in markersList)
                 {
-                    Debug.Log("TEST MRKER AT"+marker.Position);
                     carGraph.AddVertex(marker.Position);
                     foreach (var markerNeighbour in marker.adjacentMarkers)
                     {

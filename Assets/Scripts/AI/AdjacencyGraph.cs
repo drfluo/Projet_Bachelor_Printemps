@@ -26,7 +26,6 @@ namespace SimpleCity.AI
 
         private void AddVertex(Vertex v)
         {
-            Debug.Log("ADD VERTEX"+v.Position);
             if (adjacencyDictionary.ContainsKey(v))
             {
                 return;
@@ -62,7 +61,6 @@ namespace SimpleCity.AI
                 v2 = new Vertex(position2);
                 AddVertex(v2);
             }
-            Debug.Log("ADDEDGE");
             AddEdgeBetween(v1, v2);
             //AddEdgeBetween(v2, v1);
 

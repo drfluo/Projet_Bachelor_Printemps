@@ -72,6 +72,7 @@ public class CarAI : MonoBehaviour
         {
             currentTargetPosition = path[index];
         }
+
     }
 
     private void Update()

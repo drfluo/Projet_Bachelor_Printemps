@@ -35,13 +35,21 @@ public class SmartRoad : MonoBehaviour
         Debug.Log(markers[0].Position);
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Car"))
         {
             var car = other.GetComponent<CarAI>();
-            bool occupied=false;
 
+            foreach(Marker marker in markers) //cherche son marker e
+            {
+
+            }
+
+
+            bool occupied=false;
+            
+            //si il tourne on le laisse faire
             foreach(Marker marker in toStopCar)
             {
                 Debug.Log("TO STOP :"+marker.Position+"TRUE"+car.path[car.index+1]);
@@ -55,6 +63,9 @@ public class SmartRoad : MonoBehaviour
                     occupied=marker.IsOccupied;
                 }
             }
+
+            //si il tourne pas et on doit regarder si en bas a droite c'est occupé (si c'est le cas faut laisser la priorité)
+
             //check collider entry_bottom (if empty Go else wait)
             if(occupied)
             {
@@ -65,13 +76,15 @@ public class SmartRoad : MonoBehaviour
 
 
             
-            /*if (car != null && car != currentCar && car.IsThisLastPathIndex() == false)
+            if (car != null && car != currentCar && car.IsThisLastPathIndex() == false)
             {
                 trafficQueue.Enqueue(car);
                 car.Stop = true;
-            }*/
-        }
-    }
+            }
+}
+    }*/
+
+    
 
     private void Update()
     {
