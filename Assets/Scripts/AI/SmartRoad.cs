@@ -3,13 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using SimpleCity.AI;
 
 public class SmartRoad : MonoBehaviour
 {
     Queue<CarAI> trafficQueue = new Queue<CarAI>();
     public CarAI currentCar;
-    
 
+    public RoadHelper model = null;
+    public List<Marker> markers = null;
+    
+    public List<Marker> toStopCar=null;
 
     //IDEA
     /*
@@ -23,16 +27,49 @@ public class SmartRoad : MonoBehaviour
         
     */
 
+    private void Start() 
+    {
+        model= GetComponent<RoadHelper>();
+        markers=model.carMarkers;
+
+        Debug.Log(markers[0].Position);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Car"))
         {
             var car = other.GetComponent<CarAI>();
-            if (car != null && car != currentCar && car.IsThisLastPathIndex() == false)
+            bool occupied=false;
+
+            foreach(Marker marker in toStopCar)
+            {
+                Debug.Log("TO STOP :"+marker.Position+"TRUE"+car.path[car.index+1]);
+                if(marker.Position==car.path[car.index+1])
+                {
+                    //car.Stop = true;
+                    return;
+                }
+                else if(marker.name.Contains("Entry_Bottom"))
+                {
+                    occupied=marker.IsOccupied;
+                }
+            }
+            //check collider entry_bottom (if empty Go else wait)
+            if(occupied)
             {
                 trafficQueue.Enqueue(car);
                 car.Stop = true;
             }
+
+
+
+            
+            /*if (car != null && car != currentCar && car.IsThisLastPathIndex() == false)
+            {
+                trafficQueue.Enqueue(car);
+                car.Stop = true;
+            }*/
         }
     }
 

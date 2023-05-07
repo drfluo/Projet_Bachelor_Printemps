@@ -13,6 +13,9 @@ namespace SimpleCity.AI
         public List<Marker> adjacentMarkers;
 
         [SerializeField]
+        public bool IsOccupied=false;
+
+        [SerializeField]
         private bool openForConnections;
 
         public bool OpenForconnections
@@ -24,6 +27,27 @@ namespace SimpleCity.AI
         {
             return new List<Vector3>(adjacentMarkers.Select(x => x.Position).ToList());
         }
+    
+    
+        private void OnTriggerEnter(Collider other)
+        {
+            
+            if (other.CompareTag("Car"))
+            {
+                IsOccupied=true;
+                Debug.Log("COLLIDED BOUMSKI");
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Car"))
+            {
+                IsOccupied=false;
+                Debug.Log("COLLIDED DEBOUMSKITATION");
+            }
+        }
+    
     }
 
 }

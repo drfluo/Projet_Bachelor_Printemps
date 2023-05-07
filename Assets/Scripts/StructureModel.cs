@@ -27,7 +27,7 @@ public class StructureModel : MonoBehaviour, INeedingRoad
         structure.transform.localRotation = rotation;
     }
 
-    internal List<Marker> GetCarMarkers()
+    public List<Marker> GetCarMarkers()
     {
         return transform.GetChild(0).GetComponent<RoadHelper>().GetAllCarMarkers();
     }

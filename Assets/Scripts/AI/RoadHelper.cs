@@ -8,8 +8,7 @@ namespace SimpleCity.AI
     public class RoadHelper : MonoBehaviour
     {
 
-        [SerializeField]
-        protected List<Marker> carMarkers;
+        public List<Marker> carMarkers;
         [SerializeField]
         protected bool isCorner;
 

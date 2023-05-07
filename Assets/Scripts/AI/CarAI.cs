@@ -18,14 +18,13 @@ public class CarAI : MonoBehaviour
     private Vector2 movementVector;
     /* END   */
 
-    [SerializeField]
-    private List<Vector3> path = null;
+    public List<Vector3> path = null;
     [SerializeField]
     private float arriveDistance = .3f, lastPointArriveDistance = .1f;
     [SerializeField]
     private float turningAngleOffset = 5;
-    [SerializeField]
-    private Vector3 currentTargetPosition;
+  
+    public Vector3 currentTargetPosition;
 
     [SerializeField]
     private GameObject raycastStartingPoint = null;
@@ -42,7 +41,7 @@ public class CarAI : MonoBehaviour
         return index >= path.Count-1;
     }
 
-    private int index = 0;
+    public int index = 0;
 
     private bool stop;
     private bool collisionStop = false;
