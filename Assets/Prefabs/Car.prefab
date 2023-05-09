@@ -92,7 +92,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carPrefabs:
   - {fileID: 771982215564958993, guid: 855cd82b21977fe458e741a8f5352a56, type: 3}
-  - {fileID: 3224105099788658157, guid: 25c83d295f789394da1342229c25d951, type: 3}
 --- !u!114 &-1274727206583111556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,9 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07c9c03ed6ed104c9c79355ef33bba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 10
-  torque: 0.02
-  maxSpeed: 0.4
   movementVector: {x: 0, y: 0}
   path: []
   arriveDistance: 0.2
@@ -115,7 +111,7 @@ MonoBehaviour:
   turningAngleOffset: 5
   currentTargetPosition: {x: 0, y: 0, z: 0}
   raycastStartingPoint: {fileID: 7828243858922119456}
-  raycastSafetyDistance: 1
+  index: 0
 --- !u!1 &7828243858922119456
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ namespace SimpleCity.AI
         public List<Dependency> dependencyList;
 
         [SerializeField]
-        public bool IsOccupied=false;
+        public int IsOccupied=0;
 
         [SerializeField]
         private bool openForConnections;
@@ -60,18 +60,33 @@ namespace SimpleCity.AI
             {
                 var car = other.GetComponent<CarAI>(); //if collision with car we get its script
                 currentCar = car;
+                //Debug.Log("Collider "+GetComponent<Collider>().name+" has hit object "+other.name);
+                //Debug.Log("Collider's parent "+GetComponent<Collider>().transform.parent.name+" has hit object "+other.name);
+                //Debug.Log("Collider's parent's parent "+GetComponent<Collider>().transform.parent.transform.parent.name+" has hit object "+other.name);
+                //Debug.Log("IS SET TO TRUE");
+                IsOccupied +=1;
+                int increment = 0;
+                if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("3Way"))
+                {
+                    Debug.Log("A 3Way ahead");
+                    increment=2;
+                }else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
+                {
+                    Debug.Log("A 4Way ahead");
+                    increment=3;
+                }else
+                {
+                    Debug.Log("HOUSTON WE HAVE A PROBLEM");
+                }
 
-                Debug.Log("IS SET TO TRUE");
-                IsOccupied =true;
-
-                Debug.Log("car path" + car.path[car.index+2].ToString("F3"));
+                //Debug.Log("car path" + car.path[car.index+2].ToString("F3"));
 
                 foreach(Dependency dependency in dependencyList)
                 {
-                    Debug.Log("check"+dependency.destination.Position.ToString("F3"));
-                    if (dependency.destination.Position==car.path[car.index+2])
+                    //Debug.Log("check"+dependency.destination.Position.ToString("F3"));
+                    if (dependency.destination.Position==car.path[car.index+increment])
                     {
-                        Debug.Log("YAY");
+                        //Debug.Log("YAY");
                         currentDependence = dependency.toCheck;
                         if (!CheckDependency(dependency.toCheck))
                         {
@@ -92,6 +107,10 @@ namespace SimpleCity.AI
                 {
                     currentCar.Stop = false;
                 }
+                if(!CheckDependency(currentDependence))
+                {
+                    currentCar.Stop = true;
+                }
             }
         }
 
@@ -100,9 +119,9 @@ namespace SimpleCity.AI
         {
             foreach(Marker marker in toCheck)
             {
-                if(marker.IsOccupied)
+                if(marker.IsOccupied!=0)
                 {
-                    Debug.Log("WE ARE OCUPIED");
+                    //Debug.Log("WE ARE OCUPIED");
                     return false;
                 }
             }
@@ -113,7 +132,7 @@ namespace SimpleCity.AI
         {
             if (other.CompareTag("Car"))
             {
-               IsOccupied=false;
+               IsOccupied-=1;
                currentCar = null;
             }
         }

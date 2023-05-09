@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers: []
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -95,7 +96,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList:
   - destination: {fileID: 5294581625559448516}
     toCheck: []
@@ -115,8 +117,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.35}
-  m_Center: {x: -0.71, y: 0, z: -0.01}
+  m_Size: {x: 0.5, y: 1, z: 0.35}
+  m_Center: {x: -0.47, y: 0, z: -0.01}
 --- !u!1 &2384947387477557946
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +262,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 1914715121427716573}
   - {fileID: 8220785704905346724}
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList:
   - destination: {fileID: 1914715121427716573}
     toCheck: []
@@ -280,8 +283,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.35}
-  m_Center: {x: 0.72, y: 0, z: 0}
+  m_Size: {x: 0.5, y: 1, z: 0.35}
+  m_Center: {x: 0.47, y: 0, z: 0}
 --- !u!1 &3219700215825233634
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers: []
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -374,7 +378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers: []
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -462,7 +467,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 8220785704905346724}
   - {fileID: 1547229366170371422}
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList:
   - destination: {fileID: 1547229366170371422}
     toCheck: []
@@ -482,8 +488,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 1, z: 1}
-  m_Center: {x: -0.01, y: 0, z: -0.7}
+  m_Size: {x: 0.35, y: 1, z: 0.5}
+  m_Center: {x: -0.01, y: 0, z: -0.47}
 --- !u!1 &8008757790088263805
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +536,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5294581625559448516}
   - {fileID: 1914715121427716573}
-  destination: {fileID: 0}
+  currentCar: {fileID: 0}
+  currentDependence: []
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
