@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Source https://github.com/lordjesus/Packt-Introduction-to-graph-algorithms-for-game-developers
-/// </summary>
+//A point is two int (x and y)
 public class Point
 {
     public int X { get; set; }
@@ -56,6 +54,8 @@ public enum CellType
     None
 }
 
+
+//A grid is a set of 3 lists of points (road, house and special)
 public class Grid
 {
     private CellType[,] _grid;
@@ -102,10 +102,11 @@ public class Grid
 
     public static bool IsCellWakable(CellType cellType, bool aiAgent = false)
     {
-        if (aiAgent)
+        if (aiAgent) //if we are a car a cell is interesting if it is a road
         {
             return cellType == CellType.Road;
         }
+        //If we are placing a road the "interesting" cells are empty and road
         return cellType == CellType.Empty || cellType == CellType.Road;
     }
 
@@ -148,7 +149,15 @@ public class Grid
 
     public List<Point> GetAdjacentCells(Point cell, bool isAgent)
     {
-        return GetWakableAdjacentCells((int)cell.X, (int)cell.Y, isAgent);
+        List<Point> adjacentCells = GetAllAdjacentCells((int)cell.X, (int)cell.Y);
+        for (int i = adjacentCells.Count - 1; i >= 0; i--)
+        {
+            if (IsCellWakable(_grid[adjacentCells[i].X, adjacentCells[i].Y], isAgent) == false)
+            {
+                adjacentCells.RemoveAt(i);
+            }
+        }
+        return adjacentCells;
     }
 
     public float GetCostOfEnteringCell(Point cell)
@@ -178,7 +187,7 @@ public class Grid
         return adjacentCells;
     }
 
-    public List<Point> GetWakableAdjacentCells(int x, int y, bool isAgent)
+    /*public List<Point> GetWakableAdjacentCells(int x, int y, bool isAgent)
     {
         List<Point> adjacentCells = GetAllAdjacentCells(x, y);
         for (int i = adjacentCells.Count - 1; i >= 0; i--)
@@ -189,7 +198,7 @@ public class Grid
             }
         }
         return adjacentCells;
-    }
+    }*/
 
     public List<Point> GetAdjacentCellsOfType(int x, int y, CellType type)
     {
@@ -204,12 +213,7 @@ public class Grid
         return adjacentCells;
     }
 
-    /// <summary>
-    /// Returns array [Left neighbour, Top neighbour, Right neighbour, Down neighbour]
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <returns></returns>
+  
     public CellType[] GetAllAdjacentCellTypes(int x, int y)
     {
         CellType[] neighbours = { CellType.None, CellType.None, CellType.None, CellType.None };

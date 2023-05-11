@@ -18,6 +18,7 @@ namespace SimpleCity.AI
         private Marker incomming, outgoing;
 
 
+        //Need position because multiple car markers inherits from this
         public virtual Marker GetPositioForCarToSpawn(Vector3 nextPathPosition)
         {
             return outgoing;
@@ -26,6 +27,22 @@ namespace SimpleCity.AI
         public virtual Marker GetPositioForCarToEnd(Vector3 previousPathPosition)
         {
             return incomming;
+        }
+
+        //returns all incoming markers (overriden in multiplecarMarkers)
+        public virtual List<Marker> GetAllIncomingMarkers()
+        {
+            List<Marker> incommings= new List<Marker>();
+            incommings.Add(incomming);
+            return incommings;
+        }
+
+        //returns all outgoing markers (overriden in multiplecarMarkers)
+        public virtual List<Marker> GetAllOutgoingMarkers()
+        {
+            List<Marker> outgoings = new List<Marker>();
+            outgoings.Add(outgoing);
+            return outgoings;
         }
 
         protected Marker GetClosestMarkeTo(Vector3 structurePosition, List<Marker> markers, bool isCorner = false)

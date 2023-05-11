@@ -37,13 +37,23 @@ public class StructureModel : MonoBehaviour, INeedingRoad
         return transform.GetChild(0).GetComponent<RoadHelper>().GetClosestCarMarkerPosition(position);
     }
 
-    public Marker GetCarSpawnMarker(Vector3Int nextPathPosition)
+    public Marker GetCarSpawnMarker(Vector3 nextPathPosition)
     {
         return transform.GetChild(0).GetComponent<RoadHelper>().GetPositioForCarToSpawn(nextPathPosition);
     }
 
-    public Marker GetCarEndMarker(Vector3Int previousPathPosition)
+    public Marker GetCarEndMarker(Vector3 previousPathPosition)
     {
         return transform.GetChild(0).GetComponent<RoadHelper>().GetPositioForCarToEnd(previousPathPosition);
+    }
+
+    public List<Marker> GetIncomingMarkers()
+    {
+        return transform.GetChild(0).GetComponent<RoadHelper>().GetAllIncomingMarkers();
+    }
+
+    public List<Marker> GetOutgoingMarkers()
+    {
+        return transform.GetChild(0).GetComponent<RoadHelper>().GetAllOutgoingMarkers();
     }
 }

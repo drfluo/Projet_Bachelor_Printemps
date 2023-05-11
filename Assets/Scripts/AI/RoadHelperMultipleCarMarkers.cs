@@ -17,4 +17,14 @@ public class RoadHelperMultipleCarMarkers : RoadHelper
     {
         return GetClosestMarkeTo(previousPathPosition, incommingMarkers);
     }
+
+    public override List<Marker> GetAllIncomingMarkers()
+    {
+        return incommingMarkers;
+    }
+
+    public override List<Marker> GetAllOutgoingMarkers()
+    {
+        return outgoingMarkers;
+    }
 }

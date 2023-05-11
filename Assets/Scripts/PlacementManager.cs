@@ -55,7 +55,6 @@ public class PlacementManager : MonoBehaviour
                 var newPosition = position + new Vector3Int(x, 0, z);
                 placementGrid[newPosition.x, newPosition.z] = type;
                 structureDictionary.Add(newPosition, structure);
-                DestroyNatureAt(newPosition);
             }
         }
 
@@ -76,15 +75,6 @@ public class PlacementManager : MonoBehaviour
             }
         }
         return null;
-    }
-
-    private void DestroyNatureAt(Vector3Int position)
-    {
-        RaycastHit[] hits = Physics.BoxCastAll(position + new Vector3(0, 0.5f, 0), new Vector3(0.5f, 0.5f, 0.5f), transform.up, Quaternion.identity, 1f, 1 << LayerMask.NameToLayer("Nature"));
-        foreach (var item in hits)
-        {
-            Destroy(item.collider.gameObject);
-        }
     }
 
     internal bool CheckIfPositionIsFree(Vector3Int position)
@@ -111,6 +101,18 @@ public class PlacementManager : MonoBehaviour
         foreach (var point in neighbourVertices)
         {
             neighbours.Add(new Vector3Int(point.X, 0, point.Y));
+        }
+        return neighbours;
+    }
+
+    //takes a road and return THE STRUCTURE of its neighbours
+    public List<StructureModel> GetRoadNeighbours(StructureModel givenRoad)
+    {
+        List<StructureModel> neighbours=new List<StructureModel>();
+        List<Vector3Int> positions = GetNeighboursOfTypeFor(givenRoad.RoadPosition, CellType.Road);
+        foreach(Vector3Int position in positions)
+        {
+            neighbours.Add(GetStructureAt(position));
         }
         return neighbours;
     }
@@ -157,7 +159,6 @@ public class PlacementManager : MonoBehaviour
         foreach (var structure in temporaryRoadobjects)
         {
             structureDictionary.Add(structure.Key, structure.Value);
-            DestroyNatureAt(structure.Key);
         }
         temporaryRoadobjects.Clear();
     }
@@ -211,7 +212,7 @@ public class PlacementManager : MonoBehaviour
     }
 
 
-    private StructureModel GetStructureAt(Point point)
+    public StructureModel GetStructureAt(Point point)
     {
         if (point != null)
         {
