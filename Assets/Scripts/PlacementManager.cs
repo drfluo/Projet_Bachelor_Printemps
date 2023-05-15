@@ -94,7 +94,7 @@ public class PlacementManager : MonoBehaviour
         temporaryRoadobjects.Add(position, structure);
     }
 
-    internal List<Vector3Int> GetNeighboursOfTypeFor(Vector3Int position, CellType type)
+    public List<Vector3Int> GetNeighboursOfTypeFor(Vector3Int position, CellType type)
     {
         var neighbourVertices = placementGrid.GetAdjacentCellsOfType(position.x, position.z, type);
         List<Vector3Int> neighbours = new List<Vector3Int>();
@@ -158,6 +158,7 @@ public class PlacementManager : MonoBehaviour
     {
         foreach (var structure in temporaryRoadobjects)
         {
+            structure.Value.RoadPosition = structure.Key;
             structureDictionary.Add(structure.Key, structure.Value);
         }
         temporaryRoadobjects.Clear();
@@ -174,6 +175,7 @@ public class PlacementManager : MonoBehaviour
     public StructureModel GetRandomRoad()
     {
         var point = placementGrid.GetRandomRoadPoint();
+
         return GetStructureAt(point);
     }
 

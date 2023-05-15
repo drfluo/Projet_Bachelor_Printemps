@@ -49,8 +49,10 @@ MonoBehaviour:
   - {fileID: 13479095859982473}
   - {fileID: 5183172391734285799}
   isCorner: 0
-  incomming: {fileID: 13479095859982473}
-  outgoing: {fileID: 5183172391734285799}
+  incommingMarkers:
+  - {fileID: 13479095859982473}
+  outgoingMarkers:
+  - {fileID: 5183172391734285799}
 --- !u!1 &2955311038607138026
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ GameObject:
   - component: {fileID: 8670063961605049466}
   - component: {fileID: 13479095859982473}
   m_Layer: 0
-  m_Name: CarMarker
+  m_Name: Incoming
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -143,7 +145,7 @@ GameObject:
   - component: {fileID: 2485587097282366581}
   - component: {fileID: 5183172391734285799}
   m_Layer: 0
-  m_Name: CarMarker (1)
+  m_Name: Outgoing
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

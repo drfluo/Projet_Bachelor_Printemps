@@ -16,7 +16,6 @@ namespace SimpleCity.AI
             if(GetVertexAt(position) != null)
             {
                 return null;
-                
             }
             Vertex v = new Vertex(position);
             AddVertex(v);
@@ -106,7 +105,7 @@ namespace SimpleCity.AI
                 return list;
             
             }
-                return adjacencyDictionary[v1];
+            return adjacencyDictionary[v1];
         }
 
         public void ClearGraph()

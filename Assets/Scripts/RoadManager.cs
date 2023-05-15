@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SimpleCity.AI;
 
 public class RoadManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class RoadManager : MonoBehaviour
 
     public List<Vector3Int> temporaryPlacementPositions = new List<Vector3Int>();
     public List<Vector3Int> roadPositionsToRecheck = new List<Vector3Int>();
+
+    public AiDirector ai = null;
 
     private Vector3Int startPosition;
     private bool placementMode = false;
@@ -94,5 +97,8 @@ public class RoadManager : MonoBehaviour
         placementManager.AddtemporaryStructuresToStructureDictionary();
         temporaryPlacementPositions.Clear();
         startPosition = Vector3Int.zero;
+
+        //refresh graph of markers
+       // ai.GraphWholeMarkerMap();
     }
 }

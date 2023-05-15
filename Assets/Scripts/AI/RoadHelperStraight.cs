@@ -10,7 +10,7 @@ namespace SimpleCity.AI
         [SerializeField]
         private Marker leftLaneMarker90, rightLaneMarker90;
 
-        public override Marker GetPositioForCarToSpawn(Vector3 nextPathPosition)
+        /*public override Marker GetPositioForCarToSpawn(Vector3 nextPathPosition)
         {
             int angle = (int)transform.rotation.eulerAngles.y;
             var direction = nextPathPosition - transform.position;
@@ -23,7 +23,7 @@ namespace SimpleCity.AI
             int angle = (int)transform.rotation.eulerAngles.y;
             var direction = transform.position - previousPathPosition;
             return GetCorrectMarker(angle, direction);
-        }
+        }*/
 
 
         private Marker GetCorrectMarker(int angle, Vector3 directionVector)

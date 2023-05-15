@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     public RoadManager roadManager;
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     public UIController uiController;
 
     public StructureManager structureManager;
+
 
     public ObjectDetector objectDetector;
 
@@ -29,8 +31,6 @@ public class GameManager : MonoBehaviour
         ClearInputActions();
         uiController.ResetButtonColor();
     }
-
-
 
     private void SpecialPlacementHandler()
     {
