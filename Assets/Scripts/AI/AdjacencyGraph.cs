@@ -23,6 +23,11 @@ namespace SimpleCity.AI
 
         }
 
+        public bool isEmpty()
+        {
+            return adjacencyDictionary.Count() == 0;
+        }
+
         private void AddVertex(Vertex v)
         {
             if (adjacencyDictionary.ContainsKey(v))

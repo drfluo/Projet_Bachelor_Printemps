@@ -175,7 +175,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5661862354351878554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65b2057f9155d344a6d95b892e6fa46, type: 3}
+  m_Script: {fileID: 11500000, guid: 061749052b93b894f98c62586fb5bc86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carMarkers:
@@ -185,13 +185,11 @@ MonoBehaviour:
   - {fileID: 5427428174929990726}
   isCorner: 0
   incommingMarkers:
-  - {fileID: 2099050511992636199}
   - {fileID: 1295363197539937522}
+  - {fileID: 2099050511992636199}
   outgoingMarkers:
-  - {fileID: 1438356393722834077}
   - {fileID: 5427428174929990726}
-  leftLaneMarker90: {fileID: 1295363197539937522}
-  rightLaneMarker90: {fileID: 1438356393722834077}
+  - {fileID: 1438356393722834077}
 --- !u!1 &6726126923533959542
 GameObject:
   m_ObjectHideFlags: 0

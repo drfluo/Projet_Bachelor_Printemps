@@ -790,9 +790,9 @@ MonoBehaviour:
   roadManager: {fileID: 2093395483}
   roadPrefab:
   - {fileID: 5661862354351878554, guid: 9af6cba450cf2c341aacd5e931cc99f7, type: 3}
-  - {fileID: 5661862354351878554, guid: 0cf01c743836d154eb47042e1bc62afd, type: 3}
+  - {fileID: 5661862354351878554, guid: 2da3d29bc6d47ee4a8a1dfdd028f56b6, type: 3}
   - {fileID: 5661862354351878554, guid: 7e163d8702ec10e489ba7c18ec518313, type: 3}
-  - {fileID: 5661862354351878554, guid: f34174b704326ff49b5475180708bf15, type: 3}
+  - {fileID: 5661862354351878554, guid: 21163fe07d16bb3408c63b821af0ebbe, type: 3}
   - {fileID: 5661862354351878554, guid: 87b8c631d82b13746a5683c05fad5b32, type: 3}
   idPrefab: 0
 --- !u!4 &540532164

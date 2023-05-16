@@ -54,13 +54,29 @@ namespace SimpleCity.AI
 
 
         //Choose a path by A* in graph of possible path
-        private List<Vector3> GetCarPath(List<Vector3Int> path, Vector3 startPosition, Vector3 endPosition)
+        /*private List<Vector3> GetCarPath(List<Vector3Int> path, Vector3 startPosition, Vector3 endPosition)
         {
             carGraph.ClearGraph();
             CreatACarGraph(path);
 
             return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
+        }*/
+
+        private List<Vector3> GetCarPath(List<Vector3Int> path, Vector3 startPosition, Vector3 endPosition)
+        {
+            if(!carGraph.isEmpty())
+            {
+                return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
+            }
+            else
+            {
+                Debug.Log("no car graph computed");
+                return null;
+            }
+            
         }
+
+
 
 
         //creates graph of marker for all road tiles, puts the result in carGraph
@@ -76,7 +92,6 @@ namespace SimpleCity.AI
             List<StructureModel> visited=new List<StructureModel>();
             Queue<StructureModel> roadToVisit = new Queue<StructureModel>();
 
-            int iTest = 5;
 
             roadToVisit.Enqueue(currentRoad);
 
@@ -95,22 +110,15 @@ namespace SimpleCity.AI
 
 
                 //add remaining neighbours to the tovisit queue
-
-                
-                
-                if(iTest>0)
-                {
-                    iTest--;
-                    Debug.Log("ENQUEUE ALL "+ roadNeighbor.Count+ " NEIHBOURS");
-                    roadNeighbor.ForEach(x => roadToVisit.Enqueue(x));
-                }
+                //Debug.Log("ENQUEUE ALL "+ roadNeighbor.Count+ " NEIHBOURS");
+                roadNeighbor.ForEach(x => roadToVisit.Enqueue(x));
 
 
 
                 //create a vertex foreach marker and interconnets them, now we need to connect it to other roads
                 foreach (Marker marker in currentRoad.GetCarMarkers())
                 {
-                    Debug.Log("ADD VERTEX at " + marker.Position);
+                    //Debug.Log("ADD VERTEX at " + marker.Position);
 
 
                     //the marker was never visited before (so we have to check its connection to the exterior)
@@ -122,13 +130,13 @@ namespace SimpleCity.AI
                             //if incoming another tile may be connected to it
                             if (currentRoad.GetIncomingMarkers().Contains(marker))
                             {
-                                Debug.Log("create vertex to " + marker.Position + " from " + GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position);
+                                //Debug.Log("create vertex to " + marker.Position + " from " + GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position);
                                 carGraph.AddEdge(GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position, marker.Position);
                             }
                             //if outgoing it might be connected to another tile
                             else if (currentRoad.GetOutgoingMarkers().Contains(marker))
                             {
-                                Debug.Log("create vertex from " + marker.Position + " to " + GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
+                                //Debug.Log("create vertex from " + marker.Position + " to " + GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
                                 carGraph.AddEdge(marker.Position, GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
                             }
                         }
@@ -192,7 +200,7 @@ namespace SimpleCity.AI
             return closestMarker;
         }
 
-        //creates graph of all possible path for a car
+        //useless function replaced by cargraph
         private void CreatACarGraph(List<Vector3Int> path)
         {
 
