@@ -48,11 +48,63 @@ MonoBehaviour:
   carMarkers:
   - {fileID: 13479095859982473}
   - {fileID: 5183172391734285799}
+  - {fileID: 5129024061712560825}
+  - {fileID: 7677141076251479114}
   isCorner: 0
   incommingMarkers:
-  - {fileID: 13479095859982473}
+  - {fileID: 5129024061712560825}
   outgoingMarkers:
-  - {fileID: 5183172391734285799}
+  - {fileID: 7677141076251479114}
+--- !u!1 &1559664148612704457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6873145705241198092}
+  - component: {fileID: 5129024061712560825}
+  m_Layer: 0
+  m_Name: Incoming Top
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6873145705241198092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559664148612704457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.1, z: 0.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6750532577111867877}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5129024061712560825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559664148612704457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers:
+  - {fileID: 13479095859982473}
+  currentCar: {fileID: 0}
+  currentDependence: []
+  dependencyList: []
+  IsOccupied: 0
+  openForConnections: 1
 --- !u!1 &2955311038607138026
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,7 +116,7 @@ GameObject:
   - component: {fileID: 8670063961605049466}
   - component: {fileID: 13479095859982473}
   m_Layer: 0
-  m_Name: Incoming
+  m_Name: EndTop
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -102,6 +154,55 @@ MonoBehaviour:
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
+--- !u!1 &6299848664944303428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4367822838341302698}
+  - component: {fileID: 7677141076251479114}
+  m_Layer: 0
+  m_Name: Outgoing Bot
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4367822838341302698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299848664944303428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.1, z: -0.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6750532577111867877}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7677141076251479114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299848664944303428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers: []
+  currentCar: {fileID: 0}
+  currentDependence: []
+  dependencyList: []
+  IsOccupied: 0
+  openForConnections: 0
 --- !u!1 &6423226270462737445
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,6 +232,8 @@ Transform:
   m_Children:
   - {fileID: 8670063961605049466}
   - {fileID: 2485587097282366581}
+  - {fileID: 6873145705241198092}
+  - {fileID: 4367822838341302698}
   m_Father: {fileID: 2100345786477648002}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -145,7 +248,7 @@ GameObject:
   - component: {fileID: 2485587097282366581}
   - component: {fileID: 5183172391734285799}
   m_Layer: 0
-  m_Name: Outgoing
+  m_Name: EndBot
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -177,12 +280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacentMarkers: []
+  adjacentMarkers:
+  - {fileID: 7677141076251479114}
   currentCar: {fileID: 0}
   currentDependence: []
   dependencyList: []
   IsOccupied: 0
-  openForConnections: 1
+  openForConnections: 0
 --- !u!1001 &8596573638514159203
 PrefabInstance:
   m_ObjectHideFlags: 0

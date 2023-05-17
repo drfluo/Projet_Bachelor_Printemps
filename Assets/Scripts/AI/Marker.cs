@@ -60,7 +60,7 @@ namespace SimpleCity.AI
             {
                 var car = other.GetComponent<CarAI>(); //if collision with car we get its script
                 currentCar = car;
-                //Debug.Log("Collider "+GetComponent<Collider>().name+" has hit object "+other.name);
+                Debug.Log("Collider "+GetComponent<Collider>().name+" has hit object "+other.name);
                 //Debug.Log("Collider's parent "+GetComponent<Collider>().transform.parent.name+" has hit object "+other.name);
                 //Debug.Log("Collider's parent's parent "+GetComponent<Collider>().transform.parent.transform.parent.name+" has hit object "+other.name);
                 //Debug.Log("IS SET TO TRUE");
@@ -73,13 +73,13 @@ namespace SimpleCity.AI
                 }else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
                 {
                     Debug.Log("A 4Way ahead");
-                    increment=3;
+                    increment=4;
                 }else
                 {
                     Debug.Log("HOUSTON WE HAVE A PROBLEM");
                 }
 
-                //Debug.Log("car path" + car.path[car.index+2].ToString("F3"));
+                Debug.Log("car path" + car.path[car.index+increment].ToString("F3"));
 
                 foreach(Dependency dependency in dependencyList)
                 {
