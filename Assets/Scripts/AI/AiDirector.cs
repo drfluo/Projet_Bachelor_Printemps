@@ -30,8 +30,8 @@ namespace SimpleCity.AI
         {
             if (startStructure != null && endStructure != null)
             {
-                var startRoadPosition = ((INeedingRoad)startStructure).RoadPosition;
-                var endRoadPosition = ((INeedingRoad)endStructure).RoadPosition;
+                var startRoadPosition = ((StructureModel)startStructure).RoadPosition;
+                var endRoadPosition = ((StructureModel)endStructure).RoadPosition;
 
                 var path = placementManager.GetPathBetween(startRoadPosition, endRoadPosition, true);
                 path.Reverse();
@@ -110,7 +110,7 @@ namespace SimpleCity.AI
 
 
                 //add remaining neighbours to the tovisit queue
-                //Debug.Log("ENQUEUE ALL "+ roadNeighbor.Count+ " NEIHBOURS");
+                Debug.Log("ENQUEUE ALL "+ roadNeighbor.Count+ " NEIHBOURS");
                 roadNeighbor.ForEach(x => roadToVisit.Enqueue(x));
 
 
@@ -118,7 +118,7 @@ namespace SimpleCity.AI
                 //create a vertex foreach marker and interconnets them, now we need to connect it to other roads
                 foreach (Marker marker in currentRoad.GetCarMarkers())
                 {
-                    //Debug.Log("ADD VERTEX at " + marker.Position);
+                    Debug.Log("ADD VERTEX at " + marker.Position);
 
 
                     //the marker was never visited before (so we have to check its connection to the exterior)
@@ -130,13 +130,13 @@ namespace SimpleCity.AI
                             //if incoming another tile may be connected to it
                             if (currentRoad.GetIncomingMarkers().Contains(marker))
                             {
-                                //Debug.Log("create vertex to " + marker.Position + " from " + GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position);
+                                Debug.Log("create vertex to " + marker.Position + " from " + GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position);
                                 carGraph.AddEdge(GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position, marker.Position);
                             }
                             //if outgoing it might be connected to another tile
                             else if (currentRoad.GetOutgoingMarkers().Contains(marker))
                             {
-                                //Debug.Log("create vertex from " + marker.Position + " to " + GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
+                                Debug.Log("create vertex from " + marker.Position + " to " + GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
                                 carGraph.AddEdge(marker.Position, GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
                             }
                         }
@@ -148,6 +148,7 @@ namespace SimpleCity.AI
                     //Add neighbors from same road
                     foreach (Marker neighbor in marker.adjacentMarkers)
                     {
+                        Debug.Log("create edge from " + marker.Position + " to " + neighbor.Position);
                         carGraph.AddEdge(marker.Position, neighbor.Position);
                     }
                 }

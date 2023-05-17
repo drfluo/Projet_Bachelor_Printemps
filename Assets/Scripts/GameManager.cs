@@ -1,5 +1,4 @@
 ﻿using SimpleCity.AI;
-using SVS;
 using System;
 using System.Collections;
 using System.Collections.Generic;

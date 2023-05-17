@@ -42,7 +42,7 @@ public class PlacementManager : MonoBehaviour
     {
         StructureModel structure = CreateANewStructureModel(position, structurePrefab, type);
 
-        var structureNeedingRoad = structure.GetComponent<INeedingRoad>();
+        var structureNeedingRoad = structure.GetComponent<StructureModel>();
         if (structureNeedingRoad != null)
         {
             structureNeedingRoad.RoadPosition = GetNearestRoad(position, width, height).Value;
