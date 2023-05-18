@@ -795,6 +795,11 @@ MonoBehaviour:
   - {fileID: 5661862354351878554, guid: 21163fe07d16bb3408c63b821af0ebbe, type: 3}
   - {fileID: 5661862354351878554, guid: 87b8c631d82b13746a5683c05fad5b32, type: 3}
   idPrefab: 0
+  special3Way:
+  - {fileID: 2384947387477557946, guid: 73891b03526421046ad5711cafc94324, type: 3}
+  - {fileID: 2384947387477557946, guid: bacec1ac0e07dab48b6a671a16d822c2, type: 3}
+  - {fileID: 2384947387477557946, guid: de1ecc9fa6462ad46836552baf3dd913, type: 3}
+  special4Way: {fileID: 3351635067702010651, guid: 24e3b0044c3f22d4f8f763198c541ca2, type: 3}
 --- !u!4 &540532164
 Transform:
   m_ObjectHideFlags: 0

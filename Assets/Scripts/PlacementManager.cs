@@ -15,6 +15,9 @@ public class PlacementManager : MonoBehaviour
     public int idPrefab = 0;
 
 
+    public GameObject[] special3Way;
+
+    public GameObject special4Way;
 
     private Dictionary<Vector3Int, StructureModel> temporaryRoadobjects = new Dictionary<Vector3Int, StructureModel>();
     private Dictionary<Vector3Int, StructureModel> structureDictionary = new Dictionary<Vector3Int, StructureModel>();
@@ -366,43 +369,144 @@ public class PlacementManager : MonoBehaviour
    
                 if (result[0] == CellType.Road && result[2] == CellType.Road)
                 {
+                    //Debug.Log("idRoad");
                     ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.identity);
                 
                 }
                 else if (result[1] == CellType.Road && result[3] == CellType.Road)
                 {
+                    //Debug.Log("90Road");
                     ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,90,0));
+
                 }
-                
+
 
 
                 //les ceder le passage et les stop font face au intersection avec les prochaines lignes
 
+
+
+
+                ///////////////////////////////////////////////////////////////////////
+                ////    DESSOUS EST UN CROISEMENT
+                ///////////////////////////////////////////////////////////////////////
+
                 var positionTest = position;
-                positionTest.z+=1;
-                
-                //si celui de dessus est un croisement à 3 ou 4 vois, on le tourne
+                positionTest.z -= 1;
+
+                //si celui de dessous est un croisement à 3 ou 4 vois, on le tourne
                 if (structureDictionary.ContainsKey(positionTest))
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
+                        Debug.Log("The Road  below is a Xing");
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,270,0));
+
+                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            Debug.Log("GO");
+
+                                //Si c'est un 4way, avec un cedez le passage au dessus on prend la forme 4Way bottom et on la retourne
+                                if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                                {
+                                    ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0,180,0));
+                                }
+
+                        }
                     }
                 }
-                positionTest.z-=1;
+                positionTest.z+=1;
 
 
-                //si celui à gauche est un croisement de 3 ou 4 vois, on le tourne
+
+
+
+
+                ///////////////////////////////////////////////////////////////////////
+                ////    DESSUS EST UN CROISEMENT
+                ///////////////////////////////////////////////////////////////////////
+
+                positionTest.z += 1;
+                //si celui de dessus est un croisement à 3 ou 4 vois
+                if (structureDictionary.ContainsKey(positionTest))
+                {
+                    if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
+                    {
+                        Debug.Log("The Road over is a Xing");
+
+                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            Debug.Log("GO");
+                       
+                            //Si c'est un 4way, avec un cedez le passage au dessous on prend la forme 4Way bottom
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way, Quaternion.identity);
+                                Debug.Log("4waySpecial is placed");
+                            }
+                            else
+                            {
+                                //We now need to edit the Xing
+                                //the Xing is at PositionTest
+                                ModifyStructureModel(positionTest, special3Way[1], Quaternion.identity);
+                                Debug.Log("Crossing Over respects now GW bottom");
+                            }
+                        }
+                    }
+                }
+                positionTest.z -= 1;
+
+
+
+
+
+
+
+
+                //si celui à droite est un croisement de 3 ou 4 vois, on le tourne
+                positionTest.x+=1;
+
+                if (structureDictionary.ContainsKey(positionTest))
+                {
+                    if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
+                    {
+                        Debug.Log("The Road right is a Xing");
+                        ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0, 180, 0));
+
+                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            Debug.Log("GO");
+
+                            //We now need to edit the Xing
+                            //the Xing is at PositionTest
+                            ModifyStructureModel(positionTest, special3Way[0], Quaternion.identity);
+                            Debug.Log("Crossing Right respects now GW left");
+                        }
+                    }
+                }
                 positionTest.x-=1;
 
+                //si celui à gauche est un croisement de 3 ou 4 vois
+                positionTest.x -= 1;
+
                 if (structureDictionary.ContainsKey(positionTest))
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,180,0));
+                        Debug.Log("The Road left is a Xing");
+
+                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            Debug.Log("GO");
+
+                                //We now need to edit the Xing
+                                //the Xing is at PositionTest
+                            ModifyStructureModel(positionTest, special3Way[2], Quaternion.identity);
+                            Debug.Log("Crossing Left respects now GW Right");
+                        }
                     }
                 }
-                positionTest.x+=1;
+                positionTest.x += 1;
             }
         }
     }

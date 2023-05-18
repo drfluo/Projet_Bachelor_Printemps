@@ -66,6 +66,7 @@ namespace SimpleCity.AI
                 //Debug.Log("IS SET TO TRUE");
                 IsOccupied +=1;
                 int increment = 0;
+                Debug.Log(GetComponent<Collider>().transform.parent.transform.parent.name);
                 if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("3Way"))
                 {
                     Debug.Log("A 3Way ahead");
@@ -73,8 +74,9 @@ namespace SimpleCity.AI
                 }else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
                 {
                     Debug.Log("A 4Way ahead");
-                    increment=4;
-                }else
+                    increment=3; //test with 3 instead of 4
+                }
+                else
                 {
                     Debug.Log("HOUSTON WE HAVE A PROBLEM");
                 }
@@ -86,7 +88,7 @@ namespace SimpleCity.AI
                     //Debug.Log("check"+dependency.destination.Position.ToString("F3"));
                     if (dependency.destination.Position==car.path[car.index+increment])
                     {
-                        //Debug.Log("YAY");
+                        Debug.Log("YAY");
                         currentDependence = dependency.toCheck;
                         if (!CheckDependency(dependency.toCheck))
                         {
