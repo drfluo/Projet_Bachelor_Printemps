@@ -88,6 +88,7 @@ namespace SimpleCity.AI
             //Basically a BFS kind of (BFS to go through the entire graph, however we don't exactly label things as parents but go through their markers to create the markers-graph)
             
             StructureModel currentRoad = placementManager.GetRandomRoad();
+            Debug.Log("First road :" + currentRoad.RoadPosition);
             List<StructureModel> roadNeighbor;
             List<StructureModel> visited=new List<StructureModel>();
             Queue<StructureModel> roadToVisit = new Queue<StructureModel>();
@@ -118,7 +119,7 @@ namespace SimpleCity.AI
                 //create a vertex foreach marker and interconnets them, now we need to connect it to other roads
                 foreach (Marker marker in currentRoad.GetCarMarkers())
                 {
-                    Debug.Log("ADD VERTEX at " + marker.Position);
+                    Debug.Log("ADD VERTEX at " + marker.Position + " (" + marker.name + ")");
 
 
                     //the marker was never visited before (so we have to check its connection to the exterior)
@@ -130,14 +131,32 @@ namespace SimpleCity.AI
                             //if incoming another tile may be connected to it
                             if (currentRoad.GetIncomingMarkers().Contains(marker))
                             {
-                                Debug.Log("create vertex to " + marker.Position + " from " + GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position);
-                                carGraph.AddEdge(GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker).Position, marker.Position);
+                                
+                                Marker closest = GetClosestOutgoingMarkerOfAllRoads(roadNeighbor, marker);
+                                if (closest != null) //otherwise risk of linking to marker of another tile if road next to it is closed
+                                {
+                                    Debug.Log("create vertex to " + marker.Position + " from other road " + closest.Position + " (" + closest.name + ")");
+                                    carGraph.AddEdge(closest.Position, marker.Position);
+                                }
+                                else
+                                {
+                                    Debug.Log("Something weird happened, a marker was reeeeeally far");
+                                }
                             }
                             //if outgoing it might be connected to another tile
                             else if (currentRoad.GetOutgoingMarkers().Contains(marker))
                             {
-                                Debug.Log("create vertex from " + marker.Position + " to " + GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
-                                carGraph.AddEdge(marker.Position, GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker).Position);
+                                Marker closest = GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker);
+                                if(closest!=null)//otherwise risk of linking to marker of another tile if road next to it is closed
+                                {
+                                    Debug.Log("create edge from " + marker.Position + " to other road : " + closest.Position + " ("+closest.name+")");
+
+                                    carGraph.AddEdge(marker.Position, closest.Position);
+                                }
+                                else
+                                {
+                                    Debug.Log("Something weird happened, a marker was reeeeeally far");
+                                }
                             }
                         }
                     }
@@ -148,7 +167,7 @@ namespace SimpleCity.AI
                     //Add neighbors from same road
                     foreach (Marker neighbor in marker.adjacentMarkers)
                     {
-                        Debug.Log("create edge from " + marker.Position + " to " + neighbor.Position);
+                        Debug.Log("create edge from " + marker.Position + " to (same road) " + neighbor.Position);
                         carGraph.AddEdge(marker.Position, neighbor.Position);
                     }
                 }
@@ -174,8 +193,11 @@ namespace SimpleCity.AI
                     }
                 }
             }
-
-            return closestMarker;
+            if (distance < 0.6)//otherwise risk of linking to marker of another tile if road next to it is closed
+            {
+                return closestMarker;
+            }
+            return null;
         }
 
         public Marker GetClosestOutgoingMarkerOfAllRoads(List<StructureModel> roadList, Marker marker)
@@ -197,8 +219,11 @@ namespace SimpleCity.AI
                     }
                 }
             }
-
-            return closestMarker;
+            if(distance<0.6) //otherwise risk of linking to marker of another tile if road next to it is closed
+            {
+                return closestMarker;
+            }
+            return null;
         }
 
         //useless function replaced by cargraph
