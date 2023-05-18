@@ -388,7 +388,7 @@ public class PlacementManager : MonoBehaviour
 
 
                 ///////////////////////////////////////////////////////////////////////
-                ////    DESSOUS EST UN CROISEMENT
+                ////    ON A UN CROISEMENT AU DESSOUS
                 ///////////////////////////////////////////////////////////////////////
 
                 var positionTest = position;
@@ -406,12 +406,49 @@ public class PlacementManager : MonoBehaviour
                         {
                             Debug.Log("GO");
 
-                                //Si c'est un 4way, avec un cedez le passage au dessus on prend la forme 4Way bottom et on la retourne
-                                if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
-                                {
-                                    ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0,180,0));
-                                }
+                            //Si c'est un 4way, avec un cedez le passage au dessus on prend la forme 4Way bottom et on la retourne
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0,180,0));
+                            }
 
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessous du croisement est vide :
+                                positionTest.z -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z += 1;
+                                    ModifyStructureModel(positionTest, special3Way[1], Quaternion.Euler(0,180,0));  //spe[1] = Bottom - Euler(180) -> top is at Bottom
+                                    positionTest.z -= 1;
+                                }
+                                positionTest.z += 1;
+
+
+                                //check si case a gauche du croisement est vide :
+                                positionTest.x -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x += 1;
+                                    ModifyStructureModel(positionTest, special3Way[2], Quaternion.Euler(0, 270, 0));  //spe[0] = Right - Euler (270) ->
+                                    positionTest.x -= 1;
+                                }
+                                positionTest.x += 1;
+
+
+                                //check si case a droite du croisement est vide :
+                                positionTest.x += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[0], Quaternion.Euler(0, 90, 0));  //spe[0] = Left - Euler (90) -> 
+                                    positionTest.x += 1;
+                                }
+                                positionTest.x -= 1;
+
+                            }
                         }
                     }
                 }
@@ -423,7 +460,7 @@ public class PlacementManager : MonoBehaviour
 
 
                 ///////////////////////////////////////////////////////////////////////
-                ////    DESSUS EST UN CROISEMENT
+                ////    ON A UN CROISEMENT AU DESSUS
                 ///////////////////////////////////////////////////////////////////////
 
                 positionTest.z += 1;
@@ -438,18 +475,47 @@ public class PlacementManager : MonoBehaviour
                         {
                             Debug.Log("GO");
                        
-                            //Si c'est un 4way, avec un cedez le passage au dessous on prend la forme 4Way bottom
+                            //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
                             {
                                 ModifyStructureModel(positionTest, special4Way, Quaternion.identity);
-                                Debug.Log("4waySpecial is placed");
                             }
+
+                            //3WAY case
                             else
                             {
-                                //We now need to edit the Xing
-                                //the Xing is at PositionTest
-                                ModifyStructureModel(positionTest, special3Way[1], Quaternion.identity);
-                                Debug.Log("Crossing Over respects now GW bottom");
+                                //check si case au dessus du croisement est vide :
+                                positionTest.z += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[1], Quaternion.identity);  //spe[1] = Bottom - identity -> real Bottom
+                                    positionTest.z += 1;
+                                }
+                                positionTest.z -= 1;
+
+
+                                //check si case a gauche du croisement est vide :
+                                positionTest.x -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x += 1;
+                                    ModifyStructureModel(positionTest, special3Way[0], Quaternion.Euler(0,270,0));  //spe[0] = Left - Euler (270) -> left is at Bottom
+                                    positionTest.x -= 1;
+                                }
+                                positionTest.x += 1;
+
+
+                                //check si case a droite du croisement est vide :
+                                positionTest.x += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[2], Quaternion.Euler(0, 90, 0));  //spe[0] = Right - Euler (90) -> right is at Bottom
+                                    positionTest.x += 1;
+                                }
+                                positionTest.x -= 1;
+
                             }
                         }
                     }
@@ -462,6 +528,11 @@ public class PlacementManager : MonoBehaviour
 
 
 
+
+
+                ///////////////////////////////////////////////////////////////////////
+                ////    ON A UN CROISEMENT A DROITE
+                ///////////////////////////////////////////////////////////////////////
 
                 //si celui à droite est un croisement de 3 ou 4 vois, on le tourne
                 positionTest.x+=1;
@@ -477,14 +548,65 @@ public class PlacementManager : MonoBehaviour
                         {
                             Debug.Log("GO");
 
-                            //We now need to edit the Xing
-                            //the Xing is at PositionTest
-                            ModifyStructureModel(positionTest, special3Way[0], Quaternion.identity);
-                            Debug.Log("Crossing Right respects now GW left");
+                            //4WAY case
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0,90,0));
+                            }
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessus du croisement est vide :
+                                positionTest.z += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[0], Quaternion.identity);  
+                                    positionTest.z += 1;
+                                }
+                                positionTest.z -= 1;
+
+
+                                //check si case au dessous du croisement est vide :
+                                positionTest.z -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z += 1;
+                                    ModifyStructureModel(positionTest, special3Way[2], Quaternion.Euler(0, 180, 0)); 
+                                    positionTest.z -= 1;
+                                }
+                                positionTest.z += 1;
+
+
+                                //check si case a droite du croisement est vide :
+                                positionTest.x += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[1], Quaternion.Euler(0, 90, 0));  
+                                    positionTest.x += 1;
+                                }
+                                positionTest.x -= 1;
+
+                            }
                         }
                     }
                 }
                 positionTest.x-=1;
+
+
+
+
+
+
+
+
+
+
+                ///////////////////////////////////////////////////////////////////////
+                ////    ON A UN CROISEMENT A GAUCHE
+                ///////////////////////////////////////////////////////////////////////
 
                 //si celui à gauche est un croisement de 3 ou 4 vois
                 positionTest.x -= 1;
@@ -499,10 +621,48 @@ public class PlacementManager : MonoBehaviour
                         {
                             Debug.Log("GO");
 
-                                //We now need to edit the Xing
-                                //the Xing is at PositionTest
-                            ModifyStructureModel(positionTest, special3Way[2], Quaternion.identity);
-                            Debug.Log("Crossing Left respects now GW Right");
+                            //4WAY case
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0, 270, 0));
+                            }
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessus du croisement est vide :
+                                positionTest.z += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[2], Quaternion.identity);
+                                    positionTest.z += 1;
+                                }
+                                positionTest.z -= 1;
+
+
+                                //check si case au dessous du croisement est vide :
+                                positionTest.z -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z += 1;
+                                    ModifyStructureModel(positionTest, special3Way[0], Quaternion.Euler(0, 180, 0));
+                                    positionTest.z -= 1;
+                                }
+                                positionTest.z += 1;
+
+
+                                //check si case a gauche du croisement est vide :
+                                positionTest.x -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x += 1;
+                                    ModifyStructureModel(positionTest, special3Way[1], Quaternion.Euler(0, 270, 0));
+                                    positionTest.x -= 1;
+                                }
+                                positionTest.x += 1;
+
+                            }
                         }
                     }
                 }
