@@ -85,10 +85,10 @@ namespace SimpleCity.AI
 
                 foreach(Dependency dependency in dependencyList)
                 {
-                    //Debug.Log("check"+dependency.destination.Position.ToString("F3"));
+                    Debug.Log("check"+dependency.destination.name);
                     if (dependency.destination.Position==car.path[car.index+increment])
                     {
-                        Debug.Log("YAY");
+                        Debug.Log("Found destination");
                         currentDependence = dependency.toCheck;
                         if (!CheckDependency(dependency.toCheck))
                         {
