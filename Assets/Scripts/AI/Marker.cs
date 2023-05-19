@@ -71,15 +71,18 @@ namespace SimpleCity.AI
                 {
                     Debug.Log("A 3Way ahead");
                     increment=2;
-                }else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
+                }
+                if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
+                {
+                    Debug.Log("A roundabout ahead");
+                    increment = 2; //test with 3 instead of 4
+                }
+                else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
                 {
                     Debug.Log("A 4Way ahead");
                     increment=3; //test with 3 instead of 4
                 }
-                else
-                {
-                    Debug.Log("HOUSTON WE HAVE A PROBLEM");
-                }
+                
 
                 //Debug.Log("car path : " + car.path[car.index].ToString("F3") + car.path[car.index+1].ToString("F3") + car.path[car.index+2].ToString("F3") + car.path[car.index+3].ToString("F3") + car.path[car.index+4].ToString("F3"));
 
@@ -103,6 +106,7 @@ namespace SimpleCity.AI
 
         private void Update()
         {
+            //Debug.Log("HEY");
             if (currentCar != null)
             {
                 if(CheckDependency(currentDependence))
