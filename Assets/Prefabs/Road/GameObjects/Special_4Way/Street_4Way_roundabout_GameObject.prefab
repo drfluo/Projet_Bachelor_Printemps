@@ -385,10 +385,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061749052b93b894f98c62586fb5bc86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carMarkers: []
+  carMarkers:
+  - {fileID: 2373941749527241963}
+  - {fileID: 2697737446615888118}
+  - {fileID: 4536951027229552048}
+  - {fileID: 9088595713923764479}
+  - {fileID: 7401966373876757415}
+  - {fileID: 9115835947818146856}
+  - {fileID: 2487804808059409530}
+  - {fileID: 5731712357187959273}
+  - {fileID: 4978643539067835954}
+  - {fileID: 363664984909030992}
+  - {fileID: 8315145912771571543}
+  - {fileID: 3290096157220949447}
   isCorner: 0
-  incommingMarkers: []
-  outgoingMarkers: []
+  incommingMarkers:
+  - {fileID: 2373941749527241963}
+  - {fileID: 2697737446615888118}
+  - {fileID: 4536951027229552048}
+  - {fileID: 9088595713923764479}
+  outgoingMarkers:
+  - {fileID: 4978643539067835954}
+  - {fileID: 363664984909030992}
+  - {fileID: 8315145912771571543}
+  - {fileID: 3290096157220949447}
 --- !u!1 &4016984303779812663
 GameObject:
   m_ObjectHideFlags: 0

@@ -75,7 +75,7 @@ namespace SimpleCity.AI
                 if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
                 {
                     Debug.Log("A roundabout ahead");
-                    increment = 2; //test with 3 instead of 4
+                    increment = 3; //test with 3 instead of 4
                 }
                 else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
                 {
