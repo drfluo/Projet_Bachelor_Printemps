@@ -11,9 +11,18 @@ public class PlacementManager : MonoBehaviour
     public RoadManager roadManager;
 
 
+    public GameObject[] Prefab4Way;
+    public int id4WayPrefab = 0;
+
+    public GameObject[] Prefab3Way;
+    public int id3WayPrefab = 0;
+
+    public GameObject[] light3Way;
+    public int idLight = 0;
+
+
     public GameObject[] roadPrefab;
     public int idPrefab = 0;
-
 
     public GameObject[] special3Way;
 
@@ -356,6 +365,47 @@ public class PlacementManager : MonoBehaviour
     {
         if (placementGrid[position.x, position.z] == CellType.Road)
         {
+
+            if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+            {
+                id4WayPrefab += 1;
+                id4WayPrefab = id4WayPrefab % 3;
+                ModifyStructureModel(position, Prefab4Way[id4WayPrefab], Quaternion.identity);
+            }
+
+            if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("3Way"))
+            {
+                Debug.Log("YOU CLICKED A 3WAY");
+                id3WayPrefab += 1;
+                id3WayPrefab = id3WayPrefab % 2;
+                ModifyStructureModel(position, Prefab3Way[id3WayPrefab], Quaternion.identity);
+
+                var result = GetNeighboursTypes(position);
+
+
+                if (result[0] == CellType.Road && result[1] == CellType.Road && result[2] == CellType.Road)
+                {
+                    //Debug.Log("180Road");
+                    ModifyStructureModel(position, Prefab3Way[id3WayPrefab], Quaternion.Euler(0, 180, 0));
+
+                }
+                else if (result[1] == CellType.Road && result[2] == CellType.Road && result[3] == CellType.Road)
+                {
+                    //Debug.Log("270Road");
+                    ModifyStructureModel(position, Prefab3Way[id3WayPrefab], Quaternion.Euler(0, 270, 0));
+                }
+                else if (result[2] == CellType.Road && result[3] == CellType.Road && result[0] == CellType.Road)
+                {
+                    //Debug.Log("idRoad");
+                    ModifyStructureModel(position, Prefab3Way[id3WayPrefab], Quaternion.identity);
+                }
+                else if (result[3] == CellType.Road && result[0] == CellType.Road && result[1] == CellType.Road)
+                {
+                    //Debug.Log("90Road");
+                    ModifyStructureModel(position, Prefab3Way[id3WayPrefab], Quaternion.Euler(0, 90, 0));
+                }
+            }
+
             if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("Straight"))
             {
                 idPrefab+=1;
@@ -380,31 +430,21 @@ public class PlacementManager : MonoBehaviour
 
                 }
 
-
-
-                //les ceder le passage et les stop font face au intersection avec les prochaines lignes
-
-
-
-
+                var positionTest = position;
                 ///////////////////////////////////////////////////////////////////////
                 ////    ON A UN CROISEMENT AU DESSOUS
                 ///////////////////////////////////////////////////////////////////////
 
-                var positionTest = position;
                 positionTest.z -= 1;
-
-                //si celui de dessous est un croisement à 3 ou 4 vois, on le tourne
                 if (structureDictionary.ContainsKey(positionTest))
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        Debug.Log("The Road  below is a Xing");
+
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,270,0));
 
                         if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
                         {
-                            Debug.Log("GO");
 
                             //Si c'est un 4way, avec un cedez le passage au dessus on prend la forme 4Way bottom et on la retourne
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
@@ -454,26 +494,18 @@ public class PlacementManager : MonoBehaviour
                 }
                 positionTest.z+=1;
 
-
-
-
-
-
                 ///////////////////////////////////////////////////////////////////////
                 ////    ON A UN CROISEMENT AU DESSUS
                 ///////////////////////////////////////////////////////////////////////
 
                 positionTest.z += 1;
-                //si celui de dessus est un croisement à 3 ou 4 vois
                 if (structureDictionary.ContainsKey(positionTest))
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        Debug.Log("The Road over is a Xing");
 
                         if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
                         {
-                            Debug.Log("GO");
                        
                             //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
@@ -522,31 +554,19 @@ public class PlacementManager : MonoBehaviour
                 }
                 positionTest.z -= 1;
 
-
-
-
-
-
-
-
-
                 ///////////////////////////////////////////////////////////////////////
                 ////    ON A UN CROISEMENT A DROITE
                 ///////////////////////////////////////////////////////////////////////
 
-                //si celui à droite est un croisement de 3 ou 4 vois, on le tourne
                 positionTest.x+=1;
-
                 if (structureDictionary.ContainsKey(positionTest))
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        Debug.Log("The Road right is a Xing");
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0, 180, 0));
 
                         if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
                         {
-                            Debug.Log("GO");
 
                             //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
@@ -595,31 +615,18 @@ public class PlacementManager : MonoBehaviour
                 }
                 positionTest.x-=1;
 
-
-
-
-
-
-
-
-
-
                 ///////////////////////////////////////////////////////////////////////
                 ////    ON A UN CROISEMENT A GAUCHE
                 ///////////////////////////////////////////////////////////////////////
 
-                //si celui à gauche est un croisement de 3 ou 4 vois
                 positionTest.x -= 1;
-
                 if (structureDictionary.ContainsKey(positionTest))
                 {
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
-                        Debug.Log("The Road left is a Xing");
 
                         if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
                         {
-                            Debug.Log("GO");
 
                             //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
