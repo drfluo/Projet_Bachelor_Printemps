@@ -15,11 +15,11 @@ C:/Users/Admin/Desktop/3eme_annee/Projet/Road_To_Ze_Bachelor
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57348
+60322
 Successfully changed project path to: C:/Users/Admin/Desktop/3eme_annee/Projet/Road_To_Ze_Bachelor
 C:/Users/Admin/Desktop/3eme_annee/Projet/Road_To_Ze_Bachelor
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 35.12 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.42f1 (7ade1201f527)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.42f1-x86_64/Editor/Data/Resources/UnitySubsystems
@@ -35,711 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1-x86_64/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1-x86_64/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1-x86_64/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.42f1-x86_64/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001229 seconds.
+Registered in 0.001197 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.404 seconds
+- Completed reload, in  0.412 seconds
 Domain Reload Profiling:
-	ReloadAssembly (404ms)
+	ReloadAssembly (412ms)
 		BeginReloadAssembly (43ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (312ms)
+		EndReloadAssembly (318ms)
 			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (96ms)
+			SetupTypeCache (95ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (127ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (133ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
+				RefreshPlugins (38ms)
 				BeforeProcessingInitializeOnLoad (10ms)
-				ProcessInitializeOnLoadAttributes (56ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				ProcessInitializeOnLoadAttributes (62ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002339 seconds.
+Registered in 0.002432 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.76 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 49.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.736 seconds
+- Completed reload, in  0.966 seconds
 Domain Reload Profiling:
-	ReloadAssembly (737ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (597ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (232ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (122ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (1ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2812 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 127.8 MB.
-System memory in use after: 128.0 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3251.
-Total: 2.151400 ms (FindLiveObjects: 0.160800 ms CreateObjectMapping: 0.064500 ms MarkObjects: 1.869400 ms  DeleteObjects: 0.055700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab
-  artifactKey: Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab using Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '19afbb2c3361e21be21acc8a6ccc428c') in 0.156461 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.829541 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e9c9a9af5aaaeaf1ed0861d77da8e7a5') in 0.064968 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.047574 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '975d73aeed346e7dcca4cbf64ad5b45f') in 0.044444 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.607991 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '321de6527f57d790115c45f6d931ce8b') in 0.056964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.381763 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'a9178e3bbb201e3f84ee58fe0c128ebd') in 0.018912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 233.315481 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'aa7faf9e3014f71be08f4c6c72aa5a48') in 0.014876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.830941 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '457b08ecde135e6a8122c04cbfb49f62') in 0.030408 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.013787 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'd69ff922b1aa78694632e5034dd75349') in 0.018720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.629450 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'a47e29a0acd6990b3bc14ce8494213c5') in 0.009399 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.820917 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e94ad278819ca39e99776642cec60700') in 0.007250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.219078 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'ebc965891715e539b5a2e0a848485d79') in 0.007193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.265112 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '570e36d297feb256b97e33c0cd18246c') in 0.011891 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.600770 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e46e8bf8d3085c1bf5797a019d9009bf') in 0.013632 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.202075 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '45ceebcebabe542dc0ed0370fa1edd78') in 0.010781 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.202237 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '5bcbe2a3e95169d9ef3688e8abf2c4b4') in 0.007409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 405.212998 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e22386a4fe338025bcfcea8020c45f17') in 0.009118 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.018028 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '36e57ae4d3899ee6b2a1923628a134ce') in 0.028755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.430105 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '891ca155f9052d5a0fe3fab344a82199') in 0.011057 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.805515 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e58f632e015c40dae2bf5e1bb6588bec') in 0.020231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.271943 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '7b779f6c54b19df680fc476aa19c3ff2') in 0.013772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.411745 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '577456c3346cd171b3ce6b06300d3032') in 0.006931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.724204 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '29824fb01fbe15c651c5cf1ff8159df2') in 0.016707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.636269 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '2269a9b5382cd6fd250318f7e3a34d8c') in 0.034347 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.881972 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '6e5e7b7799407618bdf99cba59fd5595') in 0.015634 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.669777 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'a77f74b6946804a96fa4ea1e66c27015') in 0.019577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 78.063387 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '8a4fda38e7146cd14484ef05db6e569a') in 0.018794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.160325 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '4e46c97908455a87da94d9582c4e378b') in 0.007401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.026911 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'cf6899e9509e341b12a7ae519f11beb2') in 0.007136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.642475 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'ea01829ee93bf6425fefdd5c97657a76') in 0.008079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.651348 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'bc06be49403aaf258af6c15efe242a62') in 0.009889 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.961430 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'f95fe53b2bd857f5a964d41d8cc83f39') in 0.008034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 86.690827 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'a99640c6d0faf0ccf9d34dff95ba832a') in 0.007817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.635969 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '388065823b59ccc2e741ce1047440f4d') in 0.013124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.942818 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '1d1594626c844d62131d6629c23a2c38') in 0.007703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.228457 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e9fb8e958ab08e19f4ee1a5bdb87afc9') in 0.008457 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.906786 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'a96d0ec112ddc7be97efd5ba8076ee0a') in 0.014044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.461908 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '97ed908548ae3d5714da1bd3e6713edd') in 0.007711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.645026 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '5846ab77b5bf0fb4630d4ed5a03579db') in 0.011636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.451266 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '8e6237ced410108aa96d9d50fbf68c56') in 0.007065 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.651514 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '631d6c2c8f16239e904172b5be34c6a9') in 0.024265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.823346 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '55626431a6deef229747993862b8dd2f') in 0.007691 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.408553 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'f85f89743c446f721786078e89e269bd') in 0.011758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.018932 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'f1204bc69bb01a1b99914ed75f8f19c0') in 0.011219 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.068769 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '064d901789c8979379173691886ca353') in 0.008516 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.042569 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '5e7701b86f09d02e2b18bd3ba912c0f6') in 0.015873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.912218 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '2c3b757650eaf6545c251e5e419e28e7') in 0.015532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.192108 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '39a750a316907087a1324ef2453d6ccd') in 0.006839 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.002962 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '32bda71bbf6d860c3570d9a469467ce9') in 0.007813 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.659141 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '50653b3d25a9de18ba5b4d8a5cd8444f') in 0.011926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.560786 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'f704299127c35aaf2afcb38531da5679') in 0.032897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.944289 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '9bc9adc6e33a3b1d8b1db05eb10fef02') in 0.015650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.711235 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'ba173ee1fe53ddb280ce188ecbf990a8') in 0.006655 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.515100 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'f4ea8e1238eda019b9ead0cc97e38b69') in 0.044823 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.378844 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '66fe595295783da6fcb1ad4cc6e54e30') in 0.007645 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.058391 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e3d4b732e383f387f24925bebabe7203') in 0.009986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.802479 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '89b5609452080361a0469c4a0ff68745') in 0.007356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.260677 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '0c279e57abb6e7a1a501bdd5c8ec44b1') in 0.007283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.262626 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'b04168ec2f8680cafe5583a06a525731') in 0.009887 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.401039 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '85cd4b90690b73f1e5d2afe2ee89d590') in 0.007597 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.664063 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '8b5014a418f1dd89c0f75ab7c79157e6') in 0.009985 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.821518 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '425d2d26be11328a729f051fba83741f') in 0.017036 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.148916 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '422a86d1b752b0b1ad24e49a58ce212b') in 0.007578 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.840977 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '15ba8460582594c956a157ad903f0a1c') in 0.012037 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.892118 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'b4abd82b3d215906869a24b8f766dd39') in 0.011565 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.339297 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'eea49b2f9567d0a0f67b594f0daf1c18') in 0.011928 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.877681 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'e9206d679e237ad57a9e0c30627fddde') in 0.011882 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.022463 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'c4e1bcf5c280d00d522ca7891a23b4ee') in 0.008548 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.431129 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '12c8cb5a3a60282c4ca637285a105180') in 0.013514 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.524675 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'fa784c45fa236b99311a8efaee2d80d9') in 0.015928 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.451495 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '19b6e5d4556868981133266dd332bdf3') in 0.011148 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.454922 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '8e95a83c25b78643e2df20a9856bf123') in 0.012126 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.015606 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'd036f592c84fb8c10a6606b7876d7e9a') in 0.010822 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.916089 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'b3bbdbf02d3126e680e0b202392b63a9') in 0.007284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.511139 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '7fcd98441a234ac9f3f6b48a1e309ec0') in 0.032467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.646309 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '93dba5e4be704f3290c78c968fb95889') in 0.010597 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.399869 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'd071caee194c99f34e72edf97498e95d') in 0.032343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.208108 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '426111d476d1062e03f61f3107e5b057') in 0.007685 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.440703 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: 'a175e48b1dd6fcc7a15d284e5dc8d2b7') in 0.013067 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.734331 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '4c850bf7339ac0e50297c03101f0bf16') in 0.007249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.795045 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '52b63d061a8421b7c6c1b26f308cf2fa') in 0.007098 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.119579 seconds.
-  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
-  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
- -> (artifact id: '42a2692dd67727b89979ac3fded0fc03') in 0.007436 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.744 seconds
-Domain Reload Profiling:
-	ReloadAssembly (745ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (967ms)
+		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (605ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (214ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (202ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (2ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (121ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.3 MB.
-System memory in use after: 126.6 MB.
+Unloading 2812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 127.9 MB.
+System memory in use after: 128.1 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3302.
-Total: 2.102400 ms (FindLiveObjects: 0.151500 ms CreateObjectMapping: 0.076300 ms MarkObjects: 1.856500 ms  DeleteObjects: 0.017300 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3251.
+Total: 2.506900 ms (FindLiveObjects: 0.174200 ms CreateObjectMapping: 0.067300 ms MarkObjects: 2.196500 ms  DeleteObjects: 0.068000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -753,111 +131,81 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 108.805521 seconds.
   path: Assets/Scripts/AI/Marker.cs
   artifactKey: Guid(1fc0ba44aac3b484b8a0a4d8cbad8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AI/Marker.cs using Guid(1fc0ba44aac3b484b8a0a4d8cbad8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0994c3e9182159c96d8db4934556c802') in 0.013434 seconds 
+Start importing Assets/Scripts/AI/Marker.cs using Guid(1fc0ba44aac3b484b8a0a4d8cbad8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362246a470dec48a74e152758043825c') in 0.023383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.430549 seconds.
+  path: Assets/Scripts/PlacementManager.cs
+  artifactKey: Guid(2579291c11f2f7145bcb17a548190b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlacementManager.cs using Guid(2579291c11f2f7145bcb17a548190b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b4336fb118d738b1bbc845767a20f9') in 0.006265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.161673 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_Bottom_GameObject.prefab
+  artifactKey: Guid(24e3b0044c3f22d4f8f763198c541ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_Bottom_GameObject.prefab using Guid(24e3b0044c3f22d4f8f763198c541ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'f2529ccf22789acc4bfc3a7d2923b527') in 0.144537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab
+  artifactKey: Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab using Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'c1ea250113a4fd65faffcf3664f81382') in 0.058941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3591c47ece97852eb72a1a06f7f5fbb2') in 0.024482 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002354 seconds.
+Registered in 0.002243 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.786 seconds
+- Completed reload, in  0.795 seconds
 Domain Reload Profiling:
-	ReloadAssembly (787ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (795ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (652ms)
-			LoadAssemblies (72ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (223ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (237ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.4 MB.
-System memory in use after: 126.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3305.
-Total: 2.430800 ms (FindLiveObjects: 0.166700 ms CreateObjectMapping: 0.073900 ms MarkObjects: 2.169100 ms  DeleteObjects: 0.020200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002139 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.751 seconds
-Domain Reload Profiling:
-	ReloadAssembly (751ms)
-		BeginReloadAssembly (87ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (623ms)
+		EndReloadAssembly (645ms)
 			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
+			SetupTypeCache (223ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (224ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (229ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (71ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
 				ProcessInitializeOnLoadAttributes (134ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.4 MB.
-System memory in use after: 126.7 MB.
+System memory in use before: 126.3 MB.
+System memory in use after: 126.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3308.
-Total: 2.314700 ms (FindLiveObjects: 0.152000 ms CreateObjectMapping: 0.067700 ms MarkObjects: 2.076500 ms  DeleteObjects: 0.017900 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3302.
+Total: 2.146000 ms (FindLiveObjects: 0.169300 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.898200 ms  DeleteObjects: 0.017500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -871,55 +219,217 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 64.483300 seconds.
-  path: Assets/Scripts/AI/Marker.cs
-  artifactKey: Guid(1fc0ba44aac3b484b8a0a4d8cbad8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AI/Marker.cs using Guid(1fc0ba44aac3b484b8a0a4d8cbad8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b954ea955d015173f60f867dacd80c9f') in 0.004246 seconds 
+  Time since last request: 219.411902 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6a264778ed2c1c52512df15e0f95dc60') in 0.129548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.121266 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '09fa45c41b839d0e842d105aef4ce303') in 0.009986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.200911 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '2ef3991459689090d1e18385c33584ce') in 0.007514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.794862 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6bed8bace1125ecd33758cd59079d784') in 0.008742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.595951 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'f98dc85dabf29971edc4666465dde8d6') in 0.007888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.393920 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '54c78651471aeb120d859e9fcf4bac10') in 0.007552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.391073 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '566c1671e5ab94bbc4ccd6cf3cd07748') in 0.007466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.389040 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'bacd06b9991ddd8344ed7fdfaa452c8c') in 0.007842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.397051 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6c12b63b0c2a959e1119e75789a2ffd6') in 0.007739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.595589 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b023074d318f1517a761491d40fef6c1') in 0.007457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.200336 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'abefe4550654b5ddc435ec86755a5be2') in 0.008012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.083082 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '598c17652559daaf7c95ded82c751bd2') in 0.008279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.864013 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '06119bd51b50e9c8c7f645b0adeb7b13') in 0.010318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.676723 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'dedb57e269eeb1b20b24fa2534c2f161') in 0.007311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.048820 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '46ca61f7706341837cc7ffa73748f6df') in 0.009097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.111368 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a138f2770f1050b579df9fb262bb5ddc') in 0.007717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.494045 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '60b2e8c0a647c0744592ce5e33f0122b') in 0.007402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.492504 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '5556e6f3f0e99513dda25ca9879980f4') in 0.008303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.640748 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'fd6314bce891527b5bdeb6c7a105b721') in 0.008064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.703205 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0dd0b78558c83bfb5dccbea843193d64') in 0.008831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.677759 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'c93316f37aef4cb8853361d1164a9c39') in 0.007400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.726283 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e43fd5cb901dece7d1a9e007e09cb17d') in 0.007764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.705166 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '88acf5717005aeab9005d48dd8b7b39c') in 0.008397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.313644 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a530bfd90533faa45eb35bcae978ac17') in 0.007695 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003143 seconds.
+Registered in 0.002179 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.777 seconds
 Domain Reload Profiling:
-	ReloadAssembly (780ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (777ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (650ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (642ms)
 			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (222ms)
+			SetupTypeCache (218ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (236ms)
+			SetupLoadedEditorAssemblies (230ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (138ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 126.5 MB.
-System memory in use after: 126.7 MB.
+System memory in use after: 126.8 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3311.
-Total: 2.120000 ms (FindLiveObjects: 0.155600 ms CreateObjectMapping: 0.065600 ms MarkObjects: 1.881600 ms  DeleteObjects: 0.016300 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3341.
+Total: 2.191700 ms (FindLiveObjects: 0.163300 ms CreateObjectMapping: 0.071400 ms MarkObjects: 1.937400 ms  DeleteObjects: 0.019000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -932,50 +442,148 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 11.429714 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '63c3efdb672ea46ff8cc884f921de078') in 0.126360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.160420 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'a760696ad8c9e58cb8534ee20d4e7597') in 0.007811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.002908 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '88d2806fe1f2e87d14075f179b181583') in 0.026359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.788979 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'ebbb4820dfe79258297a361e3cb19e96') in 0.007326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.709757 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '400d914787aa7bc287a4e0db60c55d2e') in 0.007736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.429497 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '4dafdab2211d1c46b7d9b6ac908cbdab') in 0.007697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.007824 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'c117c4630940c4ab97f591c096152149') in 0.009626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.192545 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'cb5fa1d67a0498d9f598250841d4c332') in 0.007334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.590676 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '12548f43aded669941cfbaeac8937ff6') in 0.010878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.592584 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '64a319b4cab1b774c52fa10a875d9268') in 0.007486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.683452 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '55319a8a91aed6b81ebd6e0f446b0a60') in 0.031750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.804556 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'bb293d6ffb08d3dd71f86c32ea02bd11') in 0.013548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.428708 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '6eb75d02b2c3d955bb3b797610451d07') in 0.019237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.432104 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '2d46d8db5c2c59e502f26a636eac59d1') in 0.007480 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002065 seconds.
+Registered in 0.002117 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.702 seconds
+- Completed reload, in  0.700 seconds
 Domain Reload Profiling:
-	ReloadAssembly (703ms)
-		BeginReloadAssembly (82ms)
+	ReloadAssembly (700ms)
+		BeginReloadAssembly (88ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (578ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (572ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (205ms)
+			SetupTypeCache (206ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (206ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (189ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (124ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.5 MB.
-System memory in use after: 126.7 MB.
+System memory in use before: 126.7 MB.
+System memory in use after: 126.9 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3314.
-Total: 2.131100 ms (FindLiveObjects: 0.162100 ms CreateObjectMapping: 0.072400 ms MarkObjects: 1.876700 ms  DeleteObjects: 0.019100 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3380.
+Total: 2.107200 ms (FindLiveObjects: 0.160000 ms CreateObjectMapping: 0.070100 ms MarkObjects: 1.860800 ms  DeleteObjects: 0.015800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -988,106 +596,148 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 85.310996 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_Bottom_GameObject.prefab
+  artifactKey: Guid(24e3b0044c3f22d4f8f763198c541ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_Bottom_GameObject.prefab using Guid(24e3b0044c3f22d4f8f763198c541ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '88ec2525b6a4ec5ac811c7168a334c6b') in 0.116982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab
+  artifactKey: Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab using Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '106da39b851aa54b6c5c6ce5c17709c8') in 0.009958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'e1b5e090208af2680207c588ce79db64') in 0.007510 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003436 seconds.
+Registered in 0.002197 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.744 seconds
+- Completed reload, in  0.696 seconds
 Domain Reload Profiling:
-	ReloadAssembly (745ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (697ms)
+		BeginReloadAssembly (83ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (625ms)
-			LoadAssemblies (62ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (571ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (214ms)
+			SetupTypeCache (213ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (236ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (186ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (138ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (112ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.8 MB.
+System memory in use after: 127.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3419.
+Total: 2.244100 ms (FindLiveObjects: 0.156400 ms CreateObjectMapping: 0.066300 ms MarkObjects: 2.002600 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 84.434243 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_Bottom_GameObject.prefab
+  artifactKey: Guid(24e3b0044c3f22d4f8f763198c541ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_Bottom_GameObject.prefab using Guid(24e3b0044c3f22d4f8f763198c541ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '233a6094a18b09d9f1c54a49c8741b70') in 0.128624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab
+  artifactKey: Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_GRRR_GameObject.prefab using Guid(fadeaedac069ae84ebcfe5691e9c7dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '3870448e983e66420e9d5ea94e7f66a7') in 0.011090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab
+  artifactKey: Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road/GameObjects/Special_4Way/Street_4Way_roundabout_GameObject.prefab using Guid(a82cf21314cd84147a95439e4afaffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'b8fe79a6a602fa1cc50d8d59930b7254') in 0.008429 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002280 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.652 seconds
+Domain Reload Profiling:
+	ReloadAssembly (652ms)
+		BeginReloadAssembly (82ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (532ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (114ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.5 MB.
-System memory in use after: 126.7 MB.
+System memory in use before: 127.0 MB.
+System memory in use after: 127.2 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3317.
-Total: 2.408200 ms (FindLiveObjects: 0.155600 ms CreateObjectMapping: 0.059200 ms MarkObjects: 2.174900 ms  DeleteObjects: 0.018000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002130 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.654 seconds
-Domain Reload Profiling:
-	ReloadAssembly (654ms)
-		BeginReloadAssembly (74ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (540ms)
-			LoadAssemblies (60ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (180ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (199ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (2ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (120ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2702 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 126.5 MB.
-System memory in use after: 126.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3320.
-Total: 2.076100 ms (FindLiveObjects: 0.147900 ms CreateObjectMapping: 0.065300 ms MarkObjects: 1.845100 ms  DeleteObjects: 0.017300 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3458.
+Total: 2.168700 ms (FindLiveObjects: 0.156700 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.926300 ms  DeleteObjects: 0.017900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
