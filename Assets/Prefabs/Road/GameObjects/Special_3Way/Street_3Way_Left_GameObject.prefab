@@ -46,6 +46,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -98,6 +99,7 @@ MonoBehaviour:
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 5294581625559448516}
     toCheck:
@@ -246,6 +248,7 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1914715121427716573}
     toCheck: []
@@ -312,6 +315,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -361,6 +365,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -450,6 +455,7 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1547229366170371422}
     toCheck: []
@@ -519,6 +525,7 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

@@ -46,6 +46,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -95,6 +96,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -147,6 +149,7 @@ MonoBehaviour:
   - {fileID: 7401966373876757415}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -199,6 +202,7 @@ MonoBehaviour:
   - {fileID: 5731712357187959273}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -333,6 +337,7 @@ MonoBehaviour:
   - {fileID: 9115835947818146856}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 4978643539067835954}
     toCheck: []
@@ -404,6 +409,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -453,6 +459,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -504,6 +511,7 @@ MonoBehaviour:
   - {fileID: 2487804808059409530}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 3290096157220949447}
     toCheck: []
@@ -619,6 +627,7 @@ MonoBehaviour:
   - {fileID: 5731712357187959273}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 8315145912771571543}
     toCheck: []
@@ -693,6 +702,7 @@ MonoBehaviour:
   - {fileID: 2487804808059409530}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -744,6 +754,7 @@ MonoBehaviour:
   - {fileID: 7401966373876757415}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 363664984909030992}
     toCheck: []
@@ -818,6 +829,7 @@ MonoBehaviour:
   - {fileID: 363664984909030992}
   currentCar: {fileID: 0}
   currentDependence: []
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

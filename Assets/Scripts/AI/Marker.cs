@@ -27,7 +27,7 @@ namespace SimpleCity.AI
         public CarAI currentCar;
         public List<Marker> currentDependence;
 
-
+        public bool canCommandCar;
 
 
         public List<Dependency> dependencyList;
@@ -65,38 +65,37 @@ namespace SimpleCity.AI
                 //Debug.Log("Collider's parent's parent "+GetComponent<Collider>().transform.parent.transform.parent.name+" has hit object "+other.name);
                 //Debug.Log("IS SET TO TRUE");
                 IsOccupied +=1;
-                int increment = 0;
-                Debug.Log(GetComponent<Collider>().transform.parent.transform.parent.name);
-                if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("3Way"))
-                {
-                    Debug.Log("A 3Way ahead");
-                    increment=2;
-                }
-                if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
-                {
-                    Debug.Log("A roundabout ahead");
-                    increment = 3; //test with 3 instead of 4
-                }
-                else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
-                {
-                    Debug.Log("A 4Way ahead");
-                    increment=3; //test with 3 instead of 4
-                }
-                
 
-                //Debug.Log("car path : " + car.path[car.index].ToString("F3") + car.path[car.index+1].ToString("F3") + car.path[car.index+2].ToString("F3") + car.path[car.index+3].ToString("F3") + car.path[car.index+4].ToString("F3"));
-
-                foreach(Dependency dependency in dependencyList)
+                if (canCommandCar)
                 {
-                    Debug.Log("check"+dependency.destination.name);
-                    if (dependency.destination.Position==car.path[car.index+increment])
+                    int increment = 0;
+                    if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("3Way"))
                     {
-                        Debug.Log("Found destination");
-                        currentDependence = dependency.toCheck;
-                        if (!CheckDependency(dependency.toCheck))
+                        increment = 2;
+                    }
+                    if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
+                    {
+                        increment = 2; //test with 3 instead of 4
+                    }
+                    else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
+                    {
+                        increment = 3; //test with 3 instead of 4
+                    }
+
+                    Debug.Log("Position checked marker : " + car.path[car.index + increment]);
+
+                    foreach (Dependency dependency in dependencyList)
+                    {
+                        Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
+                        if (dependency.destination.Position == car.path[car.index + increment])
                         {
-                            car.Stop = true;
-                            return;
+                            Debug.Log("Found destination");
+                            currentDependence = dependency.toCheck;
+                            if (!CheckDependency(dependency.toCheck))
+                            {
+                                car.Stop = true;
+                                return;
+                            }
                         }
                     }
                 }
@@ -107,14 +106,15 @@ namespace SimpleCity.AI
         private void Update()
         {
             //Debug.Log("HEY");
-            if (currentCar != null)
+            if (canCommandCar && currentCar != null)
             {
                 if(CheckDependency(currentDependence))
                 {
                     currentCar.Stop = false;
                 }
-                if(!CheckDependency(currentDependence))
+                else
                 {
+                    Debug.Log("STOP ZE CAR");
                     currentCar.Stop = true;
                 }
             }
@@ -123,11 +123,15 @@ namespace SimpleCity.AI
         //return true if can go otherwise false
         private bool CheckDependency(List<Marker> toCheck)
         {
+            if(toCheck==null)
+            {
+                return true;
+            }
             foreach(Marker marker in toCheck)
             {
                 if(marker.IsOccupied!=0)
                 {
-                    //Debug.Log("WE ARE OCUPIED");
+                    Debug.Log("WE ARE OCUPIED");
                     return false;
                 }
             }
@@ -140,7 +144,13 @@ namespace SimpleCity.AI
             {
                IsOccupied-=1;
                currentCar = null;
+               /*if(IsOccupied==0)
+                {
+                    currentDependence = null;
+                }*/
+              
             }
+           
         }
 
         /*public List<Marker> ToCheck(Marker carDestination)
