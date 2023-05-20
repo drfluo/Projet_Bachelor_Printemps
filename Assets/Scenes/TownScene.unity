@@ -794,14 +794,9 @@ MonoBehaviour:
   - {fileID: 3351635067702010651, guid: a82cf21314cd84147a95439e4afaffdd, type: 3}
   id4WayPrefab: 0
   Prefab3Way:
-  - {fileID: 2384947387477557946, guid: 1595699bdc247a747915382b4617362e, type: 3}
   - {fileID: 2384947387477557946, guid: 2524a8437a2d4394da7f7a0546a71f3d, type: 3}
-  id3WayPrefab: 0
-  light3Way:
   - {fileID: 2384947387477557946, guid: 1595699bdc247a747915382b4617362e, type: 3}
-  - {fileID: 2384947387477557946, guid: 39a559605e7e784468431e6bc0b30072, type: 3}
-  - {fileID: 2384947387477557946, guid: 2b595b98276951c4cb46e432081a0cfb, type: 3}
-  idLight: 0
+  id3WayPrefab: 0
   roadPrefab:
   - {fileID: 5661862354351878554, guid: 9af6cba450cf2c341aacd5e931cc99f7, type: 3}
   - {fileID: 5661862354351878554, guid: 2da3d29bc6d47ee4a8a1dfdd028f56b6, type: 3}

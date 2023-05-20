@@ -11,14 +11,12 @@ public class PlacementManager : MonoBehaviour
     public RoadManager roadManager;
 
 
+
     public GameObject[] Prefab4Way;
     public int id4WayPrefab = 0;
 
     public GameObject[] Prefab3Way;
     public int id3WayPrefab = 0;
-
-    public GameObject[] light3Way;
-    public int idLight = 0;
 
 
     public GameObject[] roadPrefab;

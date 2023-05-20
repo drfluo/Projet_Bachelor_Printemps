@@ -6,22 +6,27 @@ namespace SimpleCity.AI
 {
     public class Light_Management : MonoBehaviour
     {
-
         public bool isRedMarker;
         private bool isOrange=false;
         public Marker marker;
-        private GameObject road;
+        public GameObject road;
+        public GameObject greenRoad;
+        public GameObject orangeRoad;
         public int greenTime, orangeTime;
+        public bool is4Way;
 
+        public GameObject nextLight;
+
+        //public GameObject[] roads3WayLight;
+        //private currentRoad;
 
         private void Start()
         {
-            Debug.Log(transform.parent.transform.parent.gameObject);
-            road = transform.parent.transform.parent.gameObject;
+            is4Way = road.name.Contains("4");
 
-            if(!isRedMarker)
+            if (!isRedMarker)
             {
-                StartCoroutine(rotate());
+                StartCoroutine(change());
             }
 
         }
@@ -56,20 +61,33 @@ namespace SimpleCity.AI
         }
 
 
-        IEnumerator rotate()
+        IEnumerator change()
         {
             while(true)
             {
-                road.transform.Rotate(new Vector3(0, -90, 0));
+                
+               
                 //ModifyStructureModel(positionTest, self, Quaternion.Euler(0, (rot+90)%360, 0));
 
                 yield return new WaitForSeconds(greenTime);
                 isOrange = true;
+                orangeRoad.SetActive(true);
+                greenRoad.SetActive(false);
 
                 yield return new WaitForSeconds(orangeTime);
                 isOrange = false;
+                orangeRoad.SetActive(false);
+                greenRoad.SetActive(true);
+
+                if (is4Way)
+                {
+                    road.transform.Rotate(new Vector3(0, -90, 0));
+                }
+                else
+                {
+                    transform.parent.transform.parent.transform.parent.transform.parent.GetComponent<PlacementManager>().ModifyStructureModel(Vector3Int.FloorToInt(road.transform.position), nextLight, road.transform.rotation);
+                }
             }
-            
         }
     }
 }

@@ -91,7 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carPrefabs:
-  - {fileID: 771982215564958993, guid: 855cd82b21977fe458e741a8f5352a56, type: 3}
+  - {fileID: 3224105099788658157, guid: 25c83d295f789394da1342229c25d951, type: 3}
+  - {fileID: 3224105099788658157, guid: 25c83d295f789394da1342229c25d951, type: 3}
 --- !u!114 &-1274727206583111556
 MonoBehaviour:
   m_ObjectHideFlags: 0
