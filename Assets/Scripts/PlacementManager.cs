@@ -24,7 +24,7 @@ public class PlacementManager : MonoBehaviour
 
     public GameObject[] special3Way;
 
-    public GameObject special4Way;
+    public GameObject[] special4Way;
 
     private Dictionary<Vector3Int, StructureModel> temporaryRoadobjects = new Dictionary<Vector3Int, StructureModel>();
     private Dictionary<Vector3Int, StructureModel> structureDictionary = new Dictionary<Vector3Int, StructureModel>();
@@ -441,15 +441,13 @@ public class PlacementManager : MonoBehaviour
 
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0,270,0));
 
-                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        if (roadPrefab[idPrefab].name.Contains("GW"))
                         {
-
                             //Si c'est un 4way, avec un cedez le passage au dessus on prend la forme 4Way bottom et on la retourne
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
                             {
-                                ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0,180,0));
+                                ModifyStructureModel(positionTest, special4Way[0], Quaternion.Euler(0,180,0));
                             }
-
 
                             //3WAY case
                             else
@@ -488,6 +486,52 @@ public class PlacementManager : MonoBehaviour
 
                             }
                         }
+                        else if (roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            //Si c'est un 4way, avec un cedez le passage au dessus on prend la forme 4Way bottom et on la retourne
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way[1], Quaternion.Euler(0, 180, 0));
+                            }
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessous du croisement est vide :
+                                positionTest.z -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z += 1;
+                                    ModifyStructureModel(positionTest, special3Way[4], Quaternion.Euler(0, 180, 0));  //spe[1] = Bottom - Euler(180) -> top is at Bottom
+                                    positionTest.z -= 1;
+                                }
+                                positionTest.z += 1;
+
+
+                                //check si case a gauche du croisement est vide :
+                                positionTest.x -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x += 1;
+                                    ModifyStructureModel(positionTest, special3Way[5], Quaternion.Euler(0, 270, 0));  //spe[0] = Right - Euler (270) ->
+                                    positionTest.x -= 1;
+                                }
+                                positionTest.x += 1;
+
+
+                                //check si case a droite du croisement est vide :
+                                positionTest.x += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[3], Quaternion.Euler(0, 90, 0));  //spe[0] = Left - Euler (90) -> 
+                                    positionTest.x += 1;
+                                }
+                                positionTest.x -= 1;
+
+                            }
+
+                        }
                     }
                 }
                 positionTest.z+=1;
@@ -502,13 +546,13 @@ public class PlacementManager : MonoBehaviour
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
 
-                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        if (roadPrefab[idPrefab].name.Contains("GW"))
                         {
-                       
+
                             //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
                             {
-                                ModifyStructureModel(positionTest, special4Way, Quaternion.identity);
+                                ModifyStructureModel(positionTest, special4Way[0], Quaternion.identity);
                             }
 
                             //3WAY case
@@ -530,7 +574,7 @@ public class PlacementManager : MonoBehaviour
                                 if (!structureDictionary.ContainsKey(positionTest))
                                 {
                                     positionTest.x += 1;
-                                    ModifyStructureModel(positionTest, special3Way[0], Quaternion.Euler(0,270,0));  //spe[0] = Left - Euler (270) -> left is at Bottom
+                                    ModifyStructureModel(positionTest, special3Way[0], Quaternion.Euler(0, 270, 0));  //spe[0] = Left - Euler (270) -> left is at Bottom
                                     positionTest.x -= 1;
                                 }
                                 positionTest.x += 1;
@@ -542,6 +586,51 @@ public class PlacementManager : MonoBehaviour
                                 {
                                     positionTest.x -= 1;
                                     ModifyStructureModel(positionTest, special3Way[2], Quaternion.Euler(0, 90, 0));  //spe[0] = Right - Euler (90) -> right is at Bottom
+                                    positionTest.x += 1;
+                                }
+                                positionTest.x -= 1;
+
+                            }
+                        }
+                        else if (roadPrefab[idPrefab].name.Contains("STOP"))
+                        { 
+                            //4WAY case
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way[1], Quaternion.identity);
+                            }
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessus du croisement est vide :
+                                positionTest.z += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[4], Quaternion.identity);  //spe[1] = Bottom - identity -> real Bottom
+                                    positionTest.z += 1;
+                                }
+                                positionTest.z -= 1;
+
+
+                                //check si case a gauche du croisement est vide :
+                                positionTest.x -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x += 1;
+                                    ModifyStructureModel(positionTest, special3Way[3], Quaternion.Euler(0, 270, 0));  //spe[0] = Left - Euler (270) -> left is at Bottom
+                                    positionTest.x -= 1;
+                                }
+                                positionTest.x += 1;
+
+
+                                //check si case a droite du croisement est vide :
+                                positionTest.x += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[5], Quaternion.Euler(0, 90, 0));  //spe[0] = Right - Euler (90) -> right is at Bottom
                                     positionTest.x += 1;
                                 }
                                 positionTest.x -= 1;
@@ -563,13 +652,13 @@ public class PlacementManager : MonoBehaviour
                     {
                         ModifyStructureModel(position, roadPrefab[idPrefab], Quaternion.Euler(0, 180, 0));
 
-                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        if (roadPrefab[idPrefab].name.Contains("GW"))
                         {
 
                             //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
                             {
-                                ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0,90,0));
+                                ModifyStructureModel(positionTest, special4Way[0], Quaternion.Euler(0,90,0));
                             }
 
                             //3WAY case
@@ -609,6 +698,51 @@ public class PlacementManager : MonoBehaviour
 
                             }
                         }
+                        else if (roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            //4WAY case
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way[1], Quaternion.Euler(0, 90, 0));
+                            }
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessus du croisement est vide :
+                                positionTest.z += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[3], Quaternion.identity);
+                                    positionTest.z += 1;
+                                }
+                                positionTest.z -= 1;
+
+
+                                //check si case au dessous du croisement est vide :
+                                positionTest.z -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z += 1;
+                                    ModifyStructureModel(positionTest, special3Way[5], Quaternion.Euler(0, 180, 0));
+                                    positionTest.z -= 1;
+                                }
+                                positionTest.z += 1;
+
+
+                                //check si case a droite du croisement est vide :
+                                positionTest.x += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[4], Quaternion.Euler(0, 90, 0));
+                                    positionTest.x += 1;
+                                }
+                                positionTest.x -= 1;
+
+                            }
+                        }
                     }
                 }
                 positionTest.x-=1;
@@ -623,13 +757,13 @@ public class PlacementManager : MonoBehaviour
                     if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("Way"))
                     {
 
-                        if (roadPrefab[idPrefab].name.Contains("GW") || roadPrefab[idPrefab].name.Contains("STOP"))
+                        if (roadPrefab[idPrefab].name.Contains("GW"))
                         {
 
                             //4WAY case
                             if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
                             {
-                                ModifyStructureModel(positionTest, special4Way, Quaternion.Euler(0, 270, 0));
+                                ModifyStructureModel(positionTest, special4Way[0], Quaternion.Euler(0, 270, 0));
                             }
 
                             //3WAY case
@@ -663,6 +797,51 @@ public class PlacementManager : MonoBehaviour
                                 {
                                     positionTest.x += 1;
                                     ModifyStructureModel(positionTest, special3Way[1], Quaternion.Euler(0, 270, 0));
+                                    positionTest.x -= 1;
+                                }
+                                positionTest.x += 1;
+
+                            }
+                        }
+                        else if (roadPrefab[idPrefab].name.Contains("STOP"))
+                        {
+                            //4WAY case
+                            if (structureDictionary[positionTest].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
+                            {
+                                ModifyStructureModel(positionTest, special4Way[1], Quaternion.Euler(0, 270, 0));
+                            }
+
+                            //3WAY case
+                            else
+                            {
+                                //check si case au dessus du croisement est vide :
+                                positionTest.z += 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z -= 1;
+                                    ModifyStructureModel(positionTest, special3Way[5], Quaternion.identity);
+                                    positionTest.z += 1;
+                                }
+                                positionTest.z -= 1;
+
+
+                                //check si case au dessous du croisement est vide :
+                                positionTest.z -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.z += 1;
+                                    ModifyStructureModel(positionTest, special3Way[3], Quaternion.Euler(0, 180, 0));
+                                    positionTest.z -= 1;
+                                }
+                                positionTest.z += 1;
+
+
+                                //check si case a gauche du croisement est vide :
+                                positionTest.x -= 1;
+                                if (!structureDictionary.ContainsKey(positionTest))
+                                {
+                                    positionTest.x += 1;
+                                    ModifyStructureModel(positionTest, special3Way[4], Quaternion.Euler(0, 270, 0));
                                     positionTest.x -= 1;
                                 }
                                 positionTest.x += 1;

@@ -6,8 +6,6 @@ using UnityEditor;
 using UnityEngine;
 
 
-
-
 namespace SimpleCity.AI
 {
 
@@ -53,13 +51,38 @@ namespace SimpleCity.AI
             return p.Position == Position;
         }
 
+
+        private bool hold = false;
+        private int count = 0;
+
+        private IEnumerator ResetStopVariable(CarAI currentCar)
+        {
+            yield return new WaitForSeconds(1f); // Wait for 2 seconds
+            currentCar.Stop = false; // Set the Stop variable to false after 2 seconds
+            hold = false;
+            count += 1;
+        }
+
+
         private void OnTriggerEnter(Collider other)
         {
             
             if (other.CompareTag("Car"))
             {
+                //Debug.Log("Collider " + GetComponent<Collider>().name);
+
+
+
                 var car = other.GetComponent<CarAI>(); //if collision with car we get its script
                 currentCar = car;
+
+                if (GetComponent<Collider>().name.Contains("STOP") && count==0)
+                {
+                    currentCar.Stop = true;
+                    hold = true;
+                    StartCoroutine(ResetStopVariable(currentCar));
+                }
+
                 //Debug.Log("Collider "+GetComponent<Collider>().name+" has hit object "+other.name);
                 //Debug.Log("Collider's parent "+GetComponent<Collider>().transform.parent.name+" has hit object "+other.name);
                 //Debug.Log("Collider's parent's parent "+GetComponent<Collider>().transform.parent.transform.parent.name+" has hit object "+other.name);
@@ -82,14 +105,14 @@ namespace SimpleCity.AI
                         increment = 3; //test with 3 instead of 4
                     }
 
-                    Debug.Log("Position checked marker : " + car.path[car.index + increment]);
+                    //Debug.Log("Position checked marker : " + car.path[car.index + increment]);
 
                     foreach (Dependency dependency in dependencyList)
                     {
-                        Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
+                        //Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
                         if (dependency.destination.Position == car.path[car.index + increment])
                         {
-                            Debug.Log("Found destination");
+                            //Debug.Log("Found destination");
                             currentDependence = dependency.toCheck;
                             if (!CheckDependency(dependency.toCheck))
                             {
@@ -108,14 +131,17 @@ namespace SimpleCity.AI
             //Debug.Log("HEY");
             if (canCommandCar && currentCar != null)
             {
-                if(CheckDependency(currentDependence))
+                if (!hold)
                 {
-                    currentCar.Stop = false;
-                }
-                else
-                {
-                    Debug.Log("STOP ZE CAR");
-                    currentCar.Stop = true;
+                    if (CheckDependency(currentDependence))
+                    {
+                        currentCar.Stop = false;
+                    }
+                    else
+                    {
+                        Debug.Log("STOP ZE CAR");
+                        currentCar.Stop = true;
+                    }
                 }
             }
         }
@@ -144,11 +170,11 @@ namespace SimpleCity.AI
             {
                IsOccupied-=1;
                currentCar = null;
-               /*if(IsOccupied==0)
-                {
-                    currentDependence = null;
-                }*/
-              
+                /*if(IsOccupied==0)
+                 {
+                     currentDependence = null;
+                 }*/
+                count = 0;
             }
            
         }
