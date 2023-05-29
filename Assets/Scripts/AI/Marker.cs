@@ -14,6 +14,7 @@ namespace SimpleCity.AI
     {
         public Marker destination;
         public List<Marker> toCheck;
+        public StopLine stopLine;
     }
 
     public class Marker : MonoBehaviour
@@ -23,7 +24,7 @@ namespace SimpleCity.AI
         public List<Marker> adjacentMarkers;
 
         public CarAI currentCar;
-        public List<Marker> currentDependence;
+        public Dependency currentDependence;
 
         public bool canCommandCar;
 
@@ -63,6 +64,12 @@ namespace SimpleCity.AI
             count += 1;
         }
 
+        private IEnumerator ResetIsOccupiedVariable()
+        {
+            yield return new WaitForSeconds(1f); // Wait for 2 seconds
+            IsOccupied--;
+        }
+
 
         private void OnTriggerEnter(Collider other)
         {
@@ -98,11 +105,11 @@ namespace SimpleCity.AI
                     }
                     if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
                     {
-                        increment = 2; //test with 3 instead of 4
+                        increment = 2; 
                     }
                     else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
                     {
-                        increment = 3; //test with 3 instead of 4
+                        increment = 3; 
                     }
 
                     //Debug.Log("Position checked marker : " + car.path[car.index + increment]);
@@ -113,10 +120,10 @@ namespace SimpleCity.AI
                         if (dependency.destination.Position == car.path[car.index + increment])
                         {
                             //Debug.Log("Found destination");
-                            currentDependence = dependency.toCheck;
+                            currentDependence = dependency;
                             if (!CheckDependency(dependency.toCheck))
                             {
-                                car.Stop = true;
+                                dependency.stopLine.nextCarHasToStop = true; //tell the line where the car must stop that the next coming car has to stop
                                 return;
                             }
                         }
@@ -128,19 +135,24 @@ namespace SimpleCity.AI
 
         private void Update()
         {
-            //Debug.Log("HEY");
             if (canCommandCar && currentCar != null)
             {
                 if (!hold)
                 {
-                    if (CheckDependency(currentDependence))
+                    if (CheckDependency(currentDependence.toCheck))
                     {
-                        currentCar.Stop = false;
+                        if(currentDependence.stopLine)
+                        {
+                            currentDependence.stopLine.nextCarHasToStop = false;
+                        }
+                        
                     }
                     else
                     {
-                        Debug.Log("STOP ZE CAR");
-                        currentCar.Stop = true;
+                        if (currentDependence.stopLine)
+                        {
+                            currentDependence.stopLine.nextCarHasToStop = true;
+                        }
                     }
                 }
             }
@@ -157,7 +169,6 @@ namespace SimpleCity.AI
             {
                 if(marker.IsOccupied!=0)
                 {
-                    Debug.Log("WE ARE OCUPIED");
                     return false;
                 }
             }
@@ -168,14 +179,23 @@ namespace SimpleCity.AI
         {
             if (other.CompareTag("Car"))
             {
-               IsOccupied-=1;
-               currentCar = null;
+               if(IsOccupied==1)
+                {
+                    StartCoroutine(ResetIsOccupiedVariable());
+                }
+                else
+                {
+                    IsOccupied -= 1;
+                }
+                
+                currentCar = null;
                 /*if(IsOccupied==0)
                  {
                      currentDependence = null;
                  }*/
                 count = 0;
             }
+
            
         }
 

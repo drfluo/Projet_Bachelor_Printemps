@@ -45,7 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -95,7 +98,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -148,7 +154,10 @@ MonoBehaviour:
   - {fileID: 9115835947818146856}
   - {fileID: 7401966373876757415}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -201,7 +210,10 @@ MonoBehaviour:
   - {fileID: 9115835947818146856}
   - {fileID: 5731712357187959273}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -338,7 +350,10 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 9115835947818146856}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -370,11 +385,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRedMarker: 1
   marker: {fileID: 4536951027229552048}
-  road: {fileID: 0}
-  greenRoad: {fileID: 0}
-  orangeRoad: {fileID: 0}
+  road: {fileID: 3351635067702010651}
+  greenRoad: {fileID: 308542810601142872}
+  orangeRoad: {fileID: 8208671673879238797}
   greenTime: 0
   orangeTime: 0
+  is4Way: 0
+  nextLight: {fileID: 0}
 --- !u!1 &5074019179163755217
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +437,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -470,7 +490,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -523,7 +546,10 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2487804808059409530}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -555,11 +581,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRedMarker: 1
   marker: {fileID: 2697737446615888118}
-  road: {fileID: 0}
-  greenRoad: {fileID: 0}
-  orangeRoad: {fileID: 0}
+  road: {fileID: 3351635067702010651}
+  greenRoad: {fileID: 308542810601142872}
+  orangeRoad: {fileID: 8208671673879238797}
   greenTime: 0
   orangeTime: 0
+  is4Way: 0
+  nextLight: {fileID: 0}
 --- !u!1 &5715412212425767290
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +678,10 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5731712357187959273}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -682,11 +713,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRedMarker: 1
   marker: {fileID: 9088595713923764479}
-  road: {fileID: 0}
-  greenRoad: {fileID: 0}
-  orangeRoad: {fileID: 0}
+  road: {fileID: 3351635067702010651}
+  greenRoad: {fileID: 308542810601142872}
+  orangeRoad: {fileID: 8208671673879238797}
   greenTime: 0
   orangeTime: 0
+  is4Way: 0
+  nextLight: {fileID: 0}
 --- !u!1 &6624886499523455884
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +768,10 @@ MonoBehaviour:
   - {fileID: 7401966373876757415}
   - {fileID: 2487804808059409530}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -788,7 +824,10 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 7401966373876757415}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -825,6 +864,8 @@ MonoBehaviour:
   orangeRoad: {fileID: 8208671673879238797}
   greenTime: 5
   orangeTime: 1
+  is4Way: 0
+  nextLight: {fileID: 0}
 --- !u!1 &9123682888117793807
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +914,10 @@ MonoBehaviour:
   - {fileID: 5731712357187959273}
   - {fileID: 363664984909030992}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0

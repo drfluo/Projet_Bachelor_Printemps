@@ -45,7 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -99,14 +102,12 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  currentDependence: []
-  canCommandCar: 0
-  dependencyList:
-  - destination: {fileID: 5294581625559448516}
+  currentDependence:
+    destination: {fileID: 0}
     toCheck: []
-  - destination: {fileID: 1547229366170371422}
-    toCheck:
-    - {fileID: 5622062994906779639}
+    stopLine: {fileID: 0}
+  canCommandCar: 0
+  dependencyList: []
   IsOccupied: 0
   openForConnections: 0
 --- !u!114 &5334417182713589436
@@ -124,8 +125,8 @@ MonoBehaviour:
   isRedMarker: 1
   marker: {fileID: 394718298270981306}
   road: {fileID: 2384947387477557946}
-  greenRoad: {fileID: 0}
-  orangeRoad: {fileID: 0}
+  greenRoad: {fileID: 5672772147896020120}
+  orangeRoad: {fileID: 3180266355492812638}
   greenTime: 0
   orangeTime: 0
   is4Way: 0
@@ -269,14 +270,12 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   - {fileID: 8220785704905346724}
   currentCar: {fileID: 0}
-  currentDependence: []
-  canCommandCar: 0
-  dependencyList:
-  - destination: {fileID: 1914715121427716573}
+  currentDependence:
+    destination: {fileID: 0}
     toCheck: []
-  - destination: {fileID: 8220785704905346724}
-    toCheck:
-    - {fileID: 394718298270981306}
+    stopLine: {fileID: 0}
+  canCommandCar: 0
+  dependencyList: []
   IsOccupied: 0
   openForConnections: 0
 --- !u!114 &2580135178270732531
@@ -294,8 +293,8 @@ MonoBehaviour:
   isRedMarker: 1
   marker: {fileID: 3810113384999970596}
   road: {fileID: 2384947387477557946}
-  greenRoad: {fileID: 0}
-  orangeRoad: {fileID: 0}
+  greenRoad: {fileID: 5672772147896020120}
+  orangeRoad: {fileID: 3180266355492812638}
   greenTime: 0
   orangeTime: 0
   is4Way: 0
@@ -358,7 +357,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -408,7 +410,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -499,14 +504,12 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
-  currentDependence: []
-  canCommandCar: 0
-  dependencyList:
-  - destination: {fileID: 1547229366170371422}
+  currentDependence:
+    destination: {fileID: 0}
     toCheck: []
-  - destination: {fileID: 8220785704905346724}
-    toCheck:
-    - {fileID: 3810113384999970596}
+    stopLine: {fileID: 0}
+  canCommandCar: 0
+  dependencyList: []
   IsOccupied: 0
   openForConnections: 0
 --- !u!114 &3666289136765798821
@@ -590,7 +593,10 @@ MonoBehaviour:
   - {fileID: 5294581625559448516}
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
-  currentDependence: []
+  currentDependence:
+    destination: {fileID: 0}
+    toCheck: []
+    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
