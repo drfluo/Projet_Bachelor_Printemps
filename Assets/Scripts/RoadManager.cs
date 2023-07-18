@@ -70,8 +70,10 @@ public class RoadManager : MonoBehaviour
         FixRoadPrefabs();
     }
 
+
     public void FixRoadPrefabs()
     {
+        
         foreach (var temporaryPosition in temporaryPlacementPositions)
         {
             roadFixer.FixRoadAtPosition(placementManager, temporaryPosition);
@@ -88,6 +90,7 @@ public class RoadManager : MonoBehaviour
         {
             roadFixer.FixRoadAtPosition(placementManager, positionToFix);
         }
+
     }
 
     public void FinishPlacingRoad()
@@ -97,12 +100,6 @@ public class RoadManager : MonoBehaviour
         placementManager.AddtemporaryStructuresToStructureDictionary();
         temporaryPlacementPositions.Clear();
         startPosition = Vector3Int.zero;
-        Debug.Log("List of all roads");
-        foreach (Vector3Int pos in placementManager.structureDictionary.Keys)
-        {
-            Debug.Log(placementManager.structureDictionary[pos].gameObject.transform.GetChild(0).gameObject.name);
-        }
-        //refresh graph of markers
-        // ai.GraphWholeMarkerMap();
+
     }
 }

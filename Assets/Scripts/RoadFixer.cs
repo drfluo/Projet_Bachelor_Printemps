@@ -82,6 +82,7 @@ public class RoadFixer : MonoBehaviour
     //[left, up, right, down]
     private bool CreateStraightRoad(PlacementManager placementManager, CellType[] result, Vector3Int temporaryPosition)
     {
+
         if (result[0] == CellType.Road && result[2] == CellType.Road)
         {
             placementManager.ModifyStructureModel(temporaryPosition, roadStraight, Quaternion.identity);

@@ -67,7 +67,10 @@ public class PlacementManager : MonoBehaviour
             {
                 var newPosition = position + new Vector3Int(x, 0, z);
                 placementGrid[newPosition.x, newPosition.z] = type;
+
+                //add a building to the dictionnary
                 structureDictionary.Add(newPosition, structure);
+
        
             }
         }
@@ -175,6 +178,8 @@ public class PlacementManager : MonoBehaviour
             structure.Value.RoadPosition = structure.Key;
             structureDictionary.Add(structure.Key, structure.Value);
         }
+
+
         temporaryRoadobjects.Clear();
     }
 
@@ -183,14 +188,13 @@ public class PlacementManager : MonoBehaviour
         if (temporaryRoadobjects.ContainsKey(position))
         {
             temporaryRoadobjects[position].SwapModel(newModel, rotation);
-
         }
             
         else if (structureDictionary.ContainsKey(position))
         {
             structureDictionary[position].SwapModel(newModel, rotation);
+            //Debug.Log("CHANGED TO " + structureDictionary[position].transform.GetChild(0).gameObject.name);
         }
-            
     }
 
     public StructureModel GetRandomRoad()
@@ -220,6 +224,7 @@ public class PlacementManager : MonoBehaviour
         {
             returnList.Add(structureDictionary[new Vector3Int(point.X, 0, point.Y)]);
         }
+
         return returnList;
     }
 
@@ -234,7 +239,7 @@ public class PlacementManager : MonoBehaviour
         return returnList;
     }
 
-
+               
     public StructureModel GetStructureAt(Point point)
     {
         if (point != null)
@@ -279,9 +284,6 @@ public class PlacementManager : MonoBehaviour
     {
         if (placementGrid[position.x, position.z] != CellType.Empty)
         {
-
-
-
 
             placementGrid[position.x, position.z] = CellType.Empty;
             Destroy(structureDictionary[position].gameObject);
@@ -379,18 +381,26 @@ public class PlacementManager : MonoBehaviour
 
     public void Swap(Vector3Int position)
     {
+        Debug.Log("STATE OF DICTIONNARY");
+
+        bool onlydead = true;
+        //saves stops, giveway, roundabount...
+        foreach (Vector3Int key in structureDictionary.Keys)
+        {
+            if (!structureDictionary[key].gameObject.transform.GetChild(0).gameObject.name.Contains("ead"))
+            {
+                onlydead = false;
+            }
+        }
+        Debug.Log(onlydead);
 
         if (placementGrid[position.x, position.z] == CellType.Road)
         {
-
-            Debug.Log(position);
-            Debug.Log(structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name);
             if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
             {
                 id4WayPrefab += 1;
                 id4WayPrefab = id4WayPrefab % 3;
 
-                Debug.Log("Changing 4ways to id : " + id4WayPrefab);
                 ModifyStructureModel(position, Prefab4Way[id4WayPrefab], Quaternion.identity);
 
                 //keeps track of stops, giveways... to load and store the map
@@ -448,10 +458,14 @@ public class PlacementManager : MonoBehaviour
                     ModifyStructureModel(position, Prefab3Way[id3WayPrefab], Quaternion.Euler(0, 90, 0));
                 }
             }
+            if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("ead"))
+            {
+                Debug.Log("Yiu know this is gonna be fun");
+            }
 
             if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("Straight"))
             {
-                idPrefab+=1;
+                idPrefab +=1;
                 idPrefab = idPrefab%5;
 
                 //keeps track of stops, giveways... to load and store the map
@@ -951,6 +965,7 @@ public class PlacementManager : MonoBehaviour
         //saves stops, giveway, roundabount...
         foreach (Vector3Int key in positionsOfStops.Keys)
         {
+            Debug.Log("PLACE STOP AT " + key);
             mapData.specialRoads.Add(positionsOfStops[key]);
             mapData.specialRoadsPosition.Add(key);
         }
@@ -990,25 +1005,33 @@ public class PlacementManager : MonoBehaviour
             }
         }
 
+        //because otherwise the dictionnary is not up to date
+        StartCoroutine(waiter(data));
 
+       
+    }
+
+    IEnumerator waiter(MapData data)
+    {
+        //Wait for 1 seconds
+        yield return new WaitForSeconds(0.1f);
+        
         //loads special roads
         int j = 0;
-        foreach(String name in data.specialRoads)
+        foreach (String name in data.specialRoads)
         {
-
-
-            if(name.Contains("3"))
+            if (name.Contains("3"))
             {
                 id3WayPrefab = _FindPrefabId(name, Prefab3Way);
-                
+
                 //need to search the right id in the prefab list
             }
-            else if(name.Contains("4"))
+            else if (name.Contains("4"))
             {
                 id4WayPrefab = _FindPrefabId(name, Prefab4Way);
             }
             else
-            {              
+            {
                 idPrefab = _FindPrefabId(name, roadPrefab);
             }
             Swap(data.specialRoadsPosition[j]);
@@ -1054,5 +1077,4 @@ public class MapData
     public List<Vector3Int> positions = new List<Vector3Int>();
     public List<String> specialRoads = new List<String>();
     public List<Vector3Int> specialRoadsPosition = new List<Vector3Int>();
-
 }
