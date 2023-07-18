@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2257923441246716208}
   - component: {fileID: 8315145912771571543}
+  - component: {fileID: 2218426478362745769}
   m_Layer: 0
   m_Name: Exit_Right
   m_TagString: Untagged
@@ -45,14 +46,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
+--- !u!65 &2218426478362745769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12035314218349079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26, y: 1, z: 0.31}
+  m_Center: {x: 0.13, y: 0, z: 0}
 --- !u!1 &522339763532955791
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3335691785034037407}
   - component: {fileID: 3290096157220949447}
+  - component: {fileID: 2319547146649887489}
   m_Layer: 0
   m_Name: Exit_Bottom
   m_TagString: Untagged
@@ -98,14 +110,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
+--- !u!65 &2319547146649887489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522339763532955791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31, y: 1, z: 0.26}
+  m_Center: {x: 0, y: 0, z: -0.13}
 --- !u!1 &1019168391406054896
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,11 +176,8 @@ MonoBehaviour:
   - {fileID: 9115835947818146856}
   - {fileID: 7401966373876757415}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -210,11 +229,8 @@ MonoBehaviour:
   - {fileID: 9115835947818146856}
   - {fileID: 5731712357187959273}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -292,6 +308,7 @@ MonoBehaviour:
   - {fileID: 8315145912771571543}
   - {fileID: 3290096157220949447}
   isCorner: 0
+  canGetStuck: 0
   incommingMarkers:
   - {fileID: 2373941749527241963}
   - {fileID: 2697737446615888118}
@@ -350,11 +367,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 9115835947818146856}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -402,6 +416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8570959254010428513}
   - component: {fileID: 4978643539067835954}
+  - component: {fileID: 5698366731962702111}
   m_Layer: 0
   m_Name: Exit_Top
   m_TagString: Untagged
@@ -437,14 +452,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
+--- !u!65 &5698366731962702111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5074019179163755217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31, y: 1, z: 0.26}
+  m_Center: {x: 0, y: 0, z: 0.13}
 --- !u!1 &5324762583568528644
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 431368836702756706}
   - component: {fileID: 363664984909030992}
+  - component: {fileID: 4551616219985165820}
   m_Layer: 0
   m_Name: Exit_Left
   m_TagString: Untagged
@@ -490,14 +516,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
+--- !u!65 &4551616219985165820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5324762583568528644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26, y: 1, z: 0.31}
+  m_Center: {x: -0.13, y: 0, z: 0}
 --- !u!1 &5365472332983735775
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,11 +582,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2487804808059409530}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -678,11 +711,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5731712357187959273}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -768,11 +798,8 @@ MonoBehaviour:
   - {fileID: 7401966373876757415}
   - {fileID: 2487804808059409530}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -803,7 +830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6821599979906735818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 0.1, z: 0.419}
+  m_LocalPosition: {x: -0.22, y: 0.1, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2361687834012956800}
@@ -824,11 +851,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 7401966373876757415}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -843,8 +867,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 1, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 0.33}
+  m_Size: {x: 0.35, y: 1, z: 0.25}
+  m_Center: {x: 0, y: 0, z: 0.36}
 --- !u!114 &4893402588148178152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,13 +936,10 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2487804808059409530}
   - {fileID: 5731712357187959273}
-  - {fileID: 363664984909030992}
+  - {fileID: 4978643539067835954}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -983,14 +1004,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46e774e3f367144bab7cc12c765ad58, type: 3}
---- !u!4 &1081983907937771746 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b46e774e3f367144bab7cc12c765ad58, type: 3}
-  m_PrefabInstance: {fileID: 615097439705925385}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &308542810601142872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b46e774e3f367144bab7cc12c765ad58, type: 3}
+  m_PrefabInstance: {fileID: 615097439705925385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1081983907937771746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b46e774e3f367144bab7cc12c765ad58, type: 3}
   m_PrefabInstance: {fileID: 615097439705925385}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9019134130187609564
@@ -1054,13 +1075,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82bb56b16d5fe847aa22c960e13fd25, type: 3}
---- !u!1 &8208671673879238797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c82bb56b16d5fe847aa22c960e13fd25, type: 3}
-  m_PrefabInstance: {fileID: 9019134130187609564}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8836308526601224759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c82bb56b16d5fe847aa22c960e13fd25, type: 3}
+  m_PrefabInstance: {fileID: 9019134130187609564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8208671673879238797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c82bb56b16d5fe847aa22c960e13fd25, type: 3}
   m_PrefabInstance: {fileID: 9019134130187609564}
   m_PrefabAsset: {fileID: 0}
