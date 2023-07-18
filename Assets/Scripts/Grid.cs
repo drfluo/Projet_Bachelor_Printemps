@@ -96,6 +96,22 @@ public class Grid
             {
                 _houseStructure.Add(new Point(i, j));
             }
+            if(value==CellType.Empty)
+            {
+                CellType type = _grid[i, j];
+                if(type==CellType.Road)
+                {
+                    _roadList.Remove(new Point(i, j));
+                }
+                else if (type == CellType.SpecialStructure)
+                {
+                    _specialStructure.Remove(new Point(i, j));
+                }
+                else if (type == CellType.Structure)
+                {
+                    _houseStructure.Remove(new Point(i, j));
+                }
+            }
             _grid[i, j] = value;
         }
     }
@@ -147,6 +163,11 @@ public class Grid
         return _specialStructure;
     }
 
+    public List<Point> GetAllRoads()
+    {
+        return _roadList;
+    }
+
     public List<Point> GetAdjacentCells(Point cell, bool isAgent)
     {
         List<Point> adjacentCells = GetAllAdjacentCells((int)cell.X, (int)cell.Y);
@@ -187,18 +208,6 @@ public class Grid
         return adjacentCells;
     }
 
-    /*public List<Point> GetWakableAdjacentCells(int x, int y, bool isAgent)
-    {
-        List<Point> adjacentCells = GetAllAdjacentCells(x, y);
-        for (int i = adjacentCells.Count - 1; i >= 0; i--)
-        {
-            if (IsCellWakable(_grid[adjacentCells[i].X, adjacentCells[i].Y], isAgent) == false)
-            {
-                adjacentCells.RemoveAt(i);
-            }
-        }
-        return adjacentCells;
-    }*/
 
     public List<Point> GetAdjacentCellsOfType(int x, int y, CellType type)
     {

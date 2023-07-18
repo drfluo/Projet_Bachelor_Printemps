@@ -1,0 +1,44 @@
+{
+    "tiles": [
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road"
+    ],
+    "positions": [
+        {
+            "x": 6,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 5
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 7
+        }
+    ],
+    "specialRoads": [],
+    "specialRoadsPosition": []
+}

@@ -45,10 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -101,10 +97,6 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 1
   dependencyList:
   - destination: {fileID: 5294581625559448516}
@@ -185,6 +177,7 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   isCorner: 0
+  canGetStuck: 1
   incommingMarkers:
   - {fileID: 394718298270981306}
   - {fileID: 5622062994906779639}
@@ -232,7 +225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2538072505709013497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 0, z: -0.46}
+  m_LocalPosition: {x: 0.23, y: 0, z: -0.613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3986943762202842740}
@@ -263,8 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!1 &3194091552131760367
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,10 +306,6 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   - {fileID: 8220785704905346724}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1914715121427716573}
@@ -386,10 +375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -420,7 +405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3464281463802440296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0, z: 0.23}
+  m_LocalPosition: {x: 0.264, y: 0, z: 0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3986943762202842740}
@@ -451,8 +436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!1 &3515965438237719017
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,10 +483,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -563,8 +544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!1 &4283301358245075556
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,10 +665,6 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1547229366170371422}
@@ -755,8 +732,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 1
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!1 &8008757790088263805
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,10 +781,6 @@ MonoBehaviour:
   - {fileID: 5294581625559448516}
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0

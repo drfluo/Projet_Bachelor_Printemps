@@ -11,11 +11,16 @@ namespace SimpleCity.AI
         public List<Marker> carMarkers;
         [SerializeField]
         protected bool isCorner;
+        [SerializeField]
+        protected bool canGetStuck;
 
         float approximateThresholdCorner = 0.3f;
 
         [SerializeField]
         private List<Marker> incommingMarkers, outgoingMarkers;
+
+        private CarAI[] waitingCars;
+        
 
 
         //Need position because multiple car markers inherits from this
@@ -28,16 +33,6 @@ namespace SimpleCity.AI
         {
             return GetClosestMarkeTo(previousPathPosition, incommingMarkers);
         }
-
-        /*public virtual Marker GetPositioForCarToSpawn(Vector3 nextPathPosition)
-        {
-            return outgoing;
-        }
-
-        public virtual Marker GetPositioForCarToEnd(Vector3 previousPathPosition)
-        {
-            return incomming;
-        }*/
 
         //returns all incoming markers (overriden in multiplecarMarkers)
         public virtual List<Marker> GetAllIncomingMarkers()
@@ -94,6 +89,69 @@ namespace SimpleCity.AI
         public List<Marker> GetAllCarMarkers()
         {
             return carMarkers;
+        }
+
+
+        void Start()
+        {
+            waitingCars = new CarAI[carMarkers.Count];
+            if (canGetStuck)
+            {
+                InvokeRepeating("CheckStuck", 3.0f, 2f);
+            }
+        }
+
+        void CheckStuck()
+        {
+            bool allEmpty = true;
+            int i = 0;
+            foreach(Marker marker in carMarkers)
+            {
+                if(allEmpty && marker.currentCar!=null)
+                {
+                    allEmpty = false;
+                }
+
+                if(marker.currentCar!=waitingCars[i])
+                {
+                    UpdateListWaitingCar();
+                    return;
+                }
+                i++;
+            }
+
+
+            if(!allEmpty)
+            {
+                //STUCK situation, now need to choose a random car and let it go
+
+
+                List<int> indexes = new List<int>();
+                for (int j = 0; j < waitingCars.Length; j++)
+                {
+                    if (waitingCars[j] != null)
+                        indexes.Add(j);
+                }
+                int index = indexes[UnityEngine.Random.Range(0, indexes.Count)];
+
+                //need to get the stop line and tell it to stop stopping
+                carMarkers[index].currentStopLine.toCheck= new List<Marker>();
+                waitingCars[index].Stop = false;
+
+
+            }
+            UpdateListWaitingCar();
+
+        }
+
+        void UpdateListWaitingCar()
+        {
+            int i = 0;
+            foreach(Marker marker in carMarkers)
+            {
+                waitingCars[i] = marker.currentCar;
+                i++;
+            }
         }
     }
 }

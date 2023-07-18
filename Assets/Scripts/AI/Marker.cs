@@ -24,10 +24,11 @@ namespace SimpleCity.AI
         public List<Marker> adjacentMarkers;
 
         public CarAI currentCar;
-        public Dependency currentDependence;
 
         public bool canCommandCar;
 
+        //line where the car stops, need it to be able to let one car go if a stuck situation occurs
+        public StopLine currentStopLine;
 
         public List<Dependency> dependencyList;
 
@@ -58,8 +59,7 @@ namespace SimpleCity.AI
 
         private IEnumerator ResetStopVariable(CarAI currentCar)
         {
-            yield return new WaitForSeconds(1f); // Wait for 2 seconds
-            currentCar.Stop = false; // Set the Stop variable to false after 2 seconds
+            yield return new WaitForSeconds(currentCar.stopTime); // Wait for 2 seconds
             hold = false;
             count += 1;
         }
@@ -73,6 +73,7 @@ namespace SimpleCity.AI
 
         private void OnTriggerEnter(Collider other)
         {
+            bool isStop = false;
             
             if (other.CompareTag("Car"))
             {
@@ -85,8 +86,9 @@ namespace SimpleCity.AI
 
                 if (GetComponent<Collider>().name.Contains("STOP") && count==0)
                 {
-                    currentCar.Stop = true;
+                    isStop = true;
                     hold = true;
+
                     StartCoroutine(ResetStopVariable(currentCar));
                 }
 
@@ -112,20 +114,22 @@ namespace SimpleCity.AI
                         increment = 3; 
                     }
 
-                    //Debug.Log("Position checked marker : " + car.path[car.index + increment]);
+                   // Debug.Log("Position checked marker : " + car.path[car.index + increment]);
 
                     foreach (Dependency dependency in dependencyList)
                     {
-                        //Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
+                       // Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
                         if (dependency.destination.Position == car.path[car.index + increment])
                         {
                             //Debug.Log("Found destination");
-                            currentDependence = dependency;
-                            if (!CheckDependency(dependency.toCheck))
+                            dependency.stopLine.toCheck = dependency.toCheck;
+                            currentStopLine = dependency.stopLine;
+                            if (isStop)
                             {
-                                dependency.stopLine.nextCarHasToStop = true; //tell the line where the car must stop that the next coming car has to stop
-                                return;
+                                dependency.stopLine.isStop = true;
                             }
+
+                            return;
                         }
                     }
                 }
@@ -133,7 +137,7 @@ namespace SimpleCity.AI
             }
         }
 
-        private void Update()
+      /*  private void Update()
         {
             if (canCommandCar && currentCar != null)
             {
@@ -143,7 +147,7 @@ namespace SimpleCity.AI
                     {
                         if(currentDependence.stopLine)
                         {
-                            currentDependence.stopLine.nextCarHasToStop = false;
+                            currentDependence.stopLine.nextCarCanGo = true;
                         }
                         
                     }
@@ -151,12 +155,12 @@ namespace SimpleCity.AI
                     {
                         if (currentDependence.stopLine)
                         {
-                            currentDependence.stopLine.nextCarHasToStop = true;
+                            currentDependence.stopLine.nextCarCanGo = false;
                         }
                     }
                 }
             }
-        }
+        }*/
 
         //return true if can go otherwise false
         private bool CheckDependency(List<Marker> toCheck)

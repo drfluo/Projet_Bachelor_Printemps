@@ -33,6 +33,7 @@ public class CarAI : MonoBehaviour
     private float raycastObstacleAhead=0.9f;
 
     private float distanceObstacleAhead=-10f;
+    public float stopTime = 1f;
 
 
 
@@ -83,13 +84,10 @@ public class CarAI : MonoBehaviour
     }
 
     
-private RaycastHit hit;
+    private RaycastHit hit;
     private void FixedUpdate()
     {
 
-        //WOULD BE COOL IF : another raycasting with longer distance that only slows down until certain point(object no longer coming closer) : sinon voiture de sport "bump" dans celle devant
-        //idée : avoir une variable "distance truc devant" et checker si cette distance change, si oui, ralentir jusqu'à ce qu'elle change plus et tant que y a toujours un truc devant
-        bool haveToAccelerate=true;
         if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,out hit,raycastObstacleAhead, 1 << gameObject.layer))
         {
             if(distanceObstacleAhead<0)
@@ -99,8 +97,10 @@ private RaycastHit hit;
             if(hit.distance< distanceObstacleAhead)
             {
                 distanceObstacleAhead=hit.distance;
-                haveToAccelerate=false;
-                rb.AddForce(-movementVector.y * transform.forward * 1/hit.distance*power/10);
+                if(movementVector.x == 0) //no turning
+                {
+                    rb.AddForce(-movementVector.y * transform.forward * 1 / hit.distance * power / 10);
+                }
             }
             
         }
@@ -115,7 +115,7 @@ private RaycastHit hit;
         }
         rb.AddTorque(movementVector.x * Vector3.up * torque * movementVector.y);
     }
-    /* END   */
+
 
 
     private void InitializeCar()
@@ -125,9 +125,12 @@ private RaycastHit hit;
         {
             if(child.name.Contains("Sports"))
             {
-                raycastSafetyDistance = 0.4f;
-                maxSpeed=0.6f;
-            }
+                raycastSafetyDistance = 0.55f;
+                raycastObstacleAhead = 0.75f;
+                maxSpeed =0.5f;
+                stopTime = 0.7f;
+
+}
         }
 
     }

@@ -79,7 +79,7 @@ public class InputManager : MonoBehaviour
         {
             var position = RaycastGround();
             if (position != null)
-            { 
+            {
                 placementManager.Swap(position.Value);
             }
         }

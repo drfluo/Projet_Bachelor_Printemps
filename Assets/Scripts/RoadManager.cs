@@ -25,6 +25,7 @@ public class RoadManager : MonoBehaviour
 
     public void PlaceRoad(Vector3Int position)
     {
+
         if (placementManager.CheckIfPositionInBound(position) == false)
             return;
         if (placementManager.CheckIfPositionIsFree(position) == false)
@@ -67,10 +68,9 @@ public class RoadManager : MonoBehaviour
         }
 
         FixRoadPrefabs();
-
     }
 
-    private void FixRoadPrefabs()
+    public void FixRoadPrefabs()
     {
         foreach (var temporaryPosition in temporaryPlacementPositions)
         {
@@ -92,12 +92,17 @@ public class RoadManager : MonoBehaviour
 
     public void FinishPlacingRoad()
     {
+
         placementMode = false;
         placementManager.AddtemporaryStructuresToStructureDictionary();
         temporaryPlacementPositions.Clear();
         startPosition = Vector3Int.zero;
-
+        Debug.Log("List of all roads");
+        foreach (Vector3Int pos in placementManager.structureDictionary.Keys)
+        {
+            Debug.Log(placementManager.structureDictionary[pos].gameObject.transform.GetChild(0).gameObject.name);
+        }
         //refresh graph of markers
-       // ai.GraphWholeMarkerMap();
+        // ai.GraphWholeMarkerMap();
     }
 }

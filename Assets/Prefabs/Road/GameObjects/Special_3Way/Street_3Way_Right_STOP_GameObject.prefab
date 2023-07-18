@@ -45,10 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -101,10 +97,6 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 1
   dependencyList:
   - destination: {fileID: 5294581625559448516}
@@ -173,8 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!65 &1436041486540346652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -218,7 +210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6464194732210696885}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4698922371862846269
 MonoBehaviour:
@@ -232,8 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!65 &4928404547305157298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -303,6 +295,7 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   isCorner: 0
+  canGetStuck: 1
   incommingMarkers:
   - {fileID: 394718298270981306}
   - {fileID: 5622062994906779639}
@@ -372,10 +365,6 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   - {fileID: 8220785704905346724}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1914715121427716573}
@@ -386,7 +375,7 @@ MonoBehaviour:
     toCheck:
     - {fileID: 394718298270981306}
     - {fileID: 5622062994906779639}
-    stopLine: {fileID: 4025849896259642204}
+    stopLine: {fileID: 8735954119055254543}
   IsOccupied: 0
   openForConnections: 0
 --- !u!65 &9025442906141250348
@@ -447,10 +436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -500,73 +485,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
---- !u!1 &4687085915347410364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7918663444490157649}
-  - component: {fileID: 4025849896259642204}
-  - component: {fileID: 5856448850412139324}
-  m_Layer: 0
-  m_Name: RightToBottom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7918663444490157649
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4687085915347410364}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0, z: 0.23}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6464194732210696885}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4025849896259642204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4687085915347410364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
---- !u!65 &5856448850412139324
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4687085915347410364}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04, y: 1, z: 0.3}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4890216410734702435
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4890216410734702435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.807, y: 0, z: 0.231}
+  m_LocalPosition: {x: 0.589, y: 0, z: 0.231}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6464194732210696885}
@@ -611,8 +533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!65 &323202790976647383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -711,10 +633,6 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1547229366170371422}
@@ -768,7 +686,6 @@ Transform:
   - {fileID: 7246386178681379051}
   - {fileID: 6622614422337779894}
   - {fileID: 8750690649486988815}
-  - {fileID: 7918663444490157649}
   - {fileID: 3253703660501494326}
   m_Father: {fileID: 1948541103045650221}
   m_RootOrder: 2
@@ -820,10 +737,6 @@ MonoBehaviour:
   - {fileID: 5294581625559448516}
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
-  currentDependence:
-    destination: {fileID: 0}
-    toCheck: []
-    stopLine: {fileID: 0}
   canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
@@ -871,8 +784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07339cc09314eba48ba8da95f77a6f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCarHasToStop: 0
-  currentCar: {fileID: 0}
+  isStop: 0
+  toCheck: []
 --- !u!1001 &3000548131724387819
 PrefabInstance:
   m_ObjectHideFlags: 0

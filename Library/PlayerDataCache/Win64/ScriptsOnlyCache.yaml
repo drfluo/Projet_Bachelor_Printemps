@@ -2,21 +2,18 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CarAI
-    - CarController
     - CarSpawner
     - GameManager
     - InputManager
     - ObjectDetector
-    - PathVisualizer
     - PlacementManager
     - RoadFixer
-    - RoadHelperMultipleCarMarkers
     - RoadManager
     - SimpleCity.AI.AiDirector
+    - SimpleCity.AI.Light_Management
     - SimpleCity.AI.Marker
     - SimpleCity.AI.RoadHelper
-    - SimpleCity.AI.RoadHelperStraight
-    - SmartRoad
+    - StopLine
     - StructureManager
     - UIController
     Unity.RenderPipelines.Core.Runtime.dll:
@@ -103,8 +100,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -132,110 +127,102 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 2088}
+      Script: {instanceID: 2086}
     - Class: 114
-      Script: {instanceID: 2338}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2452}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 2454}
+      Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2658}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 3052}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3404}
+      Script: {instanceID: 3538}
     - Class: 114
-      Script: {instanceID: 3554}
+      Script: {instanceID: 3560}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3710}
     - Class: 114
-      Script: {instanceID: 3728}
+      Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 3798}
+      Script: {instanceID: 3838}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3966}
     - Class: 114
-      Script: {instanceID: 3984}
+      Script: {instanceID: 3982}
     - Class: 114
-      Script: {instanceID: 4000}
+      Script: {instanceID: 4134}
     - Class: 114
       Script: {instanceID: 4152}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4174}
+      Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 4272}
+      Script: {instanceID: 4352}
     - Class: 114
-      Script: {instanceID: 4370}
+      Script: {instanceID: 4382}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 4420}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 4544}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 4548}
+      Script: {instanceID: 4568}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4606}
     - Class: 114
-      Script: {instanceID: 4624}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 4746}
+      Script: {instanceID: 4728}
     - Class: 114
-      Script: {instanceID: 4748}
+      Script: {instanceID: 4890}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 4924}
     - Class: 114
-      Script: {instanceID: 4944}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5120}
+      Script: {instanceID: 5102}
     - Class: 114
-      Script: {instanceID: 5444}
+      Script: {instanceID: 5132}
     - Class: 114
-      Script: {instanceID: 5628}
+      Script: {instanceID: 5426}
     - Class: 114
-      Script: {instanceID: 5686}
+      Script: {instanceID: 5610}
     - Class: 114
-      Script: {instanceID: 6120}
+      Script: {instanceID: 5668}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6102}
     - Class: 114
-      Script: {instanceID: 6270}
+      Script: {instanceID: 6152}
     - Class: 114
-      Script: {instanceID: 6370}
+      Script: {instanceID: 6252}
     - Class: 114
-      Script: {instanceID: 6550}
+      Script: {instanceID: 6352}
     - Class: 114
-      Script: {instanceID: 6590}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 6740}
-    - Class: 114
-      Script: {instanceID: 6768}
-    - Class: 114
-      Script: {instanceID: 6990}
-    - Class: 114
-      Script: {instanceID: 7010}
+      Script: {instanceID: 6748}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -324,7 +311,7 @@ ScriptsOnlyBuild:
     className: Tonemapping
   - hash:
       serializedVersion: 2
-      Hash: 80eabed8be7a26fbbb1cd731eae2c436
+      Hash: 1a10f3b43599919f55c20fc64264bfd4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarAI
@@ -378,16 +365,10 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 38337980f7c5ddcf94f7a46194a518ea
+      Hash: 38136c7ae8938feaead6d4a8fb1e5fcd
     assemblyName: Assembly-CSharp.dll
     namespaceName: SimpleCity.AI
     className: RoadHelper
-  - hash:
-      serializedVersion: 2
-      Hash: 92df4e2d8f39cf2900310387ac94a198
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: SVS
-    className: AudioPlayer
   - hash:
       serializedVersion: 2
       Hash: c5bfd0f6f4664318b8b9f50d88408421
@@ -534,13 +515,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerGroup
   - hash:
       serializedVersion: 2
-      Hash: 041d0e87f0b579aa2382828e83daa934
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SmartRoad
-  - hash:
-      serializedVersion: 2
-      Hash: 4cef3c420b258a61438dcea3533d09d8
+      Hash: 6d18af530684228eb88fcde4fc64e386
     assemblyName: Assembly-CSharp.dll
     namespaceName: SimpleCity.AI
     className: Marker
@@ -558,22 +533,10 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 111c1c0578f5cb4d6e9b611648f88e99
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SmartCrosswalks
-  - hash:
-      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
-  - hash:
-      serializedVersion: 2
-      Hash: 4e90ff3d2d698131be1e9a5283bc4e7b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: SimpleCity.AI
-    className: AiAgent
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -600,12 +563,6 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 58e68364412c67eae2bdb4954be2dcc2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Readme
-  - hash:
-      serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -622,12 +579,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerHBox
-  - hash:
-      serializedVersion: 2
-      Hash: d0b3e521cd65b73d91cbc221cf80be21
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: SVS
-    className: CameraMovement
   - hash:
       serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
@@ -750,7 +701,7 @@ ScriptsOnlyBuild:
     className: DebugUpdater
   - hash:
       serializedVersion: 2
-      Hash: 0d92b6e43d152f39aa138a43d3ec3c15
+      Hash: 681a9674bc57fc82e379e7312d44864c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlacementManager
@@ -846,12 +797,6 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: 8860633d29a22ff64e02e18da3716cdf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityTemplateProjects
-    className: SimpleCameraController
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -864,7 +809,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerVBox
   - hash:
       serializedVersion: 2
-      Hash: 71b751b20ff301fa1ddd6b6e7f183afd
+      Hash: 8c2ac25adcf3f5c74d7ba3194d104f55
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoadManager
@@ -924,6 +869,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 191d077e46086e552a0f81a164927d8c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SimpleCity.AI
+    className: Light_Management
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -936,7 +887,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 644debe3d067516b143ce9915f8593ac
+      Hash: 748a994b10ba06abbe03947c565d446b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -946,6 +897,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: ColorAdjustments
+  - hash:
+      serializedVersion: 2
+      Hash: ea0eb9b5167c189c70248830421d59a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StopLine
   - hash:
       serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
@@ -1152,12 +1109,6 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
-      Hash: e3f35f4b292985fe96fdefe710db11d6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: SimpleCity.AI
-    className: RoadHelperStraight
-  - hash:
-      serializedVersion: 2
       Hash: 7d1a3e12579b7bd0f94909057ffba8d0
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
@@ -1174,12 +1125,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalRenderPipelineEditorResources
-  - hash:
-      serializedVersion: 2
-      Hash: 6aa98c19019410c5dc3dc71b3b61abdf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CarController
   - hash:
       serializedVersion: 2
       Hash: e411dc54e3f9c4c9bd562d09e02eb452
@@ -1210,19 +1155,7 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 3258b23f58e953b4b7d71e53d8d38def
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RoadHelperMultipleCarMarkers
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PathVisualizer
   platform: 19
   scenePathNames:
   - Assets/Scenes/TownScene.unity
-  playerPath: C:/_LAURELINE/Programmation/Git/Build/FullHim.exe
+  playerPath: C:/_LAURELINE/Programmation/Git/Build/ToCopy/FullHim.exe

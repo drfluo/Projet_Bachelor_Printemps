@@ -67,12 +67,12 @@
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\AI\Light_Management.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\AI\StopLine.cs" />
     <Compile Include="Assets\Scripts\AI\Vertex.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\AI\CarSpawner.cs" />
     <Compile Include="Assets\Scripts\StructureManager.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
-    <Compile Include="Assets\Scripts\AI\StopLine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
