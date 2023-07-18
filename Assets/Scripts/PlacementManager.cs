@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using System.IO;
+using UnityEngine.UI;
 
 public class PlacementManager : MonoBehaviour
 {
@@ -928,7 +929,7 @@ public class PlacementManager : MonoBehaviour
 
 
     //puts every road, building and house in a json file
-    public void SaveMap()
+    public void SaveMap(InputField Field)
     {
 
         MapData mapData = new MapData();
@@ -971,14 +972,49 @@ public class PlacementManager : MonoBehaviour
         }
 
         //saving in a json file
+        //string json = JsonUtility.ToJson(mapData, true);
+        //File.WriteAllText(Application.dataPath + "/testMap.json", json);
+
+                //saving in a json file
+        string nameFile;
+        if (Field.text=="")
+        {
+            nameFile = "/testMap.json";
+        }
+        else
+        {
+            nameFile = "/"+Field.text + ".json";
+        }
+
+        Debug.Log("Saved as " + nameFile + " at "+ Application.dataPath);
+
         string json = JsonUtility.ToJson(mapData, true);
-        File.WriteAllText(Application.dataPath + "/testMap.json", json);
-        
+        File.WriteAllText(Application.dataPath + nameFile, json);
+
     }
 
-    public void LoadMap()
+    public void LoadMap(InputField Field)
     {
-        string json = File.ReadAllText(Application.dataPath + "/testMap.json");
+        string json;
+        try
+        {
+            string nameFile;
+            if (Field.text == "")
+            {
+                nameFile = "/testMap.json";
+            }
+            else
+            {
+                nameFile = "/" + Field.text + ".json";
+            }
+            json = File.ReadAllText(Application.dataPath + nameFile);
+        }
+        catch (Exception e)
+        {
+            print("File not found");
+            return;
+        }
+       
         MapData data = JsonUtility.FromJson<MapData>(json);
 
         //need to clear the map first
@@ -1078,3 +1114,4 @@ public class MapData
     public List<String> specialRoads = new List<String>();
     public List<Vector3Int> specialRoadsPosition = new List<Vector3Int>();
 }
+ 
