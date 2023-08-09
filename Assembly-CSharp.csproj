@@ -53,11 +53,13 @@
     <UnityVersion>2020.3.42f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\ToggleConstantSpeed.cs" />
     <Compile Include="Assets\Scripts\AI\CarAI.cs" />
     <Compile Include="Assets\Scripts\GridSearch.cs" />
     <Compile Include="Assets\Scripts\AI\RoadHelper.cs" />
     <Compile Include="Assets\Scripts\RoadFixer.cs" />
     <Compile Include="Assets\Scripts\ObjectDetector.cs" />
+    <Compile Include="Assets\errorPercentagesUI.cs" />
     <Compile Include="Assets\Scripts\AI\Marker.cs" />
     <Compile Include="Assets\Scripts\StructureModel.cs" />
     <Compile Include="Assets\Scripts\PlacementManager.cs" />
@@ -72,9 +74,12 @@
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\AI\CarSpawner.cs" />
     <Compile Include="Assets\Scripts\StructureManager.cs" />
-    <Compile Include="Assets\Scripts\UIController.cs" />
-    <Compile Include="Assets\Scripts\UI\ToggleConstantSpeed.cs" />
     <Compile Include="Assets\Scripts\UI\MapNameChooser.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
+    <Compile Include="Assets\Scripts\SimulationManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Result.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

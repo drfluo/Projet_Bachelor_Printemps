@@ -382,19 +382,6 @@ public class PlacementManager : MonoBehaviour
 
     public void Swap(Vector3Int position)
     {
-        Debug.Log("STATE OF DICTIONNARY");
-
-        bool onlydead = true;
-        //saves stops, giveway, roundabount...
-        foreach (Vector3Int key in structureDictionary.Keys)
-        {
-            if (!structureDictionary[key].gameObject.transform.GetChild(0).gameObject.name.Contains("ead"))
-            {
-                onlydead = false;
-            }
-        }
-        Debug.Log(onlydead);
-
         if (placementGrid[position.x, position.z] == CellType.Road)
         {
             if (structureDictionary[position].gameObject.transform.GetChild(0).gameObject.name.Contains("4Way"))
@@ -993,28 +980,84 @@ public class PlacementManager : MonoBehaviour
 
     }
 
-    public void LoadMap(InputField Field)
+    public void LoadMap(InputField Field) => LoadMap(Field.text);
+    /*      string json;
+try
+{
+string nameFile;
+if (Field.text == "")
+{
+nameFile = "/testMap.json";
+}
+else
+{
+nameFile = "/" + Field.text + ".json";
+}
+json = File.ReadAllText(Application.dataPath + nameFile);
+}
+catch (Exception)
+{
+print("File not found");
+return;
+}
+
+MapData data = JsonUtility.FromJson<MapData>(json);
+
+//need to clear the map first
+ClearCurrentMap();
+
+
+//place the tiles
+for (int i = 0; i < data.tiles.Count; i++)
+{
+if(data.tiles[i]=="road")
+{
+roadManager.PlaceRoad(data.positions[i]);
+//end placing
+roadManager.FinishPlacingRoad();
+
+}
+if (data.tiles[i] == "house")
+{
+structureManager.PlaceHouse(data.positions[i]);
+}
+if (data.tiles[i] == "structure")
+{
+structureManager.PlaceSpecial(data.positions[i]);
+}
+}
+
+//because otherwise the dictionnary is not up to date
+StartCoroutine(waiter(data));*/
+
+
+
+    public void LoadMap(string mapName)
     {
         string json;
         try
         {
             string nameFile;
-            if (Field.text == "")
+            if (mapName == "")
             {
                 nameFile = "/testMap.json";
             }
+            else if (mapName.Contains(".json"))
+            {
+                nameFile = "/" + mapName;
+            }
             else
             {
-                nameFile = "/" + Field.text + ".json";
+                nameFile = "/" + mapName + ".json";
             }
             json = File.ReadAllText(Application.dataPath + nameFile);
         }
-        catch (Exception e)
+        catch (Exception)
         {
-            print("File not found");
+            Debug.Log("File not found");
             return;
         }
-       
+
         MapData data = JsonUtility.FromJson<MapData>(json);
 
         //need to clear the map first
@@ -1024,7 +1067,7 @@ public class PlacementManager : MonoBehaviour
         //place the tiles
         for (int i = 0; i < data.tiles.Count; i++)
         {
-            if(data.tiles[i]=="road")
+            if (data.tiles[i] == "road")
             {
                 roadManager.PlaceRoad(data.positions[i]);
                 //end placing
@@ -1043,8 +1086,6 @@ public class PlacementManager : MonoBehaviour
 
         //because otherwise the dictionnary is not up to date
         StartCoroutine(waiter(data));
-
-       
     }
 
     IEnumerator waiter(MapData data)
@@ -1097,12 +1138,13 @@ public class PlacementManager : MonoBehaviour
         List<Point> listRoad = placementGrid.GetAllRoads();
         List<Vector3Int> positions = listRoad.ConvertAll(road => new Vector3Int(road.X,0,road.Y));
 
-        
-        foreach (Vector3Int position in positions)
+        if(positions.Count!=0)
         {
-            RemoveRoad(position);
+            foreach (Vector3Int position in positions)
+            {
+                RemoveRoad(position);
+            }
         }
-
     }
 }
 

@@ -1,15 +1,24 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CarAI : MonoBehaviour
 {
+    public static int numberArrived=0;
+    public static int numberStarted=0;
+    public static double totalTimeTaken=0;
+
+
+
     /*previously in CarController*/
     Rigidbody rb;
- 
+    private double timeTaken;
+    Stopwatch stopWatch = new Stopwatch();
+
     private float power = 10;
     private float torque = 0.02f;
     private float maxSpeed = 0.4f;
@@ -53,7 +62,11 @@ public class CarAI : MonoBehaviour
         set { stop = value; }
     }
 
- 
+    public CarAI()
+    {
+        numberStarted++;
+        stopWatch.Start();
+    }
 
     /*previously in CarController*/
     private void Awake()
@@ -221,6 +234,11 @@ public class CarAI : MonoBehaviour
         if(index >= path.Count)
         {
             Stop = true;
+            numberArrived++;
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            timeTaken = stopWatch.Elapsed.TotalSeconds;
+            totalTimeTaken += timeTaken;
             Destroy(gameObject);
         }
         else

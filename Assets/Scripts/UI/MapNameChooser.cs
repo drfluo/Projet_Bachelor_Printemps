@@ -28,7 +28,11 @@ public class MapNameChooser : MonoBehaviour
 
         foreach(string map in test)
         {
-            mapList.Add(Path.GetFileName(map));
+            if(!Path.GetFileName(map).Contains("Runtime") && !Path.GetFileName(map).Contains("Scripting"))
+            {
+                mapList.Add(Path.GetFileName(map));
+            }
+            
         }
 
         return mapList;

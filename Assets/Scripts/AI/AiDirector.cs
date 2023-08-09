@@ -16,17 +16,14 @@ namespace SimpleCity.AI
 
         List<Vector3> carPath = new List<Vector3>();
         
-        public void SpawnACar()
+        public CarAI SpawnACar()
         {
-            foreach (var house in placementManager.GetAllHouses())
-            {
-                TrySpawninACar(house, placementManager.GetRandomSpecialStrucutre());
-            }
+            return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre());
         }
 
 
 
-        private void TrySpawninACar(StructureModel startStructure, StructureModel endStructure)
+        private CarAI TrySpawninACar(StructureModel startStructure, StructureModel endStructure)
         {
             if (startStructure != null && endStructure != null)
             {
@@ -36,8 +33,8 @@ namespace SimpleCity.AI
                 var path = placementManager.GetPathBetween(startRoadPosition, endRoadPosition, true);
                 path.Reverse();
                 
-                if (path.Count == 0 && path.Count>2)
-                    return;
+                //if (path.Count == 0 && path.Count>2)
+                //    return null;
                 var startMarkerPosition = placementManager.GetStructureAt(startRoadPosition).GetCarSpawnMarker(path[1]);
 
                 var endMarkerPosition = placementManager.GetStructureAt(endRoadPosition).GetCarEndMarker(path[path.Count-2]);
@@ -47,9 +44,13 @@ namespace SimpleCity.AI
                 if(carPath.Count > 0)
                 {
                     var car = Instantiate(carPrefab, startMarkerPosition.Position, Quaternion.identity);
-                    car.GetComponent<CarAI>().SetPath(carPath);
+                    CarAI toreturn = car.GetComponent<CarAI>();
+                    toreturn.SetPath(carPath);
+                    return toreturn;
                 }
+                return null;
             }
+            return null;
         }
 
 

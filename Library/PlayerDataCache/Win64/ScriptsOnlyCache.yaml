@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - CarSpawner
     - GameManager
     - InputManager
+    - MapNameChooser
     - ObjectDetector
     - PlacementManager
     - RoadFixer
@@ -15,7 +16,9 @@ ScriptsOnlyBuild:
     - SimpleCity.AI.RoadHelper
     - StopLine
     - StructureManager
+    - ToggleConstantSpeed
     - UIController
+    - errorPercentagesUI
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -63,14 +66,17 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -117,111 +123,123 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1732}
     - Class: 114
-      Script: {instanceID: 1864}
+      Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 1960}
+      Script: {instanceID: 1866}
     - Class: 114
-      Script: {instanceID: 1992}
+      Script: {instanceID: 1948}
     - Class: 114
-      Script: {instanceID: 2018}
+      Script: {instanceID: 1962}
     - Class: 114
-      Script: {instanceID: 2086}
+      Script: {instanceID: 1994}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2448}
+      Script: {instanceID: 2088}
+    - Class: 114
+      Script: {instanceID: 2336}
     - Class: 114
       Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 2452}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 3388}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3538}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3560}
+      Script: {instanceID: 3392}
     - Class: 114
-      Script: {instanceID: 3710}
+      Script: {instanceID: 3542}
     - Class: 114
-      Script: {instanceID: 3780}
+      Script: {instanceID: 3564}
     - Class: 114
-      Script: {instanceID: 3838}
+      Script: {instanceID: 3712}
     - Class: 114
-      Script: {instanceID: 3966}
+      Script: {instanceID: 3714}
     - Class: 114
-      Script: {instanceID: 3982}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4152}
+      Script: {instanceID: 3970}
+    - Class: 114
+      Script: {instanceID: 3986}
+    - Class: 114
+      Script: {instanceID: 4138}
     - Class: 114
       Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4254}
+      Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 4352}
+      Script: {instanceID: 4258}
     - Class: 114
-      Script: {instanceID: 4382}
+      Script: {instanceID: 4356}
     - Class: 114
-      Script: {instanceID: 4420}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4500}
+      Script: {instanceID: 4424}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 4504}
     - Class: 114
       Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 4568}
+      Script: {instanceID: 4534}
     - Class: 114
-      Script: {instanceID: 4606}
+      Script: {instanceID: 4572}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 4610}
     - Class: 114
-      Script: {instanceID: 4728}
+      Script: {instanceID: 4730}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 4732}
     - Class: 114
-      Script: {instanceID: 4924}
+      Script: {instanceID: 4894}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5102}
+      Script: {instanceID: 5044}
     - Class: 114
-      Script: {instanceID: 5132}
+      Script: {instanceID: 5106}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 5136}
     - Class: 114
-      Script: {instanceID: 5610}
+      Script: {instanceID: 5148}
     - Class: 114
-      Script: {instanceID: 5668}
+      Script: {instanceID: 5430}
     - Class: 114
-      Script: {instanceID: 6102}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 6152}
+      Script: {instanceID: 5672}
     - Class: 114
-      Script: {instanceID: 6252}
+      Script: {instanceID: 6106}
     - Class: 114
-      Script: {instanceID: 6352}
+      Script: {instanceID: 6156}
     - Class: 114
-      Script: {instanceID: 6570}
+      Script: {instanceID: 6256}
     - Class: 114
-      Script: {instanceID: 6748}
+      Script: {instanceID: 6356}
+    - Class: 114
+      Script: {instanceID: 6502}
+    - Class: 114
+      Script: {instanceID: 6576}
+    - Class: 114
+      Script: {instanceID: 6754}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,6 +317,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 8f5b386b602278e8c008e949d3a5b544
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToggleConstantSpeed
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -311,7 +335,7 @@ ScriptsOnlyBuild:
     className: Tonemapping
   - hash:
       serializedVersion: 2
-      Hash: 1a10f3b43599919f55c20fc64264bfd4
+      Hash: 2812dd94762897f811beec8286be61b1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarAI
@@ -365,7 +389,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 38136c7ae8938feaead6d4a8fb1e5fcd
+      Hash: e090b5f323ec846b96cda4c21b1fa8b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: SimpleCity.AI
     className: RoadHelper
@@ -491,6 +515,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerToggle
   - hash:
       serializedVersion: 2
+      Hash: e86ac839e8e34fa4abcc285c207ef17a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: errorPercentagesUI
+  - hash:
+      serializedVersion: 2
       Hash: 95e6797232b7d5831c9feb55a8582905
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -515,7 +545,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerGroup
   - hash:
       serializedVersion: 2
-      Hash: 6d18af530684228eb88fcde4fc64e386
+      Hash: 018969ad86a512702752db60782c1501
     assemblyName: Assembly-CSharp.dll
     namespaceName: SimpleCity.AI
     className: Marker
@@ -701,7 +731,7 @@ ScriptsOnlyBuild:
     className: DebugUpdater
   - hash:
       serializedVersion: 2
-      Hash: 681a9674bc57fc82e379e7312d44864c
+      Hash: ad1f7f74eab88d520dbfdbc914e71609
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlacementManager
@@ -899,7 +929,7 @@ ScriptsOnlyBuild:
     className: ColorAdjustments
   - hash:
       serializedVersion: 2
-      Hash: ea0eb9b5167c189c70248830421d59a0
+      Hash: 49ab78141d6dad9cc671c5e890e8527c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StopLine
@@ -1103,6 +1133,12 @@ ScriptsOnlyBuild:
     className: Volume
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapNameChooser
+  - hash:
+      serializedVersion: 2
       Hash: 08705cef837f5d18a4c86b19b1ccf347
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1158,4 +1194,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/TownScene.unity
-  playerPath: C:/_LAURELINE/Programmation/Git/Build/ToCopy/FullHim.exe
+  playerPath: G:/FullHim.exe

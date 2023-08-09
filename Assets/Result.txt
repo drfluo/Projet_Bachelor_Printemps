@@ -1,0 +1,71 @@
+
+ ---------------firstResults--------------- 
+
+Specifications : 
+	  map used : stopTest.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  cars that arrived to their destination: 6
+	  cars that started their journey : 11
+
+ ---------------resu--------------- 
+
+Specifications : 
+	  map used : dancingmoveN1.json
+	  time: 1min
+	  car load: 25cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 25
+	  # of cars that arrived to their destination before the end of the timer: 16
+
+ ---------------he--------------- 
+
+Specifications : 
+	  map used : stopTest.json
+	  time: 1min
+	  car load: 20cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 20
+	  # of cars that arrived to their destination before the end of the timer: 15
+	  Total time traveled by cars which reached their destination: 274.4960882s
+	  Average time traveled: 18.2997392133333
+
+ ---------------loooong--------------- 
+
+Specifications : 
+	  map used : zoupérlong.json
+	  time: 2min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 20
+	  # of cars that arrived to their destination before the end of the timer: 0
+	  Total time traveled by cars which reached their destination: 0s
+	  Average time traveled: NaNs
+
+
+---------------Gros bugitch--------------- 
