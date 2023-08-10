@@ -16,9 +16,14 @@ namespace SimpleCity.AI
 
         List<Vector3> carPath = new List<Vector3>();
         
-        public CarAI SpawnACar()
+        public CarAI SpawnACarWithReturn()
         {
             return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre());
+        }
+
+        public void SpawnACar()
+        {
+            TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre());
         }
 
 

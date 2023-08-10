@@ -66,6 +66,561 @@ Results :
 	  # of cars that arrived to their destination before the end of the timer: 0
 	  Total time traveled by cars which reached their destination: 0s
 	  Average time traveled: NaNs
+ ---------------stop--------------- 
 
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 2
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 8.1465755s
+	  Average time traveled: 8.1465755s
+	  Total time stopped : 0.7019284s
+	  Average time stopped: 0.7019284s
 
----------------Gros bugitch--------------- 
+ ---------------4way--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 4
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 29.7168593s
+	  Average time traveled: 7.429214825s
+	  Total time stopped : 1.0016929s
+	  Average time stopped: 0.250423225s
+	  Average number of time stopped: 1s
+
+ ---------------test--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 8cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 7
+	  # of cars that arrived to their destination before the end of the timer: 7
+	  Total time traveled by cars which reached their destination: 47.7786129s
+	  Average time traveled: 6.82551612857143s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 52
+
+ ---------------t--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 70.2243521s
+	  Average time traveled: 7.02243521s
+	  Total time stopped : 1400978.68169379s
+	  Average time stopped: 140097.868169379s
+	  Total number of times stopped: 688
+	  Average number of time stopped: 68
+
+ ---------------e--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 9
+	  Total time traveled by cars which reached their destination: 64.960454s
+	  Average time traveled: 7.21782822222222s
+	  Total time stopped : 634652.655451298s
+	  Average time stopped: 70516.9617168109s
+	  Total number of times stopped: 413
+	  Average number of time stopped: 45
+
+ ---------------tet--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 57.7043721s
+	  Average time traveled: 7.2130465125s
+	  Total time stopped : 15.4343294s
+	  Average time stopped: 1.929291175s
+	  Total number of times stopped: 13
+	  Average number of time stopped: 1
+
+ ---------------stopTest--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.4297444s
+	  Average time traveled: 7.4297444s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 1
+
+ ---------------khk--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 6.4120716s
+	  Average time traveled: 6.4120716s
+	  Total time stopped : 6.4113058s
+	  Average time stopped: 6.4113058s
+	  Total number of times stopped: 2
+	  Average number of time stopped: 2
+
+ ---------------n--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 6.4113652s
+	  Average time traveled: 6.4113652s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+
+ ---------------n--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 74.6621146s
+	  Average time traveled: 7.46621146s
+	  Total time stopped : 28.4919296s
+	  Average time stopped: 2.84919296s
+	  Total number of times stopped: 14
+	  Average number of time stopped: 1
+
+ ---------------f--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 75.6237872s
+	  Average time traveled: 7.56237872s
+	  Total time stopped : 32.9339863s
+	  Average time stopped: 3.29339863s
+	  Total number of times stopped: 15
+	  Average number of time stopped: 1.5
+
+ ---------------1--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 60.2647994s
+	  Average time traveled: 7.533099925s
+	  Total time stopped : 3.7167189s
+	  Average time stopped: 0.4645898625s
+	  Total number of times stopped: 12
+	  Average number of time stopped: 1.5
+
+ ---------------ffs--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 2cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 2
+	  Total time traveled by cars which reached their destination: 16.2827652s
+	  Average time traveled: 8.1413826s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 1742
+	  Average number of time stopped: 871
+
+ ---------------gf--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 8.1535938s
+	  Average time traveled: 8.1535938s
+	  Total time stopped : 0.7048366s
+	  Average time stopped: 0.7048366s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 1
+
+ ---------------a--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 70.5512934s
+	  Average time traveled: 8.818911675s
+	  Total time stopped : 4.9996419s
+	  Average time stopped: 0.6249552375s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 0.125
+
+ ---------------i--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 81.6787417s
+	  Average time traveled: 8.16787417s
+	  Total time stopped : 7.3288004s
+	  Average time stopped: 0.73288004s
+	  Total number of times stopped: 5
+	  Average number of time stopped: 0.5
+
+ ---------------1--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.4387938s
+	  Average time traveled: 7.4387938s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 179.9179059
+	  Average time at max speed: 179.9179059
+
+ ---------------s--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 0
+	  Total time traveled by cars which reached their destination: 0s
+	  Average time traveled: NaNs
+	  Total time stopped : 2.8048229s
+	  Average time stopped: +Infinis
+	  Total number of times stopped: 2
+	  Average number of time stopped: +Infini
+	  Total time at max speed: 260.0749518
+	  Average time at max speed: +Infini
+
+ ---------------d--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 13.1026752s
+	  Average time traveled: 13.1026752s
+	  Total time stopped : 1.402759s
+	  Average time stopped: 1.402759s
+	  Total number of times stopped: 2
+	  Average number of time stopped: 2
+	  Total time at max speed: 4.0918149
+	  Average time at max speed: 4.0918149
+
+ ---------------nowIndividuals--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 2cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Time traveled : 7.4407175s, stopped 0times for a total of 0.7s. Time at full speed s
+	 Time traveled : 7.6869246s, stopped 0times for a total of 0.7s. Time at full speed s
+Total Results : 
+	  # of cars that were created : 2
+	  # of cars that arrived to their destination before the end of the timer: 2
+	  Total time traveled by cars which reached their destination: 15.1276421s
+	  Average time traveled: 7.56382105s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 5.3415694
+	  Average time at max speed: 2.6707847
+
+ ---------------i--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 2cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Time traveled : 13.102765s, stopped 2 times for a total of 1.4060188s. Time at full speed 4.1379415s
+	 Time traveled : 13.0899671s, stopped 2 times for a total of 1.410183s. Time at full speed 4.1035205s
+Total Results : 
+	  # of cars that were created : 2
+	  # of cars that arrived to their destination before the end of the timer: 2
+	  Total time traveled by cars which reached their destination: 26.1927321s
+	  Average time traveled: 13.09636605s
+	  Total time stopped : 2.8162018s
+	  Average time stopped: 1.4081009s
+	  Total number of times stopped: 4
+	  Average number of time stopped: 2
+	  Total time at max speed: 8.241462
+	  Average time at max speed: 4.120731
+
+ ---------------1--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 4cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at(4.2, 0.1, 6.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.4324795s, stopped 0 times for a total of 0s. Time at full speed 2.6488225s
+	 Started at(5.8, 0.1, 8.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.6752098s, stopped 0 times for a total of 0s. Time at full speed 2.8127872s
+	 Started at(5.8, 0.1, 8.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.6782163s, stopped 0 times for a total of 0s. Time at full speed 2.7373621s
+	 Started at(5.8, 0.1, 8.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.6825865s, stopped 0 times for a total of 0s. Time at full speed 2.7426767s
+Total Results : 
+	  # of cars that were created : 4
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 30.4684921s
+	  Average time traveled: 7.617123025s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 10.9416485
+	  Average time at max speed: 2.735412125
+
+ ---------------vnh--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 4cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4415684s, stopped 0 times for a total of 0s. Time at full speed 2.6178896s
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4301595s, stopped 0 times for a total of 0s. Time at full speed 2.607607s
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4333675s, stopped 0 times for a total of 0s. Time at full speed 2.6803472s
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4462014s, stopped 0 times for a total of 0s. Time at full speed 2.6269936s
+Total Results : 
+	  # of cars that were created : 4
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 29.7512968s
+	  Average time traveled: 7.4378242s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 10.5328374
+	  Average time at max speed: 2.63320935
+
+ ---------------ewg--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (5.8, 8.8). Arrived at (7.8, 6.8). Time traveled : 7.6801191s, stopped 0 times for a total of 0s. Time at full speed 2.7400909s
+Total Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.6801191s
+	  Average time traveled: 7.6801191s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 2.7400909
+	  Average time at max speed: 2.7400909

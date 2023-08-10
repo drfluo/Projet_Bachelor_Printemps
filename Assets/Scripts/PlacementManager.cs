@@ -973,64 +973,12 @@ public class PlacementManager : MonoBehaviour
             nameFile = "/"+Field.text + ".json";
         }
 
-        Debug.Log("Saved as " + nameFile + " at "+ Application.dataPath);
-
         string json = JsonUtility.ToJson(mapData, true);
         File.WriteAllText(Application.dataPath + nameFile, json);
 
     }
 
     public void LoadMap(InputField Field) => LoadMap(Field.text);
-    /*      string json;
-try
-{
-string nameFile;
-if (Field.text == "")
-{
-nameFile = "/testMap.json";
-}
-else
-{
-nameFile = "/" + Field.text + ".json";
-}
-json = File.ReadAllText(Application.dataPath + nameFile);
-}
-catch (Exception)
-{
-print("File not found");
-return;
-}
-
-MapData data = JsonUtility.FromJson<MapData>(json);
-
-//need to clear the map first
-ClearCurrentMap();
-
-
-//place the tiles
-for (int i = 0; i < data.tiles.Count; i++)
-{
-if(data.tiles[i]=="road")
-{
-roadManager.PlaceRoad(data.positions[i]);
-//end placing
-roadManager.FinishPlacingRoad();
-
-}
-if (data.tiles[i] == "house")
-{
-structureManager.PlaceHouse(data.positions[i]);
-}
-if (data.tiles[i] == "structure")
-{
-structureManager.PlaceSpecial(data.positions[i]);
-}
-}
-
-//because otherwise the dictionnary is not up to date
-StartCoroutine(waiter(data));*/
-
-
 
     public void LoadMap(string mapName)
     {

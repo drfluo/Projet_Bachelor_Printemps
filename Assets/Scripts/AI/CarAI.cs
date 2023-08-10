@@ -8,16 +8,30 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody))]
 public class CarAI : MonoBehaviour
 {
+
+    //to pass data to the simulation manager
+    public delegate void CarDestroyedEventHandler(CarAI car);
+    public event CarDestroyedEventHandler CarDestroyed;
+
+
+
     public static int numberArrived=0;
-    public static int numberStarted=0;
     public static double totalTimeTaken=0;
+    public static double totalTimeStopped=0;
+    public static double totalTimeMaxSpeed=0;
+    public static int totalNumberStops=0;
 
 
 
     /*previously in CarController*/
     Rigidbody rb;
-    private double timeTaken;
-    Stopwatch stopWatch = new Stopwatch();
+    public double timeTaken=0;
+    public double timeStopped=0;
+    public double timeFullSpeed=0;
+    public int numberStop=0;
+    Stopwatch stopWatchTotalTime = new Stopwatch();
+    Stopwatch stopWatchMaxSpeedTime = new Stopwatch();
+    Stopwatch stopWatchStoppedTime = new Stopwatch();
 
     private float power = 10;
     private float torque = 0.02f;
@@ -59,13 +73,37 @@ public class CarAI : MonoBehaviour
     public bool Stop
     {
         get { return stop || collisionStop; }
-        set { stop = value; }
+        set {
+            if(stop!=value) //because collisions checked cointinuously, need to check if value actually changedf not to count same stop twice
+            {
+                stop = value;
+
+                if (value) //want to set stop to true so want to stop
+                {
+                    if (!stopWatchStoppedTime.IsRunning) //if timer is not already running
+                    {
+                        stopWatchStoppedTime.Start();
+                        numberStop++;
+                        totalNumberStops++;
+                    }
+                }
+                else //want to set stop to false
+                {
+                    if (stopWatchStoppedTime.IsRunning)//if stopwatch runnning (honestly it should but just in case)
+                    {
+                        stopWatchStoppedTime.Stop();
+                    }
+                }
+
+            }
+        }
     }
+
+
 
     public CarAI()
     {
-        numberStarted++;
-        stopWatch.Start();
+        stopWatchTotalTime.Start();
     }
 
     /*previously in CarController*/
@@ -124,7 +162,19 @@ public class CarAI : MonoBehaviour
         
         if(rb.velocity.magnitude < maxSpeed)
         {
+            if (stopWatchMaxSpeedTime.IsRunning)
+            {
+                stopWatchMaxSpeedTime.Stop();
+                
+            }
             rb.AddForce(movementVector.y * transform.forward * power);
+        }
+        else
+        {
+            if(!stopWatchMaxSpeedTime.IsRunning)
+            {
+                stopWatchMaxSpeedTime.Start();
+            }
         }
         rb.AddTorque(movementVector.x * Vector3.up * torque * movementVector.y);
     }
@@ -142,10 +192,8 @@ public class CarAI : MonoBehaviour
                 raycastObstacleAhead = 0.75f;
                 maxSpeed =0.5f;
                 stopTime = 0.7f;
-
-}
+            }
         }
-
     }
 
 
@@ -180,12 +228,27 @@ public class CarAI : MonoBehaviour
         if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,raycastSafetyDistance, 1 << gameObject.layer))
         {
             collisionStop = true;
+            if(!stopWatchStoppedTime.IsRunning) //we need to stop because collision and we were not already stopped
+            {
+                stopWatchStoppedTime.Start();
+                numberStop++;
+                totalNumberStops++;
+            }
+
         }
         else
         {
             collisionStop = false;
+            if (!Stop)
+            {
+                if(stopWatchStoppedTime.IsRunning) //we were only stopped by the collision cause setting it to false stoped the lock
+                {
+                    stopWatchStoppedTime.Stop();
+                }
+            }
         }
     }
+
 
 
 
@@ -233,12 +296,27 @@ public class CarAI : MonoBehaviour
         index++;
         if(index >= path.Count)
         {
-            Stop = true;
             numberArrived++;
-            stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            timeTaken = stopWatch.Elapsed.TotalSeconds;
+
+            //stop all runing timers
+            stopWatchTotalTime.Stop();
+            stopWatchMaxSpeedTime.Stop();
+            stopWatchStoppedTime.Stop();
+
+            // journey time
+            timeTaken = stopWatchTotalTime.Elapsed.TotalSeconds;
             totalTimeTaken += timeTaken;
+
+            //time at max speed
+            timeFullSpeed= stopWatchMaxSpeedTime.Elapsed.TotalSeconds;
+            totalTimeMaxSpeed += timeFullSpeed;
+
+            //time stopped
+            timeStopped += stopWatchStoppedTime.Elapsed.TotalSeconds;
+            totalTimeStopped += timeStopped;
+
+            //tell the simulationManager to look at the cars data
+            CarDestroyed?.Invoke(this);
             Destroy(gameObject);
         }
         else

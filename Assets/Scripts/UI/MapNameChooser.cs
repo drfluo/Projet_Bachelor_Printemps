@@ -12,11 +12,19 @@ public class MapNameChooser : MonoBehaviour
     {
         //Fetch the Dropdown GameObject the script is attached to
         m_Dropdown = GetComponent<Dropdown>();
+        ChangeOptions();
+    }
+
+
+    public void ChangeOptions()
+    {
         //Clear the old options of the Dropdown menu
-        m_Dropdown.ClearOptions();
+        if(m_Dropdown)
+        {
+            m_Dropdown.ClearOptions();
 
-        m_Dropdown.AddOptions(findAllMaps());
-
+            m_Dropdown.AddOptions(findAllMaps());
+        }
     }
 
 

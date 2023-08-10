@@ -1,0 +1,88 @@
+{
+    "tiles": [
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "house",
+        "house",
+        "structure"
+    ],
+    "positions": [
+        {
+            "x": 8,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 5
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 8
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 10
+        },
+        {
+            "x": 9,
+            "y": 0,
+            "z": 7
+        }
+    ],
+    "specialRoads": [
+        "Street_Straight_STOP_GameObject"
+    ],
+    "specialRoadsPosition": [
+        {
+            "x": 4,
+            "y": 0,
+            "z": 6
+        }
+    ]
+}
