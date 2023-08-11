@@ -7,6 +7,7 @@ public class StopLine : MonoBehaviour
 {
     public bool isStop = false;
     private CarAI currentCar;
+    private bool currentCarHasStopped = false;
 
     public List<Marker> toCheck;
 
@@ -21,9 +22,10 @@ public class StopLine : MonoBehaviour
             {
                 var car = other.GetComponent<CarAI>(); //if collision with car we get its script
                 currentCar = car;
-                if(isStop)
+                if(isStop && currentCar.respectStops)
                 {
                     currentCar.Stop = true;
+                    currentCarHasStopped = true;
                     StartCoroutine(ResetStopVariable(currentCar));
                 }
                 else
@@ -43,7 +45,13 @@ public class StopLine : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        
+        if(isStop && !currentCarHasStopped && currentCar)
+        {
+            currentCar.numberStopDisrespected++;
+        }
         currentCar = null;
+        currentCarHasStopped = false;
     }
 
 
@@ -54,6 +62,7 @@ public class StopLine : MonoBehaviour
             if(marker.IsOccupied!=0)
             {
                 currentCar.Stop = true;
+                currentCarHasStopped = true;
                 return;
             }
         }

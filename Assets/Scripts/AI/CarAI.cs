@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Events;
+using Debug = UnityEngine.Debug;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CarAI : MonoBehaviour
@@ -29,6 +30,8 @@ public class CarAI : MonoBehaviour
     public double timeStopped=0;
     public double timeFullSpeed=0;
     public int numberStop=0;
+    public int numberStopDisrespected = 0;
+
     Stopwatch stopWatchTotalTime = new Stopwatch();
     Stopwatch stopWatchMaxSpeedTime = new Stopwatch();
     Stopwatch stopWatchStoppedTime = new Stopwatch();
@@ -36,6 +39,7 @@ public class CarAI : MonoBehaviour
     private float power = 10;
     private float torque = 0.02f;
     private float maxSpeed = 0.4f;
+    public bool respectStops = true;
 
     [SerializeField]
     private Vector2 movementVector;
@@ -56,7 +60,7 @@ public class CarAI : MonoBehaviour
     private float raycastObstacleAhead=0.9f;
 
     private float distanceObstacleAhead=-10f;
-    public float stopTime = 1f;
+    public float stopTime = 0.7f;
 
 
 
@@ -191,7 +195,6 @@ public class CarAI : MonoBehaviour
                 raycastSafetyDistance = 0.55f;
                 raycastObstacleAhead = 0.75f;
                 maxSpeed =0.5f;
-                stopTime = 0.7f;
             }
         }
     }

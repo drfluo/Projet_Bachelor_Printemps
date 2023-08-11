@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using SimpleCity.AI;
+using System;
 
 public class SimulationManager : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class SimulationManager : MonoBehaviour
     int intersectionBlocking = 0;
 
     StreamWriter sw;
+    System.Random random = new System.Random();
+    bool simulationGoing = false;
 
     public void StartSimulation()
     {
@@ -109,6 +112,7 @@ public class SimulationManager : MonoBehaviour
 
         sw.WriteLine("Individual cars results :");
 
+        simulationGoing = true;
         StartCoroutine(waitMapFinished());
 
     }
@@ -118,9 +122,7 @@ public class SimulationManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         aiDirector.GraphWholeMarkerMap(); //need to have the grapoh marker to spawn a car
 
-
         StartCoroutine(StopEverything());
-
 
         SpawnAllCars();
     }
@@ -142,21 +144,55 @@ public class SimulationManager : MonoBehaviour
     {
         yield return new WaitForSeconds(fSeconds);
 
+
         allcars[iIdCar]=aiDirector.SpawnACarWithReturn();
         allcars[iIdCar].CarDestroyed += OnCarDestroyed;
+
+        //chooses if car respects stops
+        if (random.NextDouble() * 100 < stopRespect)
+        {
+            allcars[iIdCar].respectStops = false;
+        }
     }
 
     private void OnCarDestroyed(CarAI car)
     {
-        sw.WriteLine("\t Started at "+ new Vector2(car.path[0].x, car.path[0].z) + ". Arrived at " + new Vector2(car.path[car.path.Count-1].x, car.path[car.path.Count-1].z) +". Time traveled : "+car.timeTaken+"s, stopped "+ car.numberStop+" times for a total of "+ car.timeStopped + "s. Time at full speed "+car.timeFullSpeed+"s");
+        if(simulationGoing)
+        {
+
+            string results = "\t Started at " + new Vector2(car.path[0].x, car.path[0].z) + ". Arrived at " + new Vector2(car.path[car.path.Count - 1].x, car.path[car.path.Count - 1].z) + ". Time traveled : " +
+                car.timeTaken + "s, stopped " + car.numberStop + " times for a total of " + car.timeStopped + "s. Time at full speed " + car.timeFullSpeed + "s. ";
+            results = results + "Respects stop signs  " + car.respectStops;
+            if(!car.respectStops)
+            {
+                results = results + ". Number of stops not respected :" + car.numberStopDisrespected;
+            }
+
+
+            sw.WriteLine(results);
+        }
     }
+
+
+    private double NormalDistributionGenerator(double mean, double stdDev) //using Box Muller transform
+    {
+        System.Random rand = new System.Random(); 
+        double u1 = 1.0 - rand.NextDouble(); //uniform(0,1] random doubles
+        double u2 = 1.0 - rand.NextDouble();
+        double randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2); //random normal(0,1)
+
+
+        return mean + stdDev * randStdNormal; //random normal(mean,stdDev^2)
+    }
+
+
+
 
 
     IEnumerator StopEverything()
     {
         yield return new WaitForSeconds(fTime);
 
-        
 
         //write results to file
         sw.WriteLine("Total Results : ");
@@ -171,8 +207,9 @@ public class SimulationManager : MonoBehaviour
         sw.WriteLine("\t  Total time at max speed: " + CarAI.totalTimeMaxSpeed);
         sw.WriteLine("\t  Average time at max speed: " + CarAI.totalTimeMaxSpeed / CarAI.numberArrived);
 
-        sw.Close();
 
+        sw.Close();
+        simulationGoing = false;
 
         Debug.Log("SIMULATION FINISHED AT " + System.DateTime.UtcNow.ToString("HH:mm"));
         buttonsPanelToReactivateWhenFinished.SetActive(true);

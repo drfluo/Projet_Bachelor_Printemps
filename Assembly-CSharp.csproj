@@ -59,7 +59,7 @@
     <Compile Include="Assets\Scripts\AI\RoadHelper.cs" />
     <Compile Include="Assets\Scripts\RoadFixer.cs" />
     <Compile Include="Assets\Scripts\ObjectDetector.cs" />
-    <Compile Include="Assets\errorPercentagesUI.cs" />
+    <Compile Include="Assets\Scripts\errorPercentagesUI.cs" />
     <Compile Include="Assets\Scripts\AI\Marker.cs" />
     <Compile Include="Assets\Scripts\SimulationManager.cs" />
     <Compile Include="Assets\Scripts\StructureModel.cs" />
