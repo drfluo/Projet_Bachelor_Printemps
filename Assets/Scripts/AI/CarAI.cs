@@ -38,7 +38,8 @@ public class CarAI : MonoBehaviour
 
     private float power = 10;
     private float torque = 0.02f;
-    private float maxSpeed = 0.4f;
+    public double maxSpeed = 0.4f;
+    private double effectiveMaxSpeed = 0.4f; //if a car in front is slower then take it's speed as the new max to stop stopping too much
     public bool respectStops = true;
 
     [SerializeField]
@@ -142,8 +143,8 @@ public class CarAI : MonoBehaviour
     private RaycastHit hit;
     private void FixedUpdate()
     {
-
-        if(Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,out hit,raycastObstacleAhead, 1 << gameObject.layer))
+        // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+        if (Physics.Raycast(raycastStartingPoint.transform.position, transform.forward,out hit,raycastObstacleAhead, 1 << gameObject.layer))
         {
             if(distanceObstacleAhead<0)
             {
@@ -157,14 +158,24 @@ public class CarAI : MonoBehaviour
                     rb.AddForce(-movementVector.y * transform.forward * 1 / hit.distance * power / 10);
                 }
             }
+            CarAI carHit = hit.transform.GetComponentInParent<CarAI>();
+            if(carHit)
+            {
+                effectiveMaxSpeed = carHit.effectiveMaxSpeed;
+            }
+            else
+            {
+                Debug.Log("OHOH");
+            }
             
         }
         else
         {
             distanceObstacleAhead=-10f;
+            effectiveMaxSpeed = maxSpeed;
         }
         
-        if(rb.velocity.magnitude < maxSpeed)
+        if(rb.velocity.magnitude < effectiveMaxSpeed)
         {
             if (stopWatchMaxSpeedTime.IsRunning)
             {
@@ -194,7 +205,6 @@ public class CarAI : MonoBehaviour
             {
                 raycastSafetyDistance = 0.55f;
                 raycastObstacleAhead = 0.75f;
-                maxSpeed =0.5f;
             }
         }
     }

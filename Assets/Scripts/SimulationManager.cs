@@ -16,7 +16,10 @@ public class SimulationManager : MonoBehaviour
     public Dropdown mapChoosing;
     public InputField simulationNameInput;
     public InputField carLoadInput;
-    public Toggle constantSpeedInput;
+    public Toggle boolConstantSpeedInput;
+    public Slider cstSpeedValue;
+    public Slider gaussianSpeedValue;
+    public Slider gaussianStandardDevi;
     public InputField stopRespectInput;
     public InputField secondBestPathInput;
     public InputField thirdBestPathInput;
@@ -33,6 +36,8 @@ public class SimulationManager : MonoBehaviour
     int secondBestPath = 0;
     int thirdBestPath = 0;
     int intersectionBlocking = 0;
+    double meanSpeed = 0;
+    double stdDeviationSpeed = 0;
 
     StreamWriter sw;
     System.Random random = new System.Random();
@@ -63,9 +68,17 @@ public class SimulationManager : MonoBehaviour
             carLoad = int.Parse(carLoadInput.text);
         }
         //speed type
-        if (!constantSpeedInput.isOn)
+        if (!boolConstantSpeedInput.isOn) //gaussian speed
         {
             speedChosen = "gaussian";
+            meanSpeed = gaussianSpeedValue.value;
+            stdDeviationSpeed = gaussianStandardDevi.value;
+        }
+        else //constant speed for all cars
+        {
+            speedChosen = "constant";
+            stdDeviationSpeed = 0;
+            meanSpeed = cstSpeedValue.value;
         }
         //stop respected
         if (stopRespectInput.text != "")
@@ -103,6 +116,15 @@ public class SimulationManager : MonoBehaviour
         sw.WriteLine("\t  time: " + (fTime / 60).ToString() + "min");
         sw.WriteLine("\t  car load: " + carLoad.ToString() + "cars/min");
         sw.WriteLine("\t  speed type: " + speedChosen);
+        if(speedChosen=="constant")
+        {
+            sw.WriteLine("\t  Max speed of all cars : " + meanSpeed.ToString("0.##"));
+        }
+        else
+        {
+            sw.WriteLine("\t  Mean max speed of all cars : " + meanSpeed.ToString("0.##"));
+            sw.WriteLine("\t  Standard Deviation on speed : " + stdDeviationSpeed.ToString("0.##"));
+        } 
         sw.WriteLine("\t  cars that don't respect stops: " + stopRespect + "%");
         sw.WriteLine("\t  cars that take:");
         sw.WriteLine("\t \t 2nd best path: " + secondBestPath + "% ");
@@ -113,6 +135,11 @@ public class SimulationManager : MonoBehaviour
         sw.WriteLine("Individual cars results :");
 
         simulationGoing = true;
+        CarAI.numberArrived = 0;
+        CarAI.totalNumberStops = 0;
+        CarAI.totalTimeMaxSpeed = 0;
+        CarAI.totalTimeStopped = 0;
+        CarAI.totalTimeTaken = 0;
         StartCoroutine(waitMapFinished());
 
     }
@@ -133,7 +160,7 @@ public class SimulationManager : MonoBehaviour
         float fSecondToWait = 0;
         for(int i=0;i<(int)(carLoad* fTime/60); i++) //for each car
         {
-            fSecondToWait = Random.Range(1, fTime); //choose a random nb of seconds after which it spawns
+            fSecondToWait = UnityEngine.Random.Range(1, fTime); //choose a random nb of seconds after which it spawns
             StartCoroutine(SpawnAfter(fSecondToWait,i)); //make it spawn after waiting x seconds
             Debug.Log("A car will spawn after " + fSecondToWait + " seconds");
 
@@ -153,6 +180,9 @@ public class SimulationManager : MonoBehaviour
         {
             allcars[iIdCar].respectStops = false;
         }
+
+        allcars[iIdCar].maxSpeed = NormalDistributionGenerator(meanSpeed, stdDeviationSpeed);
+        Debug.Log(allcars[iIdCar].maxSpeed);
     }
 
     private void OnCarDestroyed(CarAI car)
@@ -161,11 +191,15 @@ public class SimulationManager : MonoBehaviour
         {
 
             string results = "\t Started at " + new Vector2(car.path[0].x, car.path[0].z) + ". Arrived at " + new Vector2(car.path[car.path.Count - 1].x, car.path[car.path.Count - 1].z) + ". Time traveled : " +
-                car.timeTaken + "s, stopped " + car.numberStop + " times for a total of " + car.timeStopped + "s. Time at full speed " + car.timeFullSpeed + "s. ";
+                car.timeTaken.ToString("0.##") + "s, stopped " + car.numberStop + " times for a total of " + car.timeStopped.ToString("0.##") + "s. Time at full speed " + car.timeFullSpeed.ToString("0.##") + "s. ";
             results = results + "Respects stop signs  " + car.respectStops;
             if(!car.respectStops)
             {
                 results = results + ". Number of stops not respected :" + car.numberStopDisrespected;
+            }
+            if(speedChosen != "constant")
+            {
+                results = results + ". Max speed " + car.maxSpeed.ToString("0.##");
             }
 
 
@@ -176,12 +210,10 @@ public class SimulationManager : MonoBehaviour
 
     private double NormalDistributionGenerator(double mean, double stdDev) //using Box Muller transform
     {
-        System.Random rand = new System.Random(); 
-        double u1 = 1.0 - rand.NextDouble(); //uniform(0,1] random doubles
-        double u2 = 1.0 - rand.NextDouble();
+       
+        double u1 = 1.0 - random.NextDouble(); //uniform(0,1] random doubles
+        double u2 = 1.0 - random.NextDouble();
         double randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2); //random normal(0,1)
-
-
         return mean + stdDev * randStdNormal; //random normal(mean,stdDev^2)
     }
 
@@ -198,14 +230,14 @@ public class SimulationManager : MonoBehaviour
         sw.WriteLine("Total Results : ");
         sw.WriteLine("\t  # of cars that were created : " + (int)(carLoad * fTime / 60));
         sw.WriteLine("\t  # of cars that arrived to their destination before the end of the timer: " + CarAI.numberArrived);
-        sw.WriteLine("\t  Total time traveled by cars which reached their destination: " + CarAI.totalTimeTaken+"s");
-        sw.WriteLine("\t  Average time traveled: " + CarAI.totalTimeTaken/ CarAI.numberArrived+"s");
-        sw.WriteLine("\t  Total time stopped : " + CarAI.totalTimeStopped+"s");
-        sw.WriteLine("\t  Average time stopped: " + CarAI.totalTimeStopped / CarAI.numberArrived + "s");
+        sw.WriteLine("\t  Total time traveled by cars which reached their destination: " + CarAI.totalTimeTaken.ToString("0.##") + "s");
+        sw.WriteLine("\t  Average time traveled: " + (CarAI.totalTimeTaken/ CarAI.numberArrived).ToString("0.##") + "s");
+        sw.WriteLine("\t  Total time stopped : " + CarAI.totalTimeStopped.ToString("0.##") + "s");
+        sw.WriteLine("\t  Average time stopped: " + (CarAI.totalTimeStopped / CarAI.numberArrived).ToString("0.##") + "s");
         sw.WriteLine("\t  Total number of times stopped: " + CarAI.totalNumberStops);
         sw.WriteLine("\t  Average number of time stopped: " + (float)CarAI.totalNumberStops / CarAI.numberArrived);
-        sw.WriteLine("\t  Total time at max speed: " + CarAI.totalTimeMaxSpeed);
-        sw.WriteLine("\t  Average time at max speed: " + CarAI.totalTimeMaxSpeed / CarAI.numberArrived);
+        sw.WriteLine("\t  Total time at max speed: " + CarAI.totalTimeMaxSpeed.ToString("0.##"));
+        sw.WriteLine("\t  Average time at max speed: " + (CarAI.totalTimeMaxSpeed / CarAI.numberArrived).ToString("0.##"));
 
 
         sw.Close();

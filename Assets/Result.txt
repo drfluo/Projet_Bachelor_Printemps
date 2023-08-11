@@ -710,3 +710,395 @@ Total Results :
 	  Average number of time stopped: 0
 	  Total time at max speed: 16.7259623
 	  Average time at max speed: 4.181490575
+
+ ---------------TestSpeed--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.100000001490116
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.6957034s, stopped 2 times for a total of 2.0078111s. Time at full speed 4.134166s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.6951491s, stopped 2 times for a total of 2.0053966s. Time at full speed 4.1088392s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7036796s, stopped 2 times for a total of 2.0027006s. Time at full speed 4.1214414s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 41.0945321s
+	  Average time traveled: 13.6981773666667s
+	  Total time stopped : 6.0159083s
+	  Average time stopped: 2.00530276666667s
+	  Total number of times stopped: 10
+	  Average number of time stopped: 3.333333
+	  Total time at max speed: 12.3644466
+	  Average time at max speed: 4.1214822
+
+ ---------------Gaussian--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 1
+	 Standard Deviation on speed : 0.578203082084656
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7046654s, stopped 2 times for a total of 2.0037561s. Time at full speed 4.1149162s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7026139s, stopped 2 times for a total of 2.0058799s. Time at full speed 4.0840814s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7098782s, stopped 2 times for a total of 2.0043984s. Time at full speed 4.0885417s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 41.1171575s
+	  Average time traveled: 13.7057191666667s
+	  Total time stopped : 6.0140344s
+	  Average time stopped: 2.00467813333333s
+	  Total number of times stopped: 13
+	  Average number of time stopped: 4.333333
+	  Total time at max speed: 12.2875393
+	  Average time at max speed: 4.09584643333333
+
+ ---------------tet--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.100000001490116
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 0
+	  Total time traveled by cars which reached their destination: 0s
+	  Average time traveled: NaNs
+	  Total time stopped : 0s
+	  Average time stopped: NaNs
+	  Total number of times stopped: 230
+	  Average number of time stopped: +Infini
+	  Total time at max speed: 0
+	  Average time at max speed: NaN
+
+ ---------------speedTests--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.517341077327728
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.26753s, stopped 2 times for a total of 2.0099764s. Time at full speed 3.9687388s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.2523182s, stopped 2 times for a total of 2.0080698s. Time at full speed 3.9885297s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.2677297s, stopped 2 times for a total of 2.0083s. Time at full speed 3.9884448s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 39.7875779s
+	  Average time traveled: 13.2625259666667s
+	  Total time stopped : 6.0263462s
+	  Average time stopped: 2.00878206666667s
+	  Total number of times stopped: 10
+	  Average number of time stopped: 3.333333
+	  Total time at max speed: 11.9457133
+	  Average time at max speed: 3.98190443333333
+
+ ---------------speedTests--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.347796082496643
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.9367129s, stopped 2 times for a total of 2.0070229s. Time at full speed 6.3360009s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.9314954s, stopped 2 times for a total of 2.0076131s. Time at full speed 6.2950061s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 19.2086621s, stopped 6 times for a total of 2.1865963s. Time at full speed 6.0515581s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.9415507s, stopped 2 times for a total of 2.0065995s. Time at full speed 6.3124426s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 9
+	  Total time traveled by cars which reached their destination: 143.0090028s
+	  Average time traveled: 15.8898892s
+	  Total time stopped : 18.8821171s
+	  Average time stopped: 2.09801301111111s
+	  Total number of times stopped: 27
+	  Average number of time stopped: 3
+	  Total time at max speed: 44.6911416
+	  Average time at max speed: 4.9656824
+
+ ---------------fdsg--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 1
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 7.9150743s, stopped 2 times for a total of 2.0094737s. Time at full speed 1.6002446s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.9150743s
+	  Average time traveled: 7.9150743s
+	  Total time stopped : 2.0094737s
+	  Average time stopped: 2.0094737s
+	  Total number of times stopped: 8
+	  Average number of time stopped: 8
+	  Total time at max speed: 1.6002446
+	  Average time at max speed: 1.6002446
+
+ ---------------fd--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.54
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.700097s, stopped 0 times for a total of 0s. Time at full speed 3.7879181s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.7340989s, stopped 2 times for a total of 2.0028914s. Time at full speed 3.7121988s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.6955274s, stopped 0 times for a total of 0s. Time at full speed 3.8063084s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.7012613s, stopped 0 times for a total of 0s. Time at full speed 3.7639979s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.7330991s, stopped 2 times for a total of 2.007457s. Time at full speed 3.7048025s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 57.5640837s
+	  Average time traveled: 11.51281674s
+	  Total time stopped : 4.0103484s
+	  Average time stopped: 0.80206968s
+	  Total number of times stopped: 4
+	  Average number of time stopped: 0.8
+	  Total time at max speed: 18.7752257
+	  Average time at max speed: 3.75504514
+
+ ---------------d--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.38
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 15.36s, stopped 0 times for a total of 0s. Time at full speed 5.74s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 17.4s, stopped 2 times for a total of 1.96s. Time at full speed 5.77s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 17.53s, stopped 2 times for a total of 2s. Time at full speed 5.6s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.21s, stopped 11 times for a total of 2.98s. Time at full speed 5.65s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 15.36s, stopped 0 times for a total of 0s. Time at full speed 5.77s. Respects stop signs  False. Number of stops not respected :2
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 83.85s
+	  Average time traveled: 16.77s
+	  Total time stopped : 6.95s
+	  Average time stopped: 1.39s
+	  Total number of times stopped: 15
+	  Average number of time stopped: 3
+	  Total time at max speed: 28.54
+	  Average time at max speed: 5.71
+
+
+ ---------------jh--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.72
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.69s, stopped 2 times for a total of 2s. Time at full speed 2.47s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.7s, stopped 0 times for a total of 0s. Time at full speed 2.49s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.07s, stopped 2 times for a total of 2.01s. Time at full speed 2.6s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.08s, stopped 3 times for a total of 2.94s. Time at full speed 2.46s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.05s, stopped 2 times for a total of 2.01s. Time at full speed 2.58s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 8s, stopped 0 times for a total of 0s. Time at full speed 2.63s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.06s, stopped 2 times for a total of 2.01s. Time at full speed 2.53s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 7
+	  Total time traveled by cars which reached their destination: 68.65s
+	  Average time traveled: 9.81s
+	  Total time stopped : 10.96s
+	  Average time stopped: 1.57s
+	  Total number of times stopped: 15
+	  Average number of time stopped: 2.142857
+	  Total time at max speed: 17.76
+	  Average time at max speed: 2.54
+
+ ---------------320--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 0.71
+	 Standard Deviation on speed : 0.1
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.11s, stopped 2 times for a total of 2s. Time at full speed 2.19s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.77s, stopped 2 times for a total of 2s. Time at full speed 2.89s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.15s, stopped 2 times for a total of 2s. Time at full speed 2.18s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.03s, stopped 2 times for a total of 2s. Time at full speed 2.53s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 7.73s, stopped 0 times for a total of 0s. Time at full speed 2.53s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.15s, stopped 2 times for a total of 2s. Time at full speed 3.49s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 7.27s, stopped 0 times for a total of 0s. Time at full speed 2.34s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.52s, stopped 3 times for a total of 2.1s. Time at full speed 3.62s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 78.73s
+	  Average time traveled: 9.84s
+	  Total time stopped : 12.11s
+	  Average time stopped: 1.51s
+	  Total number of times stopped: 16
+	  Average number of time stopped: 2
+	  Total time at max speed: 21.77
+	  Average time at max speed: 2.72
+
+ ---------------t--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 0.77
+	 Standard Deviation on speed : 0.37
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 17.51s, stopped 2 times for a total of 2.01s. Time at full speed 5.87s. Respects stop signs  True. Max speed 0.37
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.28s, stopped 49 times for a total of 7.1s. Time at full speed 2.63s. Respects stop signs  True. Max speed 0.51
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.31s, stopped 2 times for a total of 2.01s. Time at full speed 2.57s. Respects stop signs  True. Max speed 0.7
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 5.6s, stopped 0 times for a total of 0s. Time at full speed 1.65s. Respects stop signs  False. Number of stops not respected :2. Max speed 1.03
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 51.69s
+	  Average time traveled: 12.92s
+	  Total time stopped : 11.11s
+	  Average time stopped: 2.78s
+	  Total number of times stopped: 53
+	  Average number of time stopped: 13.25
+	  Total time at max speed: 12.72
+	  Average time at max speed: 3.18
+
+ ---------------nz--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 0.55
+	 Standard Deviation on speed : 0.1
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.83s, stopped 2 times for a total of 2.01s. Time at full speed 2.94s. Respects stop signs  True. Max speed 0.66
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.19s, stopped 3 times for a total of 2.2s. Time at full speed 2.8s. Respects stop signs  True. Max speed 0.64
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.53s, stopped 2 times for a total of 2.01s. Time at full speed 2.78s. Respects stop signs  True. Max speed 0.68
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.65s, stopped 2 times for a total of 2.01s. Time at full speed 3.72s. Respects stop signs  True. Max speed 0.55
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.81s, stopped 2 times for a total of 2s. Time at full speed 2.44s. Respects stop signs  True. Max speed 0.74
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 55.01s
+	  Average time traveled: 11s
+	  Total time stopped : 10.23s
+	  Average time stopped: 2.05s
+	  Total number of times stopped: 11
+	  Average number of time stopped: 2.2
+	  Total time at max speed: 14.68
+	  Average time at max speed: 2.94
+
+ ---------------2--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  Max speed of all cars : 1
+	  cars that don't respect stops: 100%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 5.8s, stopped 0 times for a total of 0s. Time at full speed 1.75s. Respects stop signs  False. Number of stops not respected :2
+Total Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 5.8s
+	  Average time traveled: 5.8s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 1.75
+	  Average time at max speed: 1.75

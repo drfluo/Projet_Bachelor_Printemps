@@ -8,8 +8,8 @@ public class ToggleConstantSpeed : MonoBehaviour
 {
     private Toggle m_Toggle;
     public Toggle ToggletoDisable;
-    public Slider m_Slider;
-    public Slider sliderToDisable;
+    public Slider[] m_Sliders;
+    public Slider[] slidersToDisable;
 
     void Start()
     {
@@ -17,15 +17,22 @@ public class ToggleConstantSpeed : MonoBehaviour
         m_Toggle = GetComponent<Toggle>();
         //Add listener for when the state of the Toggle changes, to take action
         m_Toggle.onValueChanged.AddListener(delegate {
-            ToggleValueChanged(ToggletoDisable,m_Slider,sliderToDisable);
+            ToggleValueChanged(ToggletoDisable,m_Sliders,slidersToDisable);
         });
     }
 
     //Output the new state of the Toggle into Text
-    void ToggleValueChanged(Toggle OtherToggle, Slider ourSlider, Slider otherSlider)
+    void ToggleValueChanged(Toggle OtherToggle, Slider[] ourSlider, Slider[] otherSlider)
     {
+        foreach(Slider slider in ourSlider)
+        {
+            slider.interactable = m_Toggle.isOn;
+        }
+        foreach(Slider slider in otherSlider)
+        {
+            slider.interactable = !m_Toggle.isOn;
+        }
         OtherToggle.isOn = !m_Toggle.isOn;
-        ourSlider.interactable= m_Toggle.isOn;
-        otherSlider.interactable = !m_Toggle.isOn;
+       
     }
 }

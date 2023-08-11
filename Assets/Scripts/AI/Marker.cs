@@ -54,13 +54,13 @@ namespace SimpleCity.AI
         }
 
 
-        private bool hold = false;
+        //private bool hold = false;
         private int count = 0;
 
         private IEnumerator ResetStopVariable(CarAI currentCar)
         {
             yield return new WaitForSeconds(currentCar.stopTime); // Wait for 2 seconds
-            hold = false;
+            //hold = false;
             count += 1;
         }
 
@@ -87,7 +87,7 @@ namespace SimpleCity.AI
                 if (GetComponent<Collider>().name.Contains("STOP") && count==0)
                 {
                     isStop = true;
-                    hold = true;
+                    //hold = true;
 
                     StartCoroutine(ResetStopVariable(currentCar));
                 }
