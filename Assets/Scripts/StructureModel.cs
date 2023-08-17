@@ -45,6 +45,7 @@ public class StructureModel : MonoBehaviour//, INeedingRoad
         return transform.GetChild(0).GetComponent<RoadHelper>().GetPositioForCarToSpawn(nextPathPosition);
     }
 
+
     public Marker GetCarEndMarker(Vector3 previousPathPosition)
     {
         return transform.GetChild(0).GetComponent<RoadHelper>().GetPositioForCarToEnd(previousPathPosition);

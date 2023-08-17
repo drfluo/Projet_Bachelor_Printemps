@@ -12,7 +12,10 @@ public class PlacementManager : MonoBehaviour
     public Grid placementGrid;
     public RoadManager roadManager;
     public StructureManager structureManager;
- 
+    public MapSizeChanger mapsizechanger;
+    public Dropdown sizeChooser;
+
+
     public GameObject[] Prefab4Way;
     public int id4WayPrefab = 0;
 
@@ -114,7 +117,7 @@ public class PlacementManager : MonoBehaviour
 
     public List<Vector3Int> GetNeighboursOfTypeFor(Vector3Int position, CellType type)
     {
-        var neighbourVertices = placementGrid.GetAdjacentCellsOfType(position.x, position.z, type);
+        List<Point> neighbourVertices = placementGrid.GetAdjacentCellsOfType(position.x, position.z, type);
         List<Vector3Int> neighbours = new List<Vector3Int>();
         foreach (var point in neighbourVertices)
         {
@@ -127,12 +130,53 @@ public class PlacementManager : MonoBehaviour
     public List<StructureModel> GetRoadNeighbours(StructureModel givenRoad)
     {
         List<StructureModel> neighbours=new List<StructureModel>();
+        
         List<Vector3Int> positions = GetNeighboursOfTypeFor(givenRoad.RoadPosition, CellType.Road);
         foreach(Vector3Int position in positions)
         {
             neighbours.Add(GetStructureAt(position));
         }
         return neighbours;
+    }
+
+    //takes a road and return THE STRUCTURE of its neighbours
+    public List<StructureModel> GetRoadNeighbours(Vector3Int positionGiven)
+    {
+        List<StructureModel> neighbours = new List<StructureModel>();
+
+        List<Vector3Int> positions = GetNeighboursOfTypeFor(positionGiven, CellType.Road);
+        foreach (Vector3Int position in positions)
+        {
+            neighbours.Add(GetStructureAt(position));
+        }
+        return neighbours;
+    }
+
+    //takes a road and return THE STRUCTURE of its neighbours
+    public List<Vector3> GetSpawnAround(StructureModel givenStructure)
+    {
+        List<Vector3> spawns = new List<Vector3>();
+        List<StructureModel> neighboursRoad = GetRoadNeighbours(Vector3Int.FloorToInt( givenStructure.transform.position));
+
+        foreach (StructureModel road in neighboursRoad)
+        {
+            spawns.Add(road.GetCarSpawnMarker(givenStructure.transform.position).Position);
+        }
+        return spawns;
+    }
+
+    
+    //takes a road and return THE STRUCTURE of its neighbours
+    public List<Vector3> GetEndAround(StructureModel givenStructure)
+    {
+        List<Vector3> spawns = new List<Vector3>();
+        List<StructureModel> neighboursRoad = GetRoadNeighbours(Vector3Int.FloorToInt(givenStructure.transform.position));
+
+        foreach (StructureModel road in neighboursRoad)
+        {
+            spawns.Add(road.GetCarEndMarker(givenStructure.transform.position).Position);
+        }
+        return spawns;
     }
 
     private StructureModel CreateANewStructureModel(Vector3Int position, GameObject structurePrefab, CellType type)
@@ -194,7 +238,6 @@ public class PlacementManager : MonoBehaviour
         else if (structureDictionary.ContainsKey(position))
         {
             structureDictionary[position].SwapModel(newModel, rotation);
-            //Debug.Log("CHANGED TO " + structureDictionary[position].transform.GetChild(0).gameObject.name);
         }
     }
 
@@ -258,6 +301,8 @@ public class PlacementManager : MonoBehaviour
         }
         return null;
     }
+
+
 
 
     //Check if the bulding still has a road next to it, if not then deletes it
@@ -921,6 +966,20 @@ public class PlacementManager : MonoBehaviour
 
         MapData mapData = new MapData();
 
+        if(sizeChooser.options[sizeChooser.value].text=="15*15")
+        {
+            Debug.Log("Try saving size 15");
+            mapData.size = 15;
+        }
+        else if (sizeChooser.options[sizeChooser.value].text == "30*30")
+        {
+            Debug.Log("Try saving size 30");
+            mapData.size = 30;
+        }
+        else
+        {
+            mapData.size = 45;
+        }
 
         //saves every road+its position
         List<Point> listRoad = placementGrid.GetAllRoads();
@@ -962,7 +1021,7 @@ public class PlacementManager : MonoBehaviour
         //string json = JsonUtility.ToJson(mapData, true);
         //File.WriteAllText(Application.dataPath + "/testMap.json", json);
 
-                //saving in a json file
+        //saving in a json file
         string nameFile;
         if (Field.text=="")
         {
@@ -972,7 +1031,7 @@ public class PlacementManager : MonoBehaviour
         {
             nameFile = "/"+Field.text + ".json";
         }
-
+        Debug.Log("Saved at " + Application.dataPath + nameFile);
         string json = JsonUtility.ToJson(mapData, true);
         File.WriteAllText(Application.dataPath + nameFile, json);
 
@@ -998,6 +1057,7 @@ public class PlacementManager : MonoBehaviour
             {
                 nameFile = "/" + mapName + ".json";
             }
+            Debug.Log("Try reading " + Application.dataPath + nameFile);
             json = File.ReadAllText(Application.dataPath + nameFile);
         }
         catch (Exception)
@@ -1009,7 +1069,22 @@ public class PlacementManager : MonoBehaviour
         MapData data = JsonUtility.FromJson<MapData>(json);
 
         //need to clear the map first
-        ClearCurrentMap();
+        if(data.size==15)
+        {
+            Debug.Log("Try changing size 15");
+            mapsizechanger.ChangeSize(0);
+        }
+        else if(data.size==30)
+        {
+            Debug.Log("Try changing size 30 ");
+            mapsizechanger.ChangeSize(1);
+        }
+        else
+        {
+            Debug.Log("Try changing size 45");
+            mapsizechanger.ChangeSize(2);
+        }
+            
 
 
         //place the tiles
@@ -1099,6 +1174,7 @@ public class PlacementManager : MonoBehaviour
 
 public class MapData
 {
+    public int size;
     public List<String> tiles = new List<string>();
     public List<Vector3Int> positions = new List<Vector3Int>();
     public List<String> specialRoads = new List<String>();

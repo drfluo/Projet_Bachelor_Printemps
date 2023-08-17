@@ -54,6 +54,7 @@ public class GridSearch {
         return path;
     }
 
+
     private static Point GetClosestVertex(List<Point> list, Dictionary<Point, float> distanceMap)
     {
         Point candidate = list[0];

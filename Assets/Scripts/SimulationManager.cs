@@ -22,7 +22,7 @@ public class SimulationManager : MonoBehaviour
     public Slider gaussianStandardDevi;
     public InputField stopRespectInput;
     public InputField secondBestPathInput;
-    public InputField thirdBestPathInput;
+    public InputField reactionTimeInput;
     public InputField IntersectionBlockingInput;
 
     public GameObject buttonsPanelToReactivateWhenFinished;
@@ -34,7 +34,7 @@ public class SimulationManager : MonoBehaviour
     string speedChosen = "constant";
     int stopRespect = 0;
     int secondBestPath = 0;
-    int thirdBestPath = 0;
+    int reactionTime = 0;
     int intersectionBlocking = 0;
     double meanSpeed = 0;
     double stdDeviationSpeed = 0;
@@ -90,10 +90,10 @@ public class SimulationManager : MonoBehaviour
         {
             secondBestPath = int.Parse(secondBestPathInput.text);
         }
-        //thirdBestPath
-        if (thirdBestPathInput.text != "")
+        //secondBestPath
+        if (reactionTimeInput.text != "")
         {
-            thirdBestPath = int.Parse(thirdBestPathInput.text);
+            reactionTime = int.Parse(reactionTimeInput.text);
         }
         //intersection blocking
         if (IntersectionBlockingInput.text != "")
@@ -102,6 +102,7 @@ public class SimulationManager : MonoBehaviour
         }
 
         allcars = new CarAI[(int)(carLoad * fTime / 60)];
+        Debug.Log("Will try readin map");
         aiDirector.placementManager.LoadMap(mapName);
 
 
@@ -126,9 +127,8 @@ public class SimulationManager : MonoBehaviour
             sw.WriteLine("\t  Standard Deviation on speed : " + stdDeviationSpeed.ToString("0.##"));
         } 
         sw.WriteLine("\t  cars that don't respect stops: " + stopRespect + "%");
-        sw.WriteLine("\t  cars that take:");
-        sw.WriteLine("\t \t 2nd best path: " + secondBestPath + "% ");
-        sw.WriteLine("\t \t 3rd best path: " + thirdBestPath + "%");
+        sw.WriteLine("\t  cars that take 2nd best path: " + secondBestPath + "% ");
+        sw.WriteLine("\t  cars that have high reaction time: " + reactionTime + "% ");
         sw.WriteLine("\t  cars that block intersections: " + intersectionBlocking + "%");
 
 
@@ -171,18 +171,40 @@ public class SimulationManager : MonoBehaviour
     {
         yield return new WaitForSeconds(fSeconds);
 
+        PathChosen pathChose;
 
-        allcars[iIdCar]=aiDirector.SpawnACarWithReturn();
+        //chooses which path the car will take
+        double rand = random.NextDouble();
+        if (rand * 100 < secondBestPath)
+        {
+            pathChose = PathChosen.Second;
+        }
+        else
+        {
+            pathChose = PathChosen.Best;
+        }
+
+        allcars[iIdCar]=aiDirector.SpawnACarWithReturn(pathChose);
         allcars[iIdCar].CarDestroyed += OnCarDestroyed;
+        allcars[iIdCar].pathChosen = pathChose;
 
         //chooses if car respects stops
         if (random.NextDouble() * 100 < stopRespect)
         {
             allcars[iIdCar].respectStops = false;
         }
+        //chooses if car respects stops
+        if (random.NextDouble() * 100 < reactionTime)
+        {
+            allcars[iIdCar].onHisPhone = true;
+        }
 
         allcars[iIdCar].maxSpeed = NormalDistributionGenerator(meanSpeed, stdDeviationSpeed);
-        Debug.Log(allcars[iIdCar].maxSpeed);
+        allcars[iIdCar].effectiveMaxSpeed = allcars[iIdCar].maxSpeed;
+
+
+
+        Debug.Log(allcars[iIdCar].pathChosen);
     }
 
     private void OnCarDestroyed(CarAI car)
@@ -190,7 +212,7 @@ public class SimulationManager : MonoBehaviour
         if(simulationGoing)
         {
 
-            string results = "\t Started at " + new Vector2(car.path[0].x, car.path[0].z) + ". Arrived at " + new Vector2(car.path[car.path.Count - 1].x, car.path[car.path.Count - 1].z) + ". Time traveled : " +
+            string results = "\t Started at " + new Vector2Int((int)car.path[0].x, (int)car.path[0].z) + ". Arrived at " + new Vector2Int((int)car.path[car.path.Count - 1].x, (int)car.path[car.path.Count - 1].z) + ". Time traveled : " +
                 car.timeTaken.ToString("0.##") + "s, stopped " + car.numberStop + " times for a total of " + car.timeStopped.ToString("0.##") + "s. Time at full speed " + car.timeFullSpeed.ToString("0.##") + "s. ";
             results = results + "Respects stop signs  " + car.respectStops;
             if(!car.respectStops)
@@ -201,6 +223,8 @@ public class SimulationManager : MonoBehaviour
             {
                 results = results + ". Max speed " + car.maxSpeed.ToString("0.##");
             }
+            results = results + ". Path Chosen :" + car.pathChosen;
+            results = results + ". High reaction time :" + car.onHisPhone;
 
 
             sw.WriteLine(results);

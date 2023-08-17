@@ -29,6 +29,7 @@ namespace SimpleCity.AI
             return GetClosestMarkeTo(nextPathPosition, outgoingMarkers);
         }
 
+
         public Marker GetPositioForCarToEnd(Vector3 previousPathPosition)
         {
             return GetClosestMarkeTo(previousPathPosition, incommingMarkers);

@@ -14,6 +14,10 @@ namespace SimpleCity.AI
         }
         public bool Equals(Vertex other)
         {
+            if(other==null)
+            {
+                return false;
+            }
             return Vector3.SqrMagnitude(Position - other.Position) < 0.0001f;
         }
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
 namespace SimpleCity.AI
 {
     public class AiDirector : MonoBehaviour
@@ -16,70 +17,110 @@ namespace SimpleCity.AI
 
         List<Vector3> carPath = new List<Vector3>();
         
-        public CarAI SpawnACarWithReturn()
+        public CarAI SpawnACarWithReturn(PathChosen path)
         {
-            return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre());
+            return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), path);
         }
 
-        public void SpawnACar()
+        public void SpawnACar()//for button spawn a car on UI
         {
-            TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre());
+            TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), PathChosen.Best);
         }
 
 
 
-        private CarAI TrySpawninACar(StructureModel startStructure, StructureModel endStructure)
+        private CarAI TrySpawninACar(StructureModel startStructure, StructureModel endStructure,PathChosen pathChose)
         {
             if (startStructure != null && endStructure != null)
             {
-                var startRoadPosition = ((StructureModel)startStructure).RoadPosition;
-                var endRoadPosition = ((StructureModel)endStructure).RoadPosition;
+                var startRoadPosition = startStructure.RoadPosition;
+                var endRoadPosition = endStructure.RoadPosition;
 
-                var path = placementManager.GetPathBetween(startRoadPosition, endRoadPosition, true);
-                path.Reverse();
-                
-                //if (path.Count == 0 && path.Count>2)
-                //    return null;
-                var startMarkerPosition = placementManager.GetStructureAt(startRoadPosition).GetCarSpawnMarker(path[1]);
 
-                var endMarkerPosition = placementManager.GetStructureAt(endRoadPosition).GetCarEndMarker(path[path.Count-2]);
+                List<Vector3> allStartPositions= placementManager.GetSpawnAround(startStructure);
+                List<Vector3> allEndPositions= placementManager.GetEndAround(endStructure);
 
-                carPath = GetCarPath(path, startMarkerPosition.Position, endMarkerPosition.Position);
-
-                if(carPath.Count > 0)
+                //a buildin can have up to 4 entrance or exit so has to test all of them for a path
+                //also remembers the second best for if we need it
+                int sizeBestPath = int.MaxValue;
+                int sizeSeconBestPath = int.MaxValue;
+                List<Vector3> bestPath = new List<Vector3>();
+                List<Vector3> SecondBestPath = new List<Vector3>();
+                foreach (Vector3 start in allStartPositions)
                 {
-                    var car = Instantiate(carPrefab, startMarkerPosition.Position, Quaternion.identity);
+                    foreach(Vector3 stop in allEndPositions)
+                    {
+                        //try getting the fastes path from this start to this stop
+                        carPath = GetCarPath(start, stop, PathChosen.Best);
+                        //if not null and better
+                        if(carPath!=null && carPath.Count< sizeBestPath)
+                        {
+                            bestPath = carPath;
+                            sizeBestPath = carPath.Count;
+                        }
+                        //if not better than fastsest but better than second
+                        else if(carPath != null && carPath.Count < sizeSeconBestPath)
+                        {
+                            SecondBestPath = carPath;
+                            sizeSeconBestPath = carPath.Count;
+                        }
+                    }
+                }
+
+                if(pathChose==PathChosen.Best)
+                {
+                    carPath = bestPath;
+                }
+                else
+                {
+                    //carPath = SecondBestPath;
+
+                    carPath = GetCarPath(bestPath[0], bestPath[bestPath.Count-1], PathChosen.Second);
+                    if((SecondBestPath!=null && carPath!=null && SecondBestPath.Count<carPath.Count)||(SecondBestPath!=null && carPath==null))
+                    {
+                        carPath = SecondBestPath;
+                    }
+                    if (carPath==null)
+                    {
+                        carPath = bestPath;
+                    }
+                }
+
+
+
+                if (carPath != null && carPath.Count > 0)
+                {
+                    var car = Instantiate(carPrefab, carPath[0], Quaternion.identity);
                     CarAI toreturn = car.GetComponent<CarAI>();
                     toreturn.SetPath(carPath);
                     return toreturn;
                 }
+                Debug.Log("No path found for this car");
+
                 return null;
             }
             return null;
         }
 
-
-        //Choose a path by A* in graph of possible path
-        /*private List<Vector3> GetCarPath(List<Vector3Int> path, Vector3 startPosition, Vector3 endPosition)
-        {
-            carGraph.ClearGraph();
-            CreatACarGraph(path);
-
-            return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
-        }*/
-
-        private List<Vector3> GetCarPath(List<Vector3Int> path, Vector3 startPosition, Vector3 endPosition)
+        private List<Vector3> GetCarPath(Vector3 startPosition, Vector3 endPosition, PathChosen pathChose)
         {
             if(!carGraph.isEmpty())
             {
-                return AdjacencyGraph.AStarSearch(carGraph, startPosition, endPosition);
+                if(pathChose==PathChosen.Best)
+                {
+                    return AdjacencyGraph.FindKthShortestPath(carGraph, startPosition, endPosition, 1);
+                }
+                else
+                {
+                    return AdjacencyGraph.FindKthShortestPath(carGraph, startPosition, endPosition, 2);
+                }
+                
             }
             else
             {
                 Debug.Log("no car graph computed");
                 return null;
             }
-            
         }
 
 
@@ -105,7 +146,6 @@ namespace SimpleCity.AI
                 //need to find its road, add its marker to the graph we are creating then find all neighbors to connect them
 
                 currentRoad = roadToVisit.Dequeue();
-                //Debug.Log("current road : " + currentRoad.RoadPosition);
                 visited.Add(currentRoad);
                 roadNeighbor = placementManager.GetRoadNeighbours(currentRoad);
 
@@ -120,7 +160,7 @@ namespace SimpleCity.AI
 
 
 
-                //create a vertex foreach marker and interconnets them, now we need to connect it to other roads
+                //create a vertex foreach marker and connects them with other roads
                 foreach (Marker marker in currentRoad.GetCarMarkers())
                 {
                     //Debug.Log("ADD VERTEX at " + marker.Position + " (" + marker.name + ")");
@@ -151,7 +191,8 @@ namespace SimpleCity.AI
                             else if (currentRoad.GetOutgoingMarkers().Contains(marker))
                             {
                                 Marker closest = GetClosestIncomingMarkerOfAllRoads(roadNeighbor, marker);
-                                if(closest!=null)//otherwise risk of linking to marker of another tile if road next to it is closed
+                                
+                                if (closest!=null)//otherwise risk of linking to marker of another tile if road next to it is closed
                                 {
                                     //Debug.Log("create edge from " + marker.Position + " to other road : " + closest.Position + " ("+closest.name+")");
 
@@ -166,12 +207,14 @@ namespace SimpleCity.AI
                     }
                 }
 
+                //interconnets the markers of the same road
                 foreach(Marker marker in currentRoad.GetCarMarkers())
                 {
                     //Add neighbors from same road
                     foreach (Marker neighbor in marker.adjacentMarkers)
                     {
                         //Debug.Log("create edge from " + marker.Position + " to (same road) " + neighbor.Position);
+                        //Debug.Log("create edge from " + marker.gameObject.name + " to (same road) " + neighbor.gameObject.name);
                         carGraph.AddEdge(marker.Position, neighbor.Position);
                     }
                 }

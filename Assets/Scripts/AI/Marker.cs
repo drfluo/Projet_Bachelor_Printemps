@@ -19,7 +19,7 @@ namespace SimpleCity.AI
 
     public class Marker : MonoBehaviour
     {
-        public Vector3 Position { get => transform.position;}
+        public Vector3 Position { get => transform.position; }
 
         public List<Marker> adjacentMarkers;
 
@@ -119,7 +119,7 @@ namespace SimpleCity.AI
                     foreach (Dependency dependency in dependencyList)
                     {
                        // Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
-                        if (dependency.destination.Position == car.path[car.index + increment])
+                        if (car.index + increment<car.path.Count && dependency.destination.Position == car.path[car.index + increment])
                         {
                             //Debug.Log("Found destination");
                             dependency.stopLine.toCheck = dependency.toCheck;

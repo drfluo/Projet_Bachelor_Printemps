@@ -59,13 +59,15 @@
     <Compile Include="Assets\Scripts\AI\RoadHelper.cs" />
     <Compile Include="Assets\Scripts\RoadFixer.cs" />
     <Compile Include="Assets\Scripts\ObjectDetector.cs" />
-    <Compile Include="Assets\Scripts\errorPercentagesUI.cs" />
+    <Compile Include="Assets\Scripts\UI\errorPercentagesUI.cs" />
     <Compile Include="Assets\Scripts\AI\Marker.cs" />
     <Compile Include="Assets\Scripts\SimulationManager.cs" />
+    <Compile Include="Assets\ShowChosenValue.cs" />
     <Compile Include="Assets\Scripts\StructureModel.cs" />
     <Compile Include="Assets\Scripts\PlacementManager.cs" />
     <Compile Include="Assets\Scripts\AI\AiDirector.cs" />
     <Compile Include="Assets\Scripts\RoadManager.cs" />
+    <Compile Include="Assets\InfoStandradDev.cs" />
     <Compile Include="Assets\Scripts\AI\AdjacencyGraph.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\AI\Light_Management.cs" />
@@ -77,8 +79,7 @@
     <Compile Include="Assets\Scripts\StructureManager.cs" />
     <Compile Include="Assets\Scripts\UI\MapNameChooser.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
-    <Compile Include="Assets\ShowChosenValue.cs" />
-    <Compile Include="Assets\InfoStandradDev.cs" />
+    <Compile Include="Assets\MapSizeChanger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Result.txt" />

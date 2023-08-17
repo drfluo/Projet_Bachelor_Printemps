@@ -138,7 +138,13 @@ namespace SimpleCity.AI
             List<Vector3> path = new List<Vector3>();
 
             Vertex start = graph.GetVertexAt(startPosition);
+            
             Vertex end = graph.GetVertexAt(endPosition);
+            if (start == null || end==null)
+            {
+                Debug.Log("THERE IS A HUGE ISSUE WITH A VERTEX");
+                return null;
+            }
 
             List<Vertex> positionsTocheck = new List<Vertex>();
             Dictionary<Vertex, float> costDictionary = new Dictionary<Vertex, float>();
@@ -178,6 +184,52 @@ namespace SimpleCity.AI
             return path;
         }
 
+
+        public void RemoveEdge(Vertex start, Vertex stop)
+        {
+            if (adjacencyDictionary.ContainsKey(start))
+            {
+                if (adjacencyDictionary[start].Contains(stop))
+                {
+                    adjacencyDictionary[start].Remove(stop);
+                }
+            }
+        }
+
+        public static List<Vector3> FindKthShortestPath(AdjacencyGraph graph, Vector3 startPosition, Vector3 endPosition, int K = 1)
+        {
+            List<Vector3> shortestPath= AStarSearch(graph, startPosition, endPosition);
+            List<Vector3> secondPath= new List<Vector3>();
+
+            if (K==1)
+            {
+                return shortestPath;
+            }
+            else if(shortestPath!=null)
+            {
+                for(int i=0;i<shortestPath.Count-2;i++)
+                {
+                    Vector3 removedEdgeStart = shortestPath[i];
+                    Vector3 removedEdgeStop = shortestPath[i + 1];
+
+                    // Remove edge from graph's adjacency dictionary
+                    graph.RemoveEdge(graph.GetVertexAt(removedEdgeStart), graph.GetVertexAt(removedEdgeStop));
+                    //recall A* if path found the return it 
+                    secondPath = AStarSearch(graph, startPosition, endPosition);
+                    graph.AddEdge(removedEdgeStart, removedEdgeStop);
+                    if(secondPath.Count!=0)
+                    {
+                        Debug.Log("Found");
+                        return secondPath;
+                    }
+                }
+            }
+            Debug.Log("2nd not found");
+            return shortestPath;
+        }
+
+
+
         private static Vertex GetClosestVertex(List<Vertex> list, Dictionary<Vertex, float> distanceMap)
         {
             Vertex candidate = list[0];
@@ -203,6 +255,19 @@ namespace SimpleCity.AI
             while (parent != null && parentMap.ContainsKey(parent))
             {
                 path.Add(parent.Position);
+                parent = parentMap[parent];
+            }
+            path.Reverse();
+            return path;
+        }
+
+        public static List<Vertex> GeneratePathVertex(Dictionary<Vertex, Vertex> parentMap, Vertex endState)
+        {
+            List<Vertex> path = new List<Vertex>();
+            Vertex parent = endState;
+            while (parent != null && parentMap.ContainsKey(parent))
+            {
+                path.Add(parent);
                 parent = parentMap[parent];
             }
             path.Reverse();

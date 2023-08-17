@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1914715121427716573
 MonoBehaviour:
@@ -46,6 +46,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -98,6 +99,7 @@ MonoBehaviour:
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
   canCommandCar: 1
+  currentStopLine: {fileID: 0}
   dependencyList:
   - destination: {fileID: 5294581625559448516}
     toCheck: []
@@ -173,6 +175,7 @@ MonoBehaviour:
   - {fileID: 3810113384999970596}
   - {fileID: 5622062994906779639}
   - {fileID: 8220785704905346724}
+  - {fileID: 2867198715734879691}
   - {fileID: 1914715121427716573}
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
@@ -307,6 +310,7 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   currentCar: {fileID: 0}
   canCommandCar: 1
+  currentStopLine: {fileID: 0}
   dependencyList:
   - destination: {fileID: 1914715121427716573}
     toCheck: []
@@ -359,7 +363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5294581625559448516
 MonoBehaviour:
@@ -376,6 +380,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -467,7 +472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1547229366170371422
 MonoBehaviour:
@@ -484,6 +489,7 @@ MonoBehaviour:
   adjacentMarkers: []
   currentCar: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -611,6 +617,7 @@ Transform:
   - {fileID: 3111939576127094016}
   - {fileID: 4325984831527664086}
   - {fileID: 8224764086805415499}
+  - {fileID: 8751631541116385206}
   - {fileID: 7929745040629047406}
   - {fileID: 8789938540170772514}
   - {fileID: 1613258640140999503}
@@ -662,15 +669,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjacentMarkers:
-  - {fileID: 8220785704905346724}
+  - {fileID: 2867198715734879691}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
   canCommandCar: 1
+  currentStopLine: {fileID: 0}
   dependencyList:
   - destination: {fileID: 1547229366170371422}
     toCheck: []
     stopLine: {fileID: 7024245638954578734}
-  - destination: {fileID: 8220785704905346724}
+  - destination: {fileID: 2867198715734879691}
     toCheck:
     - {fileID: 3810113384999970596}
     stopLine: {fileID: 582459436890066789}
@@ -734,6 +742,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStop: 0
   toCheck: []
+--- !u!1 &7475895019271696456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8751631541116385206}
+  - component: {fileID: 2867198715734879691}
+  m_Layer: 0
+  m_Name: Middle_Corner_Bottom_ToTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8751631541116385206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475895019271696456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2525066792990505275}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2867198715734879691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475895019271696456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc0ba44aac3b484b8a0a4d8cbad8d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacentMarkers:
+  - {fileID: 1914715121427716573}
+  currentCar: {fileID: 0}
+  canCommandCar: 0
+  currentStopLine: {fileID: 0}
+  dependencyList: []
+  IsOccupied: 0
+  openForConnections: 0
 --- !u!1 &8008757790088263805
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +804,7 @@ GameObject:
   - component: {fileID: 8224764086805415499}
   - component: {fileID: 8220785704905346724}
   m_Layer: 0
-  m_Name: Middle_Corner
+  m_Name: Middle_Corner_Top_To_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -759,7 +818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8008757790088263805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: -0.055, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -779,9 +838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers:
   - {fileID: 5294581625559448516}
-  - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
   canCommandCar: 0
+  currentStopLine: {fileID: 0}
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

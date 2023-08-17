@@ -6,6 +6,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using Debug = UnityEngine.Debug;
 
+
+public enum PathChosen
+{
+    Best,
+    Second
+}
+
 [RequireComponent(typeof(Rigidbody))]
 public class CarAI : MonoBehaviour
 {
@@ -38,9 +45,13 @@ public class CarAI : MonoBehaviour
 
     private float power = 10;
     private float torque = 0.02f;
-    public double maxSpeed = 0.4f;
-    private double effectiveMaxSpeed = 0.4f; //if a car in front is slower then take it's speed as the new max to stop stopping too much
+    public double maxSpeed = 0.7f;
+    public double effectiveMaxSpeed = 0.7f; //if a car in front is slower then take it's speed as the new max to stop stopping too much
     public bool respectStops = true;
+    public bool onHisPhone = true;
+    private bool wasStopped = false;
+    private bool currentlyOnHisPhone = false;
+    public PathChosen pathChosen = PathChosen.Best;
 
     [SerializeField]
     private Vector2 movementVector;
@@ -77,7 +88,7 @@ public class CarAI : MonoBehaviour
 
     public bool Stop
     {
-        get { return stop || collisionStop; }
+        get { return stop || collisionStop; }//
         set {
             if(stop!=value) //because collisions checked cointinuously, need to check if value actually changedf not to count same stop twice
             {
@@ -96,6 +107,7 @@ public class CarAI : MonoBehaviour
                 {
                     if (stopWatchStoppedTime.IsRunning)//if stopwatch runnning (honestly it should but just in case)
                     {
+                        wasStopped = true;
                         stopWatchStoppedTime.Stop();
                     }
                 }
@@ -120,7 +132,6 @@ public class CarAI : MonoBehaviour
     private void Start()
     {
         InitializeCar();
-
         if(path == null || path.Count == 0)
         {
             Stop = true;
@@ -139,7 +150,10 @@ public class CarAI : MonoBehaviour
         CheckForCollisions();
     }
 
-    
+
+
+
+
     private RaycastHit hit;
     private void FixedUpdate()
     {
@@ -162,10 +176,6 @@ public class CarAI : MonoBehaviour
             if(carHit)
             {
                 effectiveMaxSpeed = carHit.effectiveMaxSpeed;
-            }
-            else
-            {
-                Debug.Log("OHOH");
             }
             
         }
@@ -198,6 +208,7 @@ public class CarAI : MonoBehaviour
 
     private void InitializeCar()
     {
+        onHisPhone = true;
         //if sports car then safetydistance shorter and maxspeed greater
         foreach (Transform child in transform)
         {
@@ -266,26 +277,47 @@ public class CarAI : MonoBehaviour
 
 
 
+
     private void Drive()
     {
         if (Stop)
         {
             this.movementVector = Vector2.zero;
         }
-        else
+        else if(!currentlyOnHisPhone)
         {
-            Vector3 relativepoint = transform.InverseTransformPoint(currentTargetPosition);
-            float angle = Mathf.Atan2(relativepoint.x, relativepoint.z) * Mathf.Rad2Deg;
-            var rotateCar = 0;
-            if(angle > turningAngleOffset)
+            if(wasStopped && onHisPhone)
             {
-                rotateCar = 1;
-            }else if(angle < -turningAngleOffset)
-            {
-                rotateCar = -1;
+                Debug.Log("was stopped");
+                wasStopped = false;
+                currentlyOnHisPhone = true;
+                StartCoroutine(OnHisPhoneWait());
             }
-            this.movementVector = new Vector2(rotateCar, 1);
+            else
+            {
+                Vector3 relativepoint = transform.InverseTransformPoint(currentTargetPosition);
+                float angle = Mathf.Atan2(relativepoint.x, relativepoint.z) * Mathf.Rad2Deg;
+                var rotateCar = 0;
+                if (angle > turningAngleOffset)
+                {
+                    rotateCar = 1;
+                }
+                else if (angle < -turningAngleOffset)
+                {
+                    rotateCar = -1;
+                }
+                this.movementVector = new Vector2(rotateCar, 1);
+
+            }
+
         }
+    }
+
+    private IEnumerator OnHisPhoneWait()
+    {
+        Debug.Log("Oublie de redméarer");
+        yield return new WaitForSeconds(0.2f); // Wait for 2 seconds
+        currentlyOnHisPhone = false;
     }
 
     private void CheckIfArrived()
