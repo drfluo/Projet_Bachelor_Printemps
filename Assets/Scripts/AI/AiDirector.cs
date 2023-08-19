@@ -127,7 +127,7 @@ namespace SimpleCity.AI
                                 carPath = bestPath;
                             }
                         }
-                        else
+                        else if(ThirdBestPath.Count != 0 && carPath!=null)
                         {
                             if(carPath.Count<SecondBestPath.Count || carPath.Count > ThirdBestPath.Count)
                             {
