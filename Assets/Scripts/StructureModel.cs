@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StructureModel : MonoBehaviour//, INeedingRoad
+public class StructureModel : MonoBehaviour
 {
     float yHeight = 0;
 

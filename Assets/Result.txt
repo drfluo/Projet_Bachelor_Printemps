@@ -1226,3 +1226,32 @@ Total Results :
 	  Average number of time stopped: 0.2
 	  Total time at max speed: 21.12
 	  Average time at max speed: 4.22
+
+ ---------------test--------------- 
+
+Specifications : 
+	  map used : 30By30.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.51
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 40.67s, stopped 0 times for a total of 0s. Time at full speed 14.65s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 41.24s, stopped 1 times for a total of 0.55s. Time at full speed 14.7s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 41.77s, stopped 1 times for a total of 1.08s. Time at full speed 14.61s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 40.68s, stopped 0 times for a total of 0s. Time at full speed 14.62s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 164.36s
+	  Average time traveled: 41.09s
+	  Total time stopped : 1.64s
+	  Average time stopped: 0.41s
+	  Total number of times stopped: 5
+	  Average number of time stopped: 1.25
+	  Total time at max speed: 58.58
+	  Average time at max speed: 14.65

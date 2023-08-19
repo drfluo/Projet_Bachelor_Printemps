@@ -12,9 +12,9 @@ public class MapSizeChanger : MonoBehaviour
     public new Camera camera;
     public Dropdown sizeChooser;
 
-    void LateStart()
+    void Start()
     {
-        StartCoroutine(LateStart(1f));
+        StartCoroutine(LateStart(0.2f));
     }
 
     IEnumerator LateStart(float waitTime)
@@ -28,7 +28,6 @@ public class MapSizeChanger : MonoBehaviour
         placementManager.ClearCurrentMap();
         if (sizeChooser.options[sizeChoseId].text == "15*15"||sizeChoseId==0)//mapData.size = 15;
         {
-          
             placementManager.height = 15;
             placementManager.width = 15;
             placementManager.placementGrid=new Grid(15, 15);

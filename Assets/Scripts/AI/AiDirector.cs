@@ -27,6 +27,16 @@ namespace SimpleCity.AI
             TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), PathChosen.Best);
         }
 
+        public void SpawnACarSecond()//for button spawn a car on UI
+        {
+            TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), PathChosen.Second);
+        }
+
+        public void SpawnACarThird()//for button spawn a car on UI
+        {
+            TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), PathChosen.Third);
+        }
+
 
 
         private CarAI TrySpawninACar(StructureModel startStructure, StructureModel endStructure,PathChosen pathChose)
@@ -44,8 +54,10 @@ namespace SimpleCity.AI
                 //also remembers the second best for if we need it
                 int sizeBestPath = int.MaxValue;
                 int sizeSeconBestPath = int.MaxValue;
+                int sizeThirdBestPath = int.MaxValue;
                 List<Vector3> bestPath = new List<Vector3>();
                 List<Vector3> SecondBestPath = new List<Vector3>();
+                List<Vector3> ThirdBestPath = new List<Vector3>();
                 foreach (Vector3 start in allStartPositions)
                 {
                     foreach(Vector3 stop in allEndPositions)
@@ -53,38 +65,79 @@ namespace SimpleCity.AI
                         //try getting the fastes path from this start to this stop
                         carPath = GetCarPath(start, stop, PathChosen.Best);
                         //if not null and better
-                        if(carPath!=null && carPath.Count< sizeBestPath)
+                        if(carPath!=null && carPath.Count< sizeBestPath && carPath.Count != 0)
                         {
                             bestPath = carPath;
                             sizeBestPath = carPath.Count;
                         }
                         //if not better than fastsest but better than second
-                        else if(carPath != null && carPath.Count < sizeSeconBestPath)
+                        else if(carPath != null && carPath.Count < sizeSeconBestPath && carPath.Count!=0)
                         {
                             SecondBestPath = carPath;
                             sizeSeconBestPath = carPath.Count;
                         }
+                        else if(carPath != null && carPath.Count < sizeThirdBestPath && carPath.Count != 0)
+                        {
+                            ThirdBestPath = carPath;
+                            sizeThirdBestPath = carPath.Count;
+                        }
                     }
                 }
 
+                if(bestPath.Count==0)
+                {
+                    return null;
+                }
+
+
+                //if want best : easy just give best found
                 if(pathChose==PathChosen.Best)
                 {
                     carPath = bestPath;
                 }
+                //if want second best compare Yen of first and second found, if none found then give first
                 else
                 {
-                    //carPath = SecondBestPath;
-
                     carPath = GetCarPath(bestPath[0], bestPath[bestPath.Count-1], PathChosen.Second);
-                    if((SecondBestPath!=null && carPath!=null && SecondBestPath.Count<carPath.Count)||(SecondBestPath!=null && carPath==null))
+                    if(pathChose == PathChosen.Second)
                     {
-                        carPath = SecondBestPath;
+                        if ((SecondBestPath.Count != 0 && carPath != null && SecondBestPath.Count < carPath.Count) || (SecondBestPath.Count != 0 && carPath == null))
+                        {
+                            carPath = SecondBestPath;
+                        }
+                        if (carPath == null || carPath.Count == 0)
+                        {
+                            carPath = bestPath;
+                        }
                     }
-                    if (carPath==null)
+                    else//want 3rd best path
                     {
-                        carPath = bestPath;
+                        if(ThirdBestPath.Count!=0 && carPath==null)
+                        {
+                            carPath = ThirdBestPath;
+                        }
+                        else if(ThirdBestPath.Count==0 && carPath==null)
+                        {
+                            if(SecondBestPath.Count!=0)
+                            {
+                                carPath = SecondBestPath;
+                            }
+                            else
+                            {
+                                carPath = bestPath;
+                            }
+                        }
+                        else
+                        {
+                            if(carPath.Count<SecondBestPath.Count || carPath.Count > ThirdBestPath.Count)
+                            {
+                                carPath = ThirdBestPath;
+                            }
+                        }
                     }
+
                 }
+                
 
 
 

@@ -10,7 +10,8 @@ using Debug = UnityEngine.Debug;
 public enum PathChosen
 {
     Best,
-    Second
+    Second,
+    Third
 }
 
 [RequireComponent(typeof(Rigidbody))]
@@ -48,7 +49,7 @@ public class CarAI : MonoBehaviour
     public double maxSpeed = 0.7f;
     public double effectiveMaxSpeed = 0.7f; //if a car in front is slower then take it's speed as the new max to stop stopping too much
     public bool respectStops = true;
-    public bool onHisPhone = true;
+    public bool onHisPhone = false;
     private bool wasStopped = false;
     private bool currentlyOnHisPhone = false;
     public PathChosen pathChosen = PathChosen.Best;
@@ -208,7 +209,6 @@ public class CarAI : MonoBehaviour
 
     private void InitializeCar()
     {
-        onHisPhone = true;
         //if sports car then safetydistance shorter and maxspeed greater
         foreach (Transform child in transform)
         {

@@ -137,31 +137,6 @@ namespace SimpleCity.AI
             }
         }
 
-      /*  private void Update()
-        {
-            if (canCommandCar && currentCar != null)
-            {
-                if (!hold)
-                {
-                    if (CheckDependency(currentDependence.toCheck))
-                    {
-                        if(currentDependence.stopLine)
-                        {
-                            currentDependence.stopLine.nextCarCanGo = true;
-                        }
-                        
-                    }
-                    else
-                    {
-                        if (currentDependence.stopLine)
-                        {
-                            currentDependence.stopLine.nextCarCanGo = false;
-                        }
-                    }
-                }
-            }
-        }*/
-
         //return true if can go otherwise false
         private bool CheckDependency(List<Marker> toCheck)
         {

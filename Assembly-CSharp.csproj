@@ -75,11 +75,11 @@
     <Compile Include="Assets\Scripts\AI\StopLine.cs" />
     <Compile Include="Assets\Scripts\AI\Vertex.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
+    <Compile Include="Assets\MapSizeChanger.cs" />
     <Compile Include="Assets\Scripts\AI\CarSpawner.cs" />
     <Compile Include="Assets\Scripts\StructureManager.cs" />
     <Compile Include="Assets\Scripts\UI\MapNameChooser.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
-    <Compile Include="Assets\MapSizeChanger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Result.txt" />

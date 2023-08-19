@@ -48,11 +48,7 @@ public class PlacementManager : MonoBehaviour
 
     internal bool CheckIfPositionInBound(Vector3Int position)
     {
-        if (position.x >= 0 && position.x < width && position.z >= 0 && position.z < height)
-        {
-            return true;
-        }
-        return false;
+        return (position.x >= 0 && position.x < width && position.z >= 0 && position.z < height);
     }
 
     internal void PlaceObjectOnTheMap(Vector3Int position, GameObject structurePrefab, CellType type, int width = 1, int height = 1)
@@ -328,6 +324,7 @@ public class PlacementManager : MonoBehaviour
 
     public void RemoveRoad(Vector3Int position)
     {
+       
         if (placementGrid[position.x, position.z] != CellType.Empty)
         {
 
@@ -349,7 +346,7 @@ public class PlacementManager : MonoBehaviour
 
             //cell du dessus
             position.x += 1;
-            if (placementGrid[position.x, position.z] == CellType.Road)
+            if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] == CellType.Road)
             {
                 placementGrid[position.x, position.z] = CellType.Empty;
                 Destroy(structureDictionary[position].gameObject);
@@ -359,14 +356,14 @@ public class PlacementManager : MonoBehaviour
                 roadManager.PlaceRoad(position);
                 roadManager.FinishPlacingRoad();
             }
-            else if (placementGrid[position.x, position.z] != CellType.Empty)
+            else if (position.x < placementGrid.Height && position.z < placementGrid.Width && placementGrid[position.x, position.z] != CellType.Empty)
             {
                 FixBuildingAtPosition(position);
             }
 
 
             position.x -= 2;
-            if (placementGrid[position.x, position.z] == CellType.Road)
+            if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] == CellType.Road)
             {
                 placementGrid[position.x, position.z] = CellType.Empty;
                 Destroy(structureDictionary[position].gameObject);
@@ -377,7 +374,7 @@ public class PlacementManager : MonoBehaviour
                 roadManager.FinishPlacingRoad();
 
             }
-            else if (placementGrid[position.x, position.z] != CellType.Empty)
+            else if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] != CellType.Empty)
             {
                 FixBuildingAtPosition(position);
             }
@@ -386,7 +383,7 @@ public class PlacementManager : MonoBehaviour
 
 
             position.z -= 1;
-            if (placementGrid[position.x, position.z] == CellType.Road)
+            if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] == CellType.Road)
             {
                 placementGrid[position.x, position.z] = CellType.Empty;
                 Destroy(structureDictionary[position].gameObject);
@@ -396,13 +393,13 @@ public class PlacementManager : MonoBehaviour
                 roadManager.PlaceRoad(position);
                 roadManager.FinishPlacingRoad();
             }
-            else if (placementGrid[position.x, position.z] != CellType.Empty)
+            else if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] != CellType.Empty)
             {
                 FixBuildingAtPosition(position);
             }
 
             position.z += 2;
-            if (placementGrid[position.x, position.z] == CellType.Road)
+            if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] == CellType.Road)
             {
                 placementGrid[position.x, position.z] = CellType.Empty;
                 Destroy(structureDictionary[position].gameObject);
@@ -412,7 +409,7 @@ public class PlacementManager : MonoBehaviour
                 roadManager.PlaceRoad(position);
                 roadManager.FinishPlacingRoad();
             }
-            else if (placementGrid[position.x, position.z] != CellType.Empty)
+            else if (CheckIfPositionInBound(position) && placementGrid[position.x, position.z] != CellType.Empty)
             {
                 FixBuildingAtPosition(position);
             }
@@ -968,12 +965,10 @@ public class PlacementManager : MonoBehaviour
 
         if(sizeChooser.options[sizeChooser.value].text=="15*15")
         {
-            Debug.Log("Try saving size 15");
             mapData.size = 15;
         }
         else if (sizeChooser.options[sizeChooser.value].text == "30*30")
         {
-            Debug.Log("Try saving size 30");
             mapData.size = 30;
         }
         else
@@ -1068,7 +1063,7 @@ public class PlacementManager : MonoBehaviour
 
         MapData data = JsonUtility.FromJson<MapData>(json);
 
-        //need to clear the map first
+        //need to get new map of right size
         if(data.size==15)
         {
             Debug.Log("Try changing size 15");
