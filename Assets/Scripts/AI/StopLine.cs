@@ -30,7 +30,6 @@ public class StopLine : MonoBehaviour
                 }
                 else
                 {
-
                     InvokeRepeating("CheckIfCanGo", 0f, 1f);
                 }
             }
@@ -51,6 +50,7 @@ public class StopLine : MonoBehaviour
         {
             currentCar.numberStopDisrespected++;
         }
+        CancelInvoke();
         currentCar = null;
         currentCarHasStopped = false;
     }
@@ -58,7 +58,7 @@ public class StopLine : MonoBehaviour
 
     private void CheckIfCanGo()
     {
-        
+
         foreach(Marker marker in toCheck)
         {
             if(marker.IsOccupied!=0)

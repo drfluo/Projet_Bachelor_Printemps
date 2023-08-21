@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -99,8 +99,8 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -266,8 +266,8 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   - {fileID: 8264347639909401483}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -303,7 +303,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 1, z: 0.37}
+  m_Size: {x: 0.25, y: 1, z: 0.35}
   m_Center: {x: 0.46, y: 0, z: 0}
 --- !u!1 &3219700215825233634
 GameObject:
@@ -350,8 +350,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -400,8 +400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -451,8 +451,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -543,8 +543,8 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -628,8 +628,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

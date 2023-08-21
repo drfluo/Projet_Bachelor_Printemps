@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241351582169447366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.1, z: 0.22}
+  m_LocalPosition: {x: -0.42, y: 0.1, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -98,8 +98,8 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 5294581625559448516}
     toCheck: []
@@ -309,8 +309,8 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   - {fileID: 8220785704905346724}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1914715121427716573}
     toCheck: []
@@ -359,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3219700215825233634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 0.1, z: -0.3}
+  m_LocalPosition: {x: -0.22, y: 0.1, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -379,8 +379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -468,7 +468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3515965438237719017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.1, z: -0.22}
+  m_LocalPosition: {x: 0.42, y: 0.1, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -488,8 +488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -672,8 +672,8 @@ MonoBehaviour:
   - {fileID: 2867198715734879691}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1547229366170371422}
     toCheck: []
@@ -788,8 +788,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -839,8 +839,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

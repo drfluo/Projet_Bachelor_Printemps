@@ -70,8 +70,8 @@ public class CarAI : MonoBehaviour
     [SerializeField]
     private GameObject raycastStartingPoint = null;
 
-    private float raycastSafetyDistance=0.75f;
-    private float raycastObstacleAhead=0.9f;
+    public float raycastSafetyDistance =0.75f;
+    public float raycastObstacleAhead =0.75f;
 
     private float distanceObstacleAhead=-10f;
     public float stopTime = 0.7f;
@@ -134,7 +134,6 @@ public class CarAI : MonoBehaviour
     private void Start()
     {
         numberStarted++;
-        InitializeCar();
         if(path == null || path.Count == 0)
         {
             Stop = true;
@@ -209,21 +208,6 @@ public class CarAI : MonoBehaviour
 
 
 
-    private void InitializeCar()
-    {
-        //if sports car then safetydistance shorter and maxspeed greater
-        foreach (Transform child in transform)
-        {
-            if(child.name.Contains("Sports"))
-            {
-                raycastSafetyDistance = 0.55f;
-                raycastObstacleAhead = 0.75f;
-            }
-        }
-    }
-
-
-
 
     public void SetPath(List<Vector3> path)
     {
@@ -282,6 +266,9 @@ public class CarAI : MonoBehaviour
 
     private void Drive()
     {
+        raycastSafetyDistance = (float)((0.65/maxSpeed) * rb.velocity.magnitude+0.2);
+        raycastObstacleAhead = raycastSafetyDistance;
+
         if (Stop)
         {
             this.movementVector = Vector2.zero;

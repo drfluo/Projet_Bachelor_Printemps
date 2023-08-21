@@ -125,7 +125,7 @@ namespace SimpleCity.AI
             if(!allEmpty)
             {
                 //STUCK situation, now need to choose a random car and let it go
-
+                Debug.Log("STUCK STUATION");
 
                 List<int> indexes = new List<int>();
                 for (int j = 0; j < waitingCars.Length; j++)

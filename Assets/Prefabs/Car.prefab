@@ -104,6 +104,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07c9c03ed6ed104c9c79355ef33bba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeTaken: 0
+  timeStopped: 0
+  timeFullSpeed: 0
+  numberStop: 0
+  numberStopDisrespected: 0
+  maxSpeed: 0.699999988079071
+  effectiveMaxSpeed: 0.699999988079071
+  respectStops: 1
+  onHisPhone: 0
+  pathChosen: 0
   movementVector: {x: 0, y: 0}
   path: []
   arriveDistance: 0.2
@@ -111,6 +121,8 @@ MonoBehaviour:
   turningAngleOffset: 5
   currentTargetPosition: {x: 0, y: 0, z: 0}
   raycastStartingPoint: {fileID: 7828243858922119456}
+  raycastSafetyDistance: 0.75
+  raycastObstacleAhead: 0.75
   stopTime: 1
   index: 0
 --- !u!1 &7828243858922119456

@@ -220,7 +220,7 @@ public class SimulationManager : MonoBehaviour
 
 
 
-            string results = "\t" + new Vector2Int((int)car.path[0].x, (int)car.path[0].z) + "/" + new Vector2Int((int)car.path[car.path.Count - 1].x, (int)car.path[car.path.Count - 1].z) + "/" +
+            string results = "\t" +mapName+"/"+carLoad+"/"+ new Vector2Int((int)car.path[0].x, (int)car.path[0].z) + "/" + new Vector2Int((int)car.path[car.path.Count - 1].x, (int)car.path[car.path.Count - 1].z) + "/" +
                 car.timeTaken.ToString("0.##") + "/" + car.numberStop + "/" + car.timeStopped.ToString("0.##") + "/" + car.timeFullSpeed.ToString("0.##") + "/";
             results = results + car.respectStops;
             if(!car.respectStops)
@@ -229,11 +229,9 @@ public class SimulationManager : MonoBehaviour
             }
             results = results + "/" + car.pathChosen;
             results = results + "/" + car.onHisPhone;
+            results = results + "/" + car.maxSpeed.ToString("0.##");
 
-            if (speedChosen != "constant")
-            {
-                results = results + "/" + car.maxSpeed.ToString("0.##");
-            }
+
 
             sw.WriteLine(results);
         }

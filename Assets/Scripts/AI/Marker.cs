@@ -23,12 +23,15 @@ namespace SimpleCity.AI
 
         public List<Marker> adjacentMarkers;
 
+        public List<Tuple<CarAI, Dependency>> waitingCars =new List<Tuple<CarAI, Dependency>>();
+
         public CarAI currentCar;
+        //line where the car stops, need it to be able to let one car go if a stuck situation occurs
+        public StopLine currentStopLine;
 
         public bool canCommandCar;
 
-        //line where the car stops, need it to be able to let one car go if a stuck situation occurs
-        public StopLine currentStopLine;
+
 
         public List<Dependency> dependencyList;
 
@@ -82,14 +85,21 @@ namespace SimpleCity.AI
 
 
                 var car = other.GetComponent<CarAI>(); //if collision with car we get its script
-                currentCar = car;
 
+                waitingCars.Add(new Tuple<CarAI, Dependency>(car, new Dependency()));
+                if(waitingCars.Count==1)
+                {
+                    currentCar = car;
+                }
+                //currentCar = car;
+
+                //TODO UNDERSTAND THIS SHIT
                 if (GetComponent<Collider>().name.Contains("STOP") && count==0)
                 {
                     isStop = true;
                     //hold = true;
 
-                    StartCoroutine(ResetStopVariable(currentCar));
+                    StartCoroutine(ResetStopVariable(car));
                 }
 
                 //Debug.Log("Collider "+GetComponent<Collider>().name+" has hit object "+other.name);
@@ -122,11 +132,22 @@ namespace SimpleCity.AI
                         if (car.index + increment<car.path.Count && (dependency.destination.Position - car.path[car.index + increment]).sqrMagnitude < 0.01)
                         {
                             //Debug.Log("Found destination");
-                            dependency.stopLine.toCheck = dependency.toCheck;
-                            currentStopLine = dependency.stopLine;
+                            
+                            //currentStopLine = dependency.stopLine;
+
+                            waitingCars[waitingCars.Count - 1] = new Tuple<CarAI,Dependency>(waitingCars[waitingCars.Count - 1].Item1, dependency);
+
                             if (isStop)
                             {
-                                dependency.stopLine.isStop = true;
+                                waitingCars[waitingCars.Count - 1].Item2.stopLine.isStop=true;
+                                //dependency.stopLine.isStop = true;
+                            }
+
+                            //the car that just arrived is the only one
+                            if(waitingCars.Count==1)
+                            {
+                                dependency.stopLine.toCheck = dependency.toCheck;
+                                currentStopLine = dependency.stopLine;
                             }
 
                             return;
@@ -138,7 +159,7 @@ namespace SimpleCity.AI
         }
 
         //return true if can go otherwise false
-        private bool CheckDependency(List<Marker> toCheck)
+        /*private bool CheckDependency(List<Marker> toCheck)
         {
             if(toCheck==null)
             {
@@ -152,7 +173,7 @@ namespace SimpleCity.AI
                 }
             }
             return true;
-        }
+        }*/
 
         private void OnTriggerExit(Collider other)
         {
@@ -165,13 +186,30 @@ namespace SimpleCity.AI
                 else
                 {
                     IsOccupied -= 1;
+                    
                 }
-                
-                currentCar = null;
-                /*if(IsOccupied==0)
-                 {
-                     currentDependence = null;
-                 }*/
+
+               if(waitingCars.Count!=0)
+               {
+                    if(canCommandCar)
+                        waitingCars[0].Item2.stopLine.toCheck = new List<Marker>();
+                    waitingCars.RemoveAt(0);
+                    if (waitingCars.Count!=0)
+                    {
+                        currentCar = waitingCars[0].Item1;
+
+                        if(canCommandCar)
+                        {
+                            waitingCars[0].Item2.stopLine.toCheck = waitingCars[0].Item2.toCheck;
+                            currentStopLine = waitingCars[0].Item2.stopLine;
+                        }
+                    }
+                    else
+                    {
+                        currentCar = null;
+                    }
+               }
+
                 count = 0;
             }
 

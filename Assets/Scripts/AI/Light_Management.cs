@@ -15,6 +15,8 @@ namespace SimpleCity.AI
         public int greenTime, orangeTime;
         public bool is4Way;
 
+        private bool arrivedBeforeOrange = true;
+
         public GameObject nextLight;
 
         //public GameObject[] roads3WayLight;
@@ -41,10 +43,13 @@ namespace SimpleCity.AI
                 if (isOrange == true)
                 {
                     //IF ORANGE -> CAR STOPS
-                    marker.currentCar.Stop = true;
+                    if(!arrivedBeforeOrange)
+                        marker.currentCar.Stop = true;
                 }
                 else
                 {
+                    marker.currentCar.Stop = false;
+                    /*
                     //green case
                     Transform[] lsMarker = marker.transform.parent.GetComponentsInChildren<Transform>();
 
@@ -67,7 +72,7 @@ namespace SimpleCity.AI
                             }
 
                         }
-                    }
+                    }*/
                 }
             }
 
@@ -76,6 +81,16 @@ namespace SimpleCity.AI
 
         private void OnTriggerEnter(Collider other)
         {
+
+            if(!isOrange)
+            {
+                arrivedBeforeOrange = true;
+            }
+            else
+            {
+                arrivedBeforeOrange = false;
+            }
+
             if (isRedMarker && marker.currentCar!=null)
             {
                 marker.currentCar.Stop = true;

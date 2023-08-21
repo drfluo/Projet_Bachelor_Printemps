@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -96,8 +96,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 3290096157220949447}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -198,8 +198,8 @@ MonoBehaviour:
   - {fileID: 5057264794145881099}
   - {fileID: 7140277445914794347}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
   - {fileID: 5057264794145881099}
   - {fileID: 2776928844052160952}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -346,8 +346,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2776928844052160952}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -397,8 +397,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 8315145912771571543}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -521,7 +521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3548852045189906750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.427, y: 0, z: 0.22}
+  m_LocalPosition: {x: 0.519, y: 0, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8481919150617382056}
@@ -580,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3820593475440285058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0, z: -0.427}
+  m_LocalPosition: {x: 0.22, y: 0, z: -0.521}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8481919150617382056}
@@ -674,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4236686132822482123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.429, y: 0, z: -0.22}
+  m_LocalPosition: {x: -0.521, y: 0, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8481919150617382056}
@@ -753,8 +753,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5057264794145881099}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -784,7 +784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4838465753391724514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: 0.1, z: 0.22}
+  m_LocalPosition: {x: 0.449, y: 0.1, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2361687834012956800}
@@ -806,8 +806,8 @@ MonoBehaviour:
   - {fileID: 9115835947818146856}
   - {fileID: 6912992639491887610}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 4978643539067835954}
     toCheck: []
@@ -881,8 +881,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -931,8 +931,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -962,7 +962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5365472332983735775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.507, y: 0.1, z: -0.22}
+  m_LocalPosition: {x: -0.5, y: 0.1, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2361687834012956800}
@@ -984,8 +984,8 @@ MonoBehaviour:
   - {fileID: 2487804808059409530}
   - {fileID: 2291178656021059844}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 3290096157220949447}
     toCheck: []
@@ -1110,8 +1110,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 2332403700272287276}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -1141,7 +1141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6386315448996234968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0.1, z: -0.43}
+  m_LocalPosition: {x: 0.22, y: 0.1, z: -0.464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2361687834012956800}
@@ -1163,8 +1163,8 @@ MonoBehaviour:
   - {fileID: 5731712357187959273}
   - {fileID: 1730687000486935543}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 8315145912771571543}
     toCheck: []
@@ -1240,8 +1240,8 @@ MonoBehaviour:
   - {fileID: 7140277445914794347}
   - {fileID: 2332403700272287276}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -1271,7 +1271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6821599979906735818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 0.1, z: 0.453}
+  m_LocalPosition: {x: -0.22, y: 0.1, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2361687834012956800}
@@ -1293,8 +1293,8 @@ MonoBehaviour:
   - {fileID: 7401966373876757415}
   - {fileID: 1708810288968752841}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 363664984909030992}
     toCheck: []
@@ -1369,8 +1369,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 4978643539067835954}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -1420,8 +1420,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 363664984909030992}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -1451,7 +1451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7928978141888961406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 0, z: 0.411}
+  m_LocalPosition: {x: -0.22, y: 0, z: 0.525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8481919150617382056}
@@ -1530,8 +1530,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 7140277445914794347}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -1582,8 +1582,8 @@ MonoBehaviour:
   - {fileID: 2332403700272287276}
   - {fileID: 2776928844052160952}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

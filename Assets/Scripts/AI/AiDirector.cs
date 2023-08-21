@@ -174,13 +174,13 @@ namespace SimpleCity.AI
                     }
 
 
-                    if(marker.IsOccupied!=0 && i<2)
+                    if(marker.IsOccupied!=0 && i<15)
                     {
-                        Debug.Log("MARKER NOT FREE");
-                        return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), pathChose,i++);
+                        i++;
+                        return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), pathChose,i);
                     }
 
-                    if(i>=2)
+                    if(i>=15)
                     {
                         return null;
                     }
