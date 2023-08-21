@@ -38,7 +38,6 @@ namespace SimpleCity.AI
         {
             if (!isRedMarker && marker.currentCar != null)
             {
-                Debug.Log("light not red + car here");
                 if (isOrange == true)
                 {
                     //IF ORANGE -> CAR STOPS
@@ -53,14 +52,12 @@ namespace SimpleCity.AI
                     {
                         if ((mark.position == marker.currentCar.path[marker.currentCar.index + 3] || mark.position == marker.currentCar.path[marker.currentCar.index + 2] || mark.position == marker.currentCar.path[marker.currentCar.index + 1]) && mark.name.Contains("Exit"))
                         {
-                            Debug.Log(mark.name);
                             
                             
                             var markOut = mark.GetComponent<Marker>();
                             //check if this marker is occupied
                             if (markOut.IsOccupied == 0)
                             {
-                                Debug.Log("free");
                                 marker.currentCar.Stop = false;
                             }
                             else

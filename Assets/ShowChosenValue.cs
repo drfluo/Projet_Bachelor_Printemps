@@ -16,6 +16,7 @@ public class ShowChosenValue : MonoBehaviour
 
     public void OnSliderValueChanged(float value)
     {
+        Debug.Log(value);
         showingChosenValue.text = value.ToString("0.00");
     }
 

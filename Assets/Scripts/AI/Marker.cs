@@ -66,7 +66,7 @@ namespace SimpleCity.AI
 
         private IEnumerator ResetIsOccupiedVariable()
         {
-            yield return new WaitForSeconds(1f); // Wait for 2 seconds
+            yield return new WaitForSeconds(0.2f); // Wait for 2 seconds
             IsOccupied--;
         }
 

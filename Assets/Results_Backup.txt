@@ -1,0 +1,1701 @@
+
+ ---------------firstResults--------------- 
+
+Specifications : 
+	  map used : stopTest.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  cars that arrived to their destination: 6
+	  cars that started their journey : 11
+
+ ---------------resu--------------- 
+
+Specifications : 
+	  map used : dancingmoveN1.json
+	  time: 1min
+	  car load: 25cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 25
+	  # of cars that arrived to their destination before the end of the timer: 16
+
+ ---------------he--------------- 
+
+Specifications : 
+	  map used : stopTest.json
+	  time: 1min
+	  car load: 20cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 20
+	  # of cars that arrived to their destination before the end of the timer: 15
+	  Total time traveled by cars which reached their destination: 274.4960882s
+	  Average time traveled: 18.2997392133333
+
+ ---------------loooong--------------- 
+
+Specifications : 
+	  map used : zoupérlong.json
+	  time: 2min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 20
+	  # of cars that arrived to their destination before the end of the timer: 0
+	  Total time traveled by cars which reached their destination: 0s
+	  Average time traveled: NaNs
+ ---------------stop--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 2
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 8.1465755s
+	  Average time traveled: 8.1465755s
+	  Total time stopped : 0.7019284s
+	  Average time stopped: 0.7019284s
+
+ ---------------4way--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 4
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 29.7168593s
+	  Average time traveled: 7.429214825s
+	  Total time stopped : 1.0016929s
+	  Average time stopped: 0.250423225s
+	  Average number of time stopped: 1s
+
+ ---------------test--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 8cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 7
+	  # of cars that arrived to their destination before the end of the timer: 7
+	  Total time traveled by cars which reached their destination: 47.7786129s
+	  Average time traveled: 6.82551612857143s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 52
+
+ ---------------t--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 70.2243521s
+	  Average time traveled: 7.02243521s
+	  Total time stopped : 1400978.68169379s
+	  Average time stopped: 140097.868169379s
+	  Total number of times stopped: 688
+	  Average number of time stopped: 68
+
+ ---------------e--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 9
+	  Total time traveled by cars which reached their destination: 64.960454s
+	  Average time traveled: 7.21782822222222s
+	  Total time stopped : 634652.655451298s
+	  Average time stopped: 70516.9617168109s
+	  Total number of times stopped: 413
+	  Average number of time stopped: 45
+
+ ---------------tet--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 57.7043721s
+	  Average time traveled: 7.2130465125s
+	  Total time stopped : 15.4343294s
+	  Average time stopped: 1.929291175s
+	  Total number of times stopped: 13
+	  Average number of time stopped: 1
+
+ ---------------stopTest--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.4297444s
+	  Average time traveled: 7.4297444s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 1
+
+ ---------------khk--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 6.4120716s
+	  Average time traveled: 6.4120716s
+	  Total time stopped : 6.4113058s
+	  Average time stopped: 6.4113058s
+	  Total number of times stopped: 2
+	  Average number of time stopped: 2
+
+ ---------------n--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 6.4113652s
+	  Average time traveled: 6.4113652s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+
+ ---------------n--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 74.6621146s
+	  Average time traveled: 7.46621146s
+	  Total time stopped : 28.4919296s
+	  Average time stopped: 2.84919296s
+	  Total number of times stopped: 14
+	  Average number of time stopped: 1
+
+ ---------------f--------------- 
+
+Specifications : 
+	  map used : 4way.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 75.6237872s
+	  Average time traveled: 7.56237872s
+	  Total time stopped : 32.9339863s
+	  Average time stopped: 3.29339863s
+	  Total number of times stopped: 15
+	  Average number of time stopped: 1.5
+
+ ---------------1--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 60.2647994s
+	  Average time traveled: 7.533099925s
+	  Total time stopped : 3.7167189s
+	  Average time stopped: 0.4645898625s
+	  Total number of times stopped: 12
+	  Average number of time stopped: 1.5
+
+ ---------------ffs--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 2cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 2
+	  Total time traveled by cars which reached their destination: 16.2827652s
+	  Average time traveled: 8.1413826s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 1742
+	  Average number of time stopped: 871
+
+ ---------------gf--------------- 
+
+Specifications : 
+	  map used : oneStop.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 0
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 8.1535938s
+	  Average time traveled: 8.1535938s
+	  Total time stopped : 0.7048366s
+	  Average time stopped: 0.7048366s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 1
+
+ ---------------a--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 9
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 70.5512934s
+	  Average time traveled: 8.818911675s
+	  Total time stopped : 4.9996419s
+	  Average time stopped: 0.6249552375s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 0.125
+
+ ---------------i--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 10
+	  Total time traveled by cars which reached their destination: 81.6787417s
+	  Average time traveled: 8.16787417s
+	  Total time stopped : 7.3288004s
+	  Average time stopped: 0.73288004s
+	  Total number of times stopped: 5
+	  Average number of time stopped: 0.5
+
+ ---------------1--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.4387938s
+	  Average time traveled: 7.4387938s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 179.9179059
+	  Average time at max speed: 179.9179059
+
+ ---------------s--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 0
+	  Total time traveled by cars which reached their destination: 0s
+	  Average time traveled: NaNs
+	  Total time stopped : 2.8048229s
+	  Average time stopped: +Infinis
+	  Total number of times stopped: 2
+	  Average number of time stopped: +Infini
+	  Total time at max speed: 260.0749518
+	  Average time at max speed: +Infini
+
+ ---------------d--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 13.1026752s
+	  Average time traveled: 13.1026752s
+	  Total time stopped : 1.402759s
+	  Average time stopped: 1.402759s
+	  Total number of times stopped: 2
+	  Average number of time stopped: 2
+	  Total time at max speed: 4.0918149
+	  Average time at max speed: 4.0918149
+
+ ---------------nowIndividuals--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 2cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Time traveled : 7.4407175s, stopped 0times for a total of 0.7s. Time at full speed s
+	 Time traveled : 7.6869246s, stopped 0times for a total of 0.7s. Time at full speed s
+Total Results : 
+	  # of cars that were created : 2
+	  # of cars that arrived to their destination before the end of the timer: 2
+	  Total time traveled by cars which reached their destination: 15.1276421s
+	  Average time traveled: 7.56382105s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 5.3415694
+	  Average time at max speed: 2.6707847
+
+ ---------------i--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 2cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Time traveled : 13.102765s, stopped 2 times for a total of 1.4060188s. Time at full speed 4.1379415s
+	 Time traveled : 13.0899671s, stopped 2 times for a total of 1.410183s. Time at full speed 4.1035205s
+Total Results : 
+	  # of cars that were created : 2
+	  # of cars that arrived to their destination before the end of the timer: 2
+	  Total time traveled by cars which reached their destination: 26.1927321s
+	  Average time traveled: 13.09636605s
+	  Total time stopped : 2.8162018s
+	  Average time stopped: 1.4081009s
+	  Total number of times stopped: 4
+	  Average number of time stopped: 2
+	  Total time at max speed: 8.241462
+	  Average time at max speed: 4.120731
+
+ ---------------1--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 4cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at(4.2, 0.1, 6.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.4324795s, stopped 0 times for a total of 0s. Time at full speed 2.6488225s
+	 Started at(5.8, 0.1, 8.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.6752098s, stopped 0 times for a total of 0s. Time at full speed 2.8127872s
+	 Started at(5.8, 0.1, 8.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.6782163s, stopped 0 times for a total of 0s. Time at full speed 2.7373621s
+	 Started at(5.8, 0.1, 8.8). Arrived at(7.8, 0.1, 6.8). Time traveled : 7.6825865s, stopped 0 times for a total of 0s. Time at full speed 2.7426767s
+Total Results : 
+	  # of cars that were created : 4
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 30.4684921s
+	  Average time traveled: 7.617123025s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 10.9416485
+	  Average time at max speed: 2.735412125
+
+ ---------------vnh--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 4cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4415684s, stopped 0 times for a total of 0s. Time at full speed 2.6178896s
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4301595s, stopped 0 times for a total of 0s. Time at full speed 2.607607s
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4333675s, stopped 0 times for a total of 0s. Time at full speed 2.6803472s
+	 Started at (4.2, 6.8). Arrived at (7.8, 6.8). Time traveled : 7.4462014s, stopped 0 times for a total of 0s. Time at full speed 2.6269936s
+Total Results : 
+	  # of cars that were created : 4
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 29.7512968s
+	  Average time traveled: 7.4378242s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 10.5328374
+	  Average time at max speed: 2.63320935
+
+ ---------------ewg--------------- 
+
+Specifications : 
+	  map used : 4.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (5.8, 8.8). Arrived at (7.8, 6.8). Time traveled : 7.6801191s, stopped 0 times for a total of 0s. Time at full speed 2.7400909s
+Total Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.6801191s
+	  Average time traveled: 7.6801191s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 2.7400909
+	  Average time at max speed: 2.7400909
+
+ ---------------NoStopRespect--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  cars that don't respect stops: 100%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6918553s, stopped 2 times for a total of 0.0093511s. Time at full speed 4.2094054s
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6907997s, stopped 2 times for a total of 0.0095517s. Time at full speed 4.1337547s
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.7051374s, stopped 2 times for a total of 0.0090374s. Time at full speed 4.1773244s
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 35.0877924s
+	  Average time traveled: 11.6959308s
+	  Total time stopped : 0.0279402s
+	  Average time stopped: 0.0093134s
+	  Total number of times stopped: 9
+	  Average number of time stopped: 3
+	  Total time at max speed: 12.5204845
+	  Average time at max speed: 4.17349483333333
+
+ ---------------fes--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  cars that don't respect stops: 100%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6954143s, stopped 0 times for a total of 0s. Time at full speed 4.2080333s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.7081335s, stopped 0 times for a total of 0s. Time at full speed 4.1497458s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.7051304s, stopped 0 times for a total of 0s. Time at full speed 4.1752314s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.7063021s, stopped 0 times for a total of 0s. Time at full speed 4.2066771s. Respects stop signs  False. Number of stops not respected :2
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 46.8149803s
+	  Average time traveled: 11.703745075s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 16.7396876
+	  Average time at max speed: 4.1849219
+
+ ---------------csda--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  cars that don't respect stops: 100%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6959879s, stopped 0 times for a total of 0s. Time at full speed 4.2111108s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6937964s, stopped 0 times for a total of 0s. Time at full speed 4.1814973s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6944814s, stopped 0 times for a total of 0s. Time at full speed 4.164781s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.6927173s, stopped 0 times for a total of 0s. Time at full speed 4.1685732s. Respects stop signs  False. Number of stops not respected :2
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 46.776983s
+	  Average time traveled: 11.69424575s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 16.7259623
+	  Average time at max speed: 4.181490575
+
+ ---------------TestSpeed--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.100000001490116
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.6957034s, stopped 2 times for a total of 2.0078111s. Time at full speed 4.134166s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.6951491s, stopped 2 times for a total of 2.0053966s. Time at full speed 4.1088392s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7036796s, stopped 2 times for a total of 2.0027006s. Time at full speed 4.1214414s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 41.0945321s
+	  Average time traveled: 13.6981773666667s
+	  Total time stopped : 6.0159083s
+	  Average time stopped: 2.00530276666667s
+	  Total number of times stopped: 10
+	  Average number of time stopped: 3.333333
+	  Total time at max speed: 12.3644466
+	  Average time at max speed: 4.1214822
+
+ ---------------Gaussian--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 1
+	 Standard Deviation on speed : 0.578203082084656
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7046654s, stopped 2 times for a total of 2.0037561s. Time at full speed 4.1149162s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7026139s, stopped 2 times for a total of 2.0058799s. Time at full speed 4.0840814s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.7098782s, stopped 2 times for a total of 2.0043984s. Time at full speed 4.0885417s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 41.1171575s
+	  Average time traveled: 13.7057191666667s
+	  Total time stopped : 6.0140344s
+	  Average time stopped: 2.00467813333333s
+	  Total number of times stopped: 13
+	  Average number of time stopped: 4.333333
+	  Total time at max speed: 12.2875393
+	  Average time at max speed: 4.09584643333333
+
+ ---------------tet--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.100000001490116
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 0
+	  Total time traveled by cars which reached their destination: 0s
+	  Average time traveled: NaNs
+	  Total time stopped : 0s
+	  Average time stopped: NaNs
+	  Total number of times stopped: 230
+	  Average number of time stopped: +Infini
+	  Total time at max speed: 0
+	  Average time at max speed: NaN
+
+ ---------------speedTests--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.517341077327728
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.26753s, stopped 2 times for a total of 2.0099764s. Time at full speed 3.9687388s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.2523182s, stopped 2 times for a total of 2.0080698s. Time at full speed 3.9885297s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 13.2677297s, stopped 2 times for a total of 2.0083s. Time at full speed 3.9884448s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 39.7875779s
+	  Average time traveled: 13.2625259666667s
+	  Total time stopped : 6.0263462s
+	  Average time stopped: 2.00878206666667s
+	  Total number of times stopped: 10
+	  Average number of time stopped: 3.333333
+	  Total time at max speed: 11.9457133
+	  Average time at max speed: 3.98190443333333
+
+ ---------------speedTests--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.347796082496643
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.9367129s, stopped 2 times for a total of 2.0070229s. Time at full speed 6.3360009s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.9314954s, stopped 2 times for a total of 2.0076131s. Time at full speed 6.2950061s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 19.2086621s, stopped 6 times for a total of 2.1865963s. Time at full speed 6.0515581s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.9415507s, stopped 2 times for a total of 2.0065995s. Time at full speed 6.3124426s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 9
+	  Total time traveled by cars which reached their destination: 143.0090028s
+	  Average time traveled: 15.8898892s
+	  Total time stopped : 18.8821171s
+	  Average time stopped: 2.09801301111111s
+	  Total number of times stopped: 27
+	  Average number of time stopped: 3
+	  Total time at max speed: 44.6911416
+	  Average time at max speed: 4.9656824
+
+ ---------------fdsg--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 1
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 7.9150743s, stopped 2 times for a total of 2.0094737s. Time at full speed 1.6002446s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 7.9150743s
+	  Average time traveled: 7.9150743s
+	  Total time stopped : 2.0094737s
+	  Average time stopped: 2.0094737s
+	  Total number of times stopped: 8
+	  Average number of time stopped: 8
+	  Total time at max speed: 1.6002446
+	  Average time at max speed: 1.6002446
+
+ ---------------fd--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.54
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.700097s, stopped 0 times for a total of 0s. Time at full speed 3.7879181s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.7340989s, stopped 2 times for a total of 2.0028914s. Time at full speed 3.7121988s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.6955274s, stopped 0 times for a total of 0s. Time at full speed 3.8063084s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.7012613s, stopped 0 times for a total of 0s. Time at full speed 3.7639979s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.7330991s, stopped 2 times for a total of 2.007457s. Time at full speed 3.7048025s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 57.5640837s
+	  Average time traveled: 11.51281674s
+	  Total time stopped : 4.0103484s
+	  Average time stopped: 0.80206968s
+	  Total number of times stopped: 4
+	  Average number of time stopped: 0.8
+	  Total time at max speed: 18.7752257
+	  Average time at max speed: 3.75504514
+
+ ---------------d--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.38
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 15.36s, stopped 0 times for a total of 0s. Time at full speed 5.74s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 17.4s, stopped 2 times for a total of 1.96s. Time at full speed 5.77s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 17.53s, stopped 2 times for a total of 2s. Time at full speed 5.6s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.21s, stopped 11 times for a total of 2.98s. Time at full speed 5.65s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 15.36s, stopped 0 times for a total of 0s. Time at full speed 5.77s. Respects stop signs  False. Number of stops not respected :2
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 83.85s
+	  Average time traveled: 16.77s
+	  Total time stopped : 6.95s
+	  Average time stopped: 1.39s
+	  Total number of times stopped: 15
+	  Average number of time stopped: 3
+	  Total time at max speed: 28.54
+	  Average time at max speed: 5.71
+
+
+ ---------------jh--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.72
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.69s, stopped 2 times for a total of 2s. Time at full speed 2.47s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.7s, stopped 0 times for a total of 0s. Time at full speed 2.49s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.07s, stopped 2 times for a total of 2.01s. Time at full speed 2.6s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.08s, stopped 3 times for a total of 2.94s. Time at full speed 2.46s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.05s, stopped 2 times for a total of 2.01s. Time at full speed 2.58s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 8s, stopped 0 times for a total of 0s. Time at full speed 2.63s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.06s, stopped 2 times for a total of 2.01s. Time at full speed 2.53s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 7
+	  Total time traveled by cars which reached their destination: 68.65s
+	  Average time traveled: 9.81s
+	  Total time stopped : 10.96s
+	  Average time stopped: 1.57s
+	  Total number of times stopped: 15
+	  Average number of time stopped: 2.142857
+	  Total time at max speed: 17.76
+	  Average time at max speed: 2.54
+
+ ---------------320--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 0.71
+	 Standard Deviation on speed : 0.1
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.11s, stopped 2 times for a total of 2s. Time at full speed 2.19s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.77s, stopped 2 times for a total of 2s. Time at full speed 2.89s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.15s, stopped 2 times for a total of 2s. Time at full speed 2.18s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.03s, stopped 2 times for a total of 2s. Time at full speed 2.53s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 7.73s, stopped 0 times for a total of 0s. Time at full speed 2.53s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.15s, stopped 2 times for a total of 2s. Time at full speed 3.49s. Respects stop signs  True
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 7.27s, stopped 0 times for a total of 0s. Time at full speed 2.34s. Respects stop signs  False. Number of stops not respected :2
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.52s, stopped 3 times for a total of 2.1s. Time at full speed 3.62s. Respects stop signs  True
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 78.73s
+	  Average time traveled: 9.84s
+	  Total time stopped : 12.11s
+	  Average time stopped: 1.51s
+	  Total number of times stopped: 16
+	  Average number of time stopped: 2
+	  Total time at max speed: 21.77
+	  Average time at max speed: 2.72
+
+ ---------------t--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 0.77
+	 Standard Deviation on speed : 0.37
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 17.51s, stopped 2 times for a total of 2.01s. Time at full speed 5.87s. Respects stop signs  True. Max speed 0.37
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 18.28s, stopped 49 times for a total of 7.1s. Time at full speed 2.63s. Respects stop signs  True. Max speed 0.51
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.31s, stopped 2 times for a total of 2.01s. Time at full speed 2.57s. Respects stop signs  True. Max speed 0.7
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 5.6s, stopped 0 times for a total of 0s. Time at full speed 1.65s. Respects stop signs  False. Number of stops not respected :2. Max speed 1.03
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 51.69s
+	  Average time traveled: 12.92s
+	  Total time stopped : 11.11s
+	  Average time stopped: 2.78s
+	  Total number of times stopped: 53
+	  Average number of time stopped: 13.25
+	  Total time at max speed: 12.72
+	  Average time at max speed: 3.18
+
+ ---------------nz--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: gaussian
+	  Mean max speed of all cars : 0.55
+	 Standard Deviation on speed : 0.1
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.83s, stopped 2 times for a total of 2.01s. Time at full speed 2.94s. Respects stop signs  True. Max speed 0.66
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 11.19s, stopped 3 times for a total of 2.2s. Time at full speed 2.8s. Respects stop signs  True. Max speed 0.64
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 10.53s, stopped 2 times for a total of 2.01s. Time at full speed 2.78s. Respects stop signs  True. Max speed 0.68
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 12.65s, stopped 2 times for a total of 2.01s. Time at full speed 3.72s. Respects stop signs  True. Max speed 0.55
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 9.81s, stopped 2 times for a total of 2s. Time at full speed 2.44s. Respects stop signs  True. Max speed 0.74
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 55.01s
+	  Average time traveled: 11s
+	  Total time stopped : 10.23s
+	  Average time stopped: 2.05s
+	  Total number of times stopped: 11
+	  Average number of time stopped: 2.2
+	  Total time at max speed: 14.68
+	  Average time at max speed: 2.94
+
+ ---------------2--------------- 
+
+Specifications : 
+	  map used : 2stops.json
+	  time: 1min
+	  car load: 1cars/min
+	  speed type: constant
+	  Max speed of all cars : 1
+	  cars that don't respect stops: 100%
+	  cars that take:
+	 	 2nd best path: 0% 
+	 	 3rd best path: 0%
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 5.8). Arrived at (9.8, 5.8). Time traveled : 5.8s, stopped 0 times for a total of 0s. Time at full speed 1.75s. Respects stop signs  False. Number of stops not respected :2
+Total Results : 
+	  # of cars that were created : 1
+	  # of cars that arrived to their destination before the end of the timer: 1
+	  Total time traveled by cars which reached their destination: 5.8s
+	  Average time traveled: 5.8s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 1.75
+	  Average time at max speed: 1.75
+ ---------------fdsa--------------- 
+
+Specifications : 
+	  map used : 2ways.json
+	  time: 2min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.6
+	  cars that don't respect stops: 50%
+	  cars that take:
+	 	 2nd best path: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.88s, stopped 0 times for a total of 0s. Time at full speed 2.68s. Respects stop signs  False. Number of stops not respected :0. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.88s, stopped 0 times for a total of 0s. Time at full speed 2.72s. Respects stop signs  False. Number of stops not respected :0. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.87s, stopped 0 times for a total of 0s. Time at full speed 2.74s. Respects stop signs  True. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.88s, stopped 0 times for a total of 0s. Time at full speed 2.71s. Respects stop signs  True. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.89s, stopped 0 times for a total of 0s. Time at full speed 2.72s. Respects stop signs  False. Number of stops not respected :0. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.88s, stopped 0 times for a total of 0s. Time at full speed 2.71s. Respects stop signs  False. Number of stops not respected :0. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.88s, stopped 0 times for a total of 0s. Time at full speed 2.77s. Respects stop signs  False. Number of stops not respected :0. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.88s, stopped 0 times for a total of 0s. Time at full speed 2.68s. Respects stop signs  True. Path Chosen Best
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 8
+	  Total time traveled by cars which reached their destination: 63.04s
+	  Average time traveled: 7.88s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 21.72
+	  Average time at max speed: 2.72
+
+ ---------------ag--------------- 
+
+Specifications : 
+	  map used : 2ways.json
+	  time: 2min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.64
+	  cars that don't respect stops: 0%
+	  cars that take:
+	 	 2nd best path: 50% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 15.85s, stopped 0 times for a total of 0s. Time at full speed 5.37s. Respects stop signs  True. Path Chosen Second
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.35s, stopped 0 times for a total of 0s. Time at full speed 2.47s. Respects stop signs  True. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 15.86s, stopped 0 times for a total of 0s. Time at full speed 5.38s. Respects stop signs  True. Path Chosen Second
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 15.82s, stopped 0 times for a total of 0s. Time at full speed 5.31s. Respects stop signs  True. Path Chosen Second
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.36s, stopped 0 times for a total of 0s. Time at full speed 2.5s. Respects stop signs  True. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 18.94s, stopped 3 times for a total of 2.97s. Time at full speed 5.22s. Respects stop signs  True. Path Chosen Second
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 7.34s, stopped 0 times for a total of 0s. Time at full speed 2.51s. Respects stop signs  True. Path Chosen Best
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 15.86s, stopped 0 times for a total of 0s. Time at full speed 5.43s. Respects stop signs  True. Path Chosen Second
+	 Started at (4.2, 4.8). Arrived at (8.8, 4.8). Time traveled : 15.86s, stopped 0 times for a total of 0s. Time at full speed 5.38s. Respects stop signs  True. Path Chosen Second
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 9
+	  Total time traveled by cars which reached their destination: 120.25s
+	  Average time traveled: 13.36s
+	  Total time stopped : 2.97s
+	  Average time stopped: 0.33s
+	  Total number of times stopped: 3
+	  Average number of time stopped: 0.3333333
+	  Total time at max speed: 39.57
+	  Average time at max speed: 4.4
+
+ ---------------t--------------- 
+
+Specifications : 
+	  map used : map30.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.3
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (6.2, 15.8). Arrived at (10.8, 11.2). Time traveled : 32.33s, stopped 0 times for a total of 0s. Time at full speed 12.3s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (6.2, 15.8). Arrived at (10.8, 11.2). Time traveled : 32.33s, stopped 0 times for a total of 0s. Time at full speed 12.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (6.2, 15.8). Arrived at (10.8, 11.2). Time traveled : 32.35s, stopped 0 times for a total of 0s. Time at full speed 12.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 3
+	  Total time traveled by cars which reached their destination: 97.02s
+	  Average time traveled: 32.34s
+	  Total time stopped : 0s
+	  Average time stopped: 0s
+	  Total number of times stopped: 0
+	  Average number of time stopped: 0
+	  Total time at max speed: 36.99
+	  Average time at max speed: 12.33
+
+ ---------------tsd--------------- 
+
+Specifications : 
+	  map used : 15.json
+	  time: 1min
+	  car load: 5cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.49
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (5, 6). Arrived at (10, 6). Time traveled : 11.75s, stopped 0 times for a total of 0s. Time at full speed 4.2s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (5, 6). Arrived at (10, 6). Time traveled : 12.2s, stopped 1 times for a total of 0.45s. Time at full speed 4.24s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (5, 6). Arrived at (10, 6). Time traveled : 11.75s, stopped 0 times for a total of 0s. Time at full speed 4.24s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (5, 6). Arrived at (10, 6). Time traveled : 11.74s, stopped 0 times for a total of 0s. Time at full speed 4.2s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (5, 6). Arrived at (10, 6). Time traveled : 11.73s, stopped 0 times for a total of 0s. Time at full speed 4.25s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+Total Results : 
+	  # of cars that were created : 5
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 59.17s
+	  Average time traveled: 11.83s
+	  Total time stopped : 0.45s
+	  Average time stopped: 0.09s
+	  Total number of times stopped: 1
+	  Average number of time stopped: 0.2
+	  Total time at max speed: 21.12
+	  Average time at max speed: 4.22
+
+ ---------------test--------------- 
+
+Specifications : 
+	  map used : 30By30.json
+	  time: 1min
+	  car load: 10cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.51
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 40.67s, stopped 0 times for a total of 0s. Time at full speed 14.65s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 41.24s, stopped 1 times for a total of 0.55s. Time at full speed 14.7s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 41.77s, stopped 1 times for a total of 1.08s. Time at full speed 14.61s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+	 Started at (24, 14). Arrived at (5, 14). Time traveled : 40.68s, stopped 0 times for a total of 0s. Time at full speed 14.62s. Respects stop signs  True. Path Chosen :Best. High reaction time :True
+Total Results : 
+	  # of cars that were created : 10
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 164.36s
+	  Average time traveled: 41.09s
+	  Total time stopped : 1.64s
+	  Average time stopped: 0.41s
+	  Total number of times stopped: 5
+	  Average number of time stopped: 1.25
+	  Total time at max speed: 58.58
+	  Average time at max speed: 14.65
+
+ ---------------NoLight1--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 1min
+	  car load: 60cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.56
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 49.46s, stopped 1 times for a total of 0.67s. Time at full speed 17.31s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 55.96s, stopped 0 times for a total of 0s. Time at full speed 19.75s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 55.97s, stopped 0 times for a total of 0s. Time at full speed 19.87s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 56.89s, stopped 1 times for a total of 0.87s. Time at full speed 19.71s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+Total Results : 
+	  # of cars that were created : 60
+	  # of cars that arrived to their destination before the end of the timer: 4
+	  Total time traveled by cars which reached their destination: 218.27s
+	  Average time traveled: 54.57s
+	  Total time stopped : 1.55s
+	  Average time stopped: 0.39s
+	  Total number of times stopped: 27
+	  Average number of time stopped: 6.75
+	  Total time at max speed: 76.63
+	  Average time at max speed: 19.16
+
+ ---------------NoLightTest--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 10min
+	  car load: 60cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.51
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 52.24s, stopped 1 times for a total of 1.05s. Time at full speed 18.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 59.02s, stopped 0 times for a total of 0s. Time at full speed 21.3s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 51.19s, stopped 0 times for a total of 0s. Time at full speed 18.5s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 62.25s, stopped 1 times for a total of 0.69s. Time at full speed 22.42s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 51.18s, stopped 0 times for a total of 0s. Time at full speed 18.45s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 51.26s, stopped 0 times for a total of 0s. Time at full speed 18.46s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 51.19s, stopped 0 times for a total of 0s. Time at full speed 18.62s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 74.82s, stopped 0 times for a total of 0s. Time at full speed 27.01s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 76.35s, stopped 3 times for a total of 2.02s. Time at full speed 26.46s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 53.01s, stopped 3 times for a total of 1.64s. Time at full speed 18.36s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 75.41s, stopped 0 times for a total of 0s. Time at full speed 27.29s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 51.19s, stopped 0 times for a total of 0s. Time at full speed 18.49s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 75.62s, stopped 1 times for a total of 1.57s. Time at full speed 26.86s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 78.37s, stopped 1 times for a total of 1.15s. Time at full speed 27.62s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 78.74s, stopped 1 times for a total of 3.12s. Time at full speed 27.24s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 74.71s, stopped 0 times for a total of 0s. Time at full speed 26.93s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 86.84s, stopped 1 times for a total of 0.85s. Time at full speed 31.15s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 53.67s, stopped 0 times for a total of 0s. Time at full speed 19.38s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (42, 21). Time traveled : 83.22s, stopped 2 times for a total of 0.85s. Time at full speed 29.81s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 77s, stopped 0 times for a total of 0s. Time at full speed 27.8s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 75.02s, stopped 2 times for a total of 1.12s. Time at full speed 26.56s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 74.31s, stopped 1 times for a total of 0.06s. Time at full speed 26.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 61.58s, stopped 0 times for a total of 0s. Time at full speed 22.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 59.18s, stopped 1 times for a total of 0.11s. Time at full speed 21.03s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 52.57s, stopped 5 times for a total of 1.21s. Time at full speed 18.11s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 78.07s, stopped 4 times for a total of 2.59s. Time at full speed 26.99s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 101.56s, stopped 3 times for a total of 1.66s. Time at full speed 35.67s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 105.74s, stopped 0 times for a total of 0s. Time at full speed 38.3s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 67.12s, stopped 4 times for a total of 5.73s. Time at full speed 21.96s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 85.98s, stopped 0 times for a total of 0s. Time at full speed 31.13s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 106.29s, stopped 1 times for a total of 0.39s. Time at full speed 38.15s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 22). Time traveled : 107.03s, stopped 2 times for a total of 1.22s. Time at full speed 38.26s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 74.01s, stopped 0 times for a total of 0s. Time at full speed 26.75s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 63.49s, stopped 1 times for a total of 1.9s. Time at full speed 22.05s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 68.74s, stopped 12 times for a total of 6.88s. Time at full speed 21.98s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 107.36s, stopped 1 times for a total of 1.33s. Time at full speed 38.34s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 65.79s, stopped 6 times for a total of 3.99s. Time at full speed 22.1s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 100.2s, stopped 1 times for a total of 0.32s. Time at full speed 36.18s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 105.75s, stopped 0 times for a total of 0s. Time at full speed 38.11s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 53.67s, stopped 0 times for a total of 0s. Time at full speed 19.39s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 108.25s, stopped 1 times for a total of 2.46s. Time at full speed 38.19s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 121.73s, stopped 1 times for a total of 3.2s. Time at full speed 42.82s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 74s, stopped 0 times for a total of 0s. Time at full speed 26.68s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 61.6s, stopped 6 times for a total of 0.17s. Time at full speed 22.13s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 103.43s, stopped 2 times for a total of 3.5s. Time at full speed 35.86s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 51.94s, stopped 7 times for a total of 0.61s. Time at full speed 18.2s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 75.41s, stopped 0 times for a total of 0s. Time at full speed 27.2s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 74.01s, stopped 0 times for a total of 0s. Time at full speed 26.7s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 65.26s, stopped 2 times for a total of 3.6s. Time at full speed 22.16s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 61.64s, stopped 0 times for a total of 0s. Time at full speed 22.22s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 22). Time traveled : 128.82s, stopped 2 times for a total of 2.27s. Time at full speed 45.69s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 125.9s, stopped 5 times for a total of 7.52s. Time at full speed 42.4s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 74.71s, stopped 0 times for a total of 0s. Time at full speed 26.92s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 119.84s, stopped 2 times for a total of 1.25s. Time at ful
+ ---------------NoLight--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 5min
+	  car load: 30cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.56
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 25% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 57.57s, stopped 0 times for a total of 0s. Time at full speed 20.75s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 69.08s, stopped 0 times for a total of 0s. Time at full speed 24.41s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 58.03s, stopped 1 times for a total of 1.18s. Time at full speed 20.28s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (42, 21). Time traveled : 77.88s, stopped 1 times for a total of 1.25s. Time at full speed 26.46s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 71.58s, stopped 0 times for a total of 0s. Time at full speed 25.4s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 98.08s, stopped 0 times for a total of 0s. Time at full speed 34.17s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 22). Time traveled : 98.27s, stopped 0 times for a total of 0s. Time at full speed 34.88s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 50.21s, stopped 0 times for a total of 0s. Time at full speed 18.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 49.79s, stopped 3 times for a total of 1.64s. Time at full speed 17.13s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 98.2s, stopped 0 times for a total of 0s. Time at full speed 34.02s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 98.57s, stopped 0 times for a total of 0s. Time at full speed 34.75s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 69.52s, stopped 0 times for a total of 0s. Time at full speed 24.6s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 98.3s, stopped 0 times for a total of 0s. Time at full speed 35.2s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 42). Arrived at (42, 21). Time traveled : 81.62s, stopped 6 times for a total of 5.11s. Time at full speed 26.97s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 58.06s, stopped 0 times for a total of 0s. Time at full speed 20.22s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 68.69s, stopped 0 times for a total of 0s. Time at full speed 24.91s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 90.98s, stopped 0 times for a total of 0s. Time at full speed 33.04s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 71.19s, stopped 3 times for a total of 0.98s. Time at full speed 24.27s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (10, 5). Time traveled : 116.74s, stopped 1 times for a total of 0.16s. Time at full speed 40.44s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (10, 5). Time traveled : 113.53s, stopped 3 times for a total of 2.1s. Time at full speed 38.92s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 92.75s, stopped 0 times for a total of 0s. Time at full speed 33.51s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 110.65s, stopped 0 times for a total of 0s. Time at full speed 39.36s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 22). Time traveled : 116.49s, stopped 1 times for a total of 0.25s. Time at full speed 40.75s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 110.33s, stopped 0 times for a total of 0s. Time at full speed 38.48s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 59.25s, stopped 1 times for a total of 1.21s. Time at full speed 21.51s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 92.75s, stopped 0 times for a total of 0s. Time at full speed 32.63s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 69.25s, stopped 1 times for a total of 0.23s. Time at full speed 24.06s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 98.09s, stopped 0 times for a total of 0s. Time at full speed 34.62s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 98.01s, stopped 0 times for a total of 0s. Time at full speed 34.68s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (42, 21). Time traveled : 76.54s, stopped 0 times for a total of 0s. Time at full speed 26.93s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.68s, stopped 0 times for a total of 0s. Time at full speed 20.08s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 80.07s, stopped 6 times for a total of 1.85s. Time at full speed 28.52s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 72.92s, stopped 2 times for a total of 1.52s. Time at full speed 24.84s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 22). Time traveled : 117.72s, stopped 3 times for a total of 0.7s. Time at full speed 41.41s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 95.66s, stopped 3 times for a total of 2.8s. Time at full speed 31.91s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 54.53s, stopped 3 times for a total of 0.26s. Time at full speed 18.86s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 85.72s, stopped 0 times for a total of 0s. Time at full speed 30.84s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 22). Time traveled : 118.02s, stopped 3 times for a total of 2s. Time at full speed 41.11s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 54.08s, stopped 0 times for a total of 0s. Time at full speed 19.37s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 49.14s, stopped 0 times for a total of 0s. Time at full speed 17.19s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (10, 5). Time traveled : 113.98s, stopped 2 times for a total of 3.36s. Time at full speed 39.68s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 78.78s, stopped 0 times for a total of 0s. Time at full speed 28.09s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 57.98s, stopped 1 times for a total of 1.6s. Time at full speed 19.72s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.33s, stopped 0 times for a total of 0s. Time at full speed 19.8s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 42). Time traveled : 134.28s, stopped 2 times for a total of 3.05s. Time at full speed 46.38s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 100.45s, stopped 2 times for a total of 2.38s. Time at full speed 34.11s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.74s, stopped 0 times for a total of 0s. Time at full speed 20.36s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 86.6s, stopped 1 times for a total of 0.95s. Time at full speed 30.03s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 68.97s, stopped 0 times for a total of 0s. Time at full speed 24.6s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 57.06s, stopped 0 times for a total of 0s. Time at full speed 20.06s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (42, 21). Time traveled : 76.01s, stopped 0 times for a total of 0s. Time at full speed 26.49s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 110.66s, stopped 0 times for a total of 0s. Time at full speed 39.47s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 71.18s, stopped 0 times for a total of 0s. Time at full speed 25.88s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 50.84s, stopped 3 times for a total of 1.17s. Time at full speed 17.85s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 91.53s, stopped 1 times for a total of 0.65s. Time at full speed 32.12s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (10, 5). Time traveled : 111.57s, stopped 0 times for a total of 0s. Time at full speed 40.29s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 22). Time traveled : 98.69s, stopped 1 times for a total of 1.06s. Time at full speed 34.91s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 111.98s, stopped 1 times for a total of 1.65s. Time at full speed 39.27s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 56.83s, stopped 0 times for a total of 0s. Time at full speed 20.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 130.83s, stopped 1 times for a total of 0.16s. Time at full speed 47.16s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 97.56s, stopped 0 times for a total of 0s. Time at full speed 34.75s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 68.26s, stopped 1 times for a total of 0.1s. Time at full speed 24.64s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 56.79s, stopped 0 times for a total of 0s. Time at full speed 20.29s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 98.04s, stopped 1 times for a total of 0.39s. Time at full speed 34.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 68.76s, stopped 0 times for a total of 0s. Time at full speed 23.97s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 118.74s, stopped 2 times for a total of 3.13s. Time at full speed 42.08s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 112.31s, stopped 1 times for a total of 1.9s. Time at full speed 39.7s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 93.49s, stopped 2 times for a total of 1s. Time at full speed 33.05s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 57.98s, stopped 1 times for a total of 0.66s. Time at full speed 21.53s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 42). Time traveled : 130.4s, stopped 0 times for a total of 0s. Time at full speed 46.16s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 70.76s, stopped 3 times for a total of 0.6s. Time at full speed 24.52s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 97.81s, stopped 0 times for a total of 0s. Time at full speed 34.78s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (42, 21). Time traveled : 76.8s, stopped 0 times for a total of 0s. Time at full speed 26.97s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 47.51s, stopped 0 times for a total of 0s. Time at full speed 17.14s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 57.42s, stopped 0 times for a total of 0s. Time at full speed 20.9s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 69.26s, stopped 0 times for a total of 0s. Time at full speed 25.02s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 57.33s, stopped 0 times for a total of 0s. Time at full speed 19.98s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 86.3s, stopped 1 times for a total of 0.32s. Time at full speed 31.05s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 56.13s, stopped 1 times for a total of 1.14s. Time at full speed 19.68s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 131.4s, stopped 0 times for a total of 0s. Time at full speed 46.39s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 22). Time traveled : 117.09s, stopped 0 times for a total of 0s. Time at full speed 42.09s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 72.78s, stopped 1 times for a total of 0.1s. Time at full speed 25.53s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 42). Time traveled : 109.84s, stopped 0 times for a total of 0s. Time at full speed 38.36s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 69.69s, stopped 0 times for a total of 0s. Time at full speed 24.99s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 42). Time traveled : 131.3s, stopped 0 times for a total of 0s. Time at full speed 46.78s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 58.18s, stopped 1 times for a total of 1.05s. Time at full speed 20.1s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 79.89s, stopped 0 times for a total of 0s. Time at full speed 28.31s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 68.98s, stopped 0 times for a total of 0s. Time at full speed 24.81s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 22). Time traveled : 97.91s, stopped 0 times for a total of 0s. Time at full speed 34.73s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 49.77s, stopped 0 times for a total of 0s. Time at full speed 18.16s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 98.41s, stopped 1 times for a total of 0.5s. Time at full speed 35.18s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 93.67s, stopped 1 times for a total of 0.98s. Time at full speed 33.31s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 74.06s, stopped 2 times for a total of 3.4s. Time at full speed 24.96s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 130.54s, stopped 1 times for a total of 0.28s. Time at full speed 46.36s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 98.19s, stopped 0 times for a total of 0s. Time at full speed 34.52s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 98.02s, stopped 0 times for a total of 0s. Time at full speed 35.39s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 79.38s, stopped 0 times for a total of 0s. Time at full speed 27.87s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 54.44s, stopped 0 times for a total of 0s. Time at full speed 19.86s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 131.22s, stopped 0 times for a total of 0s. Time at full speed 46.01s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 54.88s, stopped 2 times for a total of 0.58s. Time at full speed 19.04s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 58.4s, stopped 1 times for a total of 0.97s. Time at full speed 20.48s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 98.28s, stopped 1 times for a total of 0.57s. Time at full speed 34.71s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 22). Time traveled : 117.71s, stopped 1 times for a total of 0.67s. Time at full speed 41.27s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 95.51s, stopped 0 times for a total of 0s. Time at full speed 34.09s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 46.97s, stopped 0 times for a total of 0s. Time at full speed 16.59s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 100.94s, stopped 4 times for a total of 5.53s. Time at full speed 32.79s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 69.64s, stopped 1 times for a total of 0.87s. Time at full speed 24.1s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 133.73s, stopped 2 times for a total of 2.2s. Time at full speed 46.19s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 108.04s, stopped 1 times for a total of 2.41s. Time at full speed 37.81s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 42). Time traveled : 132.25s, stopped 3 times for a total of 0.8s. Time at full speed 45.96s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 42). Time traveled : 132.82s, stopped 4 times for a total of 1.21s. Time at full speed 47.04s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 130.68s, stopped 1 times for a total of 0.44s. Time at full speed 46.48s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 42). Arrived at (10, 5). Time traveled : 131.24s, stopped 1 times for a total of 0.37s. Time at full speed 46.6s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+Total Results : 
+	  # of cars that were created : 150
+	  # of cars that arrived to their destination before the end of the timer: 113
+	  Total time traveled by cars which reached their destination: 9803.34s
+	  Average time traveled: 86.76s
+	  Total time stopped : 71.41s
+	  Average time stopped: 0.63s
+	  Total number of times stopped: 130
+	  Average number of time stopped: 1.150442
+	  Total time at max speed: 3453.25
+	  Average time at max speed: 30.56
+
+ ---------------stresstest--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 2min
+	  car load: 60cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.5
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 25% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 54.08s, stopped 0 times for a total of 0s. Time at full speed 19.52s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 64.86s, stopped 0 times for a total of 0s. Time at full speed 23.66s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 53.94s, stopped 0 times for a total of 0s. Time at full speed 19.27s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 56.52s, stopped 0 times for a total of 0s. Time at full speed 20.11s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 80.76s, stopped 0 times for a total of 0s. Time at full speed 28.95s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 80.79s, stopped 0 times for a total of 0s. Time at full speed 29.73s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 56.48s, stopped 0 times for a total of 0s. Time at full speed 20.69s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 64.64s, stopped 0 times for a total of 0s. Time at full speed 23.25s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 80.73s, stopped 0 times for a total of 0s. Time at full speed 29.04s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 80.81s, stopped 39 times for a total of 2.68s. Time at full speed 28.33s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 62.89s, stopped 27 times for a total of 1.21s. Time at full speed 22.14s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 54.46s, stopped 1 times for a total of 1s. Time at full speed 19.86s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 62.48s, stopped 1 times for a total of 0.57s. Time at full speed 23.21s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 65.28s, stopped 0 times for a total of 0s. Time at full speed 24.25s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 65.47s, stopped 16 times for a total of 1.42s. Time at full speed 23.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 61.63s, stopped 0 times for a total of 0s. Time at full speed 21.74s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 78.75s, stopped 1 times for a total of 0.18s. Time at full speed 27.95s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 65.71s, stopped 7 times for a total of 0.61s. Time at full speed 23.14s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 67.56s, stopped 4 times for a total of 3.25s. Time at full speed 23.63s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 105.6s, stopped 0 times for a total of 0s. Time at full speed 37.68s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 53.11s, stopped 0 times for a total of 0s. Time at full speed 19.54s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 53.84s, stopped 69 times for a total of 2.28s. Time at full speed 18.66s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 110.63s, stopped 1 times for a total of 2.33s. Time at full speed 39.32s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 86.87s, stopped 2 times for a total of 6.42s. Time at full speed 29.27s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 21). Time traveled : 111.12s, stopped 0 times for a total of 0s. Time at full speed 40.29s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 102.82s, stopped 51 times for a total of 1.13s. Time at full speed 36.68s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+Total Results : 
+	  # of cars that were created : 120
+	  # of cars that arrived to their destination before the end of the timer: 26
+	  Total time traveled by cars which reached their destination: 1881.79s
+	  Average time traveled: 72.38s
+	  Total time stopped : 23.09s
+	  Average time stopped: 0.89s
+	  Total number of times stopped: 658
+	  Average number of time stopped: 25.30769
+	  Total time at max speed: 673.26
+	  Average time at max speed: 25.89
+
+ ---------------stress--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 2min
+	  car load: 60cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.48
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 25% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 58.41s, stopped 0 times for a total of 0s. Time at full speed 21.49s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 58.62s, stopped 0 times for a total of 0s. Time at full speed 21.81s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 67.2s, stopped 0 times for a total of 0s. Time at full speed 23.56s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 82.17s, stopped 0 times for a total of 0s. Time at full speed 28.92s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 86.92s, stopped 1 times for a total of 2.82s. Time at full speed 29.89s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 60.09s, stopped 2 times for a total of 3.92s. Time at full speed 19.71s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 80.99s, stopped 1 times for a total of 0.33s. Time at full speed 28.54s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 87.93s, stopped 3 times for a total of 6.15s. Time at full speed 29.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 64.51s, stopped 0 times for a total of 0s. Time at full speed 23.36s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (10, 5). Time traveled : 83.28s, stopped 1 times for a total of 1.64s. Time at full speed 30.45s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 58.84s, stopped 0 times for a total of 0s. Time at full speed 21.24s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 59.83s, stopped 1 times for a total of 1.11s. Time at full speed 21.58s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (10, 5). Time traveled : 60.98s, stopped 3 times for a total of 4.8s. Time at full speed 19.86s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 93.48s, stopped 0 times for a total of 0s. Time at full speed 34.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 64.45s, stopped 0 times for a total of 0s. Time at full speed 23.29s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 64.55s, stopped 0 times for a total of 0s. Time at full speed 22.91s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 88.22s, stopped 1 times for a total of 6.15s. Time at full speed 29.85s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 65.13s, stopped 1 times for a total of 0.86s. Time at full speed 24.4s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (42, 21). Time traveled : 84.85s, stopped 1 times for a total of 1.54s. Time at full speed 30.84s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 68.12s, stopped 1 times for a total of 0.99s. Time at full speed 24.56s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 63.85s, stopped 0 times for a total of 0s. Time at full speed 23.57s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 63.77s, stopped 0 times for a total of 0s. Time at full speed 23.36s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 42). Arrived at (1, 42). Time traveled : 93.47s, stopped 0 times for a total of 0s. Time at full speed 34.84s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (10, 5). Time traveled : 81.26s, stopped 1 times for a total of 0.39s. Time at full speed 28.85s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 114.04s, stopped 2 times for a total of 5.72s. Time at full speed 38.66s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 109.47s, stopped 3 times for a total of 2.67s. Time at full speed 39.49s. Respects stop signs  True. Path Chosen :Second. High reaction time :False
+Total Results : 
+	  # of cars that were created : 120
+	  # of cars that arrived to their destination before the end of the timer: 26
+	  Total time traveled by cars which reached their destination: 1964.45s
+	  Average time traveled: 75.56s
+	  Total time stopped : 39.1s
+	  Average time stopped: 1.5s
+	  Total number of times stopped: 133
+	  Average number of time stopped: 5.115385
+	  Total time at max speed: 698.52
+	  Average time at max speed: 26.87
+
+ ---------------tset--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 2min
+	  car load: 30cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.48
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 57.77s, stopped 1 times for a total of 0.34s. Time at full speed 20.79s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 65.89s, stopped 0 times for a total of 0s. Time at full speed 24.03s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 65.89s, stopped 0 times for a total of 0s. Time at full speed 24.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 82.42s, stopped 0 times for a total of 0s. Time at full speed 29.87s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (22, 5). Arrived at (1, 22). Time traveled : 83.63s, stopped 1 times for a total of 1.16s. Time at full speed 30s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+Total Results : 
+	  # of cars that were created : 60
+	  # of cars that arrived to their destination before the end of the timer: 5
+	  Total time traveled by cars which reached their destination: 355.59s
+	  Average time traveled: 71.12s
+	  Total time stopped : 1.51s
+	  Average time stopped: 0.3s
+	  Total number of times stopped: 24
+	  Average number of time stopped: 4.8
+	  Total time at max speed: 128.82
+	  Average time at max speed: 25.76
+
+ ---------------noLight15--------------- 
+
+Specifications : 
+	  map used : hugeMapNoLight.json
+	  time: 5min
+	  car load: 15cars/min
+	  speed type: constant
+	  Max speed of all cars : 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results :
+	 Started at (33, 5). Arrived at (21, 5). Time traveled : 47.03s, stopped 0 times for a total of 0s. Time at full speed 16.87s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 56.52s, stopped 0 times for a total of 0s. Time at full speed 20.33s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 22). Time traveled : 50.61s, stopped 0 times for a total of 0s. Time at full speed 17.99s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 49.27s, stopped 0 times for a total of 0s. Time at full speed 17.7s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.8s, stopped 0 times for a total of 0s. Time at full speed 15.91s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (21, 5). Time traveled : 88.92s, stopped 0 times for a total of 0s. Time at full speed 31.65s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 54.27s, stopped 0 times for a total of 0s. Time at full speed 19.28s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.8s, stopped 0 times for a total of 0s. Time at full speed 15.96s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 54.27s, stopped 0 times for a total of 0s. Time at full speed 19.43s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.79s, stopped 0 times for a total of 0s. Time at full speed 15.99s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 41). Time traveled : 87.43s, stopped 0 times for a total of 0s. Time at full speed 31.04s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.79s, stopped 0 times for a total of 0s. Time at full speed 16.03s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (42, 21). Time traveled : 90.37s, stopped 0 times for a total of 0s. Time at full speed 31.95s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 42). Time traveled : 89.61s, stopped 1 times for a total of 0.98s. Time at full speed 31.48s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 42). Time traveled : 88.61s, stopped 0 times for a total of 0s. Time at full speed 31.7s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 42). Time traveled : 89.68s, stopped 1 times for a total of 1.05s. Time at full speed 31.63s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.56s, stopped 0 times for a total of 0s. Time at full speed 20.31s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (42, 41). Time traveled : 129.27s, stopped 0 times for a total of 0s. Time at full speed 46.26s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.8s, stopped 0 times for a total of 0s. Time at full speed 15.98s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 22). Time traveled : 50.61s, stopped 0 times for a total of 0s. Time at full speed 18.19s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 41). Time traveled : 87.42s, stopped 0 times for a total of 0s. Time at full speed 30.91s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 42). Time traveled : 56.51s, stopped 0 times for a total of 0s. Time at full speed 20.23s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (21, 5). Time traveled : 89.83s, stopped 0 times for a total of 0s. Time at full speed 31.89s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.52s, stopped 0 times for a total of 0s. Time at full speed 20.22s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.57s, stopped 0 times for a total of 0s. Time at full speed 20.1s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 41). Time traveled : 87.44s, stopped 0 times for a total of 0s. Time at full speed 31.18s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (21, 5). Time traveled : 47.07s, stopped 0 times for a total of 0s. Time at full speed 16.83s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 49.24s, stopped 0 times for a total of 0s. Time at full speed 17.59s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (42, 41). Time traveled : 97.15s, stopped 0 times for a total of 0s. Time at full speed 34.78s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 42). Time traveled : 88.63s, stopped 0 times for a total of 0s. Time at full speed 31.48s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 21). Time traveled : 49.27s, stopped 0 times for a total of 0s. Time at full speed 17.49s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 97.08s, stopped 0 times for a total of 0s. Time at full speed 34.82s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (1, 42). Time traveled : 97.09s, stopped 0 times for a total of 0s. Time at full speed 34.8s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (21, 5). Time traveled : 89.84s, stopped 0 times for a total of 0s. Time at full speed 31.94s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.81s, stopped 0 times for a total of 0s. Time at full speed 16.12s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 42). Time traveled : 131.98s, stopped 3 times for a total of 1.43s. Time at full speed 46.96s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (1, 22). Time traveled : 51.63s, stopped 1 times for a total of 1.02s. Time at full speed 17.96s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (1, 22). Time traveled : 55.5s, stopped 3 times for a total of 1.18s. Time at full speed 19.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (1, 31). Arrived at (21, 5). Time traveled : 89.8s, stopped 1 times for a total of 0.88s. Time at full speed 31.78s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 21). Time traveled : 56.56s, stopped 0 times for a total of 0s. Time at full speed 20.29s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 41). Time traveled : 87.44s, stopped 0 times for a total of 0s. Time at full speed 31.06s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (42, 41). Time traveled : 54.06s, stopped 0 times for a total of 0s. Time at full speed 19.33s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (21, 5). Time traveled : 47.03s, stopped 0 times for a total of 0s. Time at full speed 16.78s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (21, 5). Time traveled : 89.83s, stopped 0 times for a total of 0s. Time at full speed 32.13s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (42, 41). Time traveled : 129.29s, stopped 0 times for a total of 0s. Time at full speed 46.21s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (21, 5). Time traveled : 89.85s, stopped 0 times for a total of 0s. Time at full speed 32.35s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (42, 41). Time traveled : 87.44s, stopped 0 times for a total of 0s. Time at full speed 31.23s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (1, 22). Time traveled : 91.64s, stopped 0 times for a total of 0s. Time at full speed 32.31s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (21, 5). Time traveled : 47.05s, stopped 0 times for a total of 0s. Time at full speed 16.6s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (33, 5). Arrived at (21, 5). Time traveled : 47.05s, stopped 0 times for a total of 0s. Time at full speed 16.67s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (42, 32). Arrived at (21, 5). Time traveled : 89.91s, stopped 0 times for a total of 0s. Time at full speed 31.9s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (42, 21). Time traveled : 90.37s, stopped 0 times for a total of 0s. Time at full speed 32.32s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+	 Started at (11, 5). Arrived at (21, 5). Time traveled : 44.8s, stopped 0 times for a total of 0s. Time at full speed 15.93s. Respects stop signs  True. Path Chosen :Best. High reaction time :False
+Total Results : 
+	  # of cars that were created : 75
+	  # of cars that arrived to their destination before the end of the timer: 53
+	  Total time traveled by cars which reached their destination: 3782.71s
+	  Average time traveled: 71.37s
+	  Total time stopped : 6.54s
+	  Average time stopped: 0.12s
+	  Total number of times stopped: 24
+	  Average number of time stopped: 0.4528302 
+	  Total time at max speed: 1347.2
+	  Average time at max speed: 25.42

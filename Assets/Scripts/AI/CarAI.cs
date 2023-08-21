@@ -316,7 +316,7 @@ public class CarAI : MonoBehaviour
     private IEnumerator OnHisPhoneWait()
     {
         Debug.Log("Oublie de redméarer");
-        yield return new WaitForSeconds(0.2f); // Wait for 2 seconds
+        yield return new WaitForSeconds(0.2f); // Wait for0. 2 seconds
         currentlyOnHisPhone = false;
     }
 

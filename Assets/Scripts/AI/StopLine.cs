@@ -30,7 +30,8 @@ public class StopLine : MonoBehaviour
                 }
                 else
                 {
-                    InvokeRepeating("CheckIfCanGo", 0f, 0.5f);
+
+                    InvokeRepeating("CheckIfCanGo", 0f, 1f);
                 }
             }
         }
@@ -39,7 +40,7 @@ public class StopLine : MonoBehaviour
     private IEnumerator ResetStopVariable(CarAI currentCar)
     {
         yield return new WaitForSeconds(currentCar.stopTime); // Wait for 2 seconds
-        InvokeRepeating("CheckIfCanGo", 0f, 0.5f);
+        InvokeRepeating("CheckIfCanGo", 0f, 1f);
     }
 
 
@@ -57,6 +58,7 @@ public class StopLine : MonoBehaviour
 
     private void CheckIfCanGo()
     {
+        
         foreach(Marker marker in toCheck)
         {
             if(marker.IsOccupied!=0)
@@ -69,10 +71,11 @@ public class StopLine : MonoBehaviour
         if(currentCar)
         {
             currentCar.Stop = false;
+            CancelInvoke();
         }
         
         toCheck = new List<Marker>();
-        CancelInvoke();
+
         return;
 
     }
