@@ -24,6 +24,7 @@ public class CarAI : MonoBehaviour
 
 
 
+    public static int numberStarted=0;
     public static int numberArrived=0;
     public static double totalTimeTaken=0;
     public static double totalTimeStopped=0;
@@ -132,6 +133,7 @@ public class CarAI : MonoBehaviour
 
     private void Start()
     {
+        numberStarted++;
         InitializeCar();
         if(path == null || path.Count == 0)
         {

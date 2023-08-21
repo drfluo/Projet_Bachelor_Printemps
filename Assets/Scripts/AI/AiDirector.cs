@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 
@@ -16,7 +17,8 @@ namespace SimpleCity.AI
         AdjacencyGraph carGraph = new AdjacencyGraph();
 
         List<Vector3> carPath = new List<Vector3>();
-        
+
+
         public CarAI SpawnACarWithReturn(PathChosen path)
         {
             return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), path);
@@ -38,16 +40,25 @@ namespace SimpleCity.AI
         }
 
 
+        public IEnumerator SpawnCarCoroutine()
+        {
+            GameObject spawnedCar = Instantiate(carPrefab);
+            CarAI carComponent = spawnedCar.GetComponent<CarAI>();
 
-        private CarAI TrySpawninACar(StructureModel startStructure, StructureModel endStructure,PathChosen pathChose)
+            yield return spawnedCar; // Renvoie la référence de la voiture instanciée
+        }
+
+
+
+        private CarAI TrySpawninACar(StructureModel startStructure, StructureModel endStructure,PathChosen pathChose, int i=0)
         {
             if (startStructure != null && endStructure != null)
             {
-                var startRoadPosition = startStructure.RoadPosition;
-                var endRoadPosition = endStructure.RoadPosition;
+                //var startRoadPosition = startStructure.RoadPosition;
+                //var endRoadPosition = endStructure.RoadPosition;
 
 
-                List<Vector3> allStartPositions= placementManager.GetSpawnAround(startStructure);
+                List<Marker> allStartPositions= placementManager.GetSpawnAround(startStructure);
                 List<Vector3> allEndPositions= placementManager.GetEndAround(endStructure);
 
                 //a buildin can have up to 4 entrance or exit so has to test all of them for a path
@@ -58,12 +69,12 @@ namespace SimpleCity.AI
                 List<Vector3> bestPath = new List<Vector3>();
                 List<Vector3> SecondBestPath = new List<Vector3>();
                 List<Vector3> ThirdBestPath = new List<Vector3>();
-                foreach (Vector3 start in allStartPositions)
+                foreach (Marker start in allStartPositions)
                 {
                     foreach(Vector3 stop in allEndPositions)
                     {
                         //try getting the fastes path from this start to this stop
-                        carPath = GetCarPath(start, stop, PathChosen.Best);
+                        carPath = GetCarPath(start.Position, stop, PathChosen.Best);
                         //if not null and better
                         if(carPath!=null && carPath.Count< sizeBestPath && carPath.Count != 0)
                         {
@@ -137,15 +148,50 @@ namespace SimpleCity.AI
                     }
 
                 }
-                
+
 
 
 
                 if (carPath != null && carPath.Count > 0)
                 {
+                    Marker marker = null;
+
+                    foreach(Marker markerStart in allStartPositions)
+                    {
+                        if(markerStart.Position==carPath[0])
+                        {
+                            marker = markerStart;
+                        }
+                    }
+
+
+
+
+                    if(marker==null)
+                    {
+                        Debug.Log("HGE ISSUE : Path found but not marker start");
+                        return null;
+                    }
+
+
+                    if(marker.IsOccupied!=0 && i<2)
+                    {
+                        Debug.Log("MARKER NOT FREE");
+                        return TrySpawninACar(placementManager.GetRandomHouseStructure(), placementManager.GetRandomSpecialStrucutre(), pathChose,i++);
+                    }
+
+                    if(i>=2)
+                    {
+                        return null;
+                    }
+
+
+                    
+
                     var car = Instantiate(carPrefab, carPath[0], Quaternion.identity);
                     CarAI toreturn = car.GetComponent<CarAI>();
                     toreturn.SetPath(carPath);
+
                     return toreturn;
                 }
                 Debug.Log("No path found for this car");
@@ -154,6 +200,8 @@ namespace SimpleCity.AI
             }
             return null;
         }
+
+
 
         private List<Vector3> GetCarPath(Vector3 startPosition, Vector3 endPosition, PathChosen pathChose)
         {
@@ -175,6 +223,7 @@ namespace SimpleCity.AI
                 return null;
             }
         }
+
 
 
 
@@ -327,7 +376,7 @@ namespace SimpleCity.AI
         }
 
         //useless function replaced by cargraph
-        private void CreatACarGraph(List<Vector3Int> path)
+        /*private void CreatACarGraph(List<Vector3Int> path)
         {
 
             Dictionary<Marker, Vector3> tempDictionary = new Dictionary<Marker, Vector3>();
@@ -369,7 +418,7 @@ namespace SimpleCity.AI
                     }
                 }
             }
-        }
+        }*/
     }
 }
 

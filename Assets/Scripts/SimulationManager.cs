@@ -112,19 +112,19 @@ public class SimulationManager : MonoBehaviour
         sw.WriteLine("\n ---------------" + strSimulationName + "--------------- \n");
 
         //write specifications to file
-        sw.WriteLine("Specifications : ");
-        sw.WriteLine("\t  map used : " + mapName);
+        sw.WriteLine("Specifications: ");
+        sw.WriteLine("\t  map used: " + mapName);
         sw.WriteLine("\t  time: " + (fTime / 60).ToString() + "min");
         sw.WriteLine("\t  car load: " + carLoad.ToString() + "cars/min");
         sw.WriteLine("\t  speed type: " + speedChosen);
         if(speedChosen=="constant")
         {
-            sw.WriteLine("\t  Max speed of all cars : " + meanSpeed.ToString("0.##"));
+            sw.WriteLine("\t  Max speed of all cars: " + meanSpeed.ToString("0.##"));
         }
         else
         {
-            sw.WriteLine("\t  Mean max speed of all cars : " + meanSpeed.ToString("0.##"));
-            sw.WriteLine("\t  Standard Deviation on speed : " + stdDeviationSpeed.ToString("0.##"));
+            sw.WriteLine("\t  Mean max speed of all cars: " + meanSpeed.ToString("0.##"));
+            sw.WriteLine("\t  Standard Deviation on speed: " + stdDeviationSpeed.ToString("0.##"));
         } 
         sw.WriteLine("\t  cars that don't respect stops: " + stopRespect + "%");
         sw.WriteLine("\t  cars that take 2nd best path: " + secondBestPath + "% ");
@@ -132,9 +132,10 @@ public class SimulationManager : MonoBehaviour
         sw.WriteLine("\t  cars that block intersections: " + intersectionBlocking + "%");
 
 
-        sw.WriteLine("Individual cars results :");
+        sw.WriteLine("Individual cars results:");
 
         simulationGoing = true;
+        CarAI.numberStarted = 0;
         CarAI.numberArrived = 0;
         CarAI.totalNumberStops = 0;
         CarAI.totalTimeMaxSpeed = 0;
@@ -184,48 +185,55 @@ public class SimulationManager : MonoBehaviour
             pathChose = PathChosen.Best;
         }
 
-        allcars[iIdCar]=aiDirector.SpawnACarWithReturn(pathChose);
-        allcars[iIdCar].CarDestroyed += OnCarDestroyed;
-        allcars[iIdCar].pathChosen = pathChose;
-
-        //chooses if car respects stops
-        if (random.NextDouble() * 100 < stopRespect)
+        allcars[iIdCar] = aiDirector.SpawnACarWithReturn(pathChose);
+        if(allcars[iIdCar]!=null)
         {
-            allcars[iIdCar].respectStops = false;
+            allcars[iIdCar].CarDestroyed += OnCarDestroyed;
+            allcars[iIdCar].pathChosen = pathChose;
+
+            //chooses if car respects stops
+            if (random.NextDouble() * 100 < stopRespect)
+            {
+                allcars[iIdCar].respectStops = false;
+            }
+            //chooses if car respects stops
+            if (random.NextDouble() * 100 < reactionTime)
+            {
+                allcars[iIdCar].onHisPhone = true;
+            }
+
+            allcars[iIdCar].maxSpeed = NormalDistributionGenerator(meanSpeed, stdDeviationSpeed);
+            allcars[iIdCar].effectiveMaxSpeed = allcars[iIdCar].maxSpeed;
+
+            Debug.Log(allcars[iIdCar].pathChosen);
+
         }
-        //chooses if car respects stops
-        if (random.NextDouble() * 100 < reactionTime)
-        {
-            allcars[iIdCar].onHisPhone = true;
-        }
 
-        allcars[iIdCar].maxSpeed = NormalDistributionGenerator(meanSpeed, stdDeviationSpeed);
-        allcars[iIdCar].effectiveMaxSpeed = allcars[iIdCar].maxSpeed;
-
-
-
-        Debug.Log(allcars[iIdCar].pathChosen);
     }
+
+
 
     private void OnCarDestroyed(CarAI car)
     {
         if(simulationGoing)
         {
 
-            string results = "\t Started at " + new Vector2Int((int)car.path[0].x, (int)car.path[0].z) + ". Arrived at " + new Vector2Int((int)car.path[car.path.Count - 1].x, (int)car.path[car.path.Count - 1].z) + ". Time traveled : " +
-                car.timeTaken.ToString("0.##") + "s, stopped " + car.numberStop + " times for a total of " + car.timeStopped.ToString("0.##") + "s. Time at full speed " + car.timeFullSpeed.ToString("0.##") + "s. ";
-            results = results + "Respects stop signs  " + car.respectStops;
+
+
+            string results = "\t" + new Vector2Int((int)car.path[0].x, (int)car.path[0].z) + "/" + new Vector2Int((int)car.path[car.path.Count - 1].x, (int)car.path[car.path.Count - 1].z) + "/" +
+                car.timeTaken.ToString("0.##") + "/" + car.numberStop + "/" + car.timeStopped.ToString("0.##") + "/" + car.timeFullSpeed.ToString("0.##") + "/";
+            results = results + car.respectStops;
             if(!car.respectStops)
             {
-                results = results + ". Number of stops not respected :" + car.numberStopDisrespected;
+                results = results + "-" + car.numberStopDisrespected;
             }
-            if(speedChosen != "constant")
-            {
-                results = results + ". Max speed " + car.maxSpeed.ToString("0.##");
-            }
-            results = results + ". Path Chosen :" + car.pathChosen;
-            results = results + ". High reaction time :" + car.onHisPhone;
+            results = results + "/" + car.pathChosen;
+            results = results + "/" + car.onHisPhone;
 
+            if (speedChosen != "constant")
+            {
+                results = results + "/" + car.maxSpeed.ToString("0.##");
+            }
 
             sw.WriteLine(results);
         }
@@ -251,12 +259,12 @@ public class SimulationManager : MonoBehaviour
 
 
         //write results to file
-        sw.WriteLine("Total Results : ");
-        sw.WriteLine("\t  # of cars that were created : " + (int)(carLoad * fTime / 60));
+        sw.WriteLine("Total Results: ");
+        sw.WriteLine("\t  # of cars that were created: " + CarAI.numberStarted);
         sw.WriteLine("\t  # of cars that arrived to their destination before the end of the timer: " + CarAI.numberArrived);
         sw.WriteLine("\t  Total time traveled by cars which reached their destination: " + CarAI.totalTimeTaken.ToString("0.##") + "s");
         sw.WriteLine("\t  Average time traveled: " + (CarAI.totalTimeTaken/ CarAI.numberArrived).ToString("0.##") + "s");
-        sw.WriteLine("\t  Total time stopped : " + CarAI.totalTimeStopped.ToString("0.##") + "s");
+        sw.WriteLine("\t  Total time stopped: " + CarAI.totalTimeStopped.ToString("0.##") + "s");
         sw.WriteLine("\t  Average time stopped: " + (CarAI.totalTimeStopped / CarAI.numberArrived).ToString("0.##") + "s");
         sw.WriteLine("\t  Total number of times stopped: " + CarAI.totalNumberStops);
         sw.WriteLine("\t  Average number of time stopped: " + (float)CarAI.totalNumberStops / CarAI.numberArrived);

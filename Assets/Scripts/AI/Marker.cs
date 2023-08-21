@@ -105,13 +105,13 @@ namespace SimpleCity.AI
                     {
                         increment = 2;
                     }
-                    if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
+                    else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("roundabout"))
                     {
                         increment = 2; 
                     }
                     else if (GetComponent<Collider>().transform.parent.transform.parent.name.Contains("4Way"))
                     {
-                        increment = 3; 
+                        increment = 3;
                     }
 
                    // Debug.Log("Position checked marker : " + car.path[car.index + increment]);
@@ -119,7 +119,7 @@ namespace SimpleCity.AI
                     foreach (Dependency dependency in dependencyList)
                     {
                        // Debug.Log("check" + dependency.destination.name + " at " + dependency.destination.Position);
-                        if (car.index + increment<car.path.Count && dependency.destination.Position == car.path[car.index + increment])
+                        if (car.index + increment<car.path.Count && (dependency.destination.Position - car.path[car.index + increment]).sqrMagnitude < 0.01)
                         {
                             //Debug.Log("Found destination");
                             dependency.stopLine.toCheck = dependency.toCheck;

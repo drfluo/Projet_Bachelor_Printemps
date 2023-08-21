@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
+using SimpleCity.AI;
 
 public class PlacementManager : MonoBehaviour
 {
@@ -149,14 +150,14 @@ public class PlacementManager : MonoBehaviour
     }
 
     //takes a road and return THE STRUCTURE of its neighbours
-    public List<Vector3> GetSpawnAround(StructureModel givenStructure)
+    public List<Marker> GetSpawnAround(StructureModel givenStructure)
     {
-        List<Vector3> spawns = new List<Vector3>();
+        List<Marker> spawns = new List<Marker>();
         List<StructureModel> neighboursRoad = GetRoadNeighbours(Vector3Int.FloorToInt( givenStructure.transform.position));
 
         foreach (StructureModel road in neighboursRoad)
         {
-            spawns.Add(road.GetCarSpawnMarker(givenStructure.transform.position).Position);
+            spawns.Add(road.GetCarSpawnMarker(givenStructure.transform.position));
         }
         return spawns;
     }
