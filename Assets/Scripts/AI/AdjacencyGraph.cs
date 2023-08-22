@@ -225,6 +225,42 @@ namespace SimpleCity.AI
             }
         }
 
+        public static List<Vector3> FindSecondPathRandomly(AdjacencyGraph graph, Vector3 startPosition, Vector3 endPosition, int K = 1)
+        {
+            List<Vector3> shortestPath = AStarSearch(graph, startPosition, endPosition);
+
+            if(K==1)
+            {
+                return shortestPath;
+            }
+
+            //si veut le deuxième meilleur ou plus
+            List<Vector3> secondPath = null;
+            if(shortestPath.Count>7)
+            {
+                for (int i = 0; i < 15; i++)
+                {
+                    int index = UnityEngine.Random.Range(1, shortestPath.Count - 2);
+
+                    graph.RemoveEdge(graph.GetVertexAt(shortestPath[index]), graph.GetVertexAt(shortestPath[index+1]));
+                    secondPath = AStarSearch(graph, startPosition, endPosition);
+                    graph.AddEdge(shortestPath[index], shortestPath[index + 1]);
+
+
+                    if (secondPath!=null && secondPath.Count!=0)
+                    {
+                        Debug.Log("Other Path Found");
+                        return secondPath;
+                    }
+
+                    
+                }
+            }
+
+
+            return null;
+        }
+
         public static List<Vector3> FindKthShortestPath(AdjacencyGraph graph, Vector3 startPosition, Vector3 endPosition, int K = 1)
         {
             List<Vector3> shortestPath= AStarSearch(graph, startPosition, endPosition);

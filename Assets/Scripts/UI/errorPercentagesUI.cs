@@ -10,10 +10,16 @@ public class errorPercentagesUI : MonoBehaviour
 
 
 
-    public Text thisText;
+    public Text TextPourcentage;
+    public Text TextMissingValue;
+    public InputField SimulationName;
+    public InputField Duration;
+    public InputField CarLoad;
+
     public GameObject specsChoosing;
     public InputField percentageStop;
     public InputField percentage2ndBest;
+    public InputField percentage3rdBest;
     public InputField percentageReactionTime;
     public InputField percentageBlock;
 
@@ -30,50 +36,75 @@ public class errorPercentagesUI : MonoBehaviour
         //if we are in the choosing specs panel
         if(specsChoosing.activeSelf)
         {
+            if(SimulationName.text == "" || Duration.text == "" || CarLoad.text == "")
+            {
+                TextMissingValue.gameObject.SetActive(true);
+                launch.interactable = false;
+                return;
+            }
             if (percentageStop.text != "")
             {
-                if (!valid(int.Parse(percentageStop.text)))
+                if (!Valid(int.Parse(percentageStop.text)))
                 {
-                    thisText.gameObject.SetActive(true);
+                    TextPourcentage.gameObject.SetActive(true);
                     launch.interactable = false;
                     return;
                 }
             }
             if (percentageBlock.text != "")
             {
-                 if (!valid(int.Parse(percentageBlock.text)))
+                 if (!Valid(int.Parse(percentageBlock.text)))
                  {
-                    thisText.gameObject.SetActive(true);
+                    TextPourcentage.gameObject.SetActive(true);
                     launch.interactable = false;
                     return;
                  }
             }
             if(percentageReactionTime.text!="")
             {
-                if (!valid(int.Parse(percentageReactionTime.text)))
+                if (!Valid(int.Parse(percentageReactionTime.text)))
                 {
-                    thisText.gameObject.SetActive(true);
+                    TextPourcentage.gameObject.SetActive(true);
+                    launch.interactable = false;
+                    return;
+                }
+            }
+            if(percentage3rdBest.text != "")
+            {
+                if (!Valid(int.Parse(percentage3rdBest.text)))
+                {
+                    TextPourcentage.gameObject.SetActive(true);
                     launch.interactable = false;
                     return;
                 }
             }
             if(percentage2ndBest.text!="")
             {
-                if (!valid(int.Parse(percentage2ndBest.text)))
+                if (!Valid(int.Parse(percentage2ndBest.text)))
                 {
-                    thisText.gameObject.SetActive(true);
+                    TextPourcentage.gameObject.SetActive(true);
+                    launch.interactable = false;
+                    return;
+                }
+            }
+            if(percentage3rdBest.text != "" && percentage2ndBest.text != "")
+            {
+                if (!Valid(int.Parse(percentage2ndBest.text)+ int.Parse(percentage3rdBest.text)))
+                {
+                    TextPourcentage.gameObject.SetActive(true);
                     launch.interactable = false;
                     return;
                 }
             }
 
-            thisText.gameObject.SetActive(false);
+            TextPourcentage.gameObject.SetActive(false);
+            TextMissingValue.gameObject.SetActive(false);
             launch.interactable = true;
         }
     }
 
 
-    private bool valid(int percent)
+    private bool Valid(int percent)
     {
         return (percent>=0 && percent<=100);
     }

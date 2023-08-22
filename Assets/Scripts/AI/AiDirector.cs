@@ -209,11 +209,11 @@ namespace SimpleCity.AI
             {
                 if(pathChose==PathChosen.Best)
                 {
-                    return AdjacencyGraph.FindKthShortestPath(carGraph, startPosition, endPosition, 1);
+                    return AdjacencyGraph.FindSecondPathRandomly(carGraph, startPosition, endPosition, 1);
                 }
                 else
                 {
-                    return AdjacencyGraph.FindKthShortestPath(carGraph, startPosition, endPosition, 2);
+                    return AdjacencyGraph.FindSecondPathRandomly(carGraph, startPosition, endPosition, 2);
                 }
                 
             }
