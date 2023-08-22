@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241351582169447366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.1, z: 0.22}
+  m_LocalPosition: {x: -0.41, y: 0.1, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -79,8 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -110,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832671346734289408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 0, z: -0.552}
+  m_LocalPosition: {x: 0.23, y: 0, z: -0.579}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8866906801948800155}
@@ -168,7 +168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153723150152686348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.064, y: 0.1, z: 0}
+  m_LocalPosition: {x: -0.055, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -189,8 +189,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0
@@ -242,15 +242,15 @@ MonoBehaviour:
   - {fileID: 1547229366170371422}
   - {fileID: 5294581625559448516}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 5294581625559448516}
     toCheck: []
     stopLine: {fileID: 5667870465254227590}
   - destination: {fileID: 1547229366170371422}
     toCheck: []
-    stopLine: {fileID: 9183430883561013075}
+    stopLine: {fileID: 5667870465254227590}
   IsOccupied: 0
   openForConnections: 0
 --- !u!65 &7653484641255020569
@@ -264,8 +264,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 1, z: 0.35}
-  m_Center: {x: -0.37, y: 0, z: -0.01}
+  m_Size: {x: 0.67, y: 1, z: 0.35}
+  m_Center: {x: -0.46, y: 0, z: -0.01}
 --- !u!1 &2384947387477557946
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +324,7 @@ MonoBehaviour:
   - {fileID: 5294581625559448516}
   isCorner: 0
   canGetStuck: 1
+  is3Way: 1
   incommingMarkers:
   - {fileID: 394718298270981306}
   - {fileID: 5622062994906779639}
@@ -393,13 +394,13 @@ MonoBehaviour:
   - {fileID: 1914715121427716573}
   - {fileID: 3147576382005704904}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1914715121427716573}
     toCheck: []
     stopLine: {fileID: 5667870465254227590}
-  - destination: {fileID: 8220785704905346724}
+  - destination: {fileID: 3147576382005704904}
     toCheck:
     - {fileID: 394718298270981306}
     stopLine: {fileID: 2193496133313752873}
@@ -416,8 +417,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 1, z: 0.35}
-  m_Center: {x: 0.47, y: 0, z: 0}
+  m_Size: {x: 0.9, y: 1, z: 0.35}
+  m_Center: {x: 0.27, y: 0, z: 0}
 --- !u!1 &3219700215825233634
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3219700215825233634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 0.1, z: -0.3}
+  m_LocalPosition: {x: -0.22, y: 0.1, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -463,8 +464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -493,7 +494,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3515965438237719017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.1, z: -0.22}
+  m_LocalPosition: {x: 0.42, y: 0.1, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -513,8 +514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adjacentMarkers: []
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 1
@@ -544,7 +545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4109038470563987441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.38, y: 0, z: -0.25}
+  m_LocalPosition: {x: -0.53, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8866906801948800155}
@@ -603,7 +604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4808939951365619309}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.264, y: 0, z: 0.23}
+  m_LocalPosition: {x: 0.196, y: 0, z: 0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8866906801948800155}
@@ -686,7 +687,7 @@ GameObject:
   - component: {fileID: 5622062994906779639}
   - component: {fileID: 7668710656760818132}
   m_Layer: 0
-  m_Name: Entry_Bottom
+  m_Name: Entry_Bottom_GW
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -722,8 +723,8 @@ MonoBehaviour:
   - {fileID: 8220785704905346724}
   - {fileID: 1547229366170371422}
   currentCar: {fileID: 0}
-  canCommandCar: 1
   currentStopLine: {fileID: 0}
+  canCommandCar: 1
   dependencyList:
   - destination: {fileID: 1547229366170371422}
     toCheck:
@@ -747,8 +748,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 1, z: 0.5}
-  m_Center: {x: -0.01, y: 0, z: -0.47}
+  m_Size: {x: 0.35, y: 1, z: 0.6}
+  m_Center: {x: 0, y: 0, z: -0.42}
 --- !u!1 &5547572746461863766
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8008757790088263805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.058, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0.07, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2525066792990505275}
@@ -840,8 +841,8 @@ MonoBehaviour:
   adjacentMarkers:
   - {fileID: 1914715121427716573}
   currentCar: {fileID: 0}
-  canCommandCar: 0
   currentStopLine: {fileID: 0}
+  canCommandCar: 0
   dependencyList: []
   IsOccupied: 0
   openForConnections: 0

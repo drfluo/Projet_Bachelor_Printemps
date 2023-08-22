@@ -13,6 +13,8 @@ namespace SimpleCity.AI
         protected bool isCorner;
         [SerializeField]
         protected bool canGetStuck;
+        [SerializeField]
+        protected bool is3Way;
 
         float approximateThresholdCorner = 0.3f;
 
@@ -95,10 +97,18 @@ namespace SimpleCity.AI
 
         void Start()
         {
-            waitingCars = new CarAI[carMarkers.Count];
-            if (canGetStuck)
+            waitingCars = new CarAI[incommingMarkers.Count];
+            if (canGetStuck )
             {
-                InvokeRepeating("CheckStuck", 3.0f, 2f);
+                if(is3Way)
+                {
+                    InvokeRepeating("CheckStuck", 3.0f, 3f);
+                }
+                else
+                {
+                    InvokeRepeating("CheckStuck", 3.0f, 2f);
+                }
+                
             }
         }
 
@@ -106,7 +116,7 @@ namespace SimpleCity.AI
         {
             bool allEmpty = true;
             int i = 0;
-            foreach(Marker marker in carMarkers)
+            foreach(Marker marker in incommingMarkers)
             {
                 if(allEmpty && marker.currentCar!=null)
                 {
@@ -130,25 +140,28 @@ namespace SimpleCity.AI
                 List<int> indexes = new List<int>();
                 for (int j = 0; j < waitingCars.Length; j++)
                 {
-                    if (waitingCars[j] != null)
+                    Debug.Log(waitingCars[j] != null && incommingMarkers[j].transform.name.Contains("GW"));
+                    if (waitingCars[j] != null && !(incommingMarkers[j].transform.name.Contains("GW") || incommingMarkers[j].transform.name.Contains("STOP")))
                         indexes.Add(j);
                 }
-                int index = indexes[UnityEngine.Random.Range(0, indexes.Count)];
 
-                //need to get the stop line and tell it to stop stopping
-                carMarkers[index].currentStopLine.toCheck= new List<Marker>();
-                waitingCars[index].Stop = false;
+                if(indexes.Count>1)
+                {
+                    int index = indexes[UnityEngine.Random.Range(0, indexes.Count - 1)];
 
-
+                    //need to get the stop line and tell it to stop stopping
+                    incommingMarkers[index].currentStopLine.toCheck = new List<Marker>();
+                    waitingCars[index].Stop = false;
+                }
+                
             }
             UpdateListWaitingCar();
-
         }
 
         void UpdateListWaitingCar()
         {
             int i = 0;
-            foreach(Marker marker in carMarkers)
+            foreach(Marker marker in incommingMarkers)
             {
                 waitingCars[i] = marker.currentCar;
                 i++;

@@ -102,10 +102,6 @@ namespace SimpleCity.AI
                     StartCoroutine(ResetStopVariable(car));
                 }
 
-                //Debug.Log("Collider "+GetComponent<Collider>().name+" has hit object "+other.name);
-                //Debug.Log("Collider's parent "+GetComponent<Collider>().transform.parent.name+" has hit object "+other.name);
-                //Debug.Log("Collider's parent's parent "+GetComponent<Collider>().transform.parent.transform.parent.name+" has hit object "+other.name);
-                //Debug.Log("IS SET TO TRUE");
                 IsOccupied +=1;
 
                 if (canCommandCar)
@@ -191,14 +187,14 @@ namespace SimpleCity.AI
 
                if(waitingCars.Count!=0)
                {
-                    if(canCommandCar)
+                    if(canCommandCar && waitingCars[0].Item2.stopLine!=null)
                         waitingCars[0].Item2.stopLine.toCheck = new List<Marker>();
                     waitingCars.RemoveAt(0);
                     if (waitingCars.Count!=0)
                     {
                         currentCar = waitingCars[0].Item1;
 
-                        if(canCommandCar)
+                        if(canCommandCar && waitingCars[0].Item2.stopLine != null)
                         {
                             waitingCars[0].Item2.stopLine.toCheck = waitingCars[0].Item2.toCheck;
                             currentStopLine = waitingCars[0].Item2.stopLine;
