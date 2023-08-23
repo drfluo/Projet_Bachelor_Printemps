@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Results_Backup.txt" />
+    <None Include="Assets\Resultats.txt" />
     <None Include="Assets\Result.txt" />
   </ItemGroup>
   <ItemGroup>
