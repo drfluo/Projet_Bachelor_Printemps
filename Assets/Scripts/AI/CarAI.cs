@@ -102,7 +102,6 @@ public class CarAI : MonoBehaviour
                     {
                         stopWatchStoppedTime.Start();
                         numberStop++;
-                        totalNumberStops++;
                     }
                 }
                 else //want to set stop to false
@@ -241,8 +240,6 @@ public class CarAI : MonoBehaviour
             if(!stopWatchStoppedTime.IsRunning) //we need to stop because collision and we were not already stopped
             {
                 stopWatchStoppedTime.Start();
-                numberStop++;
-                totalNumberStops++;
             }
 
         }
@@ -348,6 +345,9 @@ public class CarAI : MonoBehaviour
             //time stopped
             timeStopped += stopWatchStoppedTime.Elapsed.TotalSeconds;
             totalTimeStopped += timeStopped;
+
+            //number of time stopped
+            totalNumberStops += numberStop;
 
             //tell the simulationManager to look at the cars data
             CarDestroyed?.Invoke(this);

@@ -140,7 +140,6 @@ namespace SimpleCity.AI
                 List<int> indexes = new List<int>();
                 for (int j = 0; j < waitingCars.Length; j++)
                 {
-                    Debug.Log(waitingCars[j] != null && incommingMarkers[j].transform.name.Contains("GW"));
                     if (waitingCars[j] != null && !(incommingMarkers[j].transform.name.Contains("GW") || incommingMarkers[j].transform.name.Contains("STOP")))
                         indexes.Add(j);
                 }
