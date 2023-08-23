@@ -1,0 +1,830 @@
+  ---------------WithLight_15_1--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 15cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/54.59/1/3.56/18.13/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/65.64/1/8.66/20.36/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/63.23/1/8.76/19.37/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/70.42/2/13.36/20.32/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/52.63/1/5.24/16.91/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/72.62/2/18.31/19.29/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/72.35/2/21.3/18.15/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/66.7/3/19.19/16.72/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/110.68/2/12.87/34.86/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/118.13/4/29.1/31.56/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 21)/114.16/3/16.26/34.77/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/59.28/1/11.86/16.82/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/123.23/3/25.36/34.83/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/102.91/3/13.4/31.87/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/53.55/1/3.86/17.64/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/70.53/2/23.08/16.58/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/67/1/12.72/19.31/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/74/2/19.5/19.33/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/64.48/13/10.46/19.14/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/140.57/3/8.9/46.99/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/68.55/2/14.06/19.34/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/109.21/3/20.2/31.66/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/162.97/4/32.48/46.49/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/110.05/4/21.74/31.25/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/67.84/2/10.78/20.21/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/120.34/3/27.8/32.82/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/72.67/2/15.64/20.26/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/162.89/5/32.34/46.43/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/97.08/2/8.84/31.43/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/62.56/2/5.5/20.2/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/112.51/3/23.06/31.73/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/58.4/1/8.66/17.7/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(21, 5)/144.87/4/54.19/32.22/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/90.24/3/30.62/19.11/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/58.08/1/1.08/20.3/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/79.44/2/28.38/18.17/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/72.95/2/18.46/19.38/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/152.41/4/20.73/46.86/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/127.67/3/29.7/34.85/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/72.32/2/22.61/17.58/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/110.66/4/22.42/31.41/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/92.33/5/41.2/17.95/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/66.86/2/12.41/19.37/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 75
+	  # of cars that arrived to their destination before the end of the timer: 43
+	  Total time traveled by cars which reached their destination: 3889.6s
+	  Average time traveled: 90.46s
+	  Total time stopped: 788.68s
+	  Average time stopped: 18.34s
+	  Total number of times stopped: 223
+	  Average number of time stopped: 5.186047
+	  Total time at max speed: 1099.66
+	  Average time at max speed: 25.57
+
+ ---------------WithLight_15_2--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 15cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/60.18/1/5.9/19.3/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/68.43/2/18.72/17.65/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/64.2/2/16.72/16.77/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/55.72/2/5.98/17.64/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/72.7/2/18.25/19.33/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/98.03/3/40.98/20.16/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/118.51/3/20.63/34.87/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/73.45/3/23.71/17.59/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(21, 5)/120.67/5/30.04/32.29/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 21)/123.3/3/32.14/32.44/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/129.25/3/31.34/34.75/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/86.42/3/29.35/20.26/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 21)/120.68/3/22.88/34.89/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/109.02/2/10.93/34.91/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 21)/126.69/5/35.56/32.28/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/131.32/6/43.03/31.27/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/65.14/1/8.14/20.34/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/120.75/4/28.12/32.88/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/146.8/6/48.89/34.79/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/123.63/2/25.66/34.92/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/59.56/1/2.56/20.32/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/70.11/2/20.42/17.63/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/160.48/5/28.72/46.94/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/70.17/2/13.12/20.14/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/171.87/5/40.12/46.84/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(21, 5)/117.23/3/26.6/32.32/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/121.86/3/23.86/34.86/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/58.26/2/3.76/19.32/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/118.76/4/29.26/31.83/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/103.18/4/14.1/31.58/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/89.92/4/32.86/20.2/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/156.44/4/24.68/46.93/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/80.71/2/23.66/20.3/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/111.92/2/19.4/33.03/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/59.92/1/12.52/16.86/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/118.33/4/28.79/31.7/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/118.47/5/28.98/31.8/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/126.23/3/28.36/34.8/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/90.55/5/30.98/19.22/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/78.94/3/24.58/19.11/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/64.58/3/10.23/18.94/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(21, 5)/140.72/5/50.16/32.23/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/123.09/4/25.2/34.71/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/60.19/1/3.2/20.31/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/84.36/3/27.35/20.17/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/149.62/3/19.1/46.54/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/125.49/4/37.22/31.33/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/66.47/1/9.48/20.28/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 75
+	  # of cars that arrived to their destination before the end of the timer: 48
+	  Total time traveled by cars which reached their destination: 4912.28s
+	  Average time traveled: 102.34s
+	  Total time stopped: 1136.26s
+	  Average time stopped: 23.67s
+	  Total number of times stopped: 202
+	  Average number of time stopped: 4.208333
+	  Total time at max speed: 1339.6
+	  Average time at max speed: 27.91
+
+ ---------------WithLight_15_3--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 15cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/132.89/5/34.68/34.95/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/149.04/4/56.44/33.02/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/189.05/6/58.14/46.32/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/51.56/1/0.52/18.14/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/74.1/2/16.96/20.14/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/73.77/3/26.26/16.8/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/62.06/2/2.03/19.5/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/107.11/2/18.11/31.76/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/64.31/1/7.22/20.26/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 21)/104.17/3/12.94/32.42/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/71.17/2/14/20.38/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/84.81/2/27.73/20.18/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/44.81/0/0/15.98/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 21)/109.05/2/11.12/34.87/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/105.96/3/16.4/32.04/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/120.65/4/28.07/32.82/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/64.29/2/9.66/19.23/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/78.18/2/18.24/19.16/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/107.97/3/18.81/31.76/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/59.08/2/14.17/15.84/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/51.44/2/3.96/16.73/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/162.7/5/30.88/46.99/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/52.94/1/8.06/15.84/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/74.68/1/17.68/20.31/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/176.26/7/44.43/46.69/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/172.83/5/41/46.96/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/56.17/2/6.48/17.7/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/67.95/2/16.96/18.2/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/120.76/4/32.38/31.29/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/118.72/4/20.73/34.66/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/51.32/1/6.46/16.04/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/167.14/4/36.52/46.64/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/70.37/2/20.66/17.64/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/108.74/3/20.51/31.33/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/81.76/2/24.7/20.2/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/59.62/2/12.14/16.8/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/63.88/1/19.02/15.99/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/174.46/5/43.8/46.51/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/67.65/1/13.36/19.31/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 21)/117.72/3/19.86/34.93/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/61.39/1/11.7/17.67/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(21, 5)/143.27/4/52.65/32.2/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/53/1/3.26/17.59/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/158.7/4/27/46.85/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/106.61/2/17.58/31.76/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/62.73/2/17.82/15.75/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/118.49/3/20.58/34.82/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/62.25/1/11.2/18.14/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/70.2/2/15.69/19.26/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/129.13/4/31.26/34.75/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/127.87/3/29.89/34.88/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/72.06/2/22.34/17.63/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/123.24/3/30.81/32.82/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/68.46/3/18.72/17.61/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/100.12/5/7.52/32.81/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 75
+	  # of cars that arrived to their destination before the end of the timer: 55
+	  Total time traveled by cars which reached their destination: 5328.65s
+	  Average time traveled: 96.88s
+	  Total time stopped: 1149.12s
+	  Average time stopped: 20.89s
+	  Total number of times stopped: 195
+	  Average number of time stopped: 3.545455
+	  Total time at max speed: 1480.88
+	  Average time at max speed: 26.93
+
+ ---------------WithLight_15_4--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 15cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/58.95/1/4.52/19.46/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/62.88/2/11.82/18.21/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/59.04/2/7.96/17.98/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 22)/57.63/1/3.36/19.31/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 21)/75.88/2/18.82/20.15/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 42)/90.91/2/1.43/31.68/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/69.95/2/20.26/17.74/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/71.16/2/20.08/18.08/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/109.09/2/20.1/31.8/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 21)/125.4/4/34.28/32.42/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/76.86/2/25.8/18.16/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 21)/123.74/4/32.52/32.08/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/121.88/3/23.81/34.8/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/66.68/2/12.18/19.36/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/66.61/2/12.1/19.28/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/133.65/5/35.75/34.87/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/57.78/1/12.92/15.91/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/110.37/2/12.28/34.99/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/102.43/4/14.12/31.3/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(1, 22)/51.81/1/0.8/18.13/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/74.73/3/20.13/19.25/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/52.95/2/8.1/15.95/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/47.37/0/0/16.99/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/56.64/2/9.2/16.87/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/172.87/5/42.35/46.46/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/76.27/2/21.78/19.43/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/118.9/4/21.01/34.69/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/123.98/5/29.64/31.62/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(42, 41)/108.13/2/10.05/34.99/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(21, 5)/63.33/2/15.92/16.79/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/121.97/3/24.11/34.93/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/176.79/6/46.2/46.17/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/173.54/5/42.94/46.15/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 22)/115.08/4/17.18/34.74/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/114.67/3/25.62/31.63/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(1, 42)/62.53/1/5.54/20.35/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 42)/172.75/5/41.02/46.94/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 21)/114.34/3/23.18/32.44/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/69.24/2/24.34/15.83/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(1, 42)/112.72/2/14.77/34.87/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(21, 5)/64.36/2/19.46/15.68/True/Best/False/0.55
+	hugeMapWithLight.json/15/(1, 31)/(21, 5)/114.3/3/25.18/31.47/True/Best/False/0.55
+	hugeMapWithLight.json/15/(11, 5)/(42, 41)/163.86/4/33.37/46.49/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 21)/72.97/2/23.28/17.76/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(42, 41)/120.28/4/31.98/31.33/True/Best/False/0.55
+	hugeMapWithLight.json/15/(42, 32)/(42, 41)/60.67/1/6.18/19.11/True/Best/False/0.55
+	hugeMapWithLight.json/15/(33, 5)/(1, 22)/122.11/8/29.53/32.81/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 75
+	  # of cars that arrived to their destination before the end of the timer: 47
+	  Total time traveled by cars which reached their destination: 4540.04s
+	  Average time traveled: 96.6s
+	  Total time stopped: 936.97s
+	  Average time stopped: 19.94s
+	  Total number of times stopped: 185
+	  Average number of time stopped: 3.93617
+	  Total time at max speed: 1277.46
+	  Average time at max speed: 27.18
+
+
+
+
+
+
+
+
+
+
+---------------WithLight_30_1--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 30cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/51.51/408/8.16/17.17/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/58.51/480/9.62/17.8/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/57.39/510/10.31/17.34/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/68.45/134/17.25/17.05/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/68.48/440/17.53/17.55/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/75.01/2/18.19/20.22/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 42)/98.34/251/13.28/30.55/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/77.38/270/28.55/16.12/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/84.75/714/40.98/13.25/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/76.66/148/21.33/18.14/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/69.04/140/13.1/18.77/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/106.9/3/18.24/31.52/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/85.67/3/28.87/20.19/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/76.09/748/28.64/16.64/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/73.41/176/14.49/19.53/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/110.22/3/19.42/32.4/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/103.94/101/13.48/31.15/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/93.32/1021/37.38/13.62/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/77.47/1112/29.7/13.23/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/116.26/610/30.88/29.53/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 42)/112.33/130/21.57/31.24/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 22)/129.24/7/31.79/34.68/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/59.51/181/3.61/18.26/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/67.49/418/11.85/18.22/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 21)/112.91/764/24.36/32.53/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/88.84/776/39.08/13.5/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/103/484/47.68/18.21/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/127.01/1903/47.26/25.05/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/109.84/501/20.61/29.74/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/147.44/441/58.41/30.9/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/137.81/1117/49.4/27.51/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/84.04/2/27.28/20.11/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/73.39/705/21.1/17.73/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/64.41/449/12.81/18.03/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/77.12/2/20.28/20.13/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/85.82/220/32.49/16.93/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/84.08/466/31.35/14.64/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/131.65/965/44.73/27.61/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/78.68/668/21.64/13.96/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/158.5/1369/60.48/25.87/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 41)/160.08/1432/42.98/41.99/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/71.44/818/20.78/16.83/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/74.69/158/16.73/19.66/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/66.99/629/17.29/18.94/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 42)/172.61/512/37.3/43.13/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/91.99/900/41.27/13.68/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/170.35/1900/70.76/24.22/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/136.66/149/45.65/30.75/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/96.14/730/43.2/15.33/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/132.05/1600/51.46/25.81/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 41)/135.35/558/39.21/32.31/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/138.73/744/49.78/28.42/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/84.05/488/31.61/16.72/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/71.58/707/19.35/16.07/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 42)/117.38/895/30.76/31.67/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/64.8/184/8.97/18.3/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 41)/183.45/1519/63.48/42.08/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 41)/121.21/520/24.75/32.89/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/62.07/121/11.27/17.01/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/151.92/1081/60.76/26.91/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/82.12/129/23.61/19.72/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/110.17/1084/51.42/13.4/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/99.55/886/48.81/13/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 42)/133.62/1107/43.46/27.41/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/105.78/937/51.32/14.97/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/76.5/334/30.68/14.89/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/92.33/894/34.11/14.61/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 42)/124.85/3/27.32/34.74/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/82.13/214/25.64/18.21/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/127.98/217/36.78/30.48/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/65.92/163/7.67/19.26/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/53.61/494/9.96/13.49/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/100.29/258/9.44/29.96/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/76.54/2/27.02/17.61/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/72.08/211/22.91/15.48/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/180.08/1126/72.62/28.01/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/62/392/14.44/15.46/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/132.97/586/44.09/29.28/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/175.95/1797/69.9/25.88/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/65.8/338/19.2/15.01/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 41)/174.78/112/46.81/46.24/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/119.58/3/30.92/31.5/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/81.96/183/31.37/19.26/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 42)/180.87/1458/50.83/42.22/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/178.25/1297/70.37/27.04/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/132.43/163/40.04/31.46/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/115.21/166/23.54/31.07/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/111.96/1084/32.7/29.07/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/154.69/649/56.11/29.32/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/55.51/4/1.5/19.16/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/125.52/657/36.86/28.26/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 21)/113.21/459/18.85/33.06/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 41)/185.35/1149/52.1/41.73/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 42)/150.59/660/52.38/29.23/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/71.73/67/17.06/18.8/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/66.32/642/18.31/16.59/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/123.77/327/29.33/30.74/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 149
+	  # of cars that arrived to their destination before the end of the timer: 97
+	  Total time traveled by cars which reached their destination: 10127.44s
+	  Average time traveled: 104.41s
+	  Total time stopped: 3054.04s
+	  Average time stopped: 31.48s
+	  Total number of times stopped: 74307
+	  Average number of time stopped: 766.0516
+	  Total time at max speed: 2294.99
+	  Average time at max speed: 23.66
+
+ ---------------WithLight_30_2--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 30cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/59.96/1/5.54/19.28/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/64.38/2/14.71/17.69/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/72.24/432/20.74/18.06/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/65.3/362/24.67/14.35/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/73.99/324/13.32/18.73/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/49.74/168/3.4/14.92/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/97.14/1418/28.39/28.25/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/57.01/1/6/18.15/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/61.24/2/13.8/16.87/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/66.07/541/21.13/15.78/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/102.43/175/15.24/32.09/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/73.84/139/17.66/18.83/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/99/7/10.04/31.65/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 21)/80.9/2/23.85/20.25/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/114.65/3/23.5/32.44/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/69.31/3/18.24/18.13/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/114.61/1431/41.82/29.07/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/122.48/145/30.22/31.62/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/69.96/2/15.51/19.42/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/65.37/498/10.29/16.91/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/69.79/1/15.56/19.32/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/116.67/4/27.67/31.59/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/110/1125/31.37/28.2/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 42)/141.38/3/9.72/46.96/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/119.55/134/26.75/31.92/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/125.31/8/32.83/32.95/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/71.65/5/24.16/16.75/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/70.35/507/14.4/18.54/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/70.37/455/28.31/13.34/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/59.17/242/14.26/14.6/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 21)/111.67/4/13.86/34.84/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/106.46/171/16.13/30.7/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/114.88/405/24.77/30.28/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/100.53/2/8.05/32.95/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/133.48/589/43.23/30.11/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/55.05/275/8.26/15.6/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 22)/119.6/134/20.08/34.36/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/73.81/1/16.8/20.25/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 42)/170.24/253/37.55/45.24/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/112.09/76/21.05/31.62/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/76.75/2/25.71/18.21/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 41)/129.72/130/29.96/34.57/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 41)/120.79/517/33.89/29.9/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/66.64/511/12.36/17.15/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 42)/167.43/1639/51.75/41.52/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/73.53/697/27.36/17.11/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/55.53/165/9.25/14.97/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 21)/112.8/460/17.1/33.03/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 41)/132.88/100/34.87/33.83/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/67.98/2/18.26/17.7/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/135.66/332/39.82/31.36/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/70.61/325/21.02/16.85/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 22)/101.87/804/16.12/29.16/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/89.94/273/32.8/18.02/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/74.45/684/34.91/13.37/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 41)/132.68/1288/45.99/30.97/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/67.5/645/20.55/12.48/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/86.72/350/24.99/18.86/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/78.03/2/28.33/17.67/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/117.79/537/29.23/30.13/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/138.79/169/46.68/31.11/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/66.09/325/19.03/15.4/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 41)/156.57/90/25.39/45.83/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 22)/128.26/5/30.38/34.78/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/86.87/836/40.65/10.84/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/99.82/852/45.02/15.36/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/122.95/286/34.72/30.42/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/88.03/826/35.97/15.36/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/81.98/972/28.81/10.76/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/88.18/675/28.25/17.59/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(42, 21)/125.14/729/33.2/31.85/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 42)/114.68/7/16.86/34.9/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(21, 5)/72.58/284/23.87/14.53/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/95.29/1119/42.47/13.63/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/140.76/812/51.07/27.7/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/75.79/562/21.05/16.94/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(1, 22)/125.42/133/25.89/34.45/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(21, 5)/73.77/390/24.36/13.69/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(21, 5)/125.93/712/33.02/28.45/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 22)/75.39/300/17.81/17.65/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(1, 42)/148.36/132/15/46.34/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 41)/160/435/30.05/44.04/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(42, 21)/130.96/531/37.04/29.96/True/Best/False/0.55
+	hugeMapWithLight.json/30/(1, 31)/(1, 42)/98.9/209/39.72/19.15/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/93.5/808/42.21/14.28/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(21, 5)/126/321/33.42/29.99/True/Best/False/0.55
+	hugeMapWithLight.json/30/(42, 32)/(42, 41)/58.37/64/3.53/18.95/True/Best/False/0.55
+	hugeMapWithLight.json/30/(33, 5)/(42, 21)/67.08/503/18.11/15.95/True/Best/False/0.55
+	hugeMapWithLight.json/30/(11, 5)/(1, 22)/54.73/388/7.74/17/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 150
+	  # of cars that arrived to their destination before the end of the timer: 89
+	  Total time traveled by cars which reached their destination: 8611.13s
+	  Average time traveled: 96.75s
+	  Total time stopped: 2198.43s
+	  Average time stopped: 24.7s
+	  Total number of times stopped: 52255
+	  Average number of time stopped: 587.1348
+	  Total time at max speed: 2166.34
+	  Average time at max speed: 24.34
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ---------------WithLight_60_1--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 60cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/54.36/2/6.98/16.76/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/53.65/245/4.89/16.46/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/48.23/166/3.35/14.82/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/69.25/365/19.29/15.5/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 42)/70.3/427/15.87/18.8/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/75.63/217/31.22/15.86/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/72.48/143/16.29/18.74/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/86.52/4/29.52/20.26/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/80.53/810/30.6/15.47/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/58.26/488/14.81/13.81/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/78/517/21.27/18.53/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/58.27/49/7.83/17.51/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/77.31/489/27.07/13.29/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(1, 22)/102.29/920/20.54/30.86/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/72.27/821/20.96/12.56/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/81.32/893/32.7/13.52/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/105.11/2/7.25/34.75/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/92.3/338/34.9/17.17/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/60.21/365/16.45/14.09/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/87.6/663/33.98/16.99/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/86.25/639/29.04/15.61/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 21)/119.79/3/22.01/34.87/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 21)/116.15/1502/35.69/31.12/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/94.43/598/37.71/14.63/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/74.02/2/22.97/18.26/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/84.87/427/31.9/14.71/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/127.27/375/38.76/31.31/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/72.12/703/24.38/15.45/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/125/1510/47.55/27.12/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/76.41/841/31.24/11.5/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/95.66/849/35.02/17.07/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(21, 5)/131.98/749/45.28/27.79/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 41)/132.15/363/30.07/32.89/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 41)/133.93/471/48.02/29.67/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(1, 22)/144.7/721/56.24/29.92/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/101.64/746/44.93/12.89/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/103.44/1285/45.48/12.36/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 41)/130.04/1815/55.71/25.25/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/98.11/1269/38.6/11.46/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/125.41/396/35.84/31.02/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/104.09/879/45.68/15.17/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/141.41/228/41.08/33.73/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/113.63/964/49.63/14.92/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/92.21/735/41.41/11.06/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/93.29/1250/44.15/9.1/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/112.59/1470/45.54/14.04/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(21, 5)/134.5/1006/43.12/27.23/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 42)/110.93/410/21.7/29.29/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/119.96/1045/55.9/13.29/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/150.58/1463/62.94/30.38/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/96.08/812/33.32/15.12/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/115.88/1532/50.86/12.51/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/93.61/1527/39.72/13.48/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(21, 5)/134.92/351/39.75/30.88/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/144.25/339/43.12/32.8/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 41)/166.26/5/35.75/46.75/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/115.28/1084/52.76/16.24/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(21, 5)/146.66/577/50.26/28.98/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 21)/146.75/860/41.83/31.26/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/122.44/1689/56.35/11.11/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/111.62/1263/40.71/13.37/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/120.24/1920/55.59/10.36/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 41)/157.28/570/51.15/32.62/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(21, 5)/145.6/1136/46.02/27.55/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/126.76/1113/55.66/15.6/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 22)/157.27/810/52.03/32.22/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/146.84/2197/64.87/12.87/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/97.14/1202/32.77/11.75/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 21)/166.98/1432/59.27/28.95/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/159.93/574/63.19/28.81/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 41)/157.15/1697/52.69/25.64/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/139.79/1781/71.66/11.39/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/103.51/1371/40.79/11.57/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(1, 22)/169.81/1563/62.62/24.96/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/103.59/1231/41.42/12.08/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 22)/157.62/872/46.14/32.17/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/143.66/1730/57.96/15.29/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 41)/181.2/1597/59.85/29.38/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/150.99/2201/77.27/12.53/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 21)/185.05/1291/67.59/30.44/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 41)/171.92/1549/69.76/25.19/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 42)/160.49/1104/58.73/26.74/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(21, 5)/117.16/1430/55.26/11.61/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/174.23/1117/69.54/26.69/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/127.54/1589/51.5/12.27/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(21, 5)/190.81/1317/91/26.64/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/163.8/2078/58.44/24.72/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(1, 42)/205.43/857/63.84/43.33/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 41)/196.92/1959/78.32/28.32/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/105.8/1211/41.6/11.51/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/162.51/2320/77.45/12.82/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 42)/160.82/1589/59.3/24.39/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/161.72/2295/66.46/13.79/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 42)/169.11/2496/67.18/14.56/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 21)/197.39/2302/70.12/28.03/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/184.42/2380/82.4/27.61/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/184.02/2073/72.7/28.28/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(42, 21)/123.8/1272/54.18/12.81/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 41)/203/1525/77.02/41.34/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/131.08/1715/62.75/12.29/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(1, 22)/179.46/1743/65.28/26.69/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 41)/211.81/1776/86.19/28.95/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 41)/170.39/2612/70.22/12.82/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 42)/166/2408/72.61/22.64/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/119.54/1150/55.9/11.85/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(1, 42)/197.96/2068/84.16/27.97/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/181.86/2252/85.74/14.34/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(21, 5)/213.1/2450/88.24/24.39/True/Best/False/0.55
+	hugeMapWithLight.json/60/(42, 32)/(42, 21)/180.36/2909/84.83/12.32/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(1, 22)/166.1/2783/71.98/12.83/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(21, 5)/97.45/1352/35.1/11.75/True/Best/False/0.55
+	hugeMapWithLight.json/60/(1, 31)/(42, 41)/218.56/2313/80.07/29.11/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 22)/137.25/1510/63.21/12.4/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(1, 42)/182.02/1418/71.52/26.19/True/Best/False/0.55
+	hugeMapWithLight.json/60/(33, 5)/(1, 22)/197.26/2886/97.67/23.09/True/Best/False/0.55
+	hugeMapWithLight.json/60/(11, 5)/(42, 21)/169.58/1373/57.41/27.08/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 220
+	  # of cars that arrived to their destination before the end of the timer: 116
+	  Total time traveled by cars which reached their destination: 15075.3s
+	  Average time traveled: 129.96s
+	  Total time stopped: 5644.01s
+	  Average time stopped: 48.66s
+	  Total number of times stopped: 292864
+	  Average number of time stopped: 2524.69
+	  Total time at max speed: 2434.85
+	  Average time at max speed: 20.99
+
+
+
+---------------WithLight_90_1--------------- 
+
+Specifications: 
+	  map used: hugeMapWithLight.json
+	  time: 5min
+	  car load: 90cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/61.42/111/16.37/14.89/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/57.57/504/17.75/13.54/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/67.69/351/18.46/15.67/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/76.14/2/19.77/20.09/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/72.92/582/28.09/14.41/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 21)/81.35/464/26.61/18.34/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/82.55/120/25.66/18.93/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/83.09/1092/35.86/15.73/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/87.47/442/35.07/14.52/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/88.8/571/37.8/13.45/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/87.64/750/30.93/13.3/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/87.59/905/33.77/11.61/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/85.06/1004/29.67/14.19/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 22)/112.26/8/15.62/34.38/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(21, 5)/107.73/139/17.97/30.76/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 21)/98.4/752/37.21/16.77/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/109.3/720/27.12/27.26/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/95.42/820/44.18/14.61/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/92.93/1110/38.01/10.76/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/118.49/4/21.67/34.34/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/116.97/1467/41.52/32/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 21)/117.58/271/26.83/30.15/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 41)/121.25/486/23.1/32.95/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/103.51/1278/43.51/12.27/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 41)/111.14/724/49.16/16.57/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/118.96/367/30.03/28.78/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(21, 5)/119.52/519/32.27/28.48/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 21)/116.21/993/50.18/16.85/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/113.03/996/50.25/13.9/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 41)/146.35/98/16.81/45.14/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 41)/136.43/399/49.04/29.49/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/133.14/1043/43.67/26.37/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/106.97/1218/40.13/12.39/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 41)/124.35/1158/53.72/14.93/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/120.37/1308/51.33/12.33/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 22)/150.33/528/58.39/28.66/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/145.71/251/46.18/33.14/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/146.95/2127/69.27/28.69/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/97.41/1168/34.07/11.48/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 41)/136.42/1583/65.66/13.4/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/145.89/899/47.22/29.79/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/132.28/1930/55.26/13.25/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/151.06/1063/64.97/27.66/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 22)/161.29/1106/51.99/30.12/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(21, 5)/156.52/1314/57.91/25.67/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/146.21/2238/66.08/12.38/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/162.02/2073/64.3/22.14/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 21)/149.93/2010/61.57/13.37/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/151.62/2073/72.1/12.99/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/167.71/1079/68.23/28.77/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/174.91/1380/37.72/40.09/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/131.84/1303/62.6/12.3/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/114.61/1137/48.87/12.84/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/128.01/1389/56.93/12.46/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 21)/166.89/1394/54.2/27.03/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/124.19/1940/59.95/11.18/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(21, 5)/170.13/1950/63.05/24.89/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 41)/166.76/2149/77.65/12.49/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/111.53/1219/47.13/11.51/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/159.6/2263/66.91/13/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/109.11/1725/49.55/10.1/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/159.91/2783/71.93/12.6/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/191.24/1280/54.82/40.62/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/98.73/1360/36.06/11.5/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/184.97/1416/75/28.17/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/184.45/2495/84.36/26.77/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 41)/184.29/1540/65.24/28.83/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/177.1/2122/83.96/14.38/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/138.98/1777/69.29/11.38/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/108.45/1226/41.35/12.39/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/120.35/1323/49.75/12.93/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/117.57/1881/54.18/11.49/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/105.48/1136/39.49/12.79/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/187.35/2518/80.62/23.16/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/193.95/1752/69.83/29.23/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/113.15/1491/54.16/11.24/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 41)/212.46/1938/77.11/38.18/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/168.41/2717/73.2/12.46/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 41)/182.88/2629/84.96/20.64/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/197.31/2299/70.86/27.73/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/187.79/2245/85.27/22.74/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 42)/175.68/1695/68.85/25.27/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/118.03/1183/49.19/13.51/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 22)/185.62/1399/72.62/27.05/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 22)/175.43/2423/72.84/23.39/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(21, 5)/215.32/2034/105.76/24.4/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/221.16/1536/77.01/40.65/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/222.21/3537/96.73/35.56/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 41)/227.55/1597/84.51/39.69/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 41)/226.31/3611/102.91/34.97/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 42)/182.59/2497/81.5/14.2/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/167.39/2720/72.48/12.77/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/220.92/2458/82.48/27.49/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/110.9/1111/43.2/13.68/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/230.89/2661/94.52/38.23/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 22)/175.91/1727/58.43/26.04/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(21, 5)/230.95/2720/104.27/22.52/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 41)/239.4/1580/86.18/40.23/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(21, 5)/110.59/1492/44.88/11.13/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/234.22/2891/99.38/35.7/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(21, 5)/115.25/1593/53.08/10.39/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(1, 22)/168.31/2794/75.06/12.72/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(1, 42)/231.61/2808/86.78/26.66/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(1, 42)/207.96/2306/68.68/38.93/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/228.66/2367/89.6/28.61/True/Best/False/0.55
+	hugeMapWithLight.json/90/(1, 31)/(42, 21)/228.25/3978/107.1/25.45/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(42, 21)/160.04/1303/49.11/27.42/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/142.76/1786/73.07/10.99/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(21, 5)/243.92/2507/111.31/24.93/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(42, 41)/183.55/2580/85.17/12.57/True/Best/False/0.55
+	hugeMapWithLight.json/90/(11, 5)/(1, 22)/139.51/2206/71.02/9.96/True/Best/False/0.55
+	hugeMapWithLight.json/90/(33, 5)/(42, 21)/107.03/1337/36.74/12.53/True/Best/False/0.55
+	hugeMapWithLight.json/90/(42, 32)/(21, 5)/235.73/3600/106.67/22.51/True/Best/False/0.55
+Total Results: 
+	  # of cars that were created: 212
+	  # of cars that arrived to their destination before the end of the timer: 113
+	  Total time traveled by cars which reached their destination: 16597s
+	  Average time traveled: 146.88s
+	  Total time stopped: 6499.43s
+	  Average time stopped: 57.52s
+	  Total number of times stopped: 322121
+	  Average number of time stopped: 2850.628
+	  Total time at max speed: 2418.86
+	  Average time at max speed: 21.41

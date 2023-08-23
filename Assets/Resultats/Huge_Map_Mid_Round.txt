@@ -1,0 +1,783 @@
+ ---------------hugeMapMidRound_15_1--------------- 
+
+Specifications: 
+	  map used: HugeMapMidRound.json
+	  time: 5min
+	  car load: 15cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that take 3rd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	HugeMapMidRound.json/15/(11, 5)/(21, 5)/43.59/0/0/15.65/True/Best/54/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 22)/52.56/0/3.28/17.8/True/Best/65/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 42)/54.99/0/0/19.56/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 22)/51.95/0/0/18.51/True/Best/65/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(21, 5)/45.44/0/0/16.19/True/Best/56/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(42, 21)/90.81/0/0/32.41/True/Best/113/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 42)/54.98/0/0/19.47/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(1, 22)/100.08/0/0/35.85/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 21)/54.97/0/0/19.47/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(1, 22)/100.09/0/0/35.63/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 21)/51.58/0/0.02/18.23/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 42)/54.99/0/0/19.78/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 41)/94.87/0/0/33.83/True/Best/120/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(42, 21)/90.8/0/0/32.28/True/Best/113/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 22)/53.13/0/0/18.98/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 21)/54.97/0/0/19.42/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 41)/53.13/0/0/18.84/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(21, 5)/43.59/0/0/15.56/True/Best/54/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(21, 5)/46.65/0/3.24/15.29/True/Best/56/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(21, 5)/43.58/0/0/15.23/True/Best/54/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 22)/53.14/0/0/18.86/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 21)/54.96/0/0/19.73/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(42, 41)/127.28/0/0.17/45.29/True/Best/158/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 21)/51.58/0/0/18.53/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 42)/95.01/0/0.88/32.86/True/Best/121/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(42, 21)/103.83/1/10.51/34.97/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 41)/94.94/0/0.09/33.93/True/Best/120/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(21, 5)/43.57/0/0/15.56/True/Best/54/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 42)/54.99/0/0/19.48/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 21)/54.95/0/0/19.4/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(1, 42)/127.53/0/0.03/45.14/True/Best/159/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 21)/51.58/0/0/18.47/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(21, 5)/91.4/1/1.26/31.97/True/Best/112/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(21, 5)/46.18/0/2.92/15.47/True/Best/56/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(21, 5)/91.77/0/3.44/30.72/True/Best/112/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(42, 21)/101.17/0/0/36.07/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(42, 41)/100.09/0/0/35.58/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 22)/51.94/0/0/18.64/True/Best/65/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(1, 22)/97.76/1/9.46/31.96/True/Best/114/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 21)/51.59/0/0/18.27/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 22)/51.95/0/0/18.38/True/Best/65/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 41)/53.18/0/0.04/19.08/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 22)/53.99/1/2.01/18.5/True/Best/65/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(42, 21)/101.17/0/0/36.11/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(1, 22)/92.25/0/0.09/32.71/True/Best/114/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 21)/51.59/0/0/18.4/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(21, 5)/88.8/0/0/31.7/True/Best/111/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 41)/94.85/0/0/33.86/True/Best/120/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 22)/53.13/0/0/18.78/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 41)/94.87/0/0/33.75/True/Best/120/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(42, 41)/58.94/1/15.54/16.46/True/Best/64/False/0.55
+	HugeMapMidRound.json/15/(1, 31)/(1, 42)/54.98/0/0/19.78/True/Best/66/False/0.55
+	HugeMapMidRound.json/15/(42, 32)/(1, 42)/103.07/0/4.48/35.3/True/Best/125/False/0.55
+	HugeMapMidRound.json/15/(33, 5)/(42, 41)/95.51/0/3.25/32.96/True/Best/120/False/0.55
+	HugeMapMidRound.json/15/(11, 5)/(1, 42)/94.18/0/0.13/33.41/True/Best/121/False/0.55
+Total Results: 
+	  # of cars that were created: 75
+	  # of cars that arrived to their destination before the end of the timer: 55
+	  Total time traveled by cars which reached their destination: 3924.45s
+	  Average time traveled: 71.35s
+	  Total time stopped: 60.84s
+	  Average time stopped: 1.11s
+	  Total number of times stopped: 5
+	  Average number of time stopped: 0.09090909
+	  Total time at max speed: 1378.06
+	  Average time at max speed: 25.06
+
+ ---------------hugeMapMidRound_30_1--------------- 
+
+Specifications: 
+	  map used: HugeMapMidRound.json
+	  time: 5min
+	  car load: 30cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that take 3rd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/53.12/0/0/19.01/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/51.94/0/0/18.52/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/54.38/0/9.25/18.09/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/54.95/0/0/19.56/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/51.95/0/0/18.5/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/54.97/0/0/19.74/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/53.13/0/0/18.73/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/51.94/0/0/18.59/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/52/0/7.85/18.43/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/44.14/0/6.54/14.6/True/Best/54/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 42)/101.16/0/0/36.09/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/43.58/0/0/15.44/True/Best/54/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 42)/94.3/0/0.22/33.58/True/Best/121/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/100.08/0/0/35.77/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 41)/100.09/0/0/35.62/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(21, 5)/88.81/0/0/31.97/True/Best/111/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/55.07/0/0.13/19.74/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 21)/52.27/0/4.29/17.6/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(21, 5)/88.81/0/0/31.58/True/Best/111/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 21)/102.02/0/6.99/34.96/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 21)/90.8/0/0/32.24/True/Best/113/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/54.98/0/0/19.57/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/53.31/0/0.19/18.81/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/127.79/0/8.43/44.97/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(21, 5)/90.37/0/0/32.31/True/Best/112/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/92.21/0/0/32.9/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/103.36/1/10.56/34.1/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 41)/100.09/0/0/35.54/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/131.57/1/4/45.78/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(21, 5)/88.89/0/0.12/31.37/True/Best/111/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/92.2/0/0/32.92/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 41)/127.64/0/0.39/45.44/True/Best/158/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 41)/95.54/0/3.42/33.16/True/Best/120/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 21)/92.76/0/12.3/30.68/True/Best/113/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(21, 5)/45.84/0/7.56/15.41/True/Best/56/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 42)/96.15/0/4.2/32.47/True/Best/121/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/100.22/0/5.17/35.52/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(21, 5)/89.41/0/8.28/30.62/True/Best/111/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/54.99/0/4.31/19.67/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/54.32/0/8.62/18.14/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/56.01/0/9.11/18.75/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(21, 5)/90.52/0/4.73/30.2/True/Best/111/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/56.36/0/5.17/18.72/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/92.16/0/0.11/32.82/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 42)/101.17/0/0.02/36.18/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 21)/90.8/0/0/32.44/True/Best/113/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 42)/102/0/11.61/35.01/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/44.01/0/6.14/14.74/True/Best/54/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 41)/127.43/0/0.29/45.4/True/Best/158/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 41)/98.12/0/15.05/31.87/True/Best/120/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/56.23/0/5.65/18.72/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/53.13/0/0/18.83/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 21)/102.23/0/3.78/35.08/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/94.78/1/2.48/32.87/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 42)/94.19/0/0.11/33.3/True/Best/121/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 42)/101.18/0/0.05/36.04/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(21, 5)/91.86/1/1.51/32.33/True/Best/112/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/100.08/0/0/35.84/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 41)/95.89/0/3.52/33.03/True/Best/120/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(21, 5)/91.28/0/5.2/31.22/True/Best/112/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 41)/98.91/0/9.38/31.63/True/Best/120/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/92.17/0/0/32.85/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/55.97/1/7/17.89/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/56.98/0/5.81/18.22/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/100.08/0/0/35.68/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 42)/94.23/0/0.15/33.26/True/Best/121/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/93.63/0/3.83/31.59/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 41)/96.39/0/3.93/33/True/Best/120/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/43.6/0/0/15.51/True/Best/54/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/52.94/0/3.94/17.34/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 41)/101.81/0/8.63/34.57/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 42)/102.44/0/5.7/35.1/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 21)/101.67/0/5.44/35.27/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/55.89/0/5.24/17.48/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/56.04/0/8.32/17.36/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(21, 5)/94.5/3/4.1/32.02/True/Best/112/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/56.31/0/13.07/16.56/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 21)/102.42/1/5.37/35.99/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/55.54/0/5.31/18.96/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(21, 5)/45.46/0/0/16.15/True/Best/56/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/53.12/0/0/18.83/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 21)/51.58/0/0/18.36/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/43.58/0/0/15.47/True/Best/54/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/44.18/0/7.6/14.78/True/Best/54/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 21)/101.2/0/0.1/35.81/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/128.52/1/1/45.58/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 21)/95.71/1/7.86/31.31/True/Best/113/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/56.98/1/1.99/19.52/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 21)/54.96/0/0/19.53/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/129.7/0/4.32/44.18/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 21)/90.89/0/0.09/32.46/True/Best/113/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(21, 5)/45.45/0/0/16.18/True/Best/56/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(42, 41)/128.58/0/2.65/43.92/True/Best/158/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 42)/101.16/0/0/36.06/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 22)/92.12/0/0.02/32.89/True/Best/114/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(42, 41)/55.35/1/7.8/17.99/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(21, 5)/92.05/0/6.63/30.42/True/Best/112/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(21, 5)/90.53/0/5.69/30.64/True/Best/111/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/127.53/0/0.09/45.56/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/57.02/1/2/19.6/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/101.48/0/5.66/34.49/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/53.02/0/4.76/17.65/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/54.61/0/5.09/17.6/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(42, 21)/51.58/0/0/18.42/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/54.98/0/0/19.37/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(1, 22)/52.33/0/3.25/17.7/True/Best/65/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 41)/103.67/1/3.28/34.88/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/127.53/0/0/45.33/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 22)/53.13/0/0/18.91/True/Best/64/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(21, 5)/95.83/1/9.39/30.41/True/Best/112/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(42, 41)/100.08/0/0/35.63/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(33, 5)/(1, 42)/127.59/0/0.1/45.68/True/Best/159/False/0.55
+	HugeMapMidRound.json/30/(42, 32)/(1, 22)/101.64/0/5.82/34.52/True/Best/125/False/0.55
+	HugeMapMidRound.json/30/(1, 31)/(1, 42)/54.99/0/0/19.73/True/Best/66/False/0.55
+	HugeMapMidRound.json/30/(11, 5)/(21, 5)/43.58/0/0/15.54/True/Best/54/False/0.55
+Total Results: 
+	  # of cars that were created: 150
+	  # of cars that arrived to their destination before the end of the timer: 115
+	  Total time traveled by cars which reached their destination: 9243.76s
+	  Average time traveled: 80.38s
+	  Total time stopped: 367.79s
+	  Average time stopped: 3.2s
+	  Total number of times stopped: 16
+	  Average number of time stopped: 0.1391304
+	  Total time at max speed: 3202.51
+	  Average time at max speed: 27.85
+
+ ---------------hugeMapMidRound_60_1--------------- 
+
+Specifications: 
+	  map used: HugeMapMidRound.json
+	  time: 5min
+	  car load: 60cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that take 3rd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/45.46/0/0/16.06/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/51.9/0/1.13/18.3/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/53.14/0/0/19.05/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.58/0/0/15.36/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/51.58/0/0/18.44/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/54.48/0/5.78/18.03/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/45.44/0/0/16.06/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/53.14/0/3.49/17.48/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/53.12/0/0/18.83/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/51.94/0/0/18.62/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/54.96/0/0/19.7/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/53.13/0/0/18.83/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/53.02/1/1.12/18.33/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/90.86/1/2/31.53/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/55.78/0/5.29/18.93/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/54.38/0/5.57/18.01/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/90.83/0/0.43/32.35/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/53.92/0/7.68/17.71/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/54.05/0/5.44/17.82/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/44.1/0/3.13/14.86/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/53.13/0/0/18.99/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/90.36/0/0.06/32.13/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/54.2/0/6.97/18.08/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/51.58/0/0/18.29/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/92.43/1/9.43/29.75/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/101.53/0/7.21/34.32/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/53.24/0/4.62/17.51/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/101.18/0/0/36.02/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/89.55/0/5/30.56/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/53.49/0/3.77/17.62/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/53.83/0/9.48/17.33/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/94.4/2/3.99/32.24/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/56.09/0/11.74/17.09/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/47.69/1/5.69/14.61/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/97.9/0/7.91/32.55/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/98.44/1/14.5/29.25/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.58/0/0/15.6/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/96.09/0/3.71/32.97/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/46.45/0/3.12/15.2/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/95.97/1/5.87/31.82/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/95.53/0/7.49/32.4/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/93.54/1/9.3/29.49/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/51.95/0/0/18.44/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/96.69/0/16.79/30.99/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.59/0/0/15.61/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/102.1/1/2/35.72/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/92.72/0/0.45/32.66/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/92.79/1/2.01/32.23/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/54.45/1/5.1/17.76/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.58/0/0/15.38/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/94.86/0/0/33.64/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/102.34/0/7.64/33.26/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/53/0/3.61/17.48/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/45.45/0/0/16.12/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/95.6/0/0.94/33.37/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/56.28/0/6.39/17.46/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/96.08/0/8.09/32.82/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/102.08/1/1.99/35.66/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/44.01/0/5.02/14.73/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/55.57/0/0.58/19.52/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 42)/54.99/0/0/19.62/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/92.91/0/5.74/31.18/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/55.29/1/5.52/17.7/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/94.93/0/0.09/33.92/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/93.52/0/19.14/29.38/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/90.44/0/0.2/32.14/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/55.91/0/10.04/16.23/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/100.09/0/0.04/35.88/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/59.2/1/9.59/18.2/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/103.24/1/2.09/35.62/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/48.47/1/11.62/13.28/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 41)/134.75/0/11.95/43.46/True/Best/158/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/53.92/1/4.12/17.35/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/97.33/1/13.38/28.96/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/130.51/1/8.4/44.09/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/54.96/0/0/19.5/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/54.1/0/5.12/18.24/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/93.78/0/9.51/29.65/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/102.27/0/5.19/35.18/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/46.64/0/3.1/15.09/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/91.38/1/9.13/30.24/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/92.34/0/0.26/32.6/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/100.1/0/0/35.82/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/95.66/1/4.51/32.87/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/52.96/0/3.64/17.66/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/104.03/1/8.5/34.66/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/54.25/0/5.98/18.14/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/96.54/0/10.21/31.73/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/55.9/0/4.77/17.29/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/101.19/0/0.12/35.91/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/105.31/0/16.17/31.33/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/55.8/0/3.63/18.7/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/105.92/1/11.02/33.97/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/92.18/0/0.07/32.77/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/100.07/0/0.07/35.69/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 42)/54.99/0/0/19.61/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/92.22/0/0.04/32.95/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/129.65/0/9.19/43.56/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/93.26/1/15.31/27.99/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/129.32/0/18.63/43.28/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/104.35/1/7.77/35.07/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/103.63/0/13.69/34.05/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/100.99/2/14.72/31.09/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/53.13/0/0/18.89/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/102.51/1/2.33/35.65/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/104.98/0/19.83/32.68/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/44.73/0/3.1/14.58/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/102.15/0/11.5/34.2/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/97.03/1/9.13/30.93/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.6/0/0/15.55/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/128.23/0/0.85/45.2/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/58.24/0/11.02/15.6/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/93.9/0/8.44/29.9/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 42)/56.99/1/1.99/19.46/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/88.87/0/0.39/31.45/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/53.55/0/8.29/16.26/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/53.12/0/0/18.86/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/102.5/0/7.95/34.55/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.59/0/0/15.46/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/105.48/1/8.15/34.94/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 42)/54.97/0/0/19.67/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/90.43/0/4.87/32.07/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/102.27/1/1.13/35.86/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/44.76/0/2.49/14.58/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/54.03/0/0.86/18.52/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/45.78/0/2.96/15.73/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/100.69/0/5.32/35.04/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/100.91/0/14.84/34.28/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/52.77/0/3.29/17.74/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.58/0/0/15.55/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/94.11/0/5.33/32.12/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/99.19/1/8.37/32.32/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/93.54/1/6.88/31.38/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/101.16/0/0/36.02/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/53.3/0/0.11/19.08/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/51.58/0/0/18.49/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/90.83/0/6.74/30.38/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/97.69/1/6.59/32.51/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/53.26/0/0.79/18.7/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/92.81/0/6.75/31.18/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/90.4/0/0.09/32.26/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/101.16/0/0/36.12/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/52.74/0/7.04/17.67/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/93.45/0/8.88/31.52/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/46.36/1/4.3/14.44/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/105.78/1/12.15/34.2/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/53.45/0/10.02/16.32/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(21, 5)/43.91/0/2.1/15.06/True/Best/54/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/106.58/0/21.36/32.01/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/53.62/0/6.5/16.87/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 42)/56.35/0/5.21/18.74/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/102.71/0/7.36/33.9/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/45.44/0/0/16.22/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 41)/133.19/0/13.72/42.39/True/Best/158/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/97.64/0/11.97/30.9/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/53.13/0/3.41/17.77/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/93.36/1/3.02/32.14/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/102.3/0/10.99/33.43/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/55.97/0/10.45/16.29/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/106.58/2/8.98/34.91/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/108.43/1/16.95/32.85/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/46.15/0/5.22/15.49/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/54.84/0/9.38/16.98/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/91.51/0/3/31.32/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/142.53/2/13.32/44.81/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/56.38/0/5.29/18.15/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 22)/52.05/0/2.95/18.44/True/Best/65/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/90.17/0/5.91/29.8/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/143.99/0/25.97/40.63/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/104.03/1/6.89/35.18/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 21)/54.02/0/7.49/16.49/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/94.87/0/0/33.89/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/92.42/0/10.82/30.22/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/53.12/0/0/19.07/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 41)/127.51/0/0.3/45.05/True/Best/158/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/90.41/0/0.14/32.1/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/101.16/0/0/36.25/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/101.16/0/0/35.98/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/131.8/1/6.59/44.58/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/92.91/1/9.13/30.99/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/102.77/0/6.32/34.27/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 21)/57.01/0/4.56/18.51/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/105.91/1/12.9/33.65/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/46.93/0/2.83/15.12/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(42, 21)/98.02/1/13.1/30.1/True/Best/113/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/97.93/0/6.18/33.49/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/47.88/0/8.97/14.37/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/93.44/1/4.81/31/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/100.7/0/0.51/35.7/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/95.21/0/1.16/33.49/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/93.89/1/10.85/28/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/96.35/0/6.34/32.34/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/102.84/0/8.22/34.54/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/45.43/0/0/16.34/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(42, 41)/95.01/0/1.3/33.48/True/Best/120/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 42)/56.49/0/3.53/18.54/True/Best/66/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/57.46/1/11.67/16.62/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/107.61/1/11.73/34.27/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(21, 5)/90.72/0/8.03/30.16/True/Best/111/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/106.37/0/10.24/33.04/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 42)/127.54/0/0/45.5/True/Best/159/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/47.79/0/6.84/14.7/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/97.76/1/5.22/33.05/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(42, 41)/53.13/0/0/19.01/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(11, 5)/(1, 42)/96.25/0/13.1/31.47/True/Best/121/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/47.32/0/7.54/14.59/True/Best/56/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(1, 22)/54/0/1.12/18.33/True/Best/64/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 41)/101.08/0/7.36/34.47/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(1, 31)/(42, 21)/104.06/0/6/33.19/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(1, 22)/93.57/1/1.19/32.67/True/Best/114/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(21, 5)/92.54/1/2.15/32.05/True/Best/112/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 42)/103.7/0/9.04/33.66/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(42, 32)/(1, 22)/105.15/1/8.12/33.33/True/Best/125/False/0.55
+	HugeMapMidRound.json/60/(33, 5)/(21, 5)/47.21/0/3.04/15.28/True/Best/56/False/0.55
+Total Results: 
+	  # of cars that were created: 293
+	  # of cars that arrived to their destination before the end of the timer: 214
+	  Total time traveled by cars which reached their destination: 16964.32s
+	  Average time traveled: 79.27s
+	  Total time stopped: 1154.87s
+	  Average time stopped: 5.4s
+	  Total number of times stopped: 57
+	  Average number of time stopped: 0.2663551
+	  Total time at max speed: 5677.76
+	  Average time at max speed: 26.53
+
+
+ ---------------hugeMapMidRound_90_1--------------- 
+
+Specifications: 
+	  map used: HugeMapMidRound.json
+	  time: 5min
+	  car load: 90cars/min
+	  speed type: constant
+	  Max speed of all cars: 0.55
+	  cars that don't respect stops: 0%
+	  cars that take 2nd best path: 0% 
+	  cars that take 3rd best path: 0% 
+	  cars that have high reaction time: 0% 
+	  cars that block intersections: 0%
+Individual cars results:
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/45.21/0/0/16.18/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/45.13/0/6.33/14.46/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/52.65/0/3.72/17.38/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/54.03/0/5.61/17.96/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/52.88/0/0/18.7/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/52.04/0/3.17/17.67/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.67/0/0/19.39/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.9/0/5.12/19.01/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/45.51/0/3.1/15.56/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/43.94/0/2.22/14.9/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/52.9/0/0/18.87/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.66/0/0/19.47/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/52.88/0/0/18.68/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/51.28/0/0/18.33/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/52.39/0/7.46/17.46/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.66/0/0/19.38/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/51.28/0/0/18.28/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/51.62/0/2.34/18.16/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/90.77/0/4.56/32.15/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/51.66/0/0/18.33/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/53.28/0/5.76/17.83/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/90.06/0/0.35/31.75/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/54.06/0/7.48/17.89/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/54.62/0/9.59/17.72/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/99.54/0/0.04/35.62/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/46.29/0/5.48/15.05/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/93.06/0/7/31.6/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/101.31/0/4.06/34.77/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/46.51/0/8.66/14.81/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/100.81/0/5.03/34.71/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/53.24/0/0.74/18.39/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/52.94/0/3.49/17.6/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/96.31/1/16.53/30.21/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/104.73/1/11.15/33.44/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/55.27/0/10.99/15.85/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/102.55/1/11.03/34.39/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/104.5/0/11.16/33.65/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/90.05/0/0.19/31.82/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/95.92/0/13.7/28.9/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/104.68/0/20.34/33.53/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/47.7/1/8.78/13.82/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/60.89/0/13.57/16.87/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/110.46/1/25.76/30.6/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/47.56/0/8.67/14.13/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/94.49/0/0.04/33.42/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/104.63/0/5.11/34.1/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/103.67/1/9.88/33/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/44.97/0/2.92/13.97/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/54.54/0/3.89/17.74/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/63.05/1/13.41/16.37/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/103.41/0/21.21/31.52/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/46.34/0/7.2/13.32/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/95.95/0/5.72/32.46/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/108.87/1/14.08/30.21/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/54.53/0/6.91/16.49/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/95.12/2/3.28/32.92/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/48.25/0/9.58/13.61/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/69.26/0/19.2/18.39/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/93.84/1/4.82/30.53/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/53.18/0/4.84/18.16/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/84.2/0/35.45/16.56/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/57.38/0/6.25/17.1/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/93.25/0/6.42/17.24/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/43.42/0/0/15.29/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/86.77/0/43.11/15.22/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/75.9/0/26.53/15.25/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/75.65/0/30.46/15.55/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/52.3/0/3.2/17.38/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/101/0/5.48/34.46/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/75.68/0/32.25/15.35/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/100.65/0/0/35.93/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/94.06/1/4.64/32.1/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/124.14/0/29.08/33.07/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/101.99/0/14.25/33.88/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/58.42/1/12.59/15.51/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/91.71/1/6.51/31.5/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/60.15/0/7.08/17.6/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/125.23/0/28.14/31.94/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/43.96/0/1.96/14.88/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/52.93/0/0/18.92/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/56/0/3.93/18.42/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/82.53/1/35.78/14.53/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/104.13/1/11.65/33.4/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/101.47/0/3.17/35.27/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/112.34/0/22.35/28.27/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/101.1/0/8.13/33.98/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/139.93/1/26.53/42.81/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/112.48/0/16.34/32.94/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/130.21/0/6.1/42.44/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/106.52/1/16.99/31.39/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/63.66/1/13.47/16.58/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/100.68/0/8.82/34.38/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/43.44/0/0.37/15.33/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/101.57/0/11.93/34.73/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/113.96/1/13.14/33.09/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/131.71/1/15.9/40.86/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/57.03/0/4.33/17.53/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/142.76/0/29.65/39.15/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/63.43/0/12/16.33/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/57.97/1/10.85/16.47/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/92.89/0/8.12/27.97/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/102.32/0/4.76/33.99/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/113.15/1/21.74/31.12/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/57.6/0/10.9/16.01/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/92/0/3/32.54/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/47.56/0/3.84/15.23/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/144.89/1/31.46/38.95/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/117.74/2/21.57/27.99/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/137.35/0/21.21/38.85/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/96.41/2/11.18/29.84/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/138.93/1/20.85/39.65/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/116.65/0/24.17/27.23/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/104.1/0/14.85/32.63/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/47.47/1/4.38/14.24/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/52.84/0/2.23/17.58/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/64.49/1/12.97/15.9/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/107.97/1/19.58/27.75/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/132.71/0/21.54/41.37/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/92.28/0/4.1/30.54/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/105.77/1/8.04/36.12/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/107.34/0/23.71/25.35/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/50.07/1/9.05/12.66/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/60.54/0/7.19/16.2/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/106.01/2/10.15/33.53/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/107.88/1/27.85/24.3/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/94.56/0/11.15/26.76/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/61.05/0/13.98/15.79/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/130.16/0/14.93/30.93/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/103.8/0/9.43/32.92/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/64.11/0/12.44/15.84/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/94.52/0/11.85/26.72/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/104.36/1/12.05/33.2/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/120.39/1/23.94/32.01/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/95.75/3/7.25/30.66/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/110.27/0/22.28/24.62/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/44.22/0/2.64/14.26/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/95.78/1/4.01/32.57/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/56.39/0/4.71/18.4/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/48.54/0/7.26/13.87/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/109.13/0/10.98/31.94/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/92.77/1/4.56/30.46/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/128.57/0/1.74/44.48/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/53.66/1/2/18.26/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/129.24/0/4.49/44.06/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/66.93/1/18.61/14.06/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/99.55/1/21.04/25.46/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/100.39/0/10.71/34.53/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/111.18/0/14.95/31.3/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/92.3/1/8.53/27.84/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/91.93/0/0.31/32.68/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/61.74/0/11.22/15.54/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/113.89/0/18.53/32.31/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/58.09/1/14.15/16.05/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/59.85/0/14.77/13.84/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/55.42/0/6.98/15.84/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/103.77/0/6.97/33.57/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/115.23/1/15.63/31.61/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.66/0/1.2/19.4/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/57.6/0/5.09/17.88/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/43.39/0/0/15.42/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/99.93/0/6.63/34.96/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/90.29/0/0/32.51/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/128.78/0/7.51/44.12/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/102.78/1/4.54/35.26/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/103.39/0/2.6/34.44/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/94.87/0/11.26/28.25/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/128.22/0/3.91/44.13/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/105.58/0/8.65/34.28/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/101.08/0/12.3/27.46/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/103.58/0/9.31/31.06/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.77/0/3.47/19.41/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/53.98/0/5.05/17.98/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/92.54/0/2.81/31.79/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/54.99/0/8.33/16.43/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/51.52/0/2.85/18.11/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/43.78/0/7.14/14.87/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/93.9/0/14.85/31.14/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/52.59/0/10.01/17.28/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/102.19/1/24.4/25.22/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/136.24/1/15.18/42.37/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/53.35/0/5.72/17.13/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/52.03/0/11.06/17.19/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/91.15/0/5.77/30.95/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/135.68/0/24.61/40.26/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.88/0/4.98/19.18/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/112.19/1/16.99/31.59/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/53.18/0/10.9/17.04/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/48.37/1/11.07/12.38/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/111.12/0/19.7/26.98/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/61.93/1/14.29/17.36/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/60.28/0/12.82/14.08/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/44.07/0/1.97/14.67/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/105.26/0/11.8/32.07/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/110.92/1/14.05/31.8/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/112.58/0/27.26/26.09/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/93.74/0/15.77/26.76/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/59.15/0/2.93/18.56/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/105.95/0/23.12/31.24/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/105.48/1/14.31/32.65/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/103.55/0/8.2/32.38/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/101.35/0/4.14/34.86/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/130.43/1/9.75/44.45/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/91.18/1/7.84/30.31/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/100.92/0/4.81/35.75/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/54.32/1/6.75/17.52/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/104.38/0/10.91/30.76/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/92.05/0/0.32/32.59/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/45.2/0/0/16.07/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/94.29/0/15.37/29.18/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/134.24/0/15.42/41.67/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/92.33/0/12.07/31.94/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/127.56/0/0.66/45.02/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/45.22/0/0.78/15.97/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/98.84/0/9.76/29.35/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/100.43/0/7.1/34.49/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/61.27/1/10.95/17.29/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/96.97/0/19.81/25.84/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 22)/58.81/0/7.26/16.95/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/53.41/0/4.48/17.06/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/54.14/0/2.41/17.44/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/46.66/0/3.7/15.25/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.67/0/0/19.53/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/101.22/0/11.29/33.85/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/44.44/0/3.46/14.27/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/101.63/2/10.2/32.24/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/92.46/1/2.68/31.6/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/54.8/0/5.73/19.31/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/94.86/0/3.43/33.04/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/102.81/1/2.19/35.52/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/129.65/0/14.29/43.24/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/95.62/1/8.98/31.19/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/95.5/1/12.24/31.02/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/93.33/2/8.03/31.33/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/99.22/3/20.85/28.56/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/102.82/0/4.1/33.77/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/55.17/0/4.95/18.81/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/99.92/1/19.74/26.53/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/97.02/1/14.79/29.94/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/57.25/1/13.53/15.47/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/50.11/0/13.96/11.29/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/107.84/2/12.14/33.01/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/51.13/1/13.68/13.74/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/101.14/1/12.62/31.96/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/45.42/0/3.13/13.97/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/97.85/1/9.78/30.98/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/95.18/0/12.08/27.47/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/91.93/0/0.27/32.5/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/46.18/0/9.52/14.38/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/92.56/0/5.02/30.39/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/102.97/0/10.39/33.44/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/110.78/1/14.96/31.68/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/54.27/0/5.89/17.65/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/100.92/1/11.39/28.04/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/53.05/0/3.67/17.41/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/53.12/0/3.65/17.43/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/99.16/0/17.33/27.28/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/112.79/1/12.41/33.56/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/103.28/1/7.25/34.61/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/98/1/9.48/31.54/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/95.35/0/4.78/32.41/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/108.27/1/10.67/32.8/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/52.88/0/0.04/18.7/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/53.99/0/8.39/16.5/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/111.64/0/20.28/31.1/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/126.92/0/8.04/44.45/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/53.12/0/3.51/17.49/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/61.16/1/13.53/17.08/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(21, 5)/89.43/0/9.01/30.45/True/Best/111/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 21)/51.3/0/0/18.11/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/59.6/0/11.03/15.95/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 21)/58.57/1/10.69/17.63/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/103.21/1/7.78/34.7/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/48.65/1/5.86/15.34/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/106.05/0/7.21/32.53/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(1, 42)/56.59/0/7.53/17.01/True/Best/66/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/93.52/0/11.24/29.54/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/97.1/0/10.4/31.58/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/98.21/2/13.73/27.86/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/106.01/0/20.1/30.85/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 42)/98.63/1/10.85/31.79/True/Best/121/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 21)/108.31/1/15.44/32.46/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/52.01/0/11.03/13.55/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 22)/93.46/0/11.64/31.37/True/Best/114/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(42, 41)/98.56/0/17.29/31.34/True/Best/120/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(21, 5)/96.83/0/11.02/26.29/True/Best/112/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 42)/104.66/0/10.37/32.16/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(1, 22)/52.34/0/3.33/17.31/True/Best/65/False/0.55
+	HugeMapMidRound.json/90/(1, 31)/(42, 41)/106.55/0/13.69/33.1/True/Best/125/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(21, 5)/53.7/0/13.14/12.66/True/Best/56/False/0.55
+	HugeMapMidRound.json/90/(33, 5)/(1, 42)/140.64/1/29.25/40.05/True/Best/159/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(42, 41)/58.86/0/10.61/15.81/True/Best/64/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 41)/135.58/1/15.79/39.44/True/Best/158/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(21, 5)/52.92/1/12.9/12.82/True/Best/54/False/0.55
+	HugeMapMidRound.json/90/(11, 5)/(42, 21)/92.27/0/4.36/31.33/True/Best/113/False/0.55
+	HugeMapMidRound.json/90/(42, 32)/(1, 22)/105.88/1/8.85/31.72/True/Best/125/False/0.55
+Total Results: 
+	  # of cars that were created: 421
+	  # of cars that arrived to their destination before the end of the timer: 295
+	  Total time traveled by cars which reached their destination: 24684.07s
+	  Average time traveled: 83.67s
+	  Total time stopped: 2953.82s
+	  Average time stopped: 10.01s
+	  Total number of times stopped: 99
+	  Average number of time stopped: 0.3355932
+	  Total time at max speed: 7584.79
+	  Average time at max speed: 25.71
