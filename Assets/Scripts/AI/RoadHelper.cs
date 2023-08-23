@@ -104,6 +104,11 @@ namespace SimpleCity.AI
                 {
                     InvokeRepeating("CheckStuck", 3.0f, 3f);
                 }
+                else if(transform.name.Contains("round"))
+                {
+                    Debug.Log("ROUNDABOUT");
+                    InvokeRepeating("CheckStuck", 3.0f, 3f);
+                }
                 else
                 {
                     InvokeRepeating("CheckStuck", 3.0f, 2f);

@@ -26,8 +26,12 @@ public class SimulationManager : MonoBehaviour
     public InputField reactionTimeInput;
     public InputField IntersectionBlockingInput;
 
-    public GameObject buttonsPanelToReactivateWhenFinished;
+    public Text timer;
 
+    public GameObject buttonsPanelToReactivateWhenFinished;
+    public float timeRemaining = 10;
+
+    bool hasStarted=false;
     float fTime=300f;//if no time indicated, runs for 5min
     string mapName = "";
     string strSimulationName="NoNameGiven";
@@ -44,6 +48,26 @@ public class SimulationManager : MonoBehaviour
     StreamWriter sw;
     System.Random random = new System.Random();
     bool simulationGoing = false;
+
+    private void Update()
+    {
+        if(hasStarted)
+        {
+            if(timeRemaining>0)
+            {
+                timeRemaining -= Time.deltaTime;
+                float minutes = Mathf.FloorToInt(timeRemaining / 60);
+                float seconds = Mathf.FloorToInt(timeRemaining % 60);
+                timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            }
+            else
+            {
+                timer.gameObject.SetActive(false);
+            }
+            
+        }
+    }
+
 
     public void StartSimulation()
     {
@@ -159,6 +183,10 @@ public class SimulationManager : MonoBehaviour
 
         StartCoroutine(StopEverything());
 
+        timer.text = fTime.ToString();
+        timeRemaining = fTime;
+        timer.gameObject.SetActive(true);
+        hasStarted = true;
         SpawnAllCars();
     }
 
