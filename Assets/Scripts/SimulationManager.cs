@@ -154,7 +154,7 @@ public class SimulationManager : MonoBehaviour
 
     IEnumerator waitMapFinished()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         aiDirector.GraphWholeMarkerMap(); //need to have the grapoh marker to spawn a car
 
         StartCoroutine(StopEverything());
