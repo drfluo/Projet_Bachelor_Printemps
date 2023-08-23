@@ -22,6 +22,7 @@ public class SimulationManager : MonoBehaviour
     public Slider gaussianStandardDevi;
     public InputField stopRespectInput;
     public InputField secondBestPathInput;
+    public InputField thirdBestPathInput;
     public InputField reactionTimeInput;
     public InputField IntersectionBlockingInput;
 
@@ -34,6 +35,7 @@ public class SimulationManager : MonoBehaviour
     string speedChosen = "constant";
     int stopRespect = 0;
     int secondBestPath = 0;
+    int thirdBestPath = 0;
     int reactionTime = 0;
     int intersectionBlocking = 0;
     double meanSpeed = 0;
@@ -90,6 +92,11 @@ public class SimulationManager : MonoBehaviour
         {
             secondBestPath = int.Parse(secondBestPathInput.text);
         }
+        //thirdBestPath
+        if (thirdBestPathInput.text != "")
+        {
+            thirdBestPath = int.Parse(thirdBestPathInput.text);
+        }
         //secondBestPath
         if (reactionTimeInput.text != "")
         {
@@ -102,7 +109,6 @@ public class SimulationManager : MonoBehaviour
         }
 
         allcars = new CarAI[(int)(carLoad * fTime / 60)];
-        Debug.Log("Will try readin map");
         aiDirector.placementManager.LoadMap(mapName);
 
 
@@ -128,6 +134,7 @@ public class SimulationManager : MonoBehaviour
         } 
         sw.WriteLine("\t  cars that don't respect stops: " + stopRespect + "%");
         sw.WriteLine("\t  cars that take 2nd best path: " + secondBestPath + "% ");
+        sw.WriteLine("\t  cars that take 3rd best path: " + thirdBestPath + "% ");
         sw.WriteLine("\t  cars that have high reaction time: " + reactionTime + "% ");
         sw.WriteLine("\t  cars that block intersections: " + intersectionBlocking + "%");
 
@@ -180,6 +187,10 @@ public class SimulationManager : MonoBehaviour
         {
             pathChose = PathChosen.Second;
         }
+        else if (rand * 100 < secondBestPath+thirdBestPath)
+        {
+            pathChose = PathChosen.Third;
+        }
         else
         {
             pathChose = PathChosen.Best;
@@ -196,7 +207,7 @@ public class SimulationManager : MonoBehaviour
             {
                 allcars[iIdCar].respectStops = false;
             }
-            //chooses if car respects stops
+            //chooses if car has high reaction time
             if (random.NextDouble() * 100 < reactionTime)
             {
                 allcars[iIdCar].onHisPhone = true;
@@ -228,6 +239,7 @@ public class SimulationManager : MonoBehaviour
                 results = results + "-" + car.numberStopDisrespected;
             }
             results = results + "/" + car.pathChosen;
+            results = results + "/" + car.path.Count;
             results = results + "/" + car.onHisPhone;
             results = results + "/" + car.maxSpeed.ToString("0.##");
 
