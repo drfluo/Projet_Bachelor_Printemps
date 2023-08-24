@@ -88,6 +88,8 @@
     <None Include="Assets\Resultats\Huge_Map_Big_Round.txt" />
     <None Include="Assets\Resultats\Huge_Map_No_Light.txt" />
     <None Include="Assets\Resultats\Huge_Map_Mid_Round.txt" />
+    <None Include="Assets\Resultats\Geneve_Stop.txt" />
+    <None Include="Assets\Resultats\Pops_Stop.txt" />
     <None Include="Assets\Resultats\Huge_Map_Mini_Round.txt" />
   </ItemGroup>
   <ItemGroup>
