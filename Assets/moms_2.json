@@ -261,6 +261,13 @@
         "road",
         "road",
         "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
         "house",
         "house",
         "house",
@@ -270,6 +277,7 @@
         "house",
         "house",
         "house",
+        "structure",
         "structure",
         "structure",
         "structure",
@@ -427,27 +435,7 @@
             "z": 10
         },
         {
-            "x": 12,
-            "y": 0,
-            "z": 3
-        },
-        {
             "x": 16,
-            "y": 0,
-            "z": 3
-        },
-        {
-            "x": 15,
-            "y": 0,
-            "z": 3
-        },
-        {
-            "x": 14,
-            "y": 0,
-            "z": 3
-        },
-        {
-            "x": 13,
             "y": 0,
             "z": 3
         },
@@ -1582,6 +1570,61 @@
             "z": 19
         },
         {
+            "x": 12,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "x": 12,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "x": 9,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "x": 10,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "x": 11,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "x": 12,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 2
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 3
+        },
+        {
             "x": 16,
             "y": 0,
             "z": 1
@@ -1670,41 +1713,251 @@
             "x": 6,
             "y": 0,
             "z": 19
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 1
         }
     ],
     "specialRoads": [
-        "Street_3Way_GRR_GameObject",
-        "Street_3Way_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_4Way_GRRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_4Way_GRRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_one_way_GameObject",
+        "Street_Straight_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_3Way_GRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_GRRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_3Way_GRR_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_GRRR_GameObject",
+        "Street_3Way_GRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_GW_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_4Way_GRRR_GameObject",
         "Street_4Way_roundabout_GameObject",
-        "Street_Straight_GW_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_3Way_GRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_3Way_GameObject",
         "Street_3Way_GameObject",
         "Street_3Way_GRR_GameObject",
         "Street_Straight_STOP_GameObject",
-        "Street_Straight_GW_GameObject",
         "Street_Straight_STOP_GameObject",
-        "Street_3Way_GameObject",
-        "Street_Straight_GW_GameObject",
-        "Street_3Way_GameObject",
-        "Street_3Way_GRR_GameObject"
+        "Street_Straight_one_way_GameObject",
+        "Street_Straight_STOP_GameObject"
     ],
     "specialRoadsPosition": [
+        {
+            "x": 5,
+            "y": 0,
+            "z": 33
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 40
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 31,
+            "y": 0,
+            "z": 38
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 38,
+            "y": 0,
+            "z": 40
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 17
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 28
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 27
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 25,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 5
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 16
+        },
         {
             "x": 7,
             "y": 0,
             "z": 6
         },
         {
-            "x": 12,
+            "x": 13,
             "y": 0,
-            "z": 5
+            "z": 9
+        },
+        {
+            "x": 11,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 8
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 17
         },
         {
             "x": 11,
             "y": 0,
             "z": 6
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "z": 22
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 22
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 21
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 24,
+            "y": 0,
+            "z": 16
+        },
+        {
+            "x": 10,
+            "y": 0,
+            "z": 16
+        },
+        {
+            "x": 12,
+            "y": 0,
+            "z": 23
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 26
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 23,
+            "y": 0,
+            "z": 23
+        },
+        {
+            "x": 23,
+            "y": 0,
+            "z": 26
         },
         {
             "x": 20,
@@ -1720,16 +1973,6 @@
             "x": 5,
             "y": 0,
             "z": 10
-        },
-        {
-            "x": 3,
-            "y": 0,
-            "z": 26
-        },
-        {
-            "x": 23,
-            "y": 0,
-            "z": 5
         },
         {
             "x": 24,
@@ -1757,11 +2000,6 @@
             "z": 6
         },
         {
-            "x": 17,
-            "y": 0,
-            "z": 6
-        },
-        {
             "x": 4,
             "y": 0,
             "z": 14
@@ -1770,6 +2008,26 @@
             "x": 4,
             "y": 0,
             "z": 27
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 22
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "z": 26
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 3
+        },
+        {
+            "x": 12,
+            "y": 0,
+            "z": 3
         }
     ]
 }

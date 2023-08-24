@@ -1,5 +1,5 @@
 {
-    "size": 30,
+    "size": 45,
     "tiles": [
         "road",
         "road",
@@ -233,9 +233,44 @@
         "road",
         "road",
         "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
+        "road",
         "house",
         "house",
         "house",
+        "house",
+        "house",
+        "house",
+        "house",
+        "house",
+        "house",
+        "structure",
+        "structure",
+        "structure",
+        "structure",
+        "structure",
         "structure"
     ],
     "positions": [
@@ -305,16 +340,6 @@
             "z": 7
         },
         {
-            "x": 7,
-            "y": 0,
-            "z": 6
-        },
-        {
-            "x": 6,
-            "y": 0,
-            "z": 7
-        },
-        {
             "x": 1,
             "y": 0,
             "z": 6
@@ -652,11 +677,6 @@
         {
             "x": 2,
             "y": 0,
-            "z": 13
-        },
-        {
-            "x": 2,
-            "y": 0,
             "z": 14
         },
         {
@@ -703,11 +723,6 @@
             "x": 17,
             "y": 0,
             "z": 20
-        },
-        {
-            "x": 17,
-            "y": 0,
-            "z": 19
         },
         {
             "x": 17,
@@ -1335,11 +1350,6 @@
             "z": 25
         },
         {
-            "x": 2,
-            "y": 0,
-            "z": 25
-        },
-        {
             "x": 27,
             "y": 0,
             "z": 27
@@ -1363,11 +1373,6 @@
             "x": 5,
             "y": 0,
             "z": 16
-        },
-        {
-            "x": 6,
-            "y": 0,
-            "z": 14
         },
         {
             "x": 6,
@@ -1398,6 +1403,156 @@
             "x": 16,
             "y": 0,
             "z": 4
+        },
+        {
+            "x": 24,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 24,
+            "y": 0,
+            "z": 8
+        },
+        {
+            "x": 24,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 14
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 25
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 26
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 25
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 24
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 21,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 22,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 23,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 1
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 14
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 8
+        },
+        {
+            "x": 27,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 25,
+            "y": 0,
+            "z": 19
         },
         {
             "x": 0,
@@ -1405,44 +1560,210 @@
             "z": 1
         },
         {
-            "x": 7,
-            "y": 0,
-            "z": 14
-        },
-        {
             "x": 20,
             "y": 0,
             "z": 3
         },
         {
+            "x": 24,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 24
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 23
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 9,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 28,
+            "y": 0,
+            "z": 19
+        },
+        {
             "x": 27,
             "y": 0,
             "z": 26
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 20,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 20,
+            "y": 0,
+            "z": 13
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 0
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 13
         }
     ],
     "specialRoads": [
-        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_4Way_GRRR_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_4Way_roundabout_GameObject",
-        "Street_Straight_GW_GameObject",
+        "Street_4Way_GRRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_one_way_GameObject",
+        "Street_Straight_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_GRRR_GameObject",
         "Street_Straight_STOP_GameObject",
         "Street_3Way_GRR_GameObject",
         "Street_Straight_GameObject",
         "Street_Straight_one_way_GameObject",
         "Street_4Way_GRRR_GameObject",
         "Street_3Way_GRR_GameObject",
-        "Street_Straight_GW_GameObject"
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_GW_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject"
     ],
     "specialRoadsPosition": [
         {
-            "x": 9,
+            "x": 5,
             "y": 0,
-            "z": 12
+            "z": 33
         },
         {
-            "x": 11,
+            "x": 15,
+            "y": 0,
+            "z": 40
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 19
+        },
+        {
+            "x": 31,
+            "y": 0,
+            "z": 38
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 38,
+            "y": 0,
+            "z": 40
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 17
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 28
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 27
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 25,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 5
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 16
+        },
+        {
+            "x": 7,
             "y": 0,
             "z": 6
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 9
         },
         {
             "x": 11,
@@ -1453,6 +1774,16 @@
             "x": 5,
             "y": 0,
             "z": 8
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 17
+        },
+        {
+            "x": 11,
+            "y": 0,
+            "z": 6
         },
         {
             "x": 18,
@@ -1488,6 +1819,41 @@
             "x": 12,
             "y": 0,
             "z": 23
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "z": 26
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 7
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 23,
+            "y": 0,
+            "z": 23
+        },
+        {
+            "x": 23,
+            "y": 0,
+            "z": 26
         }
     ]
 }

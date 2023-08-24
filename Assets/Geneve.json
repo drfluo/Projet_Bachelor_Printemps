@@ -273,22 +273,7 @@
         {
             "x": 14,
             "y": 0,
-            "z": 42
-        },
-        {
-            "x": 14,
-            "y": 0,
             "z": 43
-        },
-        {
-            "x": 14,
-            "y": 0,
-            "z": 41
-        },
-        {
-            "x": 14,
-            "y": 0,
-            "z": 40
         },
         {
             "x": 15,
@@ -1516,6 +1501,21 @@
             "z": 13
         },
         {
+            "x": 14,
+            "y": 0,
+            "z": 40
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 42
+        },
+        {
+            "x": 14,
+            "y": 0,
+            "z": 41
+        },
+        {
             "x": 36,
             "y": 0,
             "z": 15
@@ -1607,14 +1607,28 @@
         }
     ],
     "specialRoads": [
-        "Street_Straight_GW_GameObject",
         "Street_Straight_STOP_GameObject",
         "Street_Straight_STOP_GameObject",
-        "Street_Straight_GW_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_4Way_GRRR_GameObject",
-        "Street_Straight_GW_GameObject",
+        "Street_Straight_STOP_GameObject",
         "Street_4Way_roundabout_GameObject",
-        "Street_4Way_GRRR_GameObject"
+        "Street_4Way_GRRR_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_4Way_roundabout_GameObject",
+        "Street_Straight_one_way_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_STOP_GameObject",
+        "Street_Straight_GameObject",
+        "Street_Straight_GW_GameObject",
+        "Street_Straight_STOP_GameObject"
     ],
     "specialRoadsPosition": [
         {
@@ -1656,6 +1670,76 @@
             "x": 26,
             "y": 0,
             "z": 28
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 27
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 19,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 18,
+            "y": 0,
+            "z": 15
+        },
+        {
+            "x": 26,
+            "y": 0,
+            "z": 20
+        },
+        {
+            "x": 25,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 5
+        },
+        {
+            "x": 17,
+            "y": 0,
+            "z": 16
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 6
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 9
+        },
+        {
+            "x": 11,
+            "y": 0,
+            "z": 11
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 8
+        },
+        {
+            "x": 13,
+            "y": 0,
+            "z": 17
         }
     ]
 }
