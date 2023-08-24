@@ -85,6 +85,8 @@
     <None Include="Assets\Resultats\Huge_Map_With_Light.txt" />
     <None Include="Assets\Results_Backup.txt" />
     <None Include="Assets\Result.txt" />
+    <None Include="Assets\Resultats\Huge_Map_Medium_Roundabout.txt" />
+    <None Include="Assets\Resultats\Tapis_Stop.txt" />
     <None Include="Assets\Resultats\Huge_Map_Big_Round.txt" />
     <None Include="Assets\Resultats\Huge_Map_No_Light.txt" />
     <None Include="Assets\Resultats\Huge_Map_Mid_Round.txt" />
