@@ -1230,4 +1230,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/TownScene.unity
-  playerPath: G:/FullHim.exe
+  playerPath: C:/_LAURELINE/Programmation/Git/Road_To_Ze_Bachelor/Executable/FullHim.exe
