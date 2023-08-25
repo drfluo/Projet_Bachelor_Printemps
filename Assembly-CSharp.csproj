@@ -82,17 +82,24 @@
     <Compile Include="Assets\Scripts\UIController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resultats\Geneve_Traffic.txt" />
+    <None Include="Assets\Resultats\Tapis_Trafic.txt" />
+    <None Include="Assets\Resultats\Pops_Trafic.txt" />
     <None Include="Assets\Resultats\Huge_Map_With_Light.txt" />
     <None Include="Assets\Results_Backup.txt" />
+    <None Include="Assets\Resultats\Geneve_Reaction.txt" />
     <None Include="Assets\Result.txt" />
     <None Include="Assets\Resultats\Huge_Map_Medium_Roundabout.txt" />
     <None Include="Assets\Resultats\Tapis_Stop.txt" />
     <None Include="Assets\Resultats\Huge_Map_Big_Round.txt" />
     <None Include="Assets\Resultats\Huge_Map_No_Light.txt" />
     <None Include="Assets\Resultats\Huge_Map_Mid_Round.txt" />
+    <None Include="Assets\Resultats\Pops_Reaction.txt" />
     <None Include="Assets\Resultats\Geneve_Stop.txt" />
     <None Include="Assets\Resultats\Pops_Stop.txt" />
+    <None Include="Assets\Resultats\Tapis_Reaction.txt" />
     <None Include="Assets\Resultats\Huge_Map_Mini_Round.txt" />
+    <None Include="Assets\Resultats\Tapis_Vitesse.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -575,7 +575,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: eb7c5ca916b5a88307c73cc01b030efc
+      Hash: 9067ae4eb9c1d525e8a8e05620c04ab9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SimulationManager
@@ -1230,4 +1230,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/TownScene.unity
-  playerPath: C:/Users/drflu/Desktop/BUILD/FullHim.exe
+  playerPath: G:/FullHim.exe
